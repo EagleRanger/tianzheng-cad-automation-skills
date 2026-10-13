@@ -1,0 +1,4 @@
+interface:
+  display_name: "CAD检查校审"
+  short_description: "安全检查DWG图纸，生成红框校审、修改副本与保存重开证据"
+  default_prompt: "使用 $cad-check-review 检查这份 DWG，在隔离副本中标红确认问题并完成保存重开验收。"

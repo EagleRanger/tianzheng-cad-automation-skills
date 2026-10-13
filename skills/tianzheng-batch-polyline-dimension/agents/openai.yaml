@@ -1,0 +1,6 @@
+interface:
+  display_name: "天正批量多段线标注"
+  short_description: "批量生成原生角度与直线标注，并完成二次美观排版和证据验收"
+  default_prompt: "使用 $tianzheng-batch-polyline-dimension 对当前天正图纸执行批量多段线标注、二次排版和证据验收。"
+policy:
+  allow_implicit_invocation: true

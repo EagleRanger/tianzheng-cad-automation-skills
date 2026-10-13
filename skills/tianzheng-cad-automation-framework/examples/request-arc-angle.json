@@ -1,0 +1,28 @@
+{
+  "request_id": "00000000-0000-4000-8000-000000000001",
+  "document": "isolated-copy.dwg",
+  "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "operation": "annotate_arc_angle",
+  "dry_run": false,
+  "source": {
+    "discovery_rule": "selected_polyline_segment",
+    "segment_index": 1
+  },
+  "placement": {
+    "side": "right",
+    "offset_units": 1.0
+  },
+  "style": {
+    "layer": "annotation",
+    "style_name": "generic-dimension"
+  },
+  "acceptance": {
+    "native_type": "tianzheng-native-dimension",
+    "source_mapping_required": true,
+    "command_idle_required": true,
+    "save_close_reopen_required": true
+  },
+  "rollback": {
+    "on_failure": "delete_current_attempt"
+  }
+}

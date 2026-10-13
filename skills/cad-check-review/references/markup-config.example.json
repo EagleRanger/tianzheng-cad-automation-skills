@@ -1,0 +1,29 @@
+{
+  "expected_dwg_name": "review.dwg",
+  "runtime_dir": "C:/tmp/cad-review-example",
+  "layer": "00-自动检查",
+  "layer_color_aci": 1,
+  "layer_lineweight": 70,
+  "text_lineweight": 18,
+  "polyline_width": 0.3,
+  "issues": [
+    {
+      "id": "01",
+      "status": "错误",
+      "bbox": [100.0, 100.0, 140.0, 120.0],
+      "note": [150.0, 140.0],
+      "note_width": 80.0,
+      "text_height": 3.0,
+      "text": "示例对象与数量表不一致；请按权威数据复核。"
+    },
+    {
+      "id": "02",
+      "status": "待核问题",
+      "bbox": [200.0, 180.0, 240.0, 210.0],
+      "note": [250.0, 225.0],
+      "note_width": 90.0,
+      "text_height": 3.0,
+      "text": "名称存在差异，但当前证据不足以确定修正值。"
+    }
+  ]
+}
