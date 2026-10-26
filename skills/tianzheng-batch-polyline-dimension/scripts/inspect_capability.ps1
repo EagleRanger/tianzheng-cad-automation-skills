@@ -1,4 +1,4 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 param(
     [Parameter()]
     [string]$ProjectRoot = $env:TIANZHENG_CAD_AUTOMATION_HOME,

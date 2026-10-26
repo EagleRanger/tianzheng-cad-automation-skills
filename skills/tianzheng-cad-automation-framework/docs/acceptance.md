@@ -28,7 +28,7 @@ A copied file is not the same as a native save. If the application has unsaved s
 
 The controller must identify the exact application process, window, and document it owns. It must not connect to a user's unrelated CAD session.
 
-Safe cleanup may terminate only a process or orphan that current task ownership evidence identifies. Unknown, user-owned, unsaved, or ambiguous CAD processes are stopped and reported, not killed or taken over.
+Cleanup authority must cover the exact owned documents or process. Prefer per-document save/close with current identity and unsaved-state checks; process termination is not a substitute. For an unknown, user-owned, unsaved or ambiguous CAD process, stop the current attempted action and report the gap; do not terminate, close or take over that process.
 
 ## Dialog handling
 

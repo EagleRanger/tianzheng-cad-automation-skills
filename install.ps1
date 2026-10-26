@@ -1,4 +1,4 @@
-param(
+﻿param(
     [string[]]$Skill,
     [switch]$All,
     [string]$Destination = (Join-Path -Path $env:USERPROFILE -ChildPath '.codex\skills'),

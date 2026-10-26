@@ -54,7 +54,7 @@
 5. 特殊角度显示度数而非弧长；文字、箭头和标注弧线无不可接受拥挤。
 6. 完整 native audit 与可读全画布截图均形成。
 7. 分别报告生成、排版、观察、截图和总耗时。
-8. 测试稿不保存；失败项隔离且不回滚已成功对象；同一 run 不自动重试。
+8. 保存只认当前交接的准确许可：缺省不保存；获准时只走唯一新检查点的已验保存链，不覆盖源图。失败项隔离且不回滚已成功对象；同一 run 不自动重试。
 
 ## 成熟度边界
 
@@ -62,9 +62,11 @@
 - 完整命令包：以 `config/command_packages/batch_polyline_dimension_v1.json` 的实时状态为准。
 - 不同结构 DWG：未完成前必须明确写 `UNVERIFIED`，不得宣称通用。
 
+- 用户样本认可、落盘、重开几何和重开文字语义分别判断；细化边界见 [current-scope-practices.md](current-scope-practices.md)。专项3/3不覆盖后来其他对象或整条流程的接受状态。
+
 ## READY 与回传
 
 - 只使用 `config/project_execution_index.json` 指向的当前 V8 READY 发布器。
 - 目标任务 ID 只从 `config/cad_native_task_registry.json` 读取。
-- 派发后项目回合结束，不轮询 CAD。
+- 派发后不重复控制CAD；来源任务沿实际等待/回传机制接收并核对结果，阶段完成不自动结束尚未完成的原目标。
 - 执行必须生成不可变回执并向项目任务回传；回传失败不授权重跑。

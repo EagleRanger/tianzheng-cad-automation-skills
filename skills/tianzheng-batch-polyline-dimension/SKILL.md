@@ -51,7 +51,9 @@ For a real CAD mutation:
 2. Build one immutable schema-v3 READY handoff with the current V8 publisher named by `config/project_execution_index.json`.
 3. Dispatch it to the exact registered execution task.
 4. Permit only the actions named by the handoff. Default test policy is `save=false` and `retry=0`.
-5. End the project turn after dispatch. Review the immutable return in a later turn.
+5. The bounded executor stops at its contract boundary. The source task retains its active outcome and uses the host's existing wait/return mechanism to review the immutable result; do not replay the run or imply automatic continuation without an actual wake-up path.
+
+An explicit current contract may allow saving a unique checkpoint through its accepted save-copy chain. This never authorizes overwriting the source, reusing a closed historical owner or silently retrying a terminal run. Without that authority keep `save=false`; a saved checkpoint is not formal delivery acceptance.
 
 ## Judge completion precisely
 
@@ -60,9 +62,11 @@ For a real CAD mutation:
 - The special text peer-normal component has a current-board 3-of-3 stability record. This does not establish three complete blank-to-final runs and does not establish cross-structure DWG generality.
 - Keep the whole command package at its registry maturity until its own promotion gates pass.
 
+Read [current-scope reuse and acceptance](references/current-scope-practices.md) when reusing the common-band chain, diagnosing coarse collision flags, or interpreting sample acceptance and saved/reopened evidence. The historical special-text result above is not a complete current-state report.
+
 ## Keep the package clean
 
 - Do not copy run directories, screenshots, historical preparers, or superseded controllers into this Skill.
 - Do not revive routes listed as forbidden or rejected by the project.
 - Fix repeatable workflow faults in the shared layer and add a regression; do not accumulate one-run workarounds.
-- Preserve test drafts unsaved unless the user explicitly requests a saved deliverable.
+- Follow the current handoff's explicit save/checkpoint authority; otherwise preserve test drafts unsaved. A checkpoint is not a formal accepted deliverable.
