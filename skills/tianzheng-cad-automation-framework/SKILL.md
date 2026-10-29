@@ -5,7 +5,7 @@ description: Apply the documented Tianzheng/AutoCAD full-drawing-set automation 
 
 # Tianzheng CAD automation framework
 
-Use this framework to connect a planning controller to a local Tianzheng/AutoCAD adapter while keeping drawings editable as native Tianzheng objects. It describes the architecture, workflow stages, request contracts, and acceptance gates. It does not contain a private project checkout, production drawings, company identifiers, or an executable CAD driver.
+Use this framework to connect a planning controller to a local Tianzheng/AutoCAD adapter while keeping drawings editable as native Tianzheng objects. It describes architecture, workflow stages, request contracts, and acceptance gates. This framework directory is a method guide; the companion `tianzheng-batch-polyline-dimension/runtime` in the same release contains native annotation and control source. No author production drawings, company identifiers or live project state are included. Read the companion migration guide for implementation and runtime boundaries.
 
 ## Read the relevant layer
 
@@ -14,7 +14,7 @@ Use this framework to connect a planning controller to a local Tianzheng/AutoCAD
 - For what is currently automated versus only designed, read [docs/capabilities.md](docs/capabilities.md).
 - Before claiming delivery, read [docs/acceptance.md](docs/acceptance.md).
 - To implement controller/adapter messaging, read [docs/automation-contracts.md](docs/automation-contracts.md).
-- For current native topology, display/collision, plot, checkpoint and window-cleanup practices, read [docs/recent-practices.md](docs/recent-practices.md). These are scoped methods, not a bundled private executor or a claim of arbitrary-DWG acceptance.
+- For current native topology, display/collision, plot, checkpoint and window-cleanup practices, read [docs/recent-practices.md](docs/recent-practices.md). These are scoped methods, not a claim of arbitrary-DWG acceptance; execution code is in the companion runtime, not duplicated here.
 
 ## Operating rules
 

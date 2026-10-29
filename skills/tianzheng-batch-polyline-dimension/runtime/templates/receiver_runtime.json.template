@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "kind": "RECEIVER_LOCAL_INPUT",
+  "execution_enabled": false,
+  "issuer_thread_id": null,
+  "executor_thread_id": null,
+  "meaning": "Template only. Bind the receiver's actual authorized task identities and route before enabling. Not READY, not CAD ownership, not permission."
+}

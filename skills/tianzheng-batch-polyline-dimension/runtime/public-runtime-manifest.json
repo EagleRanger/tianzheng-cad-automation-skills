@@ -1,0 +1,3017 @@
+{
+  "schema_version": 1,
+  "version": "1.1.1",
+  "kind": "PUBLIC_IMPLEMENTATION_SOURCE_AND_INPUT_CONTRACTS",
+  "maturity": {
+    "exact_B_transport": "HISTORICAL_SCOPED_MIXED_ARC_LINE_FUNCTIONAL_ONLY",
+    "standalone_ready": false,
+    "production_ready": false,
+    "special_text": "HISTORICAL_CURRENT_BOARD_3_OF_3_ONLY",
+    "command_package": "VALIDATION_CANDIDATE",
+    "cross_structure_DWG": "UNVERIFIED"
+  },
+  "default_entrypoints": {
+    "exact_B_transport": "scripts/cad_exact_b_focus_independent_transport_v4.ps1",
+    "compiler": "scripts/compile_selected_typed_segment_batch.py",
+    "generation": "scripts/tdimarc_native_full_batch.lsp",
+    "build_only": "scripts/build_public_modules.ps1",
+    "ordinary_planner": "scripts/plan_typed_dimension_quantified_common_band.py",
+    "special_text_planner": "scripts/plan_special_text_peer_normal_restore_v2.py",
+    "offline_tests": "tests/run_offline_tests.py"
+  },
+  "complete_existing_control_chains": [
+    {
+      "public": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_workflow.ps1",
+      "maturity": "VALIDATION_CANDIDATE",
+      "kind": "registered_full_single_owner_workflow",
+      "source_chain": "supplied_source_paths_rebound",
+      "original": "scripts/invoke_selected_typed_dimension_workflow.ps1",
+      "receiver_gap": "Receiver project-level governance/context/scope/owner inputs required; no author current state copied"
+    },
+    {
+      "public": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_polyline_controller.ps1",
+      "maturity": "validation_only",
+      "kind": "registered_partial_convergence_controller",
+      "source_chain": "supplied_source_paths_rebound",
+      "original": "scripts/invoke_selected_typed_dimension_polyline_controller.ps1",
+      "receiver_gap": "Same exact owner, component contract and failed-subset inputs; production promotion not implied"
+    },
+    {
+      "public": "scripts/invoke_special_text_peer_normal_restore_observed_v4.ps1",
+      "maturity": "historical_current_board_3of3__adapted_environment_requires_receiver_validation",
+      "kind": "current_board_special_text_controller",
+      "source_chain": "14-file original literal dependency subchain present, public environment paths adapted",
+      "original": "scripts/invoke_special_text_peer_normal_restore_observed_v4.ps1",
+      "receiver_gap": "Single acad process gate kept; manifests/data/source identity must be receiver-bound"
+    },
+    {
+      "public": "scripts/cad_exact_b_focus_independent_transport_v4.ps1",
+      "maturity": "historical_scoped_mixed_ARC_LINE_functional_only",
+      "kind": "exact_B_generic_native_transport_library",
+      "source_chain": "17-file exact source subchain plus OwnHelperJob build/trust adapter supplied",
+      "original": "scripts/cad_exact_b_focus_independent_transport_v4.ps1",
+      "receiver_gap": "Real receiver READY/controller claim/lease/owners/scope/manifest and bounded worker still required"
+    }
+  ],
+  "module_build_map": "config/public_module_builds.json",
+  "receiver_input_templates": [
+    "templates/receiver_runtime.json.template",
+    "templates/receiver_source_admission.json.template",
+    "templates/exact_b_scope.json.template"
+  ],
+  "required_receiver_inputs": [
+    "config/receiver_runtime.json from explicit receiver configuration; disabled template is not permission",
+    "config/cad_command_research_routing_v1.json actual issuer/executor and opt-in route binding",
+    "receiver-generated config/current_execution_handoff.json plus immutable run handoff/controller claim and source manifests",
+    "current A/B process/image/start/HWND/document path/protected hashes and already-held serial lease",
+    "trusted receiver_build_manifest.json pin via CAD_BUILD_MANIFEST_SHA256",
+    "explicit source admission and pin only if invoking source-preparation functions"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "48A22506AB0CE1FFC9B58569F181D9778F752B6A3F45A28B6E671934016690F5",
+      "bytes": 201,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "config/annotation_collapse_rescue_formula_v2.json",
+      "sha256": "C53456DF8C6DB1E839685074873900985A3EFFA2A5D5128AEA9477198B2619B9",
+      "bytes": 1402,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": "config/annotation_collapse_rescue_formula_v2.json",
+      "origin_sha256": "AE590FC6C69AC243698D84D977AD739FA22DD3E788377EDF94CD48320A9AFF15",
+      "adapted": true
+    },
+    {
+      "path": "config/annotation_quantized_layout_formula_v5.json",
+      "sha256": "A6288685D2998D0B0CA03B262E54A44289E8B86C1ADFD0E1F4DD2046C16E2BA4",
+      "bytes": 3725,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": "config/annotation_quantized_layout_formula_v5.json",
+      "origin_sha256": "52BDCA70F366961E21620547C792AF724E2169FAE1DBECA1CB68249F71F5D09C",
+      "adapted": true
+    },
+    {
+      "path": "config/annotation_quantized_layout_formula_v6.json",
+      "sha256": "ED2EC92F50C2EBCBE625D532A4D8DBC7C848497736EA86DDF2CF2062B3AE28D9",
+      "bytes": 2114,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": "config/annotation_quantized_layout_formula_v6.json",
+      "origin_sha256": "D4F891F08AE036CA99AD3D039C5633D90D39FB9D2EC8E9B8784A65CA348A1641",
+      "adapted": true
+    },
+    {
+      "path": "config/annotation_quantized_layout_formula_v7.json",
+      "sha256": "87258DE1DC74D39E734B2F5E99EF5DCB7124A564A86D8046ADF17475357DC415",
+      "bytes": 3438,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": "config/annotation_quantized_layout_formula_v7.json",
+      "origin_sha256": "491B003B9EAC81B016D228E5C6AAE1B20B1F34E8978D94E79816F8358E9C7008",
+      "adapted": true
+    },
+    {
+      "path": "config/annotation_special_text_peer_normal_formula_v2.json",
+      "sha256": "3A4B562CE6B5E6B6F989C0F46F6BBB2794D4FCCBB28642DCBD27EC78E756FCF8",
+      "bytes": 1795,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": "config/annotation_special_text_peer_normal_formula_v2.json",
+      "origin_sha256": "0E8D32352E279C6A097B14F36FAB1621C61958B10FFEF7D42D3769502E58EC13",
+      "adapted": true
+    },
+    {
+      "path": "config/annotation_vector_layout_formula_v1.json",
+      "sha256": "5700354E95FF430E68FF71915603BBD37589259FEBD509DF1195AA2111E79B06",
+      "bytes": 4301,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": "config/annotation_vector_layout_formula_v1.json",
+      "origin_sha256": "5909C70C77510FE3FA12399578CD760803A3CBC34CB6673E5773F3AF2D9231A2",
+      "adapted": true
+    },
+    {
+      "path": "config/annotation_vector_layout_formula_v2.json",
+      "sha256": "8C055283DE22A993618C610F2746A5C4F4919F427544917B6061AB97840FD98B",
+      "bytes": 11557,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": "config/annotation_vector_layout_formula_v2.json",
+      "origin_sha256": "E54C18312DBBE2175C93B00B1797A26E688DC895E8E8A24FB412442D29D71E15",
+      "adapted": true
+    },
+    {
+      "path": "config/annotation_visual_qa_profile.json",
+      "sha256": "89768A7D93191AF1226E23F9F2C2FCD96ED9CB37BA30ADF491FCCAF97504BAE6",
+      "bytes": 1331,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": "config/annotation_visual_qa_profile.json",
+      "origin_sha256": "24DC909F69A51A2E7657B71366900CD06AC1BE7DC238C5C3B1CCB89770E3845B",
+      "adapted": true
+    },
+    {
+      "path": "config/cad_acceptance_gates.json",
+      "sha256": "1636DA46C0F43F66C994E031DF3F25E673DF81F304B722F9FF9B2FA683498AA3",
+      "bytes": 10948,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "config/cad_automation_component_packages.json",
+      "sha256": "C3F07C6E43CC276757E5919920325CB54B555668149834ECE9588D3BB405FCEA",
+      "bytes": 23882,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "config/cad_command_research_routing_v1.json",
+      "sha256": "9983866383D34770A638E2268515BBFB4CE6D1AB3CB6DF4AEAB607FF1DD78A7E",
+      "bytes": 3527,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "config/cad_grip_move_delta_contract_v1.json",
+      "sha256": "CE8341885F1CCEDE2EEDF01359ECB62B60CFD8357B741D45F0F15BAECDD48AED",
+      "bytes": 774,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": "config/cad_grip_move_delta_contract_v1.json",
+      "origin_sha256": "A66398B73008CD3B305543CBB91DC8CDAEE62D316B8FC8E0434BC27CF26C0D66",
+      "adapted": true
+    },
+    {
+      "path": "config/public_module_builds.json",
+      "sha256": "D45F14F44EA1762F3EAA5E0E2D3D3E72F80F62634E8897DAC0FBAA3CAC8F585B",
+      "bytes": 4239,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "config/rejected_legacy_entrypoints.json",
+      "sha256": "2568730695CC95464AA00F8FCCFB15A8FBED0E08CDB121A9C9DA860C31D4BC2A",
+      "bytes": 3433,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "config/tianzheng_dialog_whitelist.json",
+      "sha256": "167B706DB6DEB97648AEA6977FE76511F4033C63D79AAF27B2365363E37C824A",
+      "bytes": 3294,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "config/tianzheng_execution_preflight.json",
+      "sha256": "FE355D1335503036D34F98384EB2357BC4F5FEBF3C8D5EA209056F9CB150A863",
+      "bytes": 3229,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "config/verified_workflow_registry.json",
+      "sha256": "55561586F4F92A0414FE84CD4FC6E1A7F696D4653FA460E6F1362DBAA547F514",
+      "bytes": 13439,
+      "role": "PUBLIC_FORMULA_OR_POLICY_OR_BUILD_MAP",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "public-runtime-receipt.json",
+      "sha256": "626CE1827DDA6025F1FBB0D3EB32879E5DA2D6DDA1D8B0B0AC830622F10218F7",
+      "bytes": 8643,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "E88465DA8F847D82A50EF234AEA115F5FDB06E3CC51AE09F6CFBFB0F37D9A9D6",
+      "bytes": 6362,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/background_operation_reproduction_v1/native_read_contract_v1.ps1",
+      "sha256": "E7446F5061798445FFEF54BB0C5C3F79FCBE12FB76D3AACAEFF446150CA14111",
+      "bytes": 10176,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/background_operation_reproduction_v1/native_read_contract_v1.ps1",
+      "origin_sha256": "342E9E99C1814CC7993695A15E802B81551AC804137E18FAD4A7EF6E7055AE73",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/background_operation_reproduction_v4/native_read_contract_v4.ps1",
+      "sha256": "1843FC28FBC6A7D4FFCBF2CA38B91F5F8616EB429595D164E26D02DC0FC22808",
+      "bytes": 10619,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/background_operation_reproduction_v4/native_read_contract_v4.ps1",
+      "origin_sha256": "89F73173164CA22A0F7A8499E17BB596CC23A300B58AD338F5BEBD749ECD9836",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/background_operation_reproduction_v7/native_read_contract_v7.ps1",
+      "sha256": "71258F40A19330E55A12DB864E331DB6A010C243F046E549769C7C32128F139D",
+      "bytes": 9826,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/background_operation_reproduction_v7/native_read_contract_v7.ps1",
+      "origin_sha256": "9E11877BA8E3F1D260EFCDAB2D8E869F19FE15730023785EAA88401D8F1029FE",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/background_operation_reproduction_v8/native_read_contract_v8.ps1",
+      "sha256": "F1278A158AF425A22385E4E185B1494184E4AE163FF6105EA934BF2E13A68EEA",
+      "bytes": 8021,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/background_operation_reproduction_v8/native_read_contract_v8.ps1",
+      "origin_sha256": "4F9908607F4B5E05B9BDF078BA57ABE49B463D3633C3B0A13F2097E282091A3B",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/background_operation_reproduction_v8/operation_adapter_v8.ps1",
+      "sha256": "AB4041325B8F6E7BE63B95435EC6B85C7DF4BF573CE28F9D11DA802CCE9C07B7",
+      "bytes": 3509,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/background_operation_reproduction_v8/operation_adapter_v8.ps1",
+      "origin_sha256": "2F6EB9808D659C9EA4AD151CDCBD1995E3F16FE50071BAD943A7D4CDB8E147CA",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/background_operation_reproduction_v9/read_settlement_v9.ps1",
+      "sha256": "0561BCEFD54A7729198B9D55A103EE883570F8FA3573C848CC902C4B2C9E1B65",
+      "bytes": 4921,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/background_operation_reproduction_v9/read_settlement_v9.ps1",
+      "origin_sha256": "0561BCEFD54A7729198B9D55A103EE883570F8FA3573C848CC902C4B2C9E1B65",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/command_probe_v1/probe_contract_v1.ps1",
+      "sha256": "DC026A3BD3F6FD02C24C3F748BA807B363158A8C4A2818241C27B7B8CEA36DBD",
+      "bytes": 12616,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_probe_v1/probe_contract_v1.ps1",
+      "origin_sha256": "75BFF2F6C35E40A6B03265A231852A9FAF96588BF6830F52599536D665A198D3",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/command_probe_v2/probe_expression_fix_v2.ps1",
+      "sha256": "A5CC3458DF7A9F11DF7D7AAC384C0CF336876CCBE8971E5AD59EED6D8752BE80",
+      "bytes": 786,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_probe_v2/probe_expression_fix_v2.ps1",
+      "origin_sha256": "072035DACF69C31D67ECB704B3D2BB264E0C7ABECE47E8F4EB0E8A4991E50904",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/command_probe_v3/probe_contract_v3.ps1",
+      "sha256": "EA51D3C62238B316467AFC845C89ED282BF220B60E97F0C7138BA6580A29E31D",
+      "bytes": 7269,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_probe_v3/probe_contract_v3.ps1",
+      "origin_sha256": "F619E640F24A2F39774D93814DE6C45B1C6665BB0314E2464C17858E4B9C1CB0",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/command_probe_v4/file_binding_v4.ps1",
+      "sha256": "83E506AD54F36F484ED55CC5BFF7CA2F19299CDA0AC021991B8A0780C9433AED",
+      "bytes": 1466,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_probe_v4/file_binding_v4.ps1",
+      "origin_sha256": "40E3CA627E8927A7F294B2062678A626F1EE2AD25C6614C0A90E4E2BA8B7307A",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/command_probe_v4/probe_contract_v4.ps1",
+      "sha256": "1CCCC380F598DCC3D8EF89C1392C938FE26258E76C9DF17D6EBBA4999AE5B430",
+      "bytes": 2769,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_probe_v4/probe_contract_v4.ps1",
+      "origin_sha256": "D6061B7A286307265F87BB02DF9369FEEF3A1D5422119DC144E2335D3025390E",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/dual_business_concurrency_v1/build_draft.ps1",
+      "sha256": "5611A01188BB6E49184999278EAE578AF2448C822A347F66537D55B2804AE7E5",
+      "bytes": 10642,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/dual_business_concurrency_v1/build_draft.ps1",
+      "origin_sha256": "756A47D6F601136C5B426D499518E9DB3F0D825BB23EA6261052843E5040CF63",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/dual_business_concurrency_v1/command_worker_v1.ps1",
+      "sha256": "0B9513E2A65A184A8C95139CFFF2C019DC2C29BCFEB1795BB219D3C77D9857A4",
+      "bytes": 8241,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/dual_business_concurrency_v1/command_worker_v1.ps1",
+      "origin_sha256": "9247809AE6695CCD448D157D1463CAC1FC38AE43FF15AE2CCFD29A23554CB469",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/dual_business_concurrency_v1/dual_contract.ps1",
+      "sha256": "8E9F8E797F7C9C563F14516C72DFAAB5018387BB02ED0517BF75A5591C4FAB44",
+      "bytes": 11811,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/dual_business_concurrency_v1/dual_contract.ps1",
+      "origin_sha256": "6E62CABF9F25F10B4D6F3CFFDE7265CF0E22BC0FA83151A3A04D5E1EEA8AB8B0",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/dual_business_concurrency_v1/invoke_dual.ps1",
+      "sha256": "FBE6BD2111986A22463DD99A49E46379FDD356EDF1DD002E1377470B364891E2",
+      "bytes": 13247,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/dual_business_concurrency_v1/invoke_dual.ps1",
+      "origin_sha256": "B0248F1DA0047B6ED7B3D7888A38EC4A1AAB9A55E2EFF97751E70C866767073D",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/dual_business_concurrency_v1/native_dual_stages.lsp",
+      "sha256": "B66E220DB93F24B4B85686DEC535A164FC3C4AA1FEABC89A79612DF8B3B2A640",
+      "bytes": 3304,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/dual_business_concurrency_v1/native_dual_stages.lsp",
+      "origin_sha256": "B66E220DB93F24B4B85686DEC535A164FC3C4AA1FEABC89A79612DF8B3B2A640",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/dual_business_concurrency_v1/process_dual.py",
+      "sha256": "59E3E5828D3C2CB137DA9D05692D5D1B6A0F96073E8B6303D89334D30F1F7C8D",
+      "bytes": 4666,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/dual_business_concurrency_v1/process_dual.py",
+      "origin_sha256": "59E3E5828D3C2CB137DA9D05692D5D1B6A0F96073E8B6303D89334D30F1F7C8D",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v1/batch_contract.ps1",
+      "sha256": "85B79605358500ACEA67DC70F4E5C1356AC8E4A9D36EFA970086903EF7218B96",
+      "bytes": 11796,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/representative_command_batch_v1/batch_contract.ps1",
+      "origin_sha256": "ABA3FC0F8856FAD25C798AE21579899BA80A44A806FC37103FA4171E919B250A",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v1/command_worker_v1.ps1",
+      "sha256": "9CB22C709435B4212A857E7A606880215FD8F87FC8AE142B7010BC06D669EBB2",
+      "bytes": 7894,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/representative_command_batch_v1/command_worker_v1.ps1",
+      "origin_sha256": "2F8645918EAE77883C12985B0BD8E8A718AB61DC0E66E1FC0E9E8FB8C089F816",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v1/invoke_batch.ps1",
+      "sha256": "0D44CA6A00A1B6988C07C3E311631BAE29F6434DE37ADD8F84E7CC40554E692C",
+      "bytes": 12085,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/representative_command_batch_v1/invoke_batch.ps1",
+      "origin_sha256": "F76B325DC446E627EF57D84075E3A1006AF7DA937BEF960DCE09741030E0B753",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v1/process_batch.py",
+      "sha256": "14F68E5FD6675FE5E943B60B66D78DCB702D0099826F2CB3374CB8B69BD8CF1A",
+      "bytes": 7365,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/representative_command_batch_v1/process_batch.py",
+      "origin_sha256": "0D9CD509DD7776939D54C384B815B9DC6294AD9293D6E4C8E513C5BFFC313E84",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v2/batch_contract.ps1",
+      "sha256": "1FC9DDF4345D75B598F8E57924F92F6EBB8AF3D7EF9C34078A7B5CCD853FEFEB",
+      "bytes": 11511,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/representative_command_batch_v2/batch_contract.ps1",
+      "origin_sha256": "5ECF0697450707FACE8322FC56C85180B856DE7B99607E1D461583FBEFBADAED",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v2/command_worker_v1.ps1",
+      "sha256": "8F49F95B348AFA2AD4AFE224B95C252CC10829499869A47DD69541095B185280",
+      "bytes": 8092,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/representative_command_batch_v2/command_worker_v1.ps1",
+      "origin_sha256": "7D5C6A9DD9C88B3080D9933671FC1647CB32A00F49DAB8837C59222176FEA4BB",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v2/invoke_batch.ps1",
+      "sha256": "C52B267864316B8DE60738761D898C98D84AF772CBEFA5EE1DBECE339A42E7A9",
+      "bytes": 12360,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/representative_command_batch_v2/invoke_batch.ps1",
+      "origin_sha256": "9E70FAE8326CE32315C42FC0C62E060990191AE3152EC204227DCE917A1F6AF6",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v2/process_batch.py",
+      "sha256": "9A9CF4C150F7E357B39D93D35D77A504F783C6A7335ECFF0456D2D9F351A5937",
+      "bytes": 255,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/representative_command_batch_v2/process_batch.py",
+      "origin_sha256": "9A9CF4C150F7E357B39D93D35D77A504F783C6A7335ECFF0456D2D9F351A5937",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v3/process_batch.py",
+      "sha256": "5BFCD7A4347717A9B7CFA6D6C16FA38209F38F5050DF8C33D3AC7DFBC4218070",
+      "bytes": 5405,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/representative_command_batch_v3/process_batch.py",
+      "origin_sha256": "5BFCD7A4347717A9B7CFA6D6C16FA38209F38F5050DF8C33D3AC7DFBC4218070",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/single_background_input_v1/background_contract_v1.ps1",
+      "sha256": "BC02883289F06ED2030D814F89BA7EB6684393A548DD809CDB69318E1674B0F8",
+      "bytes": 6617,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/single_background_input_v1/background_contract_v1.ps1",
+      "origin_sha256": "EB1D01BF97E4C15CABEBA750A98CC14648A67F5969B6511C80B44F863D4EFCF9",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/single_background_input_v3/background_contract_v3.ps1",
+      "sha256": "059CC6AF4821D6C9AFC6BC74089F609603823BC9360E2F9E3DF2FF585609D7E8",
+      "bytes": 7166,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/single_background_input_v3/background_contract_v3.ps1",
+      "origin_sha256": "1FF569E99D500EA54E0014ADA8CC58AC0EAC412547AE47E42614F7718B443A32",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/cad_multi_window_interface_research/single_background_input_v3/base_contract_v1.ps1",
+      "sha256": "BC02883289F06ED2030D814F89BA7EB6684393A548DD809CDB69318E1674B0F8",
+      "bytes": 6617,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/cad_multi_window_interface_research/single_background_input_v3/base_contract_v1.ps1",
+      "origin_sha256": "EB1D01BF97E4C15CABEBA750A98CC14648A67F5969B6511C80B44F863D4EFCF9",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/dimension_background_reproduction_v3/discover_source_geometry.lsp",
+      "sha256": "275E190B1A29EEC57D3D959A77901C75124CA03547DF96E22693E88FC2CAAE53",
+      "bytes": 1553,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/dimension_background_reproduction_v3/discover_source_geometry.lsp",
+      "origin_sha256": "275E190B1A29EEC57D3D959A77901C75124CA03547DF96E22693E88FC2CAAE53",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/reports/dimension_background_reproduction_v7/native_stages.lsp",
+      "sha256": "543BF0BC999ADA031DE2F96FBCE22E28E6808501F88ED240647A45A52FFDDA18",
+      "bytes": 10583,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/dimension_background_reproduction_v7/native_stages.lsp",
+      "origin_sha256": "543BF0BC999ADA031DE2F96FBCE22E28E6808501F88ED240647A45A52FFDDA18",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/reports/dimension_background_reproduction_v8/plan_with_full_topology.py",
+      "sha256": "9556108D4C6A43F52829D8882A8DE0D68F49105CADB76FBDE2BFA12DAA293BA9",
+      "bytes": 2578,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/dimension_background_reproduction_v8/plan_with_full_topology.py",
+      "origin_sha256": "72D831DCEEFC4A8AEDFAE76CF69A8435F83F2E4C4605F8BDDF518BF5834D6738",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/dimension_background_reproduction_v8/popup_snapshot_v3.ps1",
+      "sha256": "1532781CD6A832E7B85B2D1D3E1588A5854F63A7FFEF3F90BCC72620EF5CF697",
+      "bytes": 3879,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/dimension_background_reproduction_v8/popup_snapshot_v3.ps1",
+      "origin_sha256": "FFD5D6E5C175A7C426B334546C058BFCE8E8D1F56D6DCCC7C7E0DF8B0E7D8784",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/dimension_background_reproduction_v8/process_artifacts.py",
+      "sha256": "AD88025D863DD526CE7AEA18EB08579E50B0B8D91E64B5303778204C51662C30",
+      "bytes": 12807,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/dimension_background_reproduction_v8/process_artifacts.py",
+      "origin_sha256": "2D95854FC85BC2F0CE9A124249CE256319D3366C39A63980B2607167C51DA559",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/reports/dimension_background_reproduction_v8/runtime_contract.ps1",
+      "sha256": "C1A323CD80278EC9D8EECB624BEDC378BD42D0CB5970099684A4B40BDDB98C25",
+      "bytes": 6288,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "reports/dimension_background_reproduction_v8/runtime_contract.ps1",
+      "origin_sha256": "C1A323CD80278EC9D8EECB624BEDC378BD42D0CB5970099684A4B40BDDB98C25",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_b_document_background_read_v1.ps1",
+      "sha256": "152BDDC90BDB7F5D2993E43BC9C11ADA518D2977E128C5A7EBCF59187A55ED3C",
+      "bytes": 6865,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_b_document_background_read_v1.ps1",
+      "origin_sha256": "E5DF2FE283108ACDE27FDDB2A99FB42624DD21E12CE090CC7695C00EE91F4274",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_background_native_read_v1.ps1",
+      "sha256": "665CB988796B78C5439AF0CEE56E6498FFB351A0730D1DF44C194CF5A320C914",
+      "bytes": 18113,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_background_native_read_v1.ps1",
+      "origin_sha256": "665CB988796B78C5439AF0CEE56E6498FFB351A0730D1DF44C194CF5A320C914",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_canonical_open_consistency.ps1",
+      "sha256": "1DD84F5D9149EEA4A99740349ADA0157AB2AA156B42B28CF19F7F67E2F21660C",
+      "bytes": 27143,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_canonical_open_consistency.ps1",
+      "origin_sha256": "620FFD83FFFBF9A99CA07143B50626EE6258377F831731B1F31B66A0B62C02E1",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_command_research_routing_v1.ps1",
+      "sha256": "CFD21D1E2347536606BDACB3617A09EBFF2168B85E61D0219FA2F58869D7C8BC",
+      "bytes": 54680,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_command_research_routing_v1.ps1",
+      "origin_sha256": "931E41C363D59E9FE4C751310222696A83FFE5B75A0FCD97A09EA640C39250FB",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_component_execution_contract.ps1",
+      "sha256": "01DA1904E40B62FC17134D03AF8A3029B28C677EEB62D501095D98CB6193C2F5",
+      "bytes": 13107,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_component_execution_contract.ps1",
+      "origin_sha256": "FB237EA7BD33BE5F37E7EE3CF071FAA68BB0F398C3A6063AA182FB3644A109D8",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_dual_business_concurrency_v1.ps1",
+      "sha256": "DBDE063DE9F90075DCDB8E0190B1B808A8B7B8BC2790F5B3FD9F6084363D3CAC",
+      "bytes": 4808,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_dual_business_concurrency_v1.ps1",
+      "origin_sha256": "51F682BBEE6B19F342F0BEC275FA350F9DC7F8AF1279BF29DA2D9ACA32B59038",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_existing_a_fixture_open_v1.ps1",
+      "sha256": "5AD9EC4D8782C924646D1DFF75D887925A4F337D11EB7C24FBBB249109D83BB6",
+      "bytes": 9389,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_existing_a_fixture_open_v1.ps1",
+      "origin_sha256": "CB9F32B18BDC2243EE458B0B6D966F801138950BF12ACD84513690759F6890E7",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_existing_b_arm_background_read_v1.ps1",
+      "sha256": "48DBCFD1089EFE2D9432F66B853C7A2DA8B2B7E3345292EAB7FE8EFF2A4CE554",
+      "bytes": 7639,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_existing_b_arm_background_read_v1.ps1",
+      "origin_sha256": "CF8E8D284D20974E75C5D3126074ED4BCF8A498C748A610290E2A873E1AD821F",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_iteration_learning.ps1",
+      "sha256": "7D43E4625D587E019A98E849C6009EFFAD72C21EB13F84828B7928D6C8D0F643",
+      "bytes": 6589,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_iteration_learning.ps1",
+      "origin_sha256": "7D43E4625D587E019A98E849C6009EFFAD72C21EB13F84828B7928D6C8D0F643",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_knowledge_promotion_consistency.ps1",
+      "sha256": "C3EC21C248C7541A6BB92B26F25A991E0952315871C80232ACFCB261BC5A0F42",
+      "bytes": 8425,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_knowledge_promotion_consistency.ps1",
+      "origin_sha256": "44D4CE5A260D7AB04F09253E146370F95A930BF300DA0285D0622308FE4C8B4D",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_multi_owner_binding_diagnostic_v1.ps1",
+      "sha256": "92466C5B7E5B1FDDFD2A296D44A59480BE4E6799A3F0AFCE910D6EFF85570F88",
+      "bytes": 45254,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_multi_owner_binding_diagnostic_v1.ps1",
+      "origin_sha256": "9CE4743381A2F3FB859C35C3A794078116B64C91108CFDE7053FE5A800CB4FCF",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_multi_owner_non_db_probe_v1.ps1",
+      "sha256": "E64AD68A64B7856FC6ACF11DF1BA22CA68CACBCC00455990E7B0C09F6F66A193",
+      "bytes": 15787,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_multi_owner_non_db_probe_v1.ps1",
+      "origin_sha256": "48346EF1EF4B27F7689ED052A4493CB56BA0F1E3E8FE56CEE4340C674CF762EC",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_multi_owner_read_profile_v1.ps1",
+      "sha256": "67FBB085C2D54D3C4EE23DBF89A1137C9DD2ABF86E9C63F1C1FE68AC93E4D2D7",
+      "bytes": 62205,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_multi_owner_read_profile_v1.ps1",
+      "origin_sha256": "53EC60DCD21A01BFBC6ED7CEBC5EA14EF41E2B30541220399B323BD83D57631B",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_multi_owner_test_preparation_v1.ps1",
+      "sha256": "5DD9213A087A5FF0C8C072B36CE661E86473F94BF02B15F7C0265E7399A9DFBC",
+      "bytes": 14176,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_multi_owner_test_preparation_v1.ps1",
+      "origin_sha256": "5DD9213A087A5FF0C8C072B36CE661E86473F94BF02B15F7C0265E7399A9DFBC",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_project_loop_core.ps1",
+      "sha256": "E729CD63B6A0B82FCADFA428C497AD4ECFC1BBA34E3A37049D1466C356E56F48",
+      "bytes": 20146,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_project_loop_core.ps1",
+      "origin_sha256": "07C816D34102F4C875F8479C21AC8E928ADA2C0639D283D53501864823EE8844",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_project_loop.ps1",
+      "sha256": "64617D963FC9D11C7A2D50DAB624AF28121167FB1BD675EC1EF7426D740FB81E",
+      "bytes": 2224,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_project_loop.ps1",
+      "origin_sha256": "9C5E1C66BB33CC45D176ABBFCF4B695969BB1F6B8A9AC5167370883B141634C9",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_ready_verified_reuse_v1.ps1",
+      "sha256": "C1B93466419B8AC2C7F418A74004AD6B71BC9211967DAEEA751EEE8E2C7CA0DE",
+      "bytes": 4086,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_ready_verified_reuse_v1.ps1",
+      "origin_sha256": "009DD0EF209427431BE6F8DE44D694411B181F093B662300A1A794498DFECB9E",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_record_chain_integrity.ps1",
+      "sha256": "8BA0B3C519048F135E49EBA8487E9D7EA5DF244BE1F0A58D3C8E93F20220024F",
+      "bytes": 14865,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_record_chain_integrity.ps1",
+      "origin_sha256": "8BA0B3C519048F135E49EBA8487E9D7EA5DF244BE1F0A58D3C8E93F20220024F",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_recovery_context.ps1",
+      "sha256": "A4406DCA8392E3CDC353C8183FEBC3B214F6CADA2EFF2F6363B383667003DDDB",
+      "bytes": 7140,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_recovery_context.ps1",
+      "origin_sha256": "4AA160F997C11BA459BBFC77321DAF1B637AC059C767DCD48E0790AB512745EC",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_representative_command_batch_v1.ps1",
+      "sha256": "5D0C4B2971ADBA36F02CF0F98B05D5AF9B51EFF491988D9D4BAE15BE559D4873",
+      "bytes": 8586,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_representative_command_batch_v1.ps1",
+      "origin_sha256": "AD22912F90B9652D48E900D441B2A6AB3DE025F95F64E25B918AB1D544DF6023",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_research_bootstrap_v1.ps1",
+      "sha256": "823B4F8E859C23D6BDC2967017F77C2FEEFAAF94DD7B666EE9ABBA0C0A873464",
+      "bytes": 8630,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_research_bootstrap_v1.ps1",
+      "origin_sha256": "C6A92BDAAE931C55BBDBAAB60328DF30D4E4F528094506AB89F273328B67D0D7",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_return_delivery_contract.ps1",
+      "sha256": "6E51563815C046F8257B1FE725A1754F290B1E779B0694FB164DC05D553DEE2B",
+      "bytes": 9816,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_return_delivery_contract.ps1",
+      "origin_sha256": "487B43E60F4BFDF33D76E17BA94F3524F86801F3268616A23E9C78363401BF95",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_single_a_passive_input_settlement_v1.ps1",
+      "sha256": "D45DB014E2ABBB165D1917D409F97CB653B49A543BC6AB081D958441C537FA0E",
+      "bytes": 9515,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_single_a_passive_input_settlement_v1.ps1",
+      "origin_sha256": "D45DB014E2ABBB165D1917D409F97CB653B49A543BC6AB081D958441C537FA0E",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_single_background_input_v1.ps1",
+      "sha256": "04772C6DFE683BE3BCE26036637AB6EA8677592607174B8EF38904F7D16B8449",
+      "bytes": 18967,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_single_background_input_v1.ps1",
+      "origin_sha256": "B43935ABD5B71693CB625E08F305780713D8709715D322233C71FCB53490C312",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_cad_task_channel_architecture.ps1",
+      "sha256": "AA467A1AFF15B4BA96D529F870CADEE82E7852A5C7AAF6E2290B6C7BA4049952",
+      "bytes": 13527,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_cad_task_channel_architecture.ps1",
+      "origin_sha256": "CF37AE4F059AD1FEC3EE3E2A2DF774B59B251F054A5E02337E12EDA1CFCBCC51",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_native_generation_bundle_semantics_v1.ps1",
+      "sha256": "A332FC14189A5F4683FD37E1672172223444B1F02AF9FD028AA0A79ACDB71C68",
+      "bytes": 3729,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_native_generation_bundle_semantics_v1.ps1",
+      "origin_sha256": "A332FC14189A5F4683FD37E1672172223444B1F02AF9FD028AA0A79ACDB71C68",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_native_generation_bundle_semantics_v3.ps1",
+      "sha256": "A5889F7F073B22946A141579303A65689A38B74D1D68F02E68BF8E23E001BF9D",
+      "bytes": 2152,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_native_generation_bundle_semantics_v3.ps1",
+      "origin_sha256": "BC7530830EFD2E4460CB1C2C47DE262323FF26296CB76460EA69B6DBDD4ACEAA",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_no_blocked_workflow_references.ps1",
+      "sha256": "D8969857CC42DEBD92D08E232AF94A6430162AFAAB8D5BAEF197E45C74D7846A",
+      "bytes": 8240,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_no_blocked_workflow_references.ps1",
+      "origin_sha256": "D8969857CC42DEBD92D08E232AF94A6430162AFAAB8D5BAEF197E45C74D7846A",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_owned_stage_checkpoint.ps1",
+      "sha256": "ACBB0BE21702D0F98F0FE3E4A41E66D21CD24901741B919E43CB0292DB8EB1DE",
+      "bytes": 5684,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_owned_stage_checkpoint.ps1",
+      "origin_sha256": "F7301ADAF4B2DBEE515EE2CCBF27A5624860B6108772EB154762A729CABA77F8",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_project_execution_contract.ps1",
+      "sha256": "6A88299C812297BA998868E7DC5D323667D36D6F3F229406CD185DB33C977BC4",
+      "bytes": 4231,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_project_execution_contract.ps1",
+      "origin_sha256": "4289E0480072650A398C044D09611E2977984D31D7E9829CCB7ACAE1358B3219",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_selected_typed_workflow_convergence.ps1",
+      "sha256": "2427A4AA48542DB889BFD300A7FCDE3971080F2056C28782DCABC67033C5EBAB",
+      "bytes": 11260,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_selected_typed_workflow_convergence.ps1",
+      "origin_sha256": "B307167481AE72F2A96D5D582A813137234F1BDFCDDB889328775CC4F8ED4DD8",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_sheet_layout_baseboard_extract_scope_v1.ps1",
+      "sha256": "EFEAAC0A6A8900F767B5E6E66EAE9DB82F8CE5F673249FCDFBD5763942E20180",
+      "bytes": 28558,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_sheet_layout_baseboard_extract_scope_v1.ps1",
+      "origin_sha256": "D35B6E90E3BB208E8DE840E00BEBAF684EEC63A3AD6DB6956205CF4D96A1E839",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_targeted_confirm_arc_dimension_positive_v40_semantics.ps1",
+      "sha256": "3268CBB4652E360FD29EB82D4F9AE54FB118A36E83BEE7AD44FE2BD4D31DCFBD",
+      "bytes": 3370,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_targeted_confirm_arc_dimension_positive_v40_semantics.ps1",
+      "origin_sha256": "3268CBB4652E360FD29EB82D4F9AE54FB118A36E83BEE7AD44FE2BD4D31DCFBD",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_tianzheng_one_shot_handoff.ps1",
+      "sha256": "6793FC0F4247EB26C24697D85C5BA1441F2A94B3B8A00D2D53ABFCEF9C2C426B",
+      "bytes": 2409,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_tianzheng_one_shot_handoff.ps1",
+      "origin_sha256": "EDE049FB2AA553919C8721AE22295F251689B93E67D498693B0475129C127654",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_typed_dimension_layout_composition.ps1",
+      "sha256": "F09F43A26C53CE2401D44FDB1CD5DFBB8BFBDD8F771611B7E0A6A43F04B7882E",
+      "bytes": 19417,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_typed_dimension_layout_composition.ps1",
+      "origin_sha256": "A91FD9344427C74B8547A1B01B562D7DAC28EB562FA98133110AF2B9CA5726FD",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/assert_verified_workflow.ps1",
+      "sha256": "9C91A93D821B1B12A932B9436C6BFFF1FFD687F699DDC3EA54B5216356382EAE",
+      "bytes": 5403,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/assert_verified_workflow.ps1",
+      "origin_sha256": "9C91A93D821B1B12A932B9436C6BFFF1FFD687F699DDC3EA54B5216356382EAE",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/scripts/cad_ui_helper.ps1",
+      "sha256": "66BB169E8E698F641C83AD70C9E686511034324218BD3DEF45A079AE0CC6B442",
+      "bytes": 17112,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/cad_ui_helper.ps1",
+      "origin_sha256": "66BB169E8E698F641C83AD70C9E686511034324218BD3DEF45A079AE0CC6B442",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/scripts/complete_cad_execution_manifest.ps1",
+      "sha256": "F2D7034F4F7851F5430EA2C0D1376170AC921158145C31A8B42186F10F2FF56A",
+      "bytes": 1410,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/complete_cad_execution_manifest.ps1",
+      "origin_sha256": "601F674715707C14863440CAF259A6E0D843C4F7EE70770C214C1F219457B0DD",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/get_cad_iteration_context.ps1",
+      "sha256": "23538C60CC7AEEBF5474240C85BFF08D35B82248E33C46E63697B980B659080F",
+      "bytes": 20319,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/get_cad_iteration_context.ps1",
+      "origin_sha256": "23538C60CC7AEEBF5474240C85BFF08D35B82248E33C46E63697B980B659080F",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/scripts/get_cad_pre_run_authority_snapshot.ps1",
+      "sha256": "A50E1911FEA475BC8DE45416253FF97123FCCA3A04A006A8E1D76A355B2E2B47",
+      "bytes": 5940,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/get_cad_pre_run_authority_snapshot.ps1",
+      "origin_sha256": "F41B18303EFFDC9E497B34FC8F458242CA32A8876277F0630E6F7767BB475414",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/get_tianzheng_adaptive_startup_budget.ps1",
+      "sha256": "57BB62C7BDD0C7EBB0C13F6D9C4DE1B517DD8DB4952F8C2B26FD5947B4BF4409",
+      "bytes": 4607,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/get_tianzheng_adaptive_startup_budget.ps1",
+      "origin_sha256": "57BB62C7BDD0C7EBB0C13F6D9C4DE1B517DD8DB4952F8C2B26FD5947B4BF4409",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_clean_full_generation_semantic_probe_trusted_v31.ps1",
+      "sha256": "9C4A3CE8C3B4DBE200D76DF23C484E3B06FFF6368AE58DA4992D9C3C79282256",
+      "bytes": 6810,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_clean_full_generation_semantic_probe_trusted_v31.ps1",
+      "origin_sha256": "9A045BFA664A3C76151054C0D91BBF6515FF21B2BA63A03FF1B55393BB335441",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_clean_full_generation_semantic_probe_v30.ps1",
+      "sha256": "72CC4DE37D218CAB00C24182CE8605FD49C87FE8F217E1206D1D5E0E96A35BC2",
+      "bytes": 16006,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_clean_full_generation_semantic_probe_v30.ps1",
+      "origin_sha256": "FC95FF3B10374B664B896444B5CF86FB475B1CA677519963FF908AAF9103851A",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_composed_layout_continuation_trusted_v34.ps1",
+      "sha256": "3AD016F4B8410508A3A30938D64B6DA3EE8F4D208D0CF2D9732E6DA269A41D33",
+      "bytes": 5152,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_composed_layout_continuation_trusted_v34.ps1",
+      "origin_sha256": "1B50B7AA041C33AD34F40029784F07E65FC59F9543EB1B1EAA25A490A60807AF",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_composed_layout_continuation_v33.ps1",
+      "sha256": "A55849D57C9E692B804EBF02058A799FA92162583087120CF00AB2CD4E17393E",
+      "bytes": 38939,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_composed_layout_continuation_v33.ps1",
+      "origin_sha256": "4E1FDF3ED854691ABEE1105D5745CCDE9EB1ED2DCD2586B082D823AF31F73A46",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_owned_cad_visual_capture.ps1",
+      "sha256": "AB88B682872265F5E421AC034542CE0B716A8DCE05C908EA4AC1A34E504A0A18",
+      "bytes": 13158,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_owned_cad_visual_capture.ps1",
+      "origin_sha256": "91931A4D4C74A0A37057F3AA52C1EB2094EA4352BCF1B8FB49BC9C09EFA46204",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_owned_stage_transition.ps1",
+      "sha256": "2D07BCD32DD0712B0ED0E88664AFDC5F79B611B2B9C662F66AC9875DD3115E61",
+      "bytes": 3244,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_owned_stage_transition.ps1",
+      "origin_sha256": "C6D3D4BE354325F3C06ACFF1617BFFAF207AF65EC63F7AB0774E7168870C6F0A",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_owned_tianzheng_one_shot_validation.ps1",
+      "sha256": "784D73855CDC0A4FE0C07A69036C88E7958A02266ED285B3EA9DBA24FD7FB0A3",
+      "bytes": 12010,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_owned_tianzheng_one_shot_validation.ps1",
+      "origin_sha256": "CDFAF8F3E375483CC27BF6C3B8653C082769F409D4D5F3D223BB9E702699B8D1",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_owned_tianzheng_whitelist_action_v5.ps1",
+      "sha256": "5FAB6A7CE569D83C48D46D4D046D7BD6DD3F45DBD542B87E888D41A19C2447E6",
+      "bytes": 176258,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_owned_tianzheng_whitelist_action_v5.ps1",
+      "origin_sha256": "1436EE5AD3BFCFB02D5AB8078935F91BA1E30C224B48C2AEF1323D32BEEBF9CA",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_owned_tianzheng_whitelist_action.ps1",
+      "sha256": "929D8655C3A6BBE4CB00B7CDD1D3D2DE6426B1BC84A6C261C478EE770918D89B",
+      "bytes": 177403,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_owned_tianzheng_whitelist_action.ps1",
+      "origin_sha256": "5510FC148FF6FA5CB238B1FD22BD51D290FFE63FBB205AD70D14ACD72F74FB23",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_post_ordinary_rescue_audit_visual_trusted_v36.ps1",
+      "sha256": "B257248D9DB4974CB1294C12645058F2E17523E19CC64052922640C1F12BFFD7",
+      "bytes": 2373,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_post_ordinary_rescue_audit_visual_trusted_v36.ps1",
+      "origin_sha256": "43274D79783A86E06F44D33A07811C765F59A8EB48C4F377E54E8B953482D562",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_post_ordinary_rescue_audit_visual_v35.ps1",
+      "sha256": "F09705C2299A370DA779B2D9730F161DDB9C7D738A29F68B3BC4527E4590E37E",
+      "bytes": 23708,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_post_ordinary_rescue_audit_visual_v35.ps1",
+      "origin_sha256": "EA6446876D739C10BADFFBBE64908BFCBFDDC111A4524223184EBFECB1E50550",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_batch.ps1",
+      "sha256": "0E093948240FE004A5222FB3DD124068DC3F8E8E770A767E1BCA20A3B556494B",
+      "bytes": 18255,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_selected_typed_dimension_batch.ps1",
+      "origin_sha256": "7365DA45F0D2D77B1C04A5527C84E82609485CE834F33748BB87A20D685D7C71",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_layout_stage.ps1",
+      "sha256": "D195CD20C2FF7BB6EE8FB2A32FF06A1A6C224B6C9EF038312FC058739FF27057",
+      "bytes": 15804,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_selected_typed_dimension_layout_stage.ps1",
+      "origin_sha256": "08D5EA57C5F436E58BC3A345572C2541968E86D81F863E9E59E274255BC12160",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_polyline_controller.ps1",
+      "sha256": "55EBE1F4F9F683BE5314B368A3895CFE34D7A89B94AA616BE70BC2A109B09C97",
+      "bytes": 52066,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_selected_typed_dimension_polyline_controller.ps1",
+      "origin_sha256": "E13C1D8E2889A1A7F2AF374B6A742BFCA6FEC0627E9798F1F06593580D90CCD1",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_quantized_plan_v15.ps1",
+      "sha256": "B42EA9AF465DBA9A0E84F6BCEB3242C1D8BB37122DEC1697DDE69049CE2E3F13",
+      "bytes": 11573,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_selected_typed_dimension_quantized_plan_v15.ps1",
+      "origin_sha256": "9ADCFD67B42F97955867E2FBF7DAA60F49045A90D29A1A40E7966328BF58950F",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_quantized_plan_v17.ps1",
+      "sha256": "6DC6ED3585B9399A9E2A2CB93A1ED2DECF5B8C7B720E1C88F494B431C3C4A557",
+      "bytes": 12957,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_selected_typed_dimension_quantized_plan_v17.ps1",
+      "origin_sha256": "A7F4BBD1391E585EEC46626737B5F7D1F9A096207E685EE59E986A44B1059BDA",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_quantized_plan_v21.ps1",
+      "sha256": "2A8E8BE32362A4B67BCB1246861388F88F7A27C0ECFBD4B3BEB4ECAAF2F1AD0B",
+      "bytes": 12549,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_selected_typed_dimension_quantized_plan_v21.ps1",
+      "origin_sha256": "4B28EAED9321151796622F304CC4762E92B6ECDB7902B8009ADA0BF8B9DC5D76",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_quantized_plan_v22.ps1",
+      "sha256": "6E662591FC04838C7A09264472EF2A9CC7BFD9C3C6A1B559B09D47C86FE93AB7",
+      "bytes": 13972,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_selected_typed_dimension_quantized_plan_v22.ps1",
+      "origin_sha256": "430C6B2AE70F3A5E569B38234C48C59BA07B596FB41CFDB5CBFF2C8C60995825",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_workflow.ps1",
+      "sha256": "5D60FBAF0AA91B0BB70C86090A6F223856759EF9BAB66471282F7B1B18375ED0",
+      "bytes": 20377,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/invoke_selected_typed_dimension_workflow.ps1",
+      "origin_sha256": "122F1251D89A4ED8BE2EAFCCFD1F19B8A36289D757F85D4B8B2586B6E93B52EF",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/merge_generation_details_pass_overlay_v1.ps1",
+      "sha256": "74B50086CEFDB4C595ABAED832E846173C3C1C4A400EA5124925BFCD9838F200",
+      "bytes": 3852,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/merge_generation_details_pass_overlay_v1.ps1",
+      "origin_sha256": "C079CE677D4CB6684BC9C8B470D681EBF74C16C390355720A67B4852EAED3194",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/new_cad_component_execution_contract.ps1",
+      "sha256": "0355C1515384E4FE5F650F5695977CC7CA1472F10FEA3FD9A45F0D6A909CE656",
+      "bytes": 8134,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/new_cad_component_execution_contract.ps1",
+      "origin_sha256": "F00359B3324B5D0BAF8CECEAB98AEBCE775135795F926AE7D80BBB9D9C0FD3AC",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/new_cad_execution_manifest.ps1",
+      "sha256": "257CF4D34F5B66B1A6926C04CFA258A82929D410C975C47A62D50BA0F00D100A",
+      "bytes": 12018,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/new_cad_execution_manifest.ps1",
+      "origin_sha256": "B10155BEE5B67905BB32F7A4CFDCD86B713633309A60CD347233E4A289B69A84",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/refresh_cad_project_state.ps1",
+      "sha256": "6300897AFBEC47A16D7BDE4CBFACA6E27588DF3607B89549D59CBFB270567F90",
+      "bytes": 11023,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/refresh_cad_project_state.ps1",
+      "origin_sha256": "473B002E67F11FDDD7006F6D7C68B892DE049F83E6D1D1CB03FDE33560A6B766",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/save_owned_test_drawing_checkpoint.ps1",
+      "sha256": "472DB4D5610F8D8B7BAD37CDCB052B0CA8576D88F16C8100B437CA2728E83647",
+      "bytes": 6422,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/save_owned_test_drawing_checkpoint.ps1",
+      "origin_sha256": "E9B72A618ABD2713237EE0CFCC2309E46F84CEDDED4B30D2E419375BC2AE82DC",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/settle_cad_hot_state_v2.ps1",
+      "sha256": "9AA00D663BCCB4CC5A69E5013222E53A6598FE947C5824C32525771B8645FEC5",
+      "bytes": 7374,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/settle_cad_hot_state_v2.ps1",
+      "origin_sha256": "3B0DC1C415145EE46C9F18EBD12F5B72BE7AFAF5D328347F1DA9EB51080F5F2B",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/start_owned_tianzheng_direct_dwg.ps1",
+      "sha256": "2771D2FD9AE49F0397AF77C4C01D4C9AE842AF06D81733BBE0F7F1F9177FBD55",
+      "bytes": 26408,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/start_owned_tianzheng_direct_dwg.ps1",
+      "origin_sha256": "9D00CD9FBDBEA7EF16ED12C08DF11EF171B0294CAD1B5439E9B4A09A05587BA9",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/start_owned_tianzheng_supervised.ps1",
+      "sha256": "E7E9C46E3620E302145FD338BE6ACA603380FCF2E1A3152AD946FCA6026DDE1C",
+      "bytes": 14205,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/start_owned_tianzheng_supervised.ps1",
+      "origin_sha256": "FABC2F6CAD30154D549B8223D637D7E5AA640357B5026A6C04F9A58646C5D0BA",
+      "adapted": true
+    },
+    {
+      "path": "reference/project-orchestration/scripts/wait_tianzheng_resource_quiescence.ps1",
+      "sha256": "35324FDB8A60B44691D962A781F8A84A698849FE1C3A28C83C84A1B2ECCC42E7",
+      "bytes": 4345,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/wait_tianzheng_resource_quiescence.ps1",
+      "origin_sha256": "35324FDB8A60B44691D962A781F8A84A698849FE1C3A28C83C84A1B2ECCC42E7",
+      "adapted": false
+    },
+    {
+      "path": "reference/project-orchestration/scripts/watch_tianzheng_dialogs.ps1",
+      "sha256": "EDE7AB94D5350E2E8294A289219A473AD7C23574CD531319F4AFD5E2822A27E0",
+      "bytes": 17079,
+      "role": "NONDEFAULT_ORIGINAL_ORCHESTRATION_SOURCE",
+      "origin_relative": "scripts/watch_tianzheng_dialogs.ps1",
+      "origin_sha256": "EDE7AB94D5350E2E8294A289219A473AD7C23574CD531319F4AFD5E2822A27E0",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/b_existing_settlement_v4/selector_trace_v4.ps1",
+      "sha256": "6DA8D345D6167897AB101285AE2B1D0838EA65605FA73C3707BF2573E3AB056A",
+      "bytes": 8518,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/b_existing_settlement_v4/selector_trace_v4.ps1",
+      "origin_sha256": "6DA8D345D6167897AB101285AE2B1D0838EA65605FA73C3707BF2573E3AB056A",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/binding_diagnostic_v2/diagnostic_contract_v1.ps1",
+      "sha256": "F20A216C245DFA30F5F88DCAD0924CBDB9C31F532ECC541F9E747895EFC2ECB8",
+      "bytes": 9600,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/binding_diagnostic_v2/diagnostic_contract_v1.ps1",
+      "origin_sha256": "F20A216C245DFA30F5F88DCAD0924CBDB9C31F532ECC541F9E747895EFC2ECB8",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/command_probe_v1/strict_binding_adapter_v1.ps1",
+      "sha256": "567C0BF888AB3BDE758CD39B0951F4042248357D543554C4C9683A7DF43EC314",
+      "bytes": 5147,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_probe_v1/strict_binding_adapter_v1.ps1",
+      "origin_sha256": "567C0BF888AB3BDE758CD39B0951F4042248357D543554C4C9683A7DF43EC314",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/command_probe_v3/file_binding_v3.ps1",
+      "sha256": "09FCC0BC09E2F5ACAE1ACBA967840A871A3E1891AD5369743D7B407A90B53889",
+      "bytes": 1708,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_probe_v3/file_binding_v3.ps1",
+      "origin_sha256": "09FCC0BC09E2F5ACAE1ACBA967840A871A3E1891AD5369743D7B407A90B53889",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/command_contract_v1.ps1",
+      "sha256": "22A90F06FE485396FC69DE583F5A79D58749351FA0BD909B6F4767CCF7CEE307",
+      "bytes": 8454,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/command_contract_v1.ps1",
+      "origin_sha256": "DFE7CB83F081ACA6584B8DD01B4316218B37438EFB897B46BB30C7571DF9F98F",
+      "adapted": true
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/command_worker_v1.ps1",
+      "sha256": "44778FE2DAA46CBE25F2B92D2C5D3C86E23E2C36C23FAB51182454A84528B956",
+      "bytes": 9086,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/command_worker_v1.ps1",
+      "origin_sha256": "44778FE2DAA46CBE25F2B92D2C5D3C86E23E2C36C23FAB51182454A84528B956",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/CommandNative.cs",
+      "sha256": "1444D6EC8A37F60D349762359AEF3AFA75D0FAC29A2801E7621388FDEB0B3E9F",
+      "bytes": 3115,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/CommandNative.cs",
+      "origin_sha256": "1444D6EC8A37F60D349762359AEF3AFA75D0FAC29A2801E7621388FDEB0B3E9F",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/evidence_policy_v1.ps1",
+      "sha256": "EF889AB053F5BF29A4097E70F5B8F2D596188FE5116C19D5042816D7BB3AED46",
+      "bytes": 3449,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/evidence_policy_v1.ps1",
+      "origin_sha256": "EF889AB053F5BF29A4097E70F5B8F2D596188FE5116C19D5042816D7BB3AED46",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/job_build_v2/bounded_job_compile_v2.py",
+      "sha256": "0181D34627818261FAB67D5D1338B98190AB41853D321813B7ADB63D15FA616C",
+      "bytes": 25628,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/job_build_v2/bounded_job_compile_v2.py",
+      "origin_sha256": "0220E1A1E7031A3891E2D0BDCC07E028C3A2652CFB6B5876E1BDF2B49490B2E7",
+      "adapted": true
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/job_build_v2/invoke_job_compile_v2.ps1",
+      "sha256": "9928CA26279E14D04FCC9C338749CB6C60BFC5A4608852F4CE7E8C67EAE12235",
+      "bytes": 10992,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/job_build_v2/invoke_job_compile_v2.ps1",
+      "origin_sha256": "7FC014A63EB57D5E128C9AC23880E21554F2B43C2EA2B4C002578E0676D2C5FF",
+      "adapted": true
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/native_anchor_v1.ps1",
+      "sha256": "81DC597C63D397DB1B424E48153036DE17ACA12357CF3D2F21FB2330C9FF28AE",
+      "bytes": 2433,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/native_anchor_v1.ps1",
+      "origin_sha256": "81DC597C63D397DB1B424E48153036DE17ACA12357CF3D2F21FB2330C9FF28AE",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/OwnHelperJobV2.cs",
+      "sha256": "ED4B2FEB1106B9C11CB62A5BC4FBD001503D4F24368F9D5E22E5E9B4D8D7A741",
+      "bytes": 12018,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/OwnHelperJobV2.cs",
+      "origin_sha256": "89128CDDD071F4E48404AC69E2FFDC6F354DBFAA2D36C855EBDC645E284CB87E",
+      "adapted": true
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/uia_adapter_v1.ps1",
+      "sha256": "3DF52023CD23DBD3F599DB81AF404C5BEF4C5F54F2144D37E252274407C70F1B",
+      "bytes": 2811,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/uia_adapter_v1.ps1",
+      "origin_sha256": "3DF52023CD23DBD3F599DB81AF404C5BEF4C5F54F2144D37E252274407C70F1B",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/uia_walk_kernel_v1.ps1",
+      "sha256": "9C95598169ECCFCE91CD97FDF71472D538F1794C77DFBD496A4ED79C8974A923",
+      "bytes": 3394,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/uia_walk_kernel_v1.ps1",
+      "origin_sha256": "9C95598169ECCFCE91CD97FDF71472D538F1794C77DFBD496A4ED79C8974A923",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/fixture_job_boundary_v1/bounded_fixture_job_v1.py",
+      "sha256": "FFA1CA568CB35D4E1A990AC876F95327D3F943A2113BC00BCADBCBB3601962D2",
+      "bytes": 19161,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/fixture_job_boundary_v1/bounded_fixture_job_v1.py",
+      "origin_sha256": "FFA1CA568CB35D4E1A990AC876F95327D3F943A2113BC00BCADBCBB3601962D2",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/lifecycle_v1/preparation_contract_v1.ps1",
+      "sha256": "58A91176E1DD9DA91BA6CB31B79566E176E9FDB70A6F90A8EA34F57FB32C902C",
+      "bytes": 6085,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/lifecycle_v1/preparation_contract_v1.ps1",
+      "origin_sha256": "26CC2393FF4134301FC83DE1AD71E8800B7B8095148AD34EEC09299394F6D79A",
+      "adapted": true
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/read_session_v8/com_identity_v1.ps1",
+      "sha256": "D39F0877E06869D68F0FAAD3DBB9A7B0666613F7A6E3C655A4B26A05EDFC7921",
+      "bytes": 2338,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/read_session_v8/com_identity_v1.ps1",
+      "origin_sha256": "D39F0877E06869D68F0FAAD3DBB9A7B0666613F7A6E3C655A4B26A05EDFC7921",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/read_session_v8/file_document_normalizer_v8.ps1",
+      "sha256": "6315980D5C3BE89AE82FADB9943FA2A31523E6CC3BEE30B15C6EA2EA5DE3293D",
+      "bytes": 4720,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/read_session_v8/file_document_normalizer_v8.ps1",
+      "origin_sha256": "6315980D5C3BE89AE82FADB9943FA2A31523E6CC3BEE30B15C6EA2EA5DE3293D",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/read_session_v8/file_rot_backend_v5.ps1",
+      "sha256": "7546C963668EF2F887769324BFE3CCD9150E7F5ECF207C2B024FEF8A433AC598",
+      "bytes": 4105,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/read_session_v8/file_rot_backend_v5.ps1",
+      "origin_sha256": "7546C963668EF2F887769324BFE3CCD9150E7F5ECF207C2B024FEF8A433AC598",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/single_background_input_v3/BackgroundNative.cs",
+      "sha256": "C61470EB76EA6757FCD967C6865DCA75D3AED3052A3BC3E663D84FFD4C4A26F2",
+      "bytes": 820,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/single_background_input_v3/BackgroundNative.cs",
+      "origin_sha256": "C61470EB76EA6757FCD967C6865DCA75D3AED3052A3BC3E663D84FFD4C4A26F2",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/single_background_input_v3/send_once_v3.ps1",
+      "sha256": "EE3E226BC59E80D78955524E26F1E35E65794232A3855A141182E6BF9B0A8085",
+      "bytes": 463,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/single_background_input_v3/send_once_v3.ps1",
+      "origin_sha256": "EE3E226BC59E80D78955524E26F1E35E65794232A3855A141182E6BF9B0A8085",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/v2/cad_exact_target_candidate_v2.ps1",
+      "sha256": "6D017BB3A96D4194AB63E5ACCF36D985BB42CEF41F4162B9C1DED67AD3357D4C",
+      "bytes": 9602,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/v2/cad_exact_target_candidate_v2.ps1",
+      "origin_sha256": "6D017BB3A96D4194AB63E5ACCF36D985BB42CEF41F4162B9C1DED67AD3357D4C",
+      "adapted": false
+    },
+    {
+      "path": "reports/cad_multi_window_interface_research/v3/cad_multi_owner_preflight_contract_v3.ps1",
+      "sha256": "50A62D086623504D8B09717C0154D44366772896E786516320CE93EA8834882F",
+      "bytes": 6199,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "reports/cad_multi_window_interface_research/v3/cad_multi_owner_preflight_contract_v3.ps1",
+      "origin_sha256": "50A62D086623504D8B09717C0154D44366772896E786516320CE93EA8834882F",
+      "adapted": false
+    },
+    {
+      "path": "scripts/analyze_quantized_grip_response_v1.py",
+      "sha256": "8E21A339B62AC00BD10FDA6D4AD14F3F694657ABA92B8BF8644BB22146ED4C4F",
+      "bytes": 7658,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/analyze_quantized_grip_response_v1.py",
+      "origin_sha256": "8E21A339B62AC00BD10FDA6D4AD14F3F694657ABA92B8BF8644BB22146ED4C4F",
+      "adapted": false
+    },
+    {
+      "path": "scripts/annotation_layout_formula.py",
+      "sha256": "0EABA480B46DC4A3EB34361C6EBC5D741C2CD95BBD05D77D2F9231215E4B8041",
+      "bytes": 45215,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/annotation_layout_formula.py",
+      "origin_sha256": "0EABA480B46DC4A3EB34361C6EBC5D741C2CD95BBD05D77D2F9231215E4B8041",
+      "adapted": false
+    },
+    {
+      "path": "scripts/annotation_layout_model.py",
+      "sha256": "3FD2DEA3664115D3405C67C1C1166A5B8C5D70DB4526C3738C9A6D6AFD36E941",
+      "bytes": 48331,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/annotation_layout_model.py",
+      "origin_sha256": "3FD2DEA3664115D3405C67C1C1166A5B8C5D70DB4526C3738C9A6D6AFD36E941",
+      "adapted": false
+    },
+    {
+      "path": "scripts/annotation_quantized_layout_v3.py",
+      "sha256": "E2B35C24981BDB70801EBCAB0EAC4501BC5E69BE3E12C34295356FFADCB781D2",
+      "bytes": 7364,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/annotation_quantized_layout_v3.py",
+      "origin_sha256": "E2B35C24981BDB70801EBCAB0EAC4501BC5E69BE3E12C34295356FFADCB781D2",
+      "adapted": false
+    },
+    {
+      "path": "scripts/annotation_vector_geometry.py",
+      "sha256": "21A96089827DAB498DDD4136DCFB917023C41B0A90F8D9B95AF5DDEC44C686C6",
+      "bytes": 10189,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/annotation_vector_geometry.py",
+      "origin_sha256": "21A96089827DAB498DDD4136DCFB917023C41B0A90F8D9B95AF5DDEC44C686C6",
+      "adapted": false
+    },
+    {
+      "path": "scripts/apply_axis_targets_to_grip_inventory_v1.py",
+      "sha256": "F668B0572F551DAB9B55B0E2B40F0562D3D4792C8F3709AB638F3CC900BB05DA",
+      "bytes": 3862,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/apply_axis_targets_to_grip_inventory_v1.py",
+      "origin_sha256": "F668B0572F551DAB9B55B0E2B40F0562D3D4792C8F3709AB638F3CC900BB05DA",
+      "adapted": false
+    },
+    {
+      "path": "scripts/assert_autolisp_lexical_balance_v1.ps1",
+      "sha256": "825AB4D2E7FB67D9BD45CFCFF9FA172DA8BAEEDBDAB49A512C99E6933BE9881E",
+      "bytes": 1339,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/assert_autolisp_lexical_balance_v1.ps1",
+      "origin_sha256": "825AB4D2E7FB67D9BD45CFCFF9FA172DA8BAEEDBDAB49A512C99E6933BE9881E",
+      "adapted": false
+    },
+    {
+      "path": "scripts/audit_annotation_screenshot_layout.py",
+      "sha256": "9281E16152A3DDCD2AC5AB08494A638C5C6B419B95B9E03F5457EF1C41F3D1CB",
+      "bytes": 10381,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_annotation_screenshot_layout.py",
+      "origin_sha256": "9281E16152A3DDCD2AC5AB08494A638C5C6B419B95B9E03F5457EF1C41F3D1CB",
+      "adapted": false
+    },
+    {
+      "path": "scripts/audit_axis_scalar_grip0_targets_v2.py",
+      "sha256": "6C7D420B9075BEE20CD1F8FD303AE39C5DC33767E0F736085CF4AA6606BDACBE",
+      "bytes": 4273,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_axis_scalar_grip0_targets_v2.py",
+      "origin_sha256": "6C7D420B9075BEE20CD1F8FD303AE39C5DC33767E0F736085CF4AA6606BDACBE",
+      "adapted": false
+    },
+    {
+      "path": "scripts/audit_blue_arc_hard_collisions.py",
+      "sha256": "622D43B0921668580CF57B99D59BEC939C9548DD1BD5ECB32C180D4AF2D6202E",
+      "bytes": 13172,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_blue_arc_hard_collisions.py",
+      "origin_sha256": "622D43B0921668580CF57B99D59BEC939C9548DD1BD5ECB32C180D4AF2D6202E",
+      "adapted": false
+    },
+    {
+      "path": "scripts/audit_cad_loop_historical_regressions.py",
+      "sha256": "4BCE34FE592C4F9525279E3C90C15D5811D4AC25925466F7B6CF91342C0E0EB4",
+      "bytes": 23209,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_cad_loop_historical_regressions.py",
+      "origin_sha256": "5697C25F71133AB7409FAA2CA2E92722C5DB8996F887C9C0EEBD9E1D154EEE95",
+      "adapted": true
+    },
+    {
+      "path": "scripts/audit_full_native_layout_effect_v4.py",
+      "sha256": "79481BC714DDC325D15C8DF29A04A7D8DAF7EDA5E449029A9551FC5875FB6A16",
+      "bytes": 13102,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_full_native_layout_effect_v4.py",
+      "origin_sha256": "79481BC714DDC325D15C8DF29A04A7D8DAF7EDA5E449029A9551FC5875FB6A16",
+      "adapted": false
+    },
+    {
+      "path": "scripts/audit_modelspace_tail.lsp",
+      "sha256": "5BF9E475B931C734B44844D5FEDBDC5D02D0FA67D71219D39A455D90F271518C",
+      "bytes": 1562,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_modelspace_tail.lsp",
+      "origin_sha256": "5BF9E475B931C734B44844D5FEDBDC5D02D0FA67D71219D39A455D90F271518C",
+      "adapted": false
+    },
+    {
+      "path": "scripts/audit_native_angle_source_text_clearance.py",
+      "sha256": "260F67DADBBD76063D40331DA18DF4226160A9277710C0A8A2A9F181E6D97858",
+      "bytes": 8496,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_native_angle_source_text_clearance.py",
+      "origin_sha256": "260F67DADBBD76063D40331DA18DF4226160A9277710C0A8A2A9F181E6D97858",
+      "adapted": false
+    },
+    {
+      "path": "scripts/audit_native_dimension_semantics_v1.py",
+      "sha256": "488338AAB8A137F3657530747A664B6E19128E406230D0857A1A480CE59B4395",
+      "bytes": 8388,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_native_dimension_semantics_v1.py",
+      "origin_sha256": "488338AAB8A137F3657530747A664B6E19128E406230D0857A1A480CE59B4395",
+      "adapted": false
+    },
+    {
+      "path": "scripts/audit_native_typed_source_mapping.py",
+      "sha256": "D3E4E2241FD64B1BE5978CD745C6CE3B6143A902F33FEC70D322BD9320AA0501",
+      "bytes": 13365,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_native_typed_source_mapping.py",
+      "origin_sha256": "D3E4E2241FD64B1BE5978CD745C6CE3B6143A902F33FEC70D322BD9320AA0501",
+      "adapted": false
+    },
+    {
+      "path": "scripts/audit_owned_document_state.lsp",
+      "sha256": "BDA3AFB652F3883592380033A12FB492BEDB2F26D8C61ADF7CC697F530A6BF27",
+      "bytes": 901,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_owned_document_state.lsp",
+      "origin_sha256": "BDA3AFB652F3883592380033A12FB492BEDB2F26D8C61ADF7CC697F530A6BF27",
+      "adapted": false
+    },
+    {
+      "path": "scripts/audit_owned_object_visibility.lsp",
+      "sha256": "1FA5EE563FF22F395FB6087EC1CE841423819245FEFDA5BB4DEA08B5A1EA7CF9",
+      "bytes": 2390,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_owned_object_visibility.lsp",
+      "origin_sha256": "1FA5EE563FF22F395FB6087EC1CE841423819245FEFDA5BB4DEA08B5A1EA7CF9",
+      "adapted": false
+    },
+    {
+      "path": "scripts/audit_owned_view_state.lsp",
+      "sha256": "D8F9B2F96F1289D16C9B2E085BD1F1C9EEEC8B4380EA2A94008DD8260A469400",
+      "bytes": 1493,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_owned_view_state.lsp",
+      "origin_sha256": "D8F9B2F96F1289D16C9B2E085BD1F1C9EEEC8B4380EA2A94008DD8260A469400",
+      "adapted": false
+    },
+    {
+      "path": "scripts/audit_preexisting_typed_source_coverage.py",
+      "sha256": "84178E8ED0B0D1A8C91202C84697CC3D62EEF90BA6DCF5592C0598EC5BA90AAE",
+      "bytes": 4152,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_preexisting_typed_source_coverage.py",
+      "origin_sha256": "84178E8ED0B0D1A8C91202C84697CC3D62EEF90BA6DCF5592C0598EC5BA90AAE",
+      "adapted": false
+    },
+    {
+      "path": "scripts/audit_tianzheng_dimension_bboxes.lsp",
+      "sha256": "500070011D765802EFDFA148CC7B28183F94086F62997F2BE958ADE25FE03101",
+      "bytes": 3672,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_tianzheng_dimension_bboxes.lsp",
+      "origin_sha256": "500070011D765802EFDFA148CC7B28183F94086F62997F2BE958ADE25FE03101",
+      "adapted": false
+    },
+    {
+      "path": "scripts/audit_tianzheng_dimension_text_bboxes.lsp",
+      "sha256": "72372893DAAB90B80F8FB3308175D24D34F9C6AA997079F4CD4419C2C5ED2FAF",
+      "bytes": 8477,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/audit_tianzheng_dimension_text_bboxes.lsp",
+      "origin_sha256": "72372893DAAB90B80F8FB3308175D24D34F9C6AA997079F4CD4419C2C5ED2FAF",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_axis_constrained_grip0_targets_v3.py",
+      "sha256": "282A939117EB57525183024CC250A74D6A23634A741FB7728EEAA832BDCABD1D",
+      "bytes": 8267,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_axis_constrained_grip0_targets_v3.py",
+      "origin_sha256": "282A939117EB57525183024CC250A74D6A23634A741FB7728EEAA832BDCABD1D",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_bounded_lsp_load_command_v3.ps1",
+      "sha256": "4ABE1325D870BF4EDA641EDADBF9282A123E9869AF2BFED524496344FA5663F5",
+      "bytes": 2715,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_bounded_lsp_load_command_v3.ps1",
+      "origin_sha256": "4ABE1325D870BF4EDA641EDADBF9282A123E9869AF2BFED524496344FA5663F5",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_cad_document_preview_capture_v1.ps1",
+      "sha256": "12354B8B555318D1AE7368F0C4E77106F220F5739FD563AA24BA3E2D4486FA02",
+      "bytes": 1943,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_cad_document_preview_capture_v1.ps1",
+      "origin_sha256": "51ACF188AC7719B4BB10B53A8C50532DA4D0D94D661D71C869014EFDF4FB0D15",
+      "adapted": true
+    },
+    {
+      "path": "scripts/build_continuous_selection_bundle_v11.ps1",
+      "sha256": "89A46188895AEB784E9092AB6BE1B779940D31EC9446882A8067797079B2A426",
+      "bytes": 4989,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_continuous_selection_bundle_v11.ps1",
+      "origin_sha256": "89A46188895AEB784E9092AB6BE1B779940D31EC9446882A8067797079B2A426",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_continuous_selection_bundle_v12.ps1",
+      "sha256": "69C945DF15C8843B4933D40047656A29F152580306AF3F273100F0053ED4928D",
+      "bytes": 2364,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_continuous_selection_bundle_v12.ps1",
+      "origin_sha256": "69C945DF15C8843B4933D40047656A29F152580306AF3F273100F0053ED4928D",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_dimension_text_metrics_probe_v2.ps1",
+      "sha256": "BD922CAE1DF797DD9300AC340F1B672A5502E6F865C658692893E4AFA8D3D794",
+      "bytes": 999,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_dimension_text_metrics_probe_v2.ps1",
+      "origin_sha256": "BD922CAE1DF797DD9300AC340F1B672A5502E6F865C658692893E4AFA8D3D794",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_runtime_candidate_chain_v1.ps1",
+      "sha256": "A16D6BA8C724E993DAA081ADB726E17551111649AFFBCB82CB647D246C053DD2",
+      "bytes": 3950,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_runtime_candidate_chain_v1.ps1",
+      "origin_sha256": "A16D6BA8C724E993DAA081ADB726E17551111649AFFBCB82CB647D246C053DD2",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_runtime_candidate_chain_v10.ps1",
+      "sha256": "D86DB9A6892F857FCE31105EA6740D8E971B2BD50607E55E4B57D7136C71E398",
+      "bytes": 2934,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_runtime_candidate_chain_v10.ps1",
+      "origin_sha256": "D86DB9A6892F857FCE31105EA6740D8E971B2BD50607E55E4B57D7136C71E398",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_runtime_candidate_chain_v11.ps1",
+      "sha256": "109EC6DDEAD8520FDC90CAC91DB5F5EBD50C287383BF817E7C24D87D8F9B8FA0",
+      "bytes": 2635,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_runtime_candidate_chain_v11.ps1",
+      "origin_sha256": "109EC6DDEAD8520FDC90CAC91DB5F5EBD50C287383BF817E7C24D87D8F9B8FA0",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_runtime_candidate_chain_v2.ps1",
+      "sha256": "5FD8B9BBFB15F87C2A8F9B2DF8F3C50C1249864B2C217541879B79C850BC725C",
+      "bytes": 3073,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_runtime_candidate_chain_v2.ps1",
+      "origin_sha256": "5FD8B9BBFB15F87C2A8F9B2DF8F3C50C1249864B2C217541879B79C850BC725C",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_runtime_candidate_chain_v20.ps1",
+      "sha256": "B6B4C15B835C7AE4F58D5BCF9D12E3FD279834EFE6DBB09E012D1AE254D2B63A",
+      "bytes": 2929,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_runtime_candidate_chain_v20.ps1",
+      "origin_sha256": "B6B4C15B835C7AE4F58D5BCF9D12E3FD279834EFE6DBB09E012D1AE254D2B63A",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_runtime_candidate_chain_v21.ps1",
+      "sha256": "C4A0571B2B1507F51F449EE2B644E5444B5D5A0B20A7F7AFCE8B2C6ADE7E57B3",
+      "bytes": 3068,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_runtime_candidate_chain_v21.ps1",
+      "origin_sha256": "C4A0571B2B1507F51F449EE2B644E5444B5D5A0B20A7F7AFCE8B2C6ADE7E57B3",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_runtime_candidate_chain_v3.ps1",
+      "sha256": "A9CE0D4284DEA620E0E37E24DF938E5E877ECDEE89C23DB99F9C3FF22A5BDFA3",
+      "bytes": 3401,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_runtime_candidate_chain_v3.ps1",
+      "origin_sha256": "A9CE0D4284DEA620E0E37E24DF938E5E877ECDEE89C23DB99F9C3FF22A5BDFA3",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_runtime_candidate_chain_v6.ps1",
+      "sha256": "C5176209F3FDD01B02BD64ED282F0E13D02CB22C24CACE479D4B9709C54D4560",
+      "bytes": 2635,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_runtime_candidate_chain_v6.ps1",
+      "origin_sha256": "C5176209F3FDD01B02BD64ED282F0E13D02CB22C24CACE479D4B9709C54D4560",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_runtime_candidate_chain_v7.ps1",
+      "sha256": "9A8F339D2A7D18EE147CC8F25E7F122C5E8BE78DCF226BA18EE974E5C82126CE",
+      "bytes": 4807,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_runtime_candidate_chain_v7.ps1",
+      "origin_sha256": "9A8F339D2A7D18EE147CC8F25E7F122C5E8BE78DCF226BA18EE974E5C82126CE",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_runtime_candidate_chain_v8.ps1",
+      "sha256": "42734908B267A82169547BF422809C0EA4A5CEB7CE173FCBC14CDFBE8C1F535F",
+      "bytes": 3838,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_runtime_candidate_chain_v8.ps1",
+      "origin_sha256": "42734908B267A82169547BF422809C0EA4A5CEB7CE173FCBC14CDFBE8C1F535F",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_runtime_ordinary_v1.ps1",
+      "sha256": "B9AFA7059420CCD0265EC7D5572C573915E3328941BA4A36F08B7BFFACC3BDC7",
+      "bytes": 5122,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_runtime_ordinary_v1.ps1",
+      "origin_sha256": "B9AFA7059420CCD0265EC7D5572C573915E3328941BA4A36F08B7BFFACC3BDC7",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_semantic_promote_v31.ps1",
+      "sha256": "6E635096E77D5F10EEDD2385FAB451C0D02E6D43BDAC87FD0958BDC5EB4760D8",
+      "bytes": 3176,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_semantic_promote_v31.ps1",
+      "origin_sha256": "6E635096E77D5F10EEDD2385FAB451C0D02E6D43BDAC87FD0958BDC5EB4760D8",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_semantic_promote_v34.ps1",
+      "sha256": "C930DB7F5E3BFE2035A0E573694453456CAD3DB9EE743BA9C85B0DEF81A475FE",
+      "bytes": 3834,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_semantic_promote_v34.ps1",
+      "origin_sha256": "C930DB7F5E3BFE2035A0E573694453456CAD3DB9EE743BA9C85B0DEF81A475FE",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_semantic_promote_v35.ps1",
+      "sha256": "68BB8178A77053649975593E61F79589E808EB5816F46900E7A4ACDF4C41D777",
+      "bytes": 2936,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_semantic_promote_v35.ps1",
+      "origin_sha256": "68BB8178A77053649975593E61F79589E808EB5816F46900E7A4ACDF4C41D777",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_semantic_promote_v36.ps1",
+      "sha256": "589603F3508F7809FC0BC52EEA4C23193A4BCD7CBED61EC4BC019804DC679389",
+      "bytes": 2812,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_semantic_promote_v36.ps1",
+      "origin_sha256": "589603F3508F7809FC0BC52EEA4C23193A4BCD7CBED61EC4BC019804DC679389",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_full_scope_semantic_promote_v37.ps1",
+      "sha256": "249AB4B2F9F39426275945F4B0606D69AEC2C98B5C862F2DA01E2474BCBE8A7A",
+      "bytes": 2897,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_full_scope_semantic_promote_v37.ps1",
+      "origin_sha256": "249AB4B2F9F39426275945F4B0606D69AEC2C98B5C862F2DA01E2474BCBE8A7A",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_generation_details_mapping_v3.ps1",
+      "sha256": "BE36D7486B83CD52FB2984F59B0B5C5CCE5F7D947C23BE9880D409DCB8684DBD",
+      "bytes": 3932,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_generation_details_mapping_v3.ps1",
+      "origin_sha256": "BE36D7486B83CD52FB2984F59B0B5C5CCE5F7D947C23BE9880D409DCB8684DBD",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_generation_details_mapping_v4.ps1",
+      "sha256": "5093BDC19FFEAC900DA40F808544608F11A5A089C5C82C993D40C90A535B0FBB",
+      "bytes": 3401,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_generation_details_mapping_v4.ps1",
+      "origin_sha256": "5093BDC19FFEAC900DA40F808544608F11A5A089C5C82C993D40C90A535B0FBB",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_inline_observed_cad_command_v3.ps1",
+      "sha256": "32FB42F90F8B1ED8901EF858E288299BB3F54F3CCC131451D496CDF7BF226417",
+      "bytes": 2167,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_inline_observed_cad_command_v3.ps1",
+      "origin_sha256": "32FB42F90F8B1ED8901EF858E288299BB3F54F3CCC131451D496CDF7BF226417",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_native_dimension_semantic_inventory_v1.ps1",
+      "sha256": "BC7033C676056AC3D0D030BB04766765112227F6919DB0390053AD73AB4A9FFB",
+      "bytes": 1486,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_native_dimension_semantic_inventory_v1.ps1",
+      "origin_sha256": "65FCE5BED4F2C538842FF5BE644637D997C1E085CA39E62CD34C75A3B66E91C3",
+      "adapted": true
+    },
+    {
+      "path": "scripts/build_native_generation_audit_target_combined_v7.ps1",
+      "sha256": "B12B0DADF2C976AF08C06D4A4D66605E56C178C9E981D4792D1997F2F3FC9BC4",
+      "bytes": 2112,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_native_generation_audit_target_combined_v7.ps1",
+      "origin_sha256": "97638A1D8EDA1132DE46FA82450A1B37D43474CB4CD428EDECB55E551B31BF61",
+      "adapted": true
+    },
+    {
+      "path": "scripts/build_public_modules.ps1",
+      "sha256": "2D51C5E8618F6B5AA303667A554F1F7969E96734B927BBEB3F85FE7AC7CA24C9",
+      "bytes": 7923,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "scripts/build_quantized_grip_scalar_converger_v3.ps1",
+      "sha256": "7458A07CE0046123914046D92683CC5FDE41CD2839841BE41C20186C33612459",
+      "bytes": 1495,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_quantized_grip_scalar_converger_v3.ps1",
+      "origin_sha256": "8AA62843E2432E1BB1A3D3CABE1CC8FEB4526145F80C12680D4CAE66DE8E32B3",
+      "adapted": true
+    },
+    {
+      "path": "scripts/build_targeted_confirm_arc_dimension_positive_v25.ps1",
+      "sha256": "D9077ABDD74E5B0DA7A7B9B2487B5033D0263B389C62236B5C0253603A8F5A75",
+      "bytes": 3623,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_targeted_confirm_arc_dimension_positive_v25.ps1",
+      "origin_sha256": "D9077ABDD74E5B0DA7A7B9B2487B5033D0263B389C62236B5C0253603A8F5A75",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_targeted_confirm_arc_dimension_positive_v27.ps1",
+      "sha256": "AB83A6A2B2247CE8CA04668234CECF0094A7A76BC1D16059BF056E29F01E762C",
+      "bytes": 1873,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_targeted_confirm_arc_dimension_positive_v27.ps1",
+      "origin_sha256": "AB83A6A2B2247CE8CA04668234CECF0094A7A76BC1D16059BF056E29F01E762C",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_targeted_confirm_arc_dimension_positive_v40.ps1",
+      "sha256": "6236F3EBA0424174E7E699F3A3E290EE22D05F0755814EBEFD2752DCB1D2269A",
+      "bytes": 1824,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_targeted_confirm_arc_dimension_positive_v40.ps1",
+      "origin_sha256": "6236F3EBA0424174E7E699F3A3E290EE22D05F0755814EBEFD2752DCB1D2269A",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_targeted_direct_positive_dispatch_v21.ps1",
+      "sha256": "E95AF97DB2770AEDB31271DEC6C4469BC42224382EA1C9D69AFC87CD737F1C38",
+      "bytes": 2743,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_targeted_direct_positive_dispatch_v21.ps1",
+      "origin_sha256": "E95AF97DB2770AEDB31271DEC6C4469BC42224382EA1C9D69AFC87CD737F1C38",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_targeted_direct_positive_xy_v22.ps1",
+      "sha256": "D857E9538FFC322A53DCDBC39B5AB2C4B544594DDB78FC12C0A486A0C4518E92",
+      "bytes": 1985,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_targeted_direct_positive_xy_v22.ps1",
+      "origin_sha256": "D857E9538FFC322A53DCDBC39B5AB2C4B544594DDB78FC12C0A486A0C4518E92",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_targeted_prompt_staged_probe_v2.ps1",
+      "sha256": "F6F2A1C5E309CD52C4E70A2482AA67FA75D49A5C5AB67E981D5CD881D64EAD77",
+      "bytes": 4703,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_targeted_prompt_staged_probe_v2.ps1",
+      "origin_sha256": "F6F2A1C5E309CD52C4E70A2482AA67FA75D49A5C5AB67E981D5CD881D64EAD77",
+      "adapted": false
+    },
+    {
+      "path": "scripts/build_targeted_prompt_staged_user_positive_v19_v2.ps1",
+      "sha256": "E00E9F357663D1C730BD3F7282C8736357C65D9C9FA1301E4483012CCFD04692",
+      "bytes": 2659,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/build_targeted_prompt_staged_user_positive_v19_v2.ps1",
+      "origin_sha256": "E00E9F357663D1C730BD3F7282C8736357C65D9C9FA1301E4483012CCFD04692",
+      "adapted": false
+    },
+    {
+      "path": "scripts/cad_capture_compat.ps1",
+      "sha256": "3B40953922D7E592BF62C77E4795552C268D40D4BB77B420B828C533FE4C99E5",
+      "bytes": 15635,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cad_capture_compat.ps1",
+      "origin_sha256": "3B40953922D7E592BF62C77E4795552C268D40D4BB77B420B828C533FE4C99E5",
+      "adapted": false
+    },
+    {
+      "path": "scripts/cad_com_rejected_call_settlement_v1.ps1",
+      "sha256": "D32C174C352DB89226279BB19DA8BA40A82F177ABC6B8015FCDCB8815D1AA22B",
+      "bytes": 1846,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cad_com_rejected_call_settlement_v1.ps1",
+      "origin_sha256": "D32C174C352DB89226279BB19DA8BA40A82F177ABC6B8015FCDCB8815D1AA22B",
+      "adapted": false
+    },
+    {
+      "path": "scripts/cad_command_observer_signal_v1.lsp",
+      "sha256": "289EF15DDC32BCA841C549FAB018B839CB08614C16624E27A08FE5B49DCD0321",
+      "bytes": 764,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cad_command_observer_signal_v1.lsp",
+      "origin_sha256": "289EF15DDC32BCA841C549FAB018B839CB08614C16624E27A08FE5B49DCD0321",
+      "adapted": false
+    },
+    {
+      "path": "scripts/cad_command_signal_parser_v3.ps1",
+      "sha256": "0CD222DD102B894F30FD6A3FD9138F65539816D75B3659AF5E053C8B7AAC8F68",
+      "bytes": 1895,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cad_command_signal_parser_v3.ps1",
+      "origin_sha256": "0CD222DD102B894F30FD6A3FD9138F65539816D75B3659AF5E053C8B7AAC8F68",
+      "adapted": false
+    },
+    {
+      "path": "scripts/cad_exact_b_action_transport_v1.ps1",
+      "sha256": "E2E8B09966F4A697D25D078633B81861995EF2DDDD7E0B1EBD22CD69B7CAFF6B",
+      "bytes": 15846,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cad_exact_b_action_transport_v1.ps1",
+      "origin_sha256": "2FA3CB0E207420641A1884CF4BC51DB60410B6EC8462571F4E4C523254A55390",
+      "adapted": true
+    },
+    {
+      "path": "scripts/cad_exact_b_fixed_stage_transport_v2.ps1",
+      "sha256": "7BD11908F6F86BA3633BC82EA9CE2936FE00A723DE4B54F8FF086AF07D1A1E06",
+      "bytes": 7877,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cad_exact_b_fixed_stage_transport_v2.ps1",
+      "origin_sha256": "7BD11908F6F86BA3633BC82EA9CE2936FE00A723DE4B54F8FF086AF07D1A1E06",
+      "adapted": false
+    },
+    {
+      "path": "scripts/cad_exact_b_focus_independent_transport_v4.ps1",
+      "sha256": "2BE042E5BDE2F7E2669E73BAC78692904C3B7A37565553C521D91A50C0357B0F",
+      "bytes": 7166,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cad_exact_b_focus_independent_transport_v4.ps1",
+      "origin_sha256": "2BE042E5BDE2F7E2669E73BAC78692904C3B7A37565553C521D91A50C0357B0F",
+      "adapted": false
+    },
+    {
+      "path": "scripts/cad_exact_b_indexed_stage_transport_v3.ps1",
+      "sha256": "15065C6CEB0A713DCE8D2EF80B9B8BEF7F57E9545973693D827FC054A08A15A8",
+      "bytes": 8128,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cad_exact_b_indexed_stage_transport_v3.ps1",
+      "origin_sha256": "15065C6CEB0A713DCE8D2EF80B9B8BEF7F57E9545973693D827FC054A08A15A8",
+      "adapted": false
+    },
+    {
+      "path": "scripts/cad_rot_exact_document_binding_v2.ps1",
+      "sha256": "D8EF051DF910B54DD2C508C2A2FAA57799A15F1E07AE47C4733EDDAB8F6A0A26",
+      "bytes": 5592,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cad_rot_exact_document_binding_v2.ps1",
+      "origin_sha256": "D8EF051DF910B54DD2C508C2A2FAA57799A15F1E07AE47C4733EDDAB8F6A0A26",
+      "adapted": false
+    },
+    {
+      "path": "scripts/cad_rot_netload_manifest_exact_v2.ps1",
+      "sha256": "DD64A20A116D589A1F717E3B90401127344D8B6831107BBE2D2CA700E2BDA602",
+      "bytes": 9813,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cad_rot_netload_manifest_exact_v2.ps1",
+      "origin_sha256": "DD64A20A116D589A1F717E3B90401127344D8B6831107BBE2D2CA700E2BDA602",
+      "adapted": false
+    },
+    {
+      "path": "scripts/cad_rot_send_command_observed_v12.ps1",
+      "sha256": "970297AC28D90DE169A78B18437702E8B7FCED255ACC834FA263F7AC2BCBD5F9",
+      "bytes": 9714,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cad_rot_send_command_observed_v12.ps1",
+      "origin_sha256": "970297AC28D90DE169A78B18437702E8B7FCED255ACC834FA263F7AC2BCBD5F9",
+      "adapted": false
+    },
+    {
+      "path": "scripts/cad_rot_send_command_worker_v10.ps1",
+      "sha256": "5C7919B29C075389E608FC64727E21E01542E87C180AD23DDAFB6FD22579D471",
+      "bytes": 7435,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cad_rot_send_command_worker_v10.ps1",
+      "origin_sha256": "5C7919B29C075389E608FC64727E21E01542E87C180AD23DDAFB6FD22579D471",
+      "adapted": false
+    },
+    {
+      "path": "scripts/cad_worker_receipt_settlement_v1.ps1",
+      "sha256": "913D1A47A604CF128CC6D9034BAD78CA56A1C6EE9789BEEFB4009D85029B0DB2",
+      "bytes": 2154,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cad_worker_receipt_settlement_v1.ps1",
+      "origin_sha256": "913D1A47A604CF128CC6D9034BAD78CA56A1C6EE9789BEEFB4009D85029B0DB2",
+      "adapted": false
+    },
+    {
+      "path": "scripts/capture_cad_commandline_passive_v1.ps1",
+      "sha256": "27ED54ED62F2F74BB049836C6D927592E44740EEDCD384337220E454274B26D8",
+      "bytes": 1866,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/capture_cad_commandline_passive_v1.ps1",
+      "origin_sha256": "27ED54ED62F2F74BB049836C6D927592E44740EEDCD384337220E454274B26D8",
+      "adapted": false
+    },
+    {
+      "path": "scripts/cleanup_probe_standard_dimensions.lsp",
+      "sha256": "5783CD4398BFEB284D38C56E4B0A1A37197851A7C6BF6A401CBD71321DCEB2DE",
+      "bytes": 1951,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cleanup_probe_standard_dimensions.lsp",
+      "origin_sha256": "5783CD4398BFEB284D38C56E4B0A1A37197851A7C6BF6A401CBD71321DCEB2DE",
+      "adapted": false
+    },
+    {
+      "path": "scripts/common/CadOperationGuard.psm1",
+      "sha256": "396E051C4C083239102CDD906DD2872EEDEEF86EEB6884BBDD3E29A6F647B411",
+      "bytes": 3393,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/common/CadOperationGuard.psm1",
+      "origin_sha256": "396E051C4C083239102CDD906DD2872EEDEEF86EEB6884BBDD3E29A6F647B411",
+      "adapted": false
+    },
+    {
+      "path": "scripts/common/CadPublicBuildTrust.ps1",
+      "sha256": "B333F4E218D9FACE5FFC81879B4B9A5E2508E60E9EBF644C1EE30F5106DCC2C7",
+      "bytes": 4303,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "scripts/compile_selected_typed_segment_batch.py",
+      "sha256": "4610A9F68E91366B3C44D2C2AB82CD6679E5C7FE0C97BD37517F492F9A9F53D1",
+      "bytes": 13620,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/compile_selected_typed_segment_batch.py",
+      "origin_sha256": "4610A9F68E91366B3C44D2C2AB82CD6679E5C7FE0C97BD37517F492F9A9F53D1",
+      "adapted": false
+    },
+    {
+      "path": "scripts/cx_tdimarc_batch_command.lsp",
+      "sha256": "CF25CA1BF995A18C602FCBB46EB051C157F2CEB046CE98D20DD35AC48AB5ABB7",
+      "bytes": 12862,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/cx_tdimarc_batch_command.lsp",
+      "origin_sha256": "6094FA98190BF46FABD375F36FDA84A20524FFCE5022A371F82BE084FB05283B",
+      "adapted": true
+    },
+    {
+      "path": "scripts/discover_runtime_polyline_targets_v1.py",
+      "sha256": "9289CC6B866BC924A4BAE90588FC06BB9C6CC3F838DC22B17719BF864026AABA",
+      "bytes": 10532,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/discover_runtime_polyline_targets_v1.py",
+      "origin_sha256": "9289CC6B866BC924A4BAE90588FC06BB9C6CC3F838DC22B17719BF864026AABA",
+      "adapted": false
+    },
+    {
+      "path": "scripts/earthwork_elevation_inventory_fast.lsp",
+      "sha256": "C19BE70648796A5BFE8AAE70856F015D1DDFAAD61E1E888F34AC6717F2AE543F",
+      "bytes": 5168,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/earthwork_elevation_inventory_fast.lsp",
+      "origin_sha256": "C19BE70648796A5BFE8AAE70856F015D1DDFAAD61E1E888F34AC6717F2AE543F",
+      "adapted": false
+    },
+    {
+      "path": "scripts/export_test_subset_wblock.lsp",
+      "sha256": "3ADA1B007AABF08BC3B553FA6FB0908F1D6F60DB6B48F1184E5FA1EC4F3F07FB",
+      "bytes": 3997,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/export_test_subset_wblock.lsp",
+      "origin_sha256": "3ADA1B007AABF08BC3B553FA6FB0908F1D6F60DB6B48F1184E5FA1EC4F3F07FB",
+      "adapted": false
+    },
+    {
+      "path": "scripts/extract_cad_canvas_roi.py",
+      "sha256": "6489CE7E3B703D0D89D80B56381313BF65D1C6CBEE3A9B602E8D913960323331",
+      "bytes": 3769,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/extract_cad_canvas_roi.py",
+      "origin_sha256": "6489CE7E3B703D0D89D80B56381313BF65D1C6CBEE3A9B602E8D913960323331",
+      "adapted": false
+    },
+    {
+      "path": "scripts/get_shared_file_sha256_v1.ps1",
+      "sha256": "55E5C237FF9B00AE8A067DD45804852B18F2EB933F58FF14DC4DE3D1960D662A",
+      "bytes": 507,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/get_shared_file_sha256_v1.ps1",
+      "origin_sha256": "55E5C237FF9B00AE8A067DD45804852B18F2EB933F58FF14DC4DE3D1960D662A",
+      "adapted": false
+    },
+    {
+      "path": "scripts/inventory_polyline_styles_fast.lsp",
+      "sha256": "FF435F0A4E89AF5E51DF15589C98F00DD7A27BC8816A3C270A0E00B25313D57A",
+      "bytes": 7469,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/inventory_polyline_styles_fast.lsp",
+      "origin_sha256": "FF435F0A4E89AF5E51DF15589C98F00DD7A27BC8816A3C270A0E00B25313D57A",
+      "adapted": false
+    },
+    {
+      "path": "scripts/inventory_route_centerlines_fast.lsp",
+      "sha256": "950FC68C5E9C384A837DABE46E1A0432661950836D81CEDEC614F9115C6A3F5E",
+      "bytes": 8256,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/inventory_route_centerlines_fast.lsp",
+      "origin_sha256": "950FC68C5E9C384A837DABE46E1A0432661950836D81CEDEC614F9115C6A3F5E",
+      "adapted": false
+    },
+    {
+      "path": "scripts/inventory_target_polyline_arcs.lsp",
+      "sha256": "BFA57180DF524B1F547E48A9D519B0A64324CCDE0226597B5E0C60CA3B6E21A1",
+      "bytes": 5581,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/inventory_target_polyline_arcs.lsp",
+      "origin_sha256": "BFA57180DF524B1F547E48A9D519B0A64324CCDE0226597B5E0C60CA3B6E21A1",
+      "adapted": false
+    },
+    {
+      "path": "scripts/inventory_target_polyline_segments.lsp",
+      "sha256": "DA6C1F29319C117D5B17033A6A765FF6D9715ECF2FF7D01526D2F7B54C1BE636",
+      "bytes": 7560,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/inventory_target_polyline_segments.lsp",
+      "origin_sha256": "DA6C1F29319C117D5B17033A6A765FF6D9715ECF2FF7D01526D2F7B54C1BE636",
+      "adapted": false
+    },
+    {
+      "path": "scripts/invoke_special_text_peer_normal_restore_observed_v4.ps1",
+      "sha256": "C80D4033BC1F76CBF1F51778C9379FDB0137AE9BD2BDA5F7509BB29E616234FF",
+      "bytes": 10948,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/invoke_special_text_peer_normal_restore_observed_v4.ps1",
+      "origin_sha256": "972ED4C8665B450A0F891C574C69790188AF48B50ED3AC51543F24538FCC8325",
+      "adapted": true
+    },
+    {
+      "path": "scripts/merge_axis_capacity_targets_v1.py",
+      "sha256": "33756746ABBBC0AD1A3AD64981DBD0C4375E3267E691480393F9032B8705B69D",
+      "bytes": 2850,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/merge_axis_capacity_targets_v1.py",
+      "origin_sha256": "33756746ABBBC0AD1A3AD64981DBD0C4375E3267E691480393F9032B8705B69D",
+      "adapted": false
+    },
+    {
+      "path": "scripts/merge_axis_capacity_targets_v2.py",
+      "sha256": "D94A642DAFD356C1D7C82483DAB907B2D8ECF8553492F3BA7E207F7B1F490626",
+      "bytes": 3032,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/merge_axis_capacity_targets_v2.py",
+      "origin_sha256": "D94A642DAFD356C1D7C82483DAB907B2D8ECF8553492F3BA7E207F7B1F490626",
+      "adapted": false
+    },
+    {
+      "path": "scripts/native_angle_mirror_batch.lsp",
+      "sha256": "DC32F9258CA87D02813FFBB82C801C3326284A9E176C41E877E7C64E41F55169",
+      "bytes": 6074,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/native_angle_mirror_batch.lsp",
+      "origin_sha256": "DC32F9258CA87D02813FFBB82C801C3326284A9E176C41E877E7C64E41F55169",
+      "adapted": false
+    },
+    {
+      "path": "scripts/native_annotation_mirror_probe.lsp",
+      "sha256": "2B3F97A2D7ED74345B41E415713355F2F05939F684FC2857FB69C5ADC8EE1484",
+      "bytes": 5135,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/native_annotation_mirror_probe.lsp",
+      "origin_sha256": "2B3F97A2D7ED74345B41E415713355F2F05939F684FC2857FB69C5ADC8EE1484",
+      "adapted": false
+    },
+    {
+      "path": "scripts/parse_quantized_scalar_report_v1.py",
+      "sha256": "34486959EF1B21C0D9FBD0876EC456960FE736D87C6C7512EBDDD366FD55A8FF",
+      "bytes": 3187,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/parse_quantized_scalar_report_v1.py",
+      "origin_sha256": "34486959EF1B21C0D9FBD0876EC456960FE736D87C6C7512EBDDD366FD55A8FF",
+      "adapted": false
+    },
+    {
+      "path": "scripts/plan_arc_capacity_resolution_v3.py",
+      "sha256": "90124E933056EAF8EF30BD156AEC90B727517979799637BC1BA311495DF2BF5A",
+      "bytes": 6929,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/plan_arc_capacity_resolution_v3.py",
+      "origin_sha256": "90124E933056EAF8EF30BD156AEC90B727517979799637BC1BA311495DF2BF5A",
+      "adapted": false
+    },
+    {
+      "path": "scripts/plan_arc_capacity_side_flip_v1.py",
+      "sha256": "5A6AD939096BA18DEA35E30BAD956231A5E8F19DF688711A30327B99E0F83311",
+      "bytes": 5669,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/plan_arc_capacity_side_flip_v1.py",
+      "origin_sha256": "5A6AD939096BA18DEA35E30BAD956231A5E8F19DF688711A30327B99E0F83311",
+      "adapted": false
+    },
+    {
+      "path": "scripts/plan_arc_capacity_side_flip_v2.py",
+      "sha256": "DB19CD7009FF8B34362D8549279403DCA7743357ABEB3EDC226DF1379A13EF50",
+      "bytes": 2555,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/plan_arc_capacity_side_flip_v2.py",
+      "origin_sha256": "DB19CD7009FF8B34362D8549279403DCA7743357ABEB3EDC226DF1379A13EF50",
+      "adapted": false
+    },
+    {
+      "path": "scripts/plan_arc_collapse_rescue_only_v3.py",
+      "sha256": "96C4D0C60CB0D5029A89ED61AF4B3DC61CC4559D6C5E8E7C5B486EEC8FAA9E44",
+      "bytes": 6624,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/plan_arc_collapse_rescue_only_v3.py",
+      "origin_sha256": "96C4D0C60CB0D5029A89ED61AF4B3DC61CC4559D6C5E8E7C5B486EEC8FAA9E44",
+      "adapted": false
+    },
+    {
+      "path": "scripts/plan_native_angle_grip0_beauty.py",
+      "sha256": "074CC98EFDC8EA4EF8AEA162D9D3BF00C22A009BAB54B929CE14BB7FAD2D327A",
+      "bytes": 59988,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/plan_native_angle_grip0_beauty.py",
+      "origin_sha256": "074CC98EFDC8EA4EF8AEA162D9D3BF00C22A009BAB54B929CE14BB7FAD2D327A",
+      "adapted": false
+    },
+    {
+      "path": "scripts/plan_native_angle_text_relief.py",
+      "sha256": "A418264E89CF46FD277628066CC5022CA8FDB625D288F1EF294CB49357D9DCC2",
+      "bytes": 16865,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/plan_native_angle_text_relief.py",
+      "origin_sha256": "A418264E89CF46FD277628066CC5022CA8FDB625D288F1EF294CB49357D9DCC2",
+      "adapted": false
+    },
+    {
+      "path": "scripts/plan_native_failed_cluster_band.py",
+      "sha256": "F10F151DF00E195D50614E0A4C804D65DD8C15DF42AF7A5A76CD76F545522842",
+      "bytes": 7465,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/plan_native_failed_cluster_band.py",
+      "origin_sha256": "F10F151DF00E195D50614E0A4C804D65DD8C15DF42AF7A5A76CD76F545522842",
+      "adapted": false
+    },
+    {
+      "path": "scripts/plan_quantized_sharp_cluster_band_v3.py",
+      "sha256": "079A3C0CAB4D72AAD29A53B194810C93E8861AB8B5B402A654272719C0065E38",
+      "bytes": 20619,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/plan_quantized_sharp_cluster_band_v3.py",
+      "origin_sha256": "079A3C0CAB4D72AAD29A53B194810C93E8861AB8B5B402A654272719C0065E38",
+      "adapted": false
+    },
+    {
+      "path": "scripts/plan_quantized_sharp_cluster_band_v4.py",
+      "sha256": "D8E39E082731DB6F6CB5757D6F33826BE3E388A1AE7F51FA464F1DB820BECC50",
+      "bytes": 639,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/plan_quantized_sharp_cluster_band_v4.py",
+      "origin_sha256": "D8E39E082731DB6F6CB5757D6F33826BE3E388A1AE7F51FA464F1DB820BECC50",
+      "adapted": false
+    },
+    {
+      "path": "scripts/plan_special_text_peer_normal_restore_v2.py",
+      "sha256": "A61205832722009AD1564471617739190AC141B9017EAED34C908190A7E8ECC5",
+      "bytes": 5783,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/plan_special_text_peer_normal_restore_v2.py",
+      "origin_sha256": "A61205832722009AD1564471617739190AC141B9017EAED34C908190A7E8ECC5",
+      "adapted": false
+    },
+    {
+      "path": "scripts/plan_strict_blue_shore_layout.py",
+      "sha256": "82527DD7BA090D50996B042B33F6AFF5D60A2D9AEE683D0092CB8C582F7AB3DD",
+      "bytes": 106719,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/plan_strict_blue_shore_layout.py",
+      "origin_sha256": "82527DD7BA090D50996B042B33F6AFF5D60A2D9AEE683D0092CB8C582F7AB3DD",
+      "adapted": false
+    },
+    {
+      "path": "scripts/plan_typed_dimension_quantified_common_band_v2.py",
+      "sha256": "B91D76A9933B667A5A9533BF6E84E86E7CCC8BD7ED9D84160B1F97D05D1E1B80",
+      "bytes": 4445,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/plan_typed_dimension_quantified_common_band_v2.py",
+      "origin_sha256": "B91D76A9933B667A5A9533BF6E84E86E7CCC8BD7ED9D84160B1F97D05D1E1B80",
+      "adapted": false
+    },
+    {
+      "path": "scripts/plan_typed_dimension_quantified_common_band.py",
+      "sha256": "3F0829881B32505E8441F601986E9261FFF62F700074623EE002F716C51071E4",
+      "bytes": 14720,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/plan_typed_dimension_quantified_common_band.py",
+      "origin_sha256": "3F0829881B32505E8441F601986E9261FFF62F700074623EE002F716C51071E4",
+      "adapted": false
+    },
+    {
+      "path": "scripts/prepare_runtime_arc_probe_audit_inputs_v1.py",
+      "sha256": "102AE5DBA2C66F71F89DE11084B6E494D1E08A0CBF6815F9DF403B01E150CDAA",
+      "bytes": 3123,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/prepare_runtime_arc_probe_audit_inputs_v1.py",
+      "origin_sha256": "102AE5DBA2C66F71F89DE11084B6E494D1E08A0CBF6815F9DF403B01E150CDAA",
+      "adapted": false
+    },
+    {
+      "path": "scripts/probe_tianzheng_dimension_explode.lsp",
+      "sha256": "BD2855CE1D71347A1E7C756CD9494F42DC0888C352986001A695D73F1063BC09",
+      "bytes": 6937,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/probe_tianzheng_dimension_explode.lsp",
+      "origin_sha256": "BD2855CE1D71347A1E7C756CD9494F42DC0888C352986001A695D73F1063BC09",
+      "adapted": false
+    },
+    {
+      "path": "scripts/rebind_runtime_typed_dimension_evidence_v1.py",
+      "sha256": "CDCF6968AD5D9DCBF5FE1FB04FBBF89C6BE36C8C580BD47DA1B33DC5027666DC",
+      "bytes": 15962,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/rebind_runtime_typed_dimension_evidence_v1.py",
+      "origin_sha256": "CDCF6968AD5D9DCBF5FE1FB04FBBF89C6BE36C8C580BD47DA1B33DC5027666DC",
+      "adapted": false
+    },
+    {
+      "path": "scripts/reset_owned_viewport_target.lsp",
+      "sha256": "E8EA11E768112CCE2BD478B8A42B6F3C89BDDA9CE5AB4FFAE7E5E0869D1F0370",
+      "bytes": 3209,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/reset_owned_viewport_target.lsp",
+      "origin_sha256": "E8EA11E768112CCE2BD478B8A42B6F3C89BDDA9CE5AB4FFAE7E5E0869D1F0370",
+      "adapted": false
+    },
+    {
+      "path": "scripts/resolve_native_dimension_text_bboxes_v1.py",
+      "sha256": "C4A9754D99E1A5E3AD506C3DF41E47088654252878DA516D8D547241730B0474",
+      "bytes": 15433,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/resolve_native_dimension_text_bboxes_v1.py",
+      "origin_sha256": "C4A9754D99E1A5E3AD506C3DF41E47088654252878DA516D8D547241730B0474",
+      "adapted": false
+    },
+    {
+      "path": "scripts/resolve_native_dimension_text_bboxes_v2.py",
+      "sha256": "5C0F1B048107A18BEE7B7BEBCAF117AC75FC6D22BC0D795A500CEED5EB41C191",
+      "bytes": 17916,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/resolve_native_dimension_text_bboxes_v2.py",
+      "origin_sha256": "5C0F1B048107A18BEE7B7BEBCAF117AC75FC6D22BC0D795A500CEED5EB41C191",
+      "adapted": false
+    },
+    {
+      "path": "scripts/resolve_native_dimension_text_bboxes_v4.py",
+      "sha256": "8E351358CEE26558851702377FCD16C7CD2C72912938AEB6BE3499AF498A465B",
+      "bytes": 5766,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/resolve_native_dimension_text_bboxes_v4.py",
+      "origin_sha256": "8E351358CEE26558851702377FCD16C7CD2C72912938AEB6BE3499AF498A465B",
+      "adapted": false
+    },
+    {
+      "path": "scripts/select_native_angle_text_state.py",
+      "sha256": "47EAA884E7CB04E24655FDD0241A2C37452DCA0AC7F1EED865BDC1A98B1DE6B1",
+      "bytes": 16351,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/select_native_angle_text_state.py",
+      "origin_sha256": "47EAA884E7CB04E24655FDD0241A2C37452DCA0AC7F1EED865BDC1A98B1DE6B1",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_adjust_probe.lsp",
+      "sha256": "8D85F0B0091985EBACAF5F238DCD696329A8A6680A5E0A38048BE5A1FBE78DBE",
+      "bytes": 7823,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_adjust_probe.lsp",
+      "origin_sha256": "8D85F0B0091985EBACAF5F238DCD696329A8A6680A5E0A38048BE5A1FBE78DBE",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_candidate_diagnostic_vector_v1.lsp",
+      "sha256": "4B7788D3CE6F0AFC5C15F58D1A2DD832107B3DC2D4105093672D4DCC03DD2D26",
+      "bytes": 4778,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_candidate_diagnostic_vector_v1.lsp",
+      "origin_sha256": "4B7788D3CE6F0AFC5C15F58D1A2DD832107B3DC2D4105093672D4DCC03DD2D26",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_continuous_batch_error_finalizer_v1.lsp",
+      "sha256": "C1313306F908B927FD92C9DBFBA840A3B246BA88AAD3ABFBB84FB24C7519C99E",
+      "bytes": 5243,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_continuous_batch_error_finalizer_v1.lsp",
+      "origin_sha256": "C1313306F908B927FD92C9DBFBA840A3B246BA88AAD3ABFBB84FB24C7519C99E",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_continuous_batch_v1.lsp",
+      "sha256": "01B33A28171F6F07A3D8E5B70761C030409148C1116C52657A2052C10CF8C1D6",
+      "bytes": 11801,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_continuous_batch_v1.lsp",
+      "origin_sha256": "01B33A28171F6F07A3D8E5B70761C030409148C1116C52657A2052C10CF8C1D6",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_full_batch_source_serial_v3.lsp",
+      "sha256": "3BAD33D691846E14ECB10D3019D60C720146878900D835E8E4E1498529DC1B56",
+      "bytes": 5548,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_full_batch_source_serial_v3.lsp",
+      "origin_sha256": "3BAD33D691846E14ECB10D3019D60C720146878900D835E8E4E1498529DC1B56",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_full_batch_source_serial_v4.lsp",
+      "sha256": "D05306BFE7783128125B110FAF0E2072E1360625765DA9F6A939199BEDE69F80",
+      "bytes": 12096,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_full_batch_source_serial_v4.lsp",
+      "origin_sha256": "D05306BFE7783128125B110FAF0E2072E1360625765DA9F6A939199BEDE69F80",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_full_batch_source_serial_v5.lsp",
+      "sha256": "93AD41EB9D72A217355298F1343F74A6CD755CC3068DE192DD63FF1CB28AEE89",
+      "bytes": 11120,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_full_batch_source_serial_v5.lsp",
+      "origin_sha256": "93AD41EB9D72A217355298F1343F74A6CD755CC3068DE192DD63FF1CB28AEE89",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_full_batch.lsp",
+      "sha256": "28A7CA500CADC4C3A90C4E899A2F5EDB43E4DB778BBE593B6E07800941754C8B",
+      "bytes": 34286,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_full_batch.lsp",
+      "origin_sha256": "28A7CA500CADC4C3A90C4E899A2F5EDB43E4DB778BBE593B6E07800941754C8B",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_angle_semantic_vector_v4.lsp",
+      "sha256": "4AC026A6C7D86D8C20B02803C2523D830DA368A1395CE2A177EAB4157B53E29D",
+      "bytes": 7550,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_angle_semantic_vector_v4.lsp",
+      "origin_sha256": "4AC026A6C7D86D8C20B02803C2523D830DA368A1395CE2A177EAB4157B53E29D",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_born_angle_confirm_vector_v1.lsp",
+      "sha256": "A1FABEF181232236AB41758EF427DA562528C1ADB62B9FDE5A7A4D0AFB452813",
+      "bytes": 5028,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_born_angle_confirm_vector_v1.lsp",
+      "origin_sha256": "A1FABEF181232236AB41758EF427DA562528C1ADB62B9FDE5A7A4D0AFB452813",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_born_angle_confirm_vector_v2.lsp",
+      "sha256": "44BCB1C99F64897F6B7D71B8C5D3809217FE6FA2B274D0FAF523D331BB6D1B79",
+      "bytes": 5926,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_born_angle_confirm_vector_v2.lsp",
+      "origin_sha256": "44BCB1C99F64897F6B7D71B8C5D3809217FE6FA2B274D0FAF523D331BB6D1B79",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_born_angle_true_wcs_adaptive_v10.lsp",
+      "sha256": "76039C580D1559C55EFEDC2495A76E94C2FF5C013EE5C3979F9D9E9B37A2A11D",
+      "bytes": 5475,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_born_angle_true_wcs_adaptive_v10.lsp",
+      "origin_sha256": "76039C580D1559C55EFEDC2495A76E94C2FF5C013EE5C3979F9D9E9B37A2A11D",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_born_angle_true_wcs_v9.lsp",
+      "sha256": "FF6AF414E9EE2BF3B696AAE762C5BA344B87F8AD97B6971EAAF8779CF0A6C912",
+      "bytes": 3461,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_born_angle_true_wcs_v9.lsp",
+      "origin_sha256": "FF6AF414E9EE2BF3B696AAE762C5BA344B87F8AD97B6971EAAF8779CF0A6C912",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_born_angle_vector_v5.lsp",
+      "sha256": "BA4A2B823E092100F7B70A8FAAE7A90E2C751E96C051AC562CDF964C9F8E9A00",
+      "bytes": 4552,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_born_angle_vector_v5.lsp",
+      "origin_sha256": "BA4A2B823E092100F7B70A8FAAE7A90E2C751E96C051AC562CDF964C9F8E9A00",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_candidate_chain_v1.lsp",
+      "sha256": "B562FDFD0E5DE0D7E7ED1A20411851CFB5317C08B27E0DD3962CF7E583BDE6E8",
+      "bytes": 1096,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_candidate_chain_v1.lsp",
+      "origin_sha256": "B562FDFD0E5DE0D7E7ED1A20411851CFB5317C08B27E0DD3962CF7E583BDE6E8",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_confirm_arc_place_v5.lsp",
+      "sha256": "CC7E33AD2D915CE63512BC79D70737D7684F2918AFF10EAE5E8F25199EE60B94",
+      "bytes": 2613,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_confirm_arc_place_v5.lsp",
+      "origin_sha256": "CC7E33AD2D915CE63512BC79D70737D7684F2918AFF10EAE5E8F25199EE60B94",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_creation_settle_v3.lsp",
+      "sha256": "CF3B69D101CD5872AD331E4F4BFAC8A7E438FC2B83AC83E2566F1EC81F2F77F4",
+      "bytes": 11426,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_creation_settle_v3.lsp",
+      "origin_sha256": "CF3B69D101CD5872AD331E4F4BFAC8A7E438FC2B83AC83E2566F1EC81F2F77F4",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_creation_settle_v5.lsp",
+      "sha256": "6FDFBEA6C282453AD57B7E680538E196C119831DB034643EFB8302DA4A1D4734",
+      "bytes": 11498,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_creation_settle_v5.lsp",
+      "origin_sha256": "6FDFBEA6C282453AD57B7E680538E196C119831DB034643EFB8302DA4A1D4734",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_direct_positive_dispatch_v2.lsp",
+      "sha256": "DA866448390C202CFF4511252636A3F48693913DD8F42D91596B6FE89C50E30A",
+      "bytes": 3932,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_direct_positive_dispatch_v2.lsp",
+      "origin_sha256": "DA866448390C202CFF4511252636A3F48693913DD8F42D91596B6FE89C50E30A",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_direct_positive_dispatch_v3.lsp",
+      "sha256": "C3D37B0D12280DBB07671EDE4B76C27562DA7C7D1BF1280A902AD543F6C67A95",
+      "bytes": 4684,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_direct_positive_dispatch_v3.lsp",
+      "origin_sha256": "C3D37B0D12280DBB07671EDE4B76C27562DA7C7D1BF1280A902AD543F6C67A95",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_direct_positive_dispatch_v4.lsp",
+      "sha256": "9DD1B577ADFC8D5317E2923E40A83251A922493863C589CB0678E6D4B405B4A8",
+      "bytes": 5609,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_direct_positive_dispatch_v4.lsp",
+      "origin_sha256": "9DD1B577ADFC8D5317E2923E40A83251A922493863C589CB0678E6D4B405B4A8",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_dynamic_candidate_promotion_v1.lsp",
+      "sha256": "08B1AB792FD34E694B58DD68E2E8280A9975B7E5F137C622C40F6C0666EC37D3",
+      "bytes": 11929,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_dynamic_candidate_promotion_v1.lsp",
+      "origin_sha256": "08B1AB792FD34E694B58DD68E2E8280A9975B7E5F137C622C40F6C0666EC37D3",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_endpoint_matched_helper_generic_v1.lsp",
+      "sha256": "A0F368684C1F9EE660D6BF3AFA379C4E3630C4469418ABD9FFD3775E2836A6A0",
+      "bytes": 4832,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_endpoint_matched_helper_generic_v1.lsp",
+      "origin_sha256": "A0F368684C1F9EE660D6BF3AFA379C4E3630C4469418ABD9FFD3775E2836A6A0",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_endpoint_xy_gate_v1.lsp",
+      "sha256": "4C7AA2A970F5EDC9E61242314539B2808C5AD1BF178F0C969FE24F0D3984B977",
+      "bytes": 967,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_endpoint_xy_gate_v1.lsp",
+      "origin_sha256": "4C7AA2A970F5EDC9E61242314539B2808C5AD1BF178F0C969FE24F0D3984B977",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_exception_rescue_v21.lsp",
+      "sha256": "EF4B0E96C59E2270733B22D83184535A93CA4B5A9A081CE89D2044CDC7068B61",
+      "bytes": 2319,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_exception_rescue_v21.lsp",
+      "origin_sha256": "EF4B0E96C59E2270733B22D83184535A93CA4B5A9A081CE89D2044CDC7068B61",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_exception_rescue_v22.lsp",
+      "sha256": "0F2B0C422F8E3E47F1C3D42A9AF594AD7551FC4E35D7F310AF602382C180F18E",
+      "bytes": 4038,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_exception_rescue_v22.lsp",
+      "origin_sha256": "0F2B0C422F8E3E47F1C3D42A9AF594AD7551FC4E35D7F310AF602382C180F18E",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_exception_rescue_v23.lsp",
+      "sha256": "2E9CCC6FE059F58042AA4E2DDF75DC773B7B734F6EF3167977008D851CF152CB",
+      "bytes": 2899,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_exception_rescue_v23.lsp",
+      "origin_sha256": "2E9CCC6FE059F58042AA4E2DDF75DC773B7B734F6EF3167977008D851CF152CB",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_placement_gate_v3.lsp",
+      "sha256": "DBEDD5EE46B7C1EA991A716AA19884777B680C8ECB7C579C431E384CDCA19284",
+      "bytes": 9226,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_placement_gate_v3.lsp",
+      "origin_sha256": "DBEDD5EE46B7C1EA991A716AA19884777B680C8ECB7C579C431E384CDCA19284",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_post_create_grip0_outer_v1.lsp",
+      "sha256": "ADDD610041AFE9AF2D13ADEA1601742824A265D3A82A47462B99796B53712AAB",
+      "bytes": 4238,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_post_create_grip0_outer_v1.lsp",
+      "origin_sha256": "ADDD610041AFE9AF2D13ADEA1601742824A265D3A82A47462B99796B53712AAB",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_prompt_settlement_v1.lsp",
+      "sha256": "C950699714EC91E6387F4F092A47C3C7DC7F0D4252D7461CD2825086E0221986",
+      "bytes": 1884,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_prompt_settlement_v1.lsp",
+      "origin_sha256": "C950699714EC91E6387F4F092A47C3C7DC7F0D4252D7461CD2825086E0221986",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_prompt_staged_v2.lsp",
+      "sha256": "8DA6251F5DD0C42700C9E312D64FEDF2AB3E379B4DB68BC0FD278C33F9CB58F7",
+      "bytes": 4479,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_prompt_staged_v2.lsp",
+      "origin_sha256": "8DA6251F5DD0C42700C9E312D64FEDF2AB3E379B4DB68BC0FD278C33F9CB58F7",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_retry_formula_v6.lsp",
+      "sha256": "EBCF13EBD2BE4CBF619241A067C3098A7E0A889260976408850DFB14A95B549D",
+      "bytes": 5476,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_retry_formula_v6.lsp",
+      "origin_sha256": "EBCF13EBD2BE4CBF619241A067C3098A7E0A889260976408850DFB14A95B549D",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_retry_formula_v7.lsp",
+      "sha256": "E70715CDD63F570F33B9436273FDEB5BE88E0C8B8D7D9648B6AA07248BBDFDE4",
+      "bytes": 6467,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_retry_formula_v7.lsp",
+      "origin_sha256": "E70715CDD63F570F33B9436273FDEB5BE88E0C8B8D7D9648B6AA07248BBDFDE4",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_semantic_exception_only_v24.lsp",
+      "sha256": "389D5CAB060409862A8F6E67F099A5E666A699294EC26707B3D01A3F9D2B666D",
+      "bytes": 3766,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_semantic_exception_only_v24.lsp",
+      "origin_sha256": "389D5CAB060409862A8F6E67F099A5E666A699294EC26707B3D01A3F9D2B666D",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_true_wcs_semantic_promote_v19.lsp",
+      "sha256": "FDA040556503B19EF6E52BB3FA8BD01233306CB8BB87A6827B8070BC980D975F",
+      "bytes": 3346,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_true_wcs_semantic_promote_v19.lsp",
+      "origin_sha256": "FDA040556503B19EF6E52BB3FA8BD01233306CB8BB87A6827B8070BC980D975F",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_generation_user_positive_v1.lsp",
+      "sha256": "F0726E56F1D1FF75BDC5225364C9435FA3D78C327FD158B1F63A5F8DAB48EC46",
+      "bytes": 9409,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_generation_user_positive_v1.lsp",
+      "origin_sha256": "F0726E56F1D1FF75BDC5225364C9435FA3D78C327FD158B1F63A5F8DAB48EC46",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_outer_batch_finalizer_v2.lsp",
+      "sha256": "77F5CE9DDE242713AF4212BB5BD219281F7F989CF4719D7BF7A7D7FD0144DE9D",
+      "bytes": 10776,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_outer_batch_finalizer_v2.lsp",
+      "origin_sha256": "77F5CE9DDE242713AF4212BB5BD219281F7F989CF4719D7BF7A7D7FD0144DE9D",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_selection_entry_v1.lsp",
+      "sha256": "2BFA04BE87A9D6F0584F0DAEBF179CE69A5919DE93D02FD72673E1BDC28E631A",
+      "bytes": 2698,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_selection_entry_v1.lsp",
+      "origin_sha256": "2BFA04BE87A9D6F0584F0DAEBF179CE69A5919DE93D02FD72673E1BDC28E631A",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_source_repair.lsp",
+      "sha256": "5E2674C45BDE303B09293B489F7E4CDEB00CE6FA6B22337D7CF760F03C77A1C2",
+      "bytes": 14174,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_source_repair.lsp",
+      "origin_sha256": "5E2674C45BDE303B09293B489F7E4CDEB00CE6FA6B22337D7CF760F03C77A1C2",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_targeted_replacement_v2.lsp",
+      "sha256": "D4ABB75D39331525DD2D5BE127DD16FDB3FB5420D7812EF9452CED1092F577A2",
+      "bytes": 16422,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_targeted_replacement_v2.lsp",
+      "origin_sha256": "D4ABB75D39331525DD2D5BE127DD16FDB3FB5420D7812EF9452CED1092F577A2",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_native_targeted_replacement_v3.lsp",
+      "sha256": "2C31AFD3638EEDB09736678981AA62B7FB2706FA1FAAB636A50EF087191ABCE3",
+      "bytes": 17529,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_native_targeted_replacement_v3.lsp",
+      "origin_sha256": "2C31AFD3638EEDB09736678981AA62B7FB2706FA1FAAB636A50EF087191ABCE3",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_prompt_v10_batch_probe.lsp",
+      "sha256": "8F9E692F98E7D61907937CA4A892FE77005FC71C4C289F6C17D30AFB7CB49453",
+      "bytes": 12303,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_prompt_v10_batch_probe.lsp",
+      "origin_sha256": "8F9E692F98E7D61907937CA4A892FE77005FC71C4C289F6C17D30AFB7CB49453",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tdimarc_user_positive_xy_plane_v2.lsp",
+      "sha256": "07FA0AFF69F3C8D0F7A3A057A63BA14D599EBF4FD6A0739FCDFB82EC2C695E80",
+      "bytes": 1428,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tdimarc_user_positive_xy_plane_v2.lsp",
+      "origin_sha256": "07FA0AFF69F3C8D0F7A3A057A63BA14D599EBF4FD6A0739FCDFB82EC2C695E80",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tianzheng_adjust_command_prompt_probe.lsp",
+      "sha256": "28C2CB9C0A937E0E9096975EAD438585DCFB3D95980B5A1CD66C95BA5D294D1B",
+      "bytes": 8096,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tianzheng_adjust_command_prompt_probe.lsp",
+      "origin_sha256": "28C2CB9C0A937E0E9096975EAD438585DCFB3D95980B5A1CD66C95BA5D294D1B",
+      "adapted": false
+    },
+    {
+      "path": "scripts/tianzheng_adjust_group_probe.lsp",
+      "sha256": "91691C9BCE808ADF3D8FDFD6A60D68C47E9303FA805CAC120B5D26710C80B63E",
+      "bytes": 6353,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "scripts/tianzheng_adjust_group_probe.lsp",
+      "origin_sha256": "91691C9BCE808ADF3D8FDFD6A60D68C47E9303FA805CAC120B5D26710C80B63E",
+      "adapted": false
+    },
+    {
+      "path": "src/CodexCadDocumentPreviewCaptureV1.cs",
+      "sha256": "2B2D316AC8C061157EFC4D502CDC5CC959B2D94CF5DD7CAE4FCF54997C438150",
+      "bytes": 8037,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "src/CodexCadDocumentPreviewCaptureV1.cs",
+      "origin_sha256": "2B2D316AC8C061157EFC4D502CDC5CC959B2D94CF5DD7CAE4FCF54997C438150",
+      "adapted": false
+    },
+    {
+      "path": "src/CodexDimensionTextGeometryRecipeV1.cs",
+      "sha256": "A99C640BD1851F2052223A3BA0956C759E9C17FE58D7277FE52DC17DE954E27C",
+      "bytes": 7695,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "src/CodexDimensionTextGeometryRecipeV1.cs",
+      "origin_sha256": "A99C640BD1851F2052223A3BA0956C759E9C17FE58D7277FE52DC17DE954E27C",
+      "adapted": false
+    },
+    {
+      "path": "src/CodexDimensionTextMetricsProbeV2.cs",
+      "sha256": "482EA54001E844C33E8833C3B8F01F0C7CF643DBA29475704EF0DE1DEEC34585",
+      "bytes": 15999,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "src/CodexDimensionTextMetricsProbeV2.cs",
+      "origin_sha256": "482EA54001E844C33E8833C3B8F01F0C7CF643DBA29475704EF0DE1DEEC34585",
+      "adapted": false
+    },
+    {
+      "path": "src/CodexNativeDimensionSemanticInventoryV1.cs",
+      "sha256": "7EEE6034C28E03A9BEFAE8F022495CFCE6F7E8189C9BDD067E3831E4A46B0546",
+      "bytes": 6644,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "src/CodexNativeDimensionSemanticInventoryV1.cs",
+      "origin_sha256": "7EEE6034C28E03A9BEFAE8F022495CFCE6F7E8189C9BDD067E3831E4A46B0546",
+      "adapted": false
+    },
+    {
+      "path": "src/CodexNativeGenerationPlacementAuditV2.cs",
+      "sha256": "7600147142F2D3FB845D77A07F0AEE2C2D61C9D9B8EB16A51243F27C6546D9D5",
+      "bytes": 10625,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "src/CodexNativeGenerationPlacementAuditV2.cs",
+      "origin_sha256": "7600147142F2D3FB845D77A07F0AEE2C2D61C9D9B8EB16A51243F27C6546D9D5",
+      "adapted": false
+    },
+    {
+      "path": "src/CodexNativeGenerationPlacementAuditV3.cs",
+      "sha256": "FEE5B1A629906268D0BC4376F2DAEC094CFB50EEAC65CF5E83F41B737D250406",
+      "bytes": 11589,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "src/CodexNativeGenerationPlacementAuditV3.cs",
+      "origin_sha256": "FEE5B1A629906268D0BC4376F2DAEC094CFB50EEAC65CF5E83F41B737D250406",
+      "adapted": false
+    },
+    {
+      "path": "src/CodexNativeGenerationPlacementAuditV4.cs",
+      "sha256": "6D71EC8A8892371C51A37BC59A0DDA0BB81EDCE4515DDBED126CDE3E130D08C5",
+      "bytes": 7125,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "src/CodexNativeGenerationPlacementAuditV4.cs",
+      "origin_sha256": "6D71EC8A8892371C51A37BC59A0DDA0BB81EDCE4515DDBED126CDE3E130D08C5",
+      "adapted": false
+    },
+    {
+      "path": "src/CodexNativeGenerationPlacementAuditV5.cs",
+      "sha256": "5AC2E897518DF242FE224606600593D7FE4002F0C94B19A585B802D6BD8458CD",
+      "bytes": 12042,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "src/CodexNativeGenerationPlacementAuditV5.cs",
+      "origin_sha256": "5AC2E897518DF242FE224606600593D7FE4002F0C94B19A585B802D6BD8458CD",
+      "adapted": false
+    },
+    {
+      "path": "src/CodexNativePlacementGrip0MoverV1.cs",
+      "sha256": "69A605D2EA0EB135E2BAD8BEA079C81A3FA42DB5128E1B4C15942E3A44BD42BE",
+      "bytes": 12085,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "src/CodexNativePlacementGrip0MoverV1.cs",
+      "origin_sha256": "69A605D2EA0EB135E2BAD8BEA079C81A3FA42DB5128E1B4C15942E3A44BD42BE",
+      "adapted": false
+    },
+    {
+      "path": "src/CodexNativePlacementTargetPointV1.cs",
+      "sha256": "BEA59DDAF4389BC3301741565E63E92DBE66C307935109A3C7F22F958BC8FB46",
+      "bytes": 7166,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "src/CodexNativePlacementTargetPointV1.cs",
+      "origin_sha256": "BEA59DDAF4389BC3301741565E63E92DBE66C307935109A3C7F22F958BC8FB46",
+      "adapted": false
+    },
+    {
+      "path": "src/CodexNativePlacementTranslatorV1.cs",
+      "sha256": "30641AB728C05939CF702F2716B792C165442C8B835E47E33506A29A67717E15",
+      "bytes": 6804,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "src/CodexNativePlacementTranslatorV1.cs",
+      "origin_sha256": "30641AB728C05939CF702F2716B792C165442C8B835E47E33506A29A67717E15",
+      "adapted": false
+    },
+    {
+      "path": "src/CodexNativePlacementTranslatorV2.cs",
+      "sha256": "60D5949FF98C501F067461423AFAE5175BBA179C75E0A3C8565583EFD19D08BB",
+      "bytes": 6988,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "src/CodexNativePlacementTranslatorV2.cs",
+      "origin_sha256": "60D5949FF98C501F067461423AFAE5175BBA179C75E0A3C8565583EFD19D08BB",
+      "adapted": false
+    },
+    {
+      "path": "src/CodexQuantizedGripScalarConverger.cs",
+      "sha256": "8DE618197C0E1AD4D51765997CB1D8807E6DEEFD53309F0F06C41539182AB7FD",
+      "bytes": 24075,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "src/CodexQuantizedGripScalarConverger.cs",
+      "origin_sha256": "8DE618197C0E1AD4D51765997CB1D8807E6DEEFD53309F0F06C41539182AB7FD",
+      "adapted": false
+    },
+    {
+      "path": "src/CodexTzGripProbe.cs",
+      "sha256": "25DB4F3E4BBA198444890403F44437FBC114F96D2055D130448589F2CDAED23F",
+      "bytes": 62555,
+      "role": "SOURCE_OR_DOCUMENTATION",
+      "origin_relative": "src/CodexTzGripProbe.cs",
+      "origin_sha256": "25DB4F3E4BBA198444890403F44437FBC114F96D2055D130448589F2CDAED23F",
+      "adapted": false
+    },
+    {
+      "path": "templates/exact_b_scope.json.template",
+      "sha256": "9388AE148C43C86B85958914DCFE76AD0C7BC1CD0E984702F4351D241722335D",
+      "bytes": 1147,
+      "role": "NONEXECUTABLE_RECEIVER_INPUT_TEMPLATE",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "templates/receiver_runtime.json.template",
+      "sha256": "F4D7525BC912AD88234CC220A9CC628EC7BCB907C71C795D19E410862DC2D7AA",
+      "bytes": 306,
+      "role": "NONEXECUTABLE_RECEIVER_INPUT_TEMPLATE",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "templates/receiver_source_admission.json.template",
+      "sha256": "41A56BD0E56E56BA302027036A0310302018F10625EFEC19403AAB3CC818B4C7",
+      "bytes": 322,
+      "role": "NONEXECUTABLE_RECEIVER_INPUT_TEMPLATE",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "tests/run_offline_tests.py",
+      "sha256": "599411312EE0AD0621DAD92607582813FA36C40011F9ABC83A53EB407151B2A2",
+      "bytes": 1999,
+      "role": "SYNTHETIC_OFFLINE_TEST",
+      "origin_relative": null,
+      "origin_sha256": null,
+      "adapted": true
+    },
+    {
+      "path": "tests/test_compile_selected_typed_segment_batch.py",
+      "sha256": "DBA4B700A4655AB85E3F499A323C331743B1BB2F4B89992280B18F68718A141C",
+      "bytes": 9788,
+      "role": "SYNTHETIC_OFFLINE_TEST",
+      "origin_relative": "tests/test_compile_selected_typed_segment_batch.py",
+      "origin_sha256": "DBA4B700A4655AB85E3F499A323C331743B1BB2F4B89992280B18F68718A141C",
+      "adapted": false
+    },
+    {
+      "path": "tests/test_native_dimension_semantics_v1.py",
+      "sha256": "82E47319AC230AE5D2B18ED391BFD0E5672DDD4B2319CE0BC342F28323A99A51",
+      "bytes": 4979,
+      "role": "SYNTHETIC_OFFLINE_TEST",
+      "origin_relative": "tests/test_native_dimension_semantics_v1.py",
+      "origin_sha256": "82E47319AC230AE5D2B18ED391BFD0E5672DDD4B2319CE0BC342F28323A99A51",
+      "adapted": false
+    },
+    {
+      "path": "tests/test_typed_dimension_quantified_common_band.py",
+      "sha256": "A93952AA7C26F370638986095AD2035C836EADC6384FB8F6E2B220993340D329",
+      "bytes": 3869,
+      "role": "SYNTHETIC_OFFLINE_TEST",
+      "origin_relative": "tests/test_typed_dimension_quantified_common_band.py",
+      "origin_sha256": "A93952AA7C26F370638986095AD2035C836EADC6384FB8F6E2B220993340D329",
+      "adapted": false
+    }
+  ],
+  "file_count": 327,
+  "commercial_SDK_or_binaries_included": false
+}

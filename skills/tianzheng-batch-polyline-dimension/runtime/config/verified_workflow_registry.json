@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "status": "active",
+  "active_workflows": {
+    "tdimarc_single_arc": "TZ-TDIMARC-INDEPENDENT-ARC-V1",
+    "tdimarc_multi_arc_same_polyline": "TZ-TDIMARC-INDEPENDENT-ARC-V1",
+    "tdimarc_multi_polyline_full": "TZ-TDIMARC-FULL-BATCH-V2",
+    "tdim_typed_segment_mixed": "TZ-TDIM-TYPED-SEGMENT-V1",
+    "native_dimension_relayout": null
+  },
+  "resolution_policy": {
+    "production_requires_status": "verified",
+    "rejected_or_limited_never_default": true,
+    "one_active_workflow_per_capability": true,
+    "replacement_requires_new_id_and_independent_acceptance": true,
+    "old_active_workflow_is_demoted_only_after_replacement_passes": true
+  },
+  "workflows": [
+    {
+      "id": "TZ-TDIMARC-INDEPENDENT-ARC-V1",
+      "capabilities": [
+        "tdimarc_single_arc",
+        "tdimarc_multi_arc_same_polyline"
+      ],
+      "status": "verified",
+      "frozen": true,
+      "implementation": {
+        "single_arc_adapter": "scripts/tdimarc_inprocess_parameter_probe.lsp",
+        "batch_adapter": "scripts/tdimarc_inprocess_batch_probe.lsp",
+        "single_arc_sha256": "E1FC3C69A90AB2931D73FBED28E075AB25DFB9C3F21D78F23DBACE9DF9387EC5",
+        "batch_sha256": "63BE7F199A7F40FCC08BD1207B7B5618743CC8078E6BC2F0EB9C5F163F491DAB",
+        "exact_command_s_shape": "TDIMARC pick pick place empty",
+        "object_model": "one independent TDbDimension2 per source arc"
+      },
+      "acceptance": [
+        "one_native_object_per_arc",
+        "TDbDimension2",
+        "PUB_DIM",
+        "_TCH_ARROW",
+        "command_idle",
+        "save_close_reopen_5_of_5"
+      ],
+      "boundary": "Verified on five arc segments of one source polyline. Full multi-polyline use remains a separate validation gate."
+    },
+    {
+      "id": "TZ-TDIMARC-FULL-BATCH-V2",
+      "capabilities": [
+        "tdimarc_multi_polyline_full"
+      ],
+      "status": "verified",
+      "inherits_kernel": "TZ-TDIMARC-INDEPENDENT-ARC-V1",
+      "frozen": true,
+      "implementation": {
+        "engine": "scripts/tdimarc_native_full_batch.lsp",
+        "engine_sha256": "28A7CA500CADC4C3A90C4E899A2F5EDB43E4DB778BBE593B6E07800941754C8B",
+        "required_marker": "VERIFIED_TDIMARC_INDEPENDENT_ARC_V1",
+        "forbidden_markers": [
+          "ONE_COMMAND_ALL_ARC_TOKENS",
+          "SHARED_TDIMARC_SESSION"
+        ],
+        "wrong_style_policy": "delete_only_the_newly_created_attempt_then_retry_another_pick_fraction"
+      },
+      "acceptance": [
+        "one_native_object_per_arc",
+        "39_of_39",
+        "TDbDimension2",
+        "PUB_DIM",
+        "_TCH_ARROW",
+        "command_idle",
+        "save_close_reopen_39_of_39"
+      ],
+      "boundary": "Verified for the governed multi-polyline 39-arc batch. Every arc still uses a fresh TDIMARC invocation; no shared continuous session."
+    },
+    {
+      "id": "TZ-TDIM-TYPED-SEGMENT-V1",
+      "capabilities": [
+        "tdim_typed_segment_mixed"
+      ],
+      "status": "verified",
+      "inherits_kernel": "TZ-TDIMARC-FULL-BATCH-V2",
+      "frozen": true,
+      "implementation": {
+        "engine": "scripts/tdimarc_native_full_batch.lsp",
+        "engine_sha256": "28A7CA500CADC4C3A90C4E899A2F5EDB43E4DB778BBE593B6E07800941754C8B",
+        "required_marker": "VERIFIED_TDIMARC_INDEPENDENT_ARC_V1",
+        "forbidden_markers": [
+          "ONE_COMMAND_ALL_ARC_TOKENS",
+          "SHARED_TDIMARC_SESSION"
+        ],
+        "arc_command": "TDIMARC",
+        "line_command": "TDimMP",
+        "dispatch_policy": "classify_each_polyline_segment_then_invoke_one_fresh_native_command_per_segment"
+      },
+      "acceptance": [
+        "10_arc_3_line_13_of_13",
+        "native_objects",
+        "typed_dispatch_exact",
+        "zero_length_rejected_before_mutation",
+        "type_mismatch_rejected_before_mutation",
+        "save_close_reopen_13_of_13"
+      ],
+      "boundary": "Verified on source 137EEF with ten arc and three line segments. Layout and collision optimization remain separate governed capabilities."
+    },
+    {
+      "id": "TZ-TDIM-TYPED-SEGMENT-SERIAL-V2",
+      "capabilities": [
+        "tdim_typed_segment_mixed"
+      ],
+      "status": "validation_only",
+      "inherits_kernel": "TZ-TDIM-TYPED-SEGMENT-V1",
+      "frozen": false,
+      "created_at": "2026-08-21",
+      "implementation": {
+        "engine": "scripts/tdimarc_native_full_batch_source_serial_v4.lsp",
+        "engine_sha256": "D05306BFE7783128125B110FAF0E2072E1360625765DA9F6A939199BEDE69F80",
+        "core_engine": "scripts/tdimarc_native_full_batch.lsp",
+        "core_engine_sha256": "28A7CA500CADC4C3A90C4E899A2F5EDB43E4DB778BBE593B6E07800941754C8B",
+        "arc_command": "TDIMARC",
+        "line_command": "TDimMP",
+        "selection_policy": "one_selected_source_at_a_time__then_hide_all_other_visible_model_objects_only_after_no_candidate__reuse_frozen_native_per_segment_kernel__abs_bulge_le_1e-8_direct_endpoint_line_dispatch"
+      },
+      "boundary": "Validation-only selected-source adapter. It preserves the frozen typed kernel, creates no helper geometry, rolls back the whole unsaved batch on any remaining failure, and cannot replace V1 before native mapping, visual review, E4, and E5 pass."
+    },
+    {
+      "id": "TZ-TDIMARC-SOURCE-SERIAL-FULL-BATCH-V3",
+      "capabilities": [
+        "tdimarc_multi_polyline_full"
+      ],
+      "status": "validation_only",
+      "inherits_kernel": "TZ-TDIMARC-FULL-BATCH-V2",
+      "frozen": false,
+      "created_at": "2026-08-18",
+      "implementation": {
+        "engine": "scripts/tdimarc_native_full_batch_source_serial_v3.lsp",
+        "engine_sha256": "3BAD33D691846E14ECB10D3019D60C720146878900D835E8E4E1498529DC1B56",
+        "core_engine": "scripts/tdimarc_native_full_batch.lsp",
+        "core_engine_sha256": "28A7CA500CADC4C3A90C4E899A2F5EDB43E4DB778BBE593B6E07800941754C8B",
+        "selection_policy": "make_exactly_one_source_polyline_selectable_then_reuse_the_frozen_per_arc_kernel"
+      },
+      "boundary": "Validation-only source-serialization adapter for the current eight-polyline full-blue slice. It may not replace the frozen V2 workflow before native mapping, visual, save-close, and reopen acceptance."
+    },
+    {
+      "id": "TZ-TDIMARC-TARGETED-REPLACEMENT-V2",
+      "capabilities": [
+        "tdimarc_targeted_replacement"
+      ],
+      "status": "validation_only",
+      "inherits_kernel": "TZ-TDIMARC-INDEPENDENT-ARC-V1",
+      "frozen": false,
+      "created_at": "2026-08-12",
+      "implementation": {
+        "engine": "scripts/tdimarc_native_targeted_replacement_v2.lsp",
+        "engine_sha256": "D4ABB75D39331525DD2D5BE127DD16FDB3FB5420D7812EF9452CED1092F577A2",
+        "target_selection": "hide_non_source_then_use_per_segment_verified_selection_aperture",
+        "exact_command_s_shape": "TDIMARC pick pick place empty"
+      },
+      "boundary": "Validation-only exact-segment replacement adapter. It creates and validates candidates before deleting only contract-named obsolete handles, and it does not save before acceptance."
+    },
+    {
+      "id": "TZ-TDIMARC-TARGETED-REPLACEMENT-V3",
+      "capabilities": [
+        "tdimarc_targeted_replacement"
+      ],
+      "status": "validation_only",
+      "inherits_kernel": "TZ-TDIMARC-INDEPENDENT-ARC-V1",
+      "frozen": false,
+      "created_at": "2026-08-21",
+      "implementation": {
+        "engine": "scripts/tdimarc_native_targeted_replacement_v3.lsp",
+        "engine_sha256": "2C31AFD3638EEDB09736678981AA62B7FB2706FA1FAAB636A50EF087191ABCE3",
+        "target_selection": "hide_non_source_then_use_per_segment_verified_selection_aperture",
+        "exact_command_s_shape": "TDIMARC pick pick place empty",
+        "bounded_target_count": "1_to_64_index_paired_transactional_replacement_with_full_rollback"
+      },
+      "boundary": "Validation-only bounded-N exact-segment replacement adapter. It pairs each target with the cleanup handle at the same index, erases only that old object immediately before successor generation, and rolls back every created and erased object on any failure. It preserves frozen annotations and source geometry and does not save before acceptance."
+    },
+    {
+      "id": "TZ-TDIMARC-SOURCE-REPAIR-V1",
+      "capabilities": [
+        "tdimarc_source_repair"
+      ],
+      "status": "validation_only",
+      "inherits_kernel": "TZ-TDIMARC-INDEPENDENT-ARC-V1",
+      "frozen": false,
+      "created_at": "2026-08-12",
+      "implementation": {
+        "engine": "scripts/tdimarc_native_source_repair.lsp",
+        "engine_sha256": "5E2674C45BDE303B09293B489F7E4CDEB00CE6FA6B22337D7CF760F03C77A1C2",
+        "target_selection": "hide_all_non_source_model_objects_then_run_one_data_only_recipe",
+        "transaction_policy": "create_validate_then_exact_cleanup_or_rollback_candidate"
+      },
+      "boundary": "Validation-only source-association repair and recipe-probe adapter. Each attempt is bounded to contract-named source segments; unsaved candidates require external source mapping and scope audit."
+    },
+    {
+      "id": "TZ-NATIVE-DIM-RELAYOUT-V1",
+      "capabilities": [
+        "native_dimension_relayout"
+      ],
+      "status": "validation_only",
+      "frozen": false,
+      "created_at": "2026-08-09",
+      "implementation": {
+        "engine": "build/CodexTzGripProbe_20260809_05.dll",
+        "engine_sha256": "9477CBEF888C9DBC604947BFB963824CED92B4553332F348295AF13EF96D6862",
+        "dimension_line_control": "MoveGripPointsAt_index_0",
+        "text_side_control": "retired_diagnostic_only__active_route_preserves_native_text",
+        "transaction_policy": "rollback_batch_on_handle_type_or_source_endpoint_drift"
+      },
+      "required_gates": [
+        "wide_side_candidate_selection",
+        "same_band_alignment",
+        "native_handle_and_type_preservation",
+        "source_endpoint_immutability",
+        "save_close_reopen_layout_persistence"
+      ],
+      "boundary": "Historical grip-semantics evidence only. One closed thick-blue source with seven native angle dimensions and seven native radius dimensions passed its sample E5, but its TMirDim text-side branch was later rejected by user visual review. Any current validation under this workflow may use grip0 distance control only; native text state is preserved and TMirDim is not selectable."
+    },
+    {
+      "id": "TZ-NATIVE-DIM-RELAYOUT-COMPOSED-V2",
+      "capabilities": [
+        "native_dimension_relayout"
+      ],
+      "status": "validation_only",
+      "frozen": false,
+      "created_at": "2026-09-02",
+      "implementation": {
+        "composition_contract": "config/cad_ready_semantic_composition_contract_v1.json",
+        "ready_admission_assertion": "scripts/assert_cad_ready_semantic_composition_v1.ps1",
+        "publisher": "scripts/publish_cad_ready_handoff_v7.ps1",
+        "ordinary_layout_reference": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_quantized_plan_v15.ps1",
+        "special_rescue_reference": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_quantized_plan_v21.ps1",
+        "semantic_audit": "scripts/audit_native_dimension_semantics_v1.py",
+        "text_bbox_resolver": "scripts/resolve_native_dimension_text_bboxes_v2.py",
+        "vector_clearance_audit": "scripts/audit_native_angle_source_text_clearance.py",
+        "vector_collision_audit": "scripts/audit_native_angle_hard_collisions.py",
+        "native_source_audit": "scripts/audit_full_native_layout_effect_v4.py"
+      },
+      "required_gates": [
+        "angle_semantic_all_arcs",
+        "ordinary_common_band_before_special_rescue",
+        "special_rescue_runtime_failed_subset_only",
+        "post_layout_text_bbox_reinventory",
+        "direct_text_vector_hard_gate",
+        "proxy_text_resolve_or_block_formal_pass",
+        "native_handle_endpoint_and_source_immutability",
+        "readable_full_canvas_after_machine_pass",
+        "three_consecutive_complete_current-board_regressions",
+        "different-structure-DWG-before-generality"
+      ],
+      "boundary": "Validation-only composition candidate. It combines proven references but is not active or verified until one immutable controller executes the full ordered contract and passes three consecutive clean current-board regressions. Current-board evidence does not prove cross-structure generality."
+    },
+    {
+      "id": "TZ-TDIMARC-SHARED-OBJECT-20260803",
+      "capabilities": [
+        "tdimarc_multi_arc_same_polyline"
+      ],
+      "status": "limited_experiment",
+      "default_allowed": false,
+      "reason": "Five picks produced one shared native object. Fast, but fixed prompt assumptions were not portable across drawings."
+    },
+    {
+      "id": "TZ-TDIMARC-ALL-TOKENS-20260809",
+      "capabilities": [
+        "tdimarc_multi_polyline_full"
+      ],
+      "status": "rejected",
+      "default_allowed": false,
+      "reason": "Concatenating all arc tokens into one command created only the first dimension and failed the batch."
+    }
+  ],
+  "blocked_legacy_paths": [
+    "scripts/tdimarc_v2/run_tdimarc_continuous_fast.ps1",
+    "scripts/tianzheng_continuous_tdimarc_dispatcher.lsp"
+  ],
+  "receiver_configuration_required": true
+}

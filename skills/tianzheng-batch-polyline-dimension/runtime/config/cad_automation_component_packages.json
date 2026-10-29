@@ -1,0 +1,377 @@
+{
+  "schema_version": 3,
+  "status": "active",
+  "convergence_policy": {
+    "one_authoritative_entry_per_component": true,
+    "resolved_issue_requires_regression": true,
+    "verified_upstream_is_frozen": true,
+    "compose_only_independently_accepted_components": true,
+    "known_lifecycle_branches_are_deterministic": true
+  },
+  "component_selection_policy": {
+    "active_reusable_component_ids": [
+      "CAD-LC-OPEN-V1",
+      "CAD-LC-DIALOG-V1",
+      "CAD-DIM-TYPED-SELECTED-AUTO-BATCH-V1",
+      "CAD-DIM-TYPED-SELECTED-SERIAL-BATCH-V2",
+      "CAD-DIM-AUDIT-V1",
+      "CAD-DIM-LAYOUT-V1",
+      "CAD-DIM-LAYOUT-NORMAL-V1",
+      "CAD-DIM-LAYOUT-SHORT-ARC-V1",
+      "CAD-CXGRIPMOVE-DELTA-CONTRACT-V1",
+      "CAD-DIM-SPECIAL-TEXT-PEER-NORMAL-V2",
+      "CAD-UI-BACKGROUND-CAPTURE-V1",
+      "CAD-DIM-VISUAL-QA-V1"
+    ],
+    "rule": "new_execution_contracts_may_select_only_active_reusable_component_ids__historical_task_adapters_remain_evidence_only"
+  },
+  "components": [
+    {
+      "id": "CAD-LC-OPEN-V1",
+      "version": "1.2.8",
+      "type": "lifecycle_executable",
+      "status": "active_with_regression",
+      "entry": "reference/project-orchestration/scripts/start_owned_tianzheng_supervised.ps1",
+      "entry_sha256": "E7E9C46E3620E302145FD338BE6ACA603380FCF2E1A3152AD946FCA6026DDE1C",
+      "inner_entry": "reference/project-orchestration/scripts/start_owned_tianzheng_direct_dwg.ps1",
+      "inner_entry_sha256": "2771D2FD9AE49F0397AF77C4C01D4C9AE842AF06D81733BBE0F7F1F9177FBD55",
+      "launch_transport": "TIANZHENG_SHORTCUT_SHELLEXECUTE_WITH_DWG_ARGUMENT",
+      "platform": "AutoCAD 2021",
+      "retry_owner": "supervisor",
+      "inner_max_launch_attempts": 1,
+      "one_shot_handoff_policy": "discover_live_project_owner_states__reject_stale_PID_reuse_by_process_identity_and_start_time__clean_exact_owned_old_cad__release_global_guard_after_ready__KeepAliveSeconds_must_be_zero__return_after_exact_ready__same_controller_continues_business",
+      "regression_assertion": "reference/project-orchestration/scripts/assert_tianzheng_one_shot_handoff.ps1",
+      "dependencies": [
+        "CAD-LC-DIALOG-V1"
+      ],
+      "forbidden_entrypoints_registry": "config/rejected_legacy_entrypoints.json",
+      "ready_handoff_policy": "bind_component_version_entry_inner_entry_transport_platform_and_canonical_only_invocation__forbid_inline_startup_wrappers_and_timeout_reclassification",
+      "next_gate": "next_real_old_to_new_dwg_handoff_must_pass_with_KeepAliveSeconds_0_and_business_send_immediately_after_exact_ready"
+    },
+    {
+      "id": "CAD-LC-DIALOG-V1",
+      "version": "1.1.3",
+      "type": "dialog_executable",
+      "status": "active_with_regression",
+      "entry": "reference/project-orchestration/scripts/watch_tianzheng_dialogs.ps1",
+      "entry_sha256": "EDE7AB94D5350E2E8294A289219A473AD7C23574CD531319F4AFD5E2822A27E0",
+      "optional_field_regression": "tests/test_tianzheng_dialog_optional_fields.ps1",
+      "optional_field_maturity": "ALL_FIVE_RULES_STRICTMODE_REPLAY_PASS__V4_CANONICAL_OPEN_XREF_AND_GRAPHIC_NOTICE_REAL_PASS",
+      "rules": "config/tianzheng_dialog_whitelist.json",
+      "rules_sha256": "167B706DB6DEB97648AEA6977FE76511F4033C63D79AAF27B2365363E37C824A",
+      "tdimmp_first_session_policy": "exact_trusted_script_context__observe_nonblocking_palette_without_mutation__native_object_and_source_mapping_are_authoritative__unknown_dialog_fail_closed",
+      "trusted_project_lsp_composition_policy": "every_controller_that_loads_a_project_LSP_starts_this_watcher_before_the_business_send__exact_PID_title_project_path_SHA256_and_button_signature_only__same_run_resolution__no_project_roundtrip",
+      "missing_composition_semantics": "READY_ADMISSION_FAILURE_NOT_POST_ACK_RECOVERY",
+      "regression_assertion": "tests/test_tdimmp_first_session_dialog.ps1",
+      "dependencies": [],
+      "next_gate": "fresh_isolated_mixed_arc_line_batch_must_pass_without_manual_input"
+    },
+    {
+      "id": "CAD-DIM-TYPED-SELECTED-AUTO-BATCH-V1",
+      "version": "1.16.18-validation",
+      "type": "unified_selected_polyline_typed_dimension_adapter",
+      "status": "validation_only",
+      "entry": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_workflow.ps1",
+      "entry_sha256": "5D60FBAF0AA91B0BB70C86090A6F223856759EF9BAB66471282F7B1B18375ED0",
+      "development_entry": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_polyline_controller.ps1",
+      "development_entry_sha256": "55EBE1F4F9F683BE5314B368A3895CFE34D7A89B94AA616BE70BC2A109B09C97",
+      "core_entry": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_batch.ps1",
+      "core_entry_sha256": "0E093948240FE004A5222FB3DD124068DC3F8E8E770A767E1BCA20A3B556494B",
+      "final_layout_entry": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_layout_stage.ps1",
+      "final_layout_entry_sha256": "D195CD20C2FF7BB6EE8FB2A32FF06A1A6C224B6C9EF038312FC058739FF27057",
+      "common_band_planner": "scripts/plan_typed_dimension_quantified_common_band.py",
+      "common_band_planner_sha256": "3F0829881B32505E8441F601986E9261FFF62F700074623EE002F716C51071E4",
+      "source_mapping_auditor": "scripts/audit_native_typed_source_mapping.py",
+      "source_mapping_auditor_sha256": "D3E4E2241FD64B1BE5978CD745C6CE3B6143A902F33FEC70D322BD9320AA0501",
+      "convergence_assertion": "reference/project-orchestration/scripts/assert_selected_typed_workflow_convergence.ps1",
+      "engine": "scripts/tdimarc_native_full_batch.lsp",
+      "command": "AUTO_TYPED",
+      "scope": "one_exact_selected_source_ledger_and_one_fresh_isolated_DWG_per_run",
+      "inherits_verified_workflow": "TZ-TDIM-TYPED-SEGMENT-V1",
+      "dependencies": [
+        "CAD-LC-OPEN-V1",
+        "CAD-DIM-AUDIT-V1",
+        "CAD-DIM-LAYOUT-V1",
+        "CAD-UI-BACKGROUND-CAPTURE-V1",
+        "CAD-DIM-VISUAL-QA-V1"
+      ],
+      "allowed_workflows": [
+        "TZ-TDIM-TYPED-SEGMENT-V1",
+        "TZ-TDIMARC-SOURCE-REPAIR-V1"
+      ],
+      "allowed_actions": [
+        "TDIM_TYPED_SEGMENT_BATCH",
+        "TDIMARC_SOURCE_REPAIR",
+        "TARGET_SEGMENT_GEOMETRY_INVENTORY",
+        "NET_NATIVE_GRIP_INVENTORY",
+        "AUDIT_NATIVE_DIM_TEXT_BBOXES",
+        "NET_GENERIC_GRIP_BATCH_MOVE",
+        "SCREENSHOT_VISUAL_QA"
+      ],
+      "required_acceptance_gate_ids": [
+        "NATIVE_OBJECT_AUDIT",
+        "MUTATION_SCOPE_AUDIT",
+        "FINAL_QUANTIFIED_LAYOUT_AUDIT",
+        "SCREENSHOT_RASTER_QA",
+        "CODEX_VISUAL_REVIEW",
+        "HUMAN_VISUAL_APPROVAL",
+        "E4_SAVE_CLOSE",
+        "E5_STANDARD_REOPEN"
+      ],
+      "generation_policy": "one_user_command__one_load_one_selection_internal_typed_dispatch__v5_idempotent_live_candidate_cleanup__native_actual_band_sign_preserved__segment_transaction__post_finish_conditional_cancel_once_only_if_active__prestart_idle_gate__runtime_error_preserves_accepted_and_writes_summary_details__source_batch_failure_decomposes_to_segments__freeze_successful_segments__retry_failed_segments_only__layout_successful_partial_subset__return_failed_segments__no_run_specific_constants__development_fast_lane_three_preconditions__no_save_on_partial__ordinary_pick_policy_unchanged__direct_no_ordinary_pick_runtime_segment_midpoint_0_50",
+      "layout_formula": "config/annotation_vector_layout_formula_v2.json",
+      "layout_formula_role": "mandatory_before_generation_for_direct_per_source_offset__mandatory_after_generation_for_measured_residual_only",
+      "final_layout_required_inputs": [
+        "formula_id_and_sha256",
+        "measured_native_text_height_per_annotation",
+        "measured_source_width_per_source",
+        "native_mutable_grip_allowlist_0_only",
+        "native_text_state_preservation_receipt",
+        "read_only_text_rotation_observation",
+        "verified_layout_profile_dispatch_receipt",
+        "unmatched_special_topology_failed_subset"
+      ],
+      "state_machine": [
+        "PRECHECK_ONCE",
+        "EXECUTE_BY_POLYLINE",
+        "MONOTONIC_PARTIAL_CONVERGENCE",
+        "FINAL_GENERATION_AUDIT_ONCE",
+        "FINAL_QUANTIFIED_LAYOUT",
+        "VERIFIED_LAYOUT_PROFILE_DISPATCH",
+        "NATIVE_TEXT_PRESERVATION_AUDIT",
+        "FINAL_LAYOUT_AUDIT_ONCE",
+        "VISUAL_EVIDENCE_ONCE",
+        "SCREENSHOT_RASTER_QA",
+        "CODEX_VISUAL_REVIEW",
+        "HUMAN_REVIEW_REQUIRED",
+        "E4_E5"
+      ],
+      "task_data_policy": "object_counts_handles_segments_layers_and_offsets_are_per_run_inventory_never_component_or_loop_constants",
+      "boundary": "The compiler may emit only runtime-inventoried classified ARC and LINE rows from the exact selected-source ledger. A source-batch failure decomposes to one-segment native tasks; successful segments remain frozen and only failed segments or necessary shared-endpoint clusters continue. GenerationOnlyDevelopment may stop after native generation, source mapping, timing, and one background screenshot so D2 type coverage can be accepted before D3 global quantification; that mode is diagnostic, unsaved, and cannot pass final layout or formal delivery gates. The normal formal path still runs the post-generation versioned ordinary common band and may dispatch only a special geometry profile that has completed user visual offset confirmation, native readback quantization, independent similar-topology replay, and atomic promotion. The current sharp-tip planner remains a separate calibration component and is not called by this one-click entry. Grip 0 is the only mutable native control; Tianzheng-generated text state and grips 2/3/4 remain frozen. Screenshot and OCR are review evidence only. Partial development results may remain unsaved for comparison but cannot pass formal save gates.",
+      "regression_assertion": "reference/project-orchestration/scripts/assert_typed_dimension_layout_composition.ps1",
+      "next_gate": "run225_offline_full_audit_then_single_visual_READY",
+      "latest_validation_probe": {
+        "path": "HISTORICAL_SOURCE_OR_RECEIVER_LOCAL_INPUT_NOT_DISTRIBUTED",
+        "sha256": "C90F68BB0EF903FF1DF9749F898634C059AAC1686A0585C360607C7976FDC54E",
+        "result": "DLL_FUNCTION_REGISTERED__15_OF_15_GATE_V3_FORMS_PASS__ZERO_BUSINESS_AUTORUN"
+      }
+    },
+    {
+      "id": "CAD-DIM-TYPED-SELECTED-SERIAL-BATCH-V2",
+      "version": "2.4.0-validation",
+      "type": "unified_selected_polyline_typed_dimension_source_serial_adapter",
+      "status": "validation_only",
+      "entry": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_workflow.ps1",
+      "entry_sha256": "5D60FBAF0AA91B0BB70C86090A6F223856759EF9BAB66471282F7B1B18375ED0",
+      "core_entry": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_batch.ps1",
+      "core_entry_sha256": "0E093948240FE004A5222FB3DD124068DC3F8E8E770A767E1BCA20A3B556494B",
+      "typed_task_compiler": "scripts/compile_selected_typed_segment_batch.py",
+      "typed_task_compiler_sha256": "4610A9F68E91366B3C44D2C2AB82CD6679E5C7FE0C97BD37517F492F9A9F53D1",
+      "source_offset_policy": "optional exact source-to-signed-offset map must cover the complete compiled source set; validated segment offsets may split one source into multiple task bands while preserving the exact complete segment scope and one serial native batch",
+      "source_mapping_auditor": "scripts/audit_native_typed_source_mapping.py",
+      "source_mapping_auditor_sha256": "D3E4E2241FD64B1BE5978CD745C6CE3B6143A902F33FEC70D322BD9320AA0501",
+      "engine": "scripts/tdimarc_native_full_batch_source_serial_v4.lsp",
+      "command": "AUTO_TYPED_SOURCE_SERIAL",
+      "scope": "one_exact_selected_source_ledger_and_one_fresh_isolated_DWG_per_run__dynamic_counts_only",
+      "inherits_verified_workflow": "TZ-TDIM-TYPED-SEGMENT-V1",
+      "dependencies": [
+        "CAD-LC-OPEN-V1",
+        "CAD-DIM-AUDIT-V1",
+        "CAD-UI-BACKGROUND-CAPTURE-V1"
+      ],
+      "allowed_workflows": [
+        "TZ-TDIM-TYPED-SEGMENT-SERIAL-V2"
+      ],
+      "allowed_actions": [
+        "TDIM_TYPED_SEGMENT_SERIAL_BATCH",
+        "TARGET_SEGMENT_GEOMETRY_INVENTORY",
+        "NET_NATIVE_GRIP_INVENTORY",
+        "SCREENSHOT_VISUAL_QA"
+      ],
+      "required_acceptance_gate_ids": [
+        "NATIVE_OBJECT_AUDIT",
+        "MUTATION_SCOPE_AUDIT",
+        "SCREENSHOT_RASTER_QA",
+        "CODEX_VISUAL_REVIEW",
+        "HUMAN_VISUAL_APPROVAL",
+        "E4_SAVE_CLOSE",
+        "E5_STANDARD_REOPEN"
+      ],
+      "generation_policy": "runtime_inventory__degenerate_segments_excluded_before_dispatch__abs_bulge_le_1e-8_is_geometrically_straight__direct_original_polyline_endpoints_to_TDimMP__ARC_to_TDIMARC__one_source_selectable_fast_path__exclusive_modelspace_retry_only_after_no_candidate__whole_batch_rollback__one_mapping_audit__one_background_capture__no_save_before_human_review",
+      "task_data_policy": "counts_handles_segments_layers_offsets_and_retry_membership_come_from_per_run_inventory_and_evidence__never_component_or_loop_constants",
+      "boundary": "Validation-only callable adapter. It preserves the frozen native command sequence, directly reads original connected polyline endpoints, treats only numerically negligible bulges as lines, creates no helper geometry, and rolls back the whole unsaved batch on any remaining failure.",
+      "next_gate": "real_plaza_21_dimensionable_segment_mapping_layout_visual_savecopy_validation__no_global_promotion_before_acceptance"
+    },
+    {
+      "id": "CAD-DIM-AUDIT-V1",
+      "version": "1.0.0",
+      "type": "audit_contract",
+      "status": "validation_only",
+      "contract": "config/verified_workflow_registry.json",
+      "dependencies": [],
+      "next_gate": "unified_angle_length_radius_native_audit_schema"
+    },
+    {
+      "id": "CAD-DIM-LAYOUT-V1",
+      "version": "1.0.0",
+      "type": "optional_optimizer_composite",
+      "status": "validation_only",
+      "entry": "scripts/plan_strict_blue_shore_layout.py",
+      "command": "CXBZOPT",
+      "dependencies": [
+        "CAD-DIM-AUDIT-V1",
+        "CAD-DIM-LAYOUT-NORMAL-V1",
+        "CAD-DIM-LAYOUT-SHORT-ARC-V1"
+      ],
+      "next_gate": "two_different_source_shapes_then_five_blue_polylines"
+    },
+    {
+      "id": "CAD-DIM-LAYOUT-NORMAL-V1",
+      "version": "1.0.0",
+      "type": "layout_policy",
+      "status": "validation_only",
+      "entry": "scripts/plan_strict_blue_shore_layout.py",
+      "scope": "non_cramped_arc_segments_only",
+      "frozen_facts": [
+        "native_dimension_line_is_grip_0",
+        "source_association_grips_2_and_3_must_not_move",
+        "same_source_prefers_same_side_same_band",
+        "offset_candidates_are_native_text_height_multiples"
+      ],
+      "next_gate": "repeat_37_existing_native_angles_with_visual_and_E5_acceptance"
+    },
+    {
+      "id": "CAD-DIM-LAYOUT-SHORT-ARC-V1",
+      "version": "1.2.0",
+      "type": "layout_policy",
+      "status": "validation_only",
+      "entry": "scripts/plan_strict_blue_shore_layout.py",
+      "scope": "new_handles_must_come_from_accepted_generation_receipt__segment_7_is_collision_context_only__other_37_native_annotations_are_frozen",
+      "scope_contract": null,
+      "policy": "closed_path_inner_side__independent_short_arc_bands__never_move_segment_7__never_use_hard_coded_stale_handles",
+      "allowed_workflows": [
+        "TZ-TDIMARC-FULL-BATCH-V2"
+      ],
+      "allowed_actions": [
+        "NATIVE_DIM_GRIP_BATCH",
+        "SCREENSHOT_VISUAL_QA"
+      ],
+      "required_acceptance_gate_ids": [
+        "NATIVE_OBJECT_AUDIT",
+        "MUTATION_SCOPE_AUDIT",
+        "SCREENSHOT_RASTER_QA",
+        "CODEX_VISUAL_REVIEW",
+        "E4_SAVE_CLOSE",
+        "E5_STANDARD_REOPEN"
+      ],
+      "regression": "tests/test_strict_blue_shore_layout.py",
+      "next_gate": "after_replacement_acceptance_build_handle_scope_from_generation_receipt__never_target_6801F_or_68024"
+    },
+    {
+      "id": "CAD-UI-BACKGROUND-CAPTURE-V1",
+      "version": "0.2.3",
+      "type": "owned_window_visual_capture_adapter",
+      "status": "validation_only",
+      "entry": "reference/project-orchestration/scripts/invoke_owned_cad_visual_capture.ps1",
+      "entry_sha256": "AB88B682872265F5E421AC034542CE0B716A8DCE05C908EA4AC1A34E504A0A18",
+      "backend_entry": "scripts/cad_capture_compat.ps1",
+      "backend_entry_sha256": "3B40953922D7E592BF62C77E4795552C268D40D4BB77B420B828C533FE4C99E5",
+      "regen_action_entry": "reference/project-orchestration/scripts/invoke_owned_tianzheng_whitelist_action.ps1",
+      "regen_action_entry_sha256": "929D8655C3A6BBE4CB00B7CDD1D3D2DE6426B1BC84A6C261C478EE770918D89B",
+      "backend": "exact_owned_HWND_PrintWindow_without_foreground_input_or_activation__one_SW_SHOWNOACTIVATE_restore_only_for_minimized_owned_window__no_ScreenCopy_fallback",
+      "review_policy": "capture_once__retain_full_frame_for_zoom_or_OCR__emit_1920px_review_JPEG__evidence_key_short_circuit__raw_hash_deduplication",
+      "cache_policy": "dedicated_transient_cache__40_frames_and_512MiB_strict_dual_limit__formal_run_evidence_outside_cache",
+      "memory_policy": "dispose_every_GDI_bitmap_graphics_encoder_and_file_handle__capture_runs_in_short_lived_process",
+      "dependencies": [
+        "CAD-LC-OPEN-V1"
+      ],
+      "validated_so_far": "3370x1876_real_Tianzheng_window_captured_without_foreground_or_input__identical_frame_hash_deduplicated__same_evidence_key_skipped_capture_in_52ms_with_108MB_peak_vs_561ms_and_241MB_transient_full_capture__run27_exposed_a_314x50_minimized_toolbar_false_PASS__run28_exposed_a_full_frame_but_unregenerated_blank_canvas__run29_exposed_fixed_1_2_second_REGEN_wait_capturing_while_regeneration_was_still_active__the_adapter_now_requires_direct_document_regen_and_ten_consecutive_idle_samples",
+      "boundary": "Screenshot and OCR are display evidence only. The capture path may not activate, focus, move, foreground-copy or send input. An exact owned minimized window may be restored once with SW_SHOWNOACTIVATE; a full frame of at least 640x480 must be established before direct native document Regen of all viewports. CMDACTIVE zero and CMDNAMES empty must remain stable for ten samples before the single PrintWindow capture. quality valid=true is necessary but the actual target canvas must also be visually present. Failure remains a visual terminal and never authorizes screenshot-derived object mutation. Native type, source-segment association, mutation scope and E4/E5 remain separate mandatory gates.",
+      "next_gate": "capture_the_preserved_run27_live_CAD_once_after_direct_document_regen_and_idle_proof__prove_actual_blue_target_canvas_and_no_foreground_takeover"
+    },
+    {
+      "id": "CAD-DIM-VISUAL-QA-V1",
+      "version": "1.0.0",
+      "type": "validation_gate",
+      "status": "validation_only",
+      "entry": "scripts/audit_annotation_screenshot_layout.py",
+      "entry_sha256": "9281E16152A3DDCD2AC5AB08494A638C5C6B419B95B9E03F5457EF1C41F3D1CB",
+      "canvas_isolator": "scripts/extract_cad_canvas_roi.py",
+      "canvas_isolator_sha256": "6489CE7E3B703D0D89D80B56381313BF65D1C6CBEE3A9B602E8D913960323331",
+      "visual_review_assertion": "scripts/assert_annotation_visual_review.ps1",
+      "profile": "config/annotation_visual_qa_profile.json",
+      "dependencies": [
+        "CAD-DIM-AUDIT-V1",
+        "CAD-UI-BACKGROUND-CAPTURE-V1"
+      ],
+      "boundary": "full_window_capture_must_be_hash_bound_to_an_isolated_CAD_canvas_ROI__deterministic_raster_triage_then_codex_visual_review__human_review_only_after_both_pass__never_replaces_native_object_or_E5_audit",
+      "outputs": [
+        "canvas_roi_receipt.json",
+        "candidate_canvas.png",
+        "visual_qa.json",
+        "visual_qa_overlay.png",
+        "codex_visual_review.json"
+      ],
+      "validated_so_far": "synthetic_positive_and_negative_raster_fixtures_plus_two_real_known_bad_screenshots_rejected_by_raster_and_codex_visual_review",
+      "next_gate": "real_isolated_screenshot_with_wcs_pixel_mapping_and_one_human_accepted_positive_fixture"
+    },
+    {
+      "id": "CAD-CXGRIPMOVE-DELTA-CONTRACT-V1",
+      "version": "1.0.0",
+      "type": "native_grip_move_interface_contract",
+      "status": "active_with_regression",
+      "entry": "config/cad_grip_move_delta_contract_v1.json",
+      "entry_sha256": "CE8341885F1CCEDE2EEDF01359ECB62B60CFD8357B741D45F0F15BAECDD48AED",
+      "scope": "CXGRIPMOVE accepts WCS delta vectors; when a planner already emits DX and DY, the controller passes both unchanged and validates current plus delta equals the absolute audit target before send",
+      "dependencies": [],
+      "reuse_rule": "every new or changed CXGRIPMOVE adapter must reuse this interface contract or declare a versioned explicit adapter and bind a regression; an undocumented absolute-target conversion cannot pass READY",
+      "boundary": "This freezes only input and adapter semantics. Target selection, aesthetic formula, endpoint association, object scope, visual acceptance and cross-structure DWG generality remain separately governed.",
+      "next_gate": "future READY handoffs bind reasoning.reuse_admission and pass CAD_READY_VERIFIED_REUSE_V1"
+    },
+    {
+      "id": "CAD-DIM-SPECIAL-TEXT-PEER-NORMAL-V2",
+      "version": "2.0.0-current-board-3of3",
+      "type": "runtime_exception_text_anchor_formula",
+      "status": "active_with_current_board_regression",
+      "entry": "config/annotation_special_text_peer_normal_formula_v2.json",
+      "entry_sha256": "3A4B562CE6B5E6B6F989C0F46F6BBB2794D4FCCBB28642DCBD27EC78E756FCF8",
+      "scope": "runtime-detected exceptional native angle text anchor; choose a same-source shared-endpoint accepted peer, transfer its grip4-to-grip0 local-normal gap normalized by text height, and command only target grip4",
+      "dependencies": [
+        "CAD-CXGRIPMOVE-DELTA-CONTRACT-V1"
+      ],
+      "implementation": {
+        "planner": "scripts/plan_special_text_peer_normal_restore_v2.py",
+        "planner_sha256": "A61205832722009AD1564471617739190AC141B9017EAED34C908190A7E8ECC5",
+        "controller": "scripts/invoke_special_text_peer_normal_restore_observed_v4.ps1",
+        "controller_sha256": "C80D4033BC1F76CBF1F51778C9379FDB0137AE9BD2BDA5F7509BB29E616234FF"
+      },
+      "reuse_rule": "future special-text READY handoffs bind this component and CAD-CXGRIPMOVE-DELTA-CONTRACT-V1; the production formula planner and mature controller remain hash-bound, while historical fixture reset stays outside production",
+      "boundary": "Current board repeatability is 3 of 3. This does not establish the complete blank-to-86-to-layout command as 3 of 3 and does not establish cross-structure DWG generality.",
+      "next_gate": "compose into a fresh full-command validation without altering this component, then test a different-structure DWG"
+    }
+  ],
+  "acceptance_policies": [
+    {
+      "id": "CAD-E5-ACCEPT-V1",
+      "type": "promotion_policy",
+      "status": "verified",
+      "contract": "HISTORICAL_SOURCE_OR_RECEIVER_LOCAL_INPUT_NOT_DISTRIBUTED",
+      "requires_components": [
+        "CAD-LC-CLOSE-V1"
+      ],
+      "next_gate": "required_for_every_new_component_promotion"
+    }
+  ],
+  "composition_order": [
+    "CAD-LC-OPEN-V1",
+    "NATIVE_GENERATION_COMPONENT",
+    "CAD-DIM-AUDIT-V1",
+    "CAD-DIM-LAYOUT-V1_OPTIONAL",
+    "CAD-DIM-VISUAL-QA-V1",
+    "CODEX_VISUAL_REVIEW",
+    "HUMAN_VISUAL_APPROVAL_REQUIRED_AT_EACH_SCOPE_EXPANSION",
+    "POLICY:CAD-E5-ACCEPT-V1",
+    "CAD-LC-CLOSE-V1"
+  ],
+  "receiver_configuration_required": true
+}

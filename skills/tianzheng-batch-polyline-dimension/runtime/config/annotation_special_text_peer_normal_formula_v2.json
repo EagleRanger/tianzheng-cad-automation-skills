@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "formula_id": "CAD-SPECIAL-TEXT-PEER-NORMAL-RESTORE-V2",
+  "status": "validation_only",
+  "purpose": "Restore one runtime-detected exceptional native angle text anchor from an adjacent accepted peer without moving the accepted dimension curve.",
+  "target_gate": {
+    "segment_type": "ARC",
+    "second_pass_text_follow": "YES",
+    "native_text_semantic": "degree_marker_required",
+    "expected_runtime_target_count": 1
+  },
+  "peer_gate": {
+    "same_source_polyline": true,
+    "shared_source_endpoint": true,
+    "final_native_rank_minimum": 2,
+    "degree_marker_required": true,
+    "selection_order": [
+      "minimum_text_rotation_difference_modulo_pi",
+      "minimum_log_segment_length_ratio",
+      "minimum_segment_index_distance"
+    ]
+  },
+  "move": {
+    "commanded_grip": 4,
+    "normal_definition": "unit_vector_from_runtime_source_arc_center_to_current_grip0",
+    "reference_gap_h": "dot(peer_grip4-peer_grip0,peer_normal)/peer_text_height",
+    "absolute_target": "planning_grip4 + (reference_gap_h-current_gap_h)*target_text_height*target_normal",
+    "planner_output_semantics": "DX_DY_WCS_DELTA_VECTOR",
+    "cxgripmove_input_semantics": "WCS_DELTA_VECTOR",
+    "adapter_formula": "DX=absolute_target_x-live_current_x;DY=absolute_target_y-live_current_y",
+    "preserve_target_tangential_coordinate": true,
+    "preserve_grips": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "tolerance": {
+    "grip_xy": 1E-06,
+    "normalized_gap_h": 1E-05
+  },
+  "scope_boundary": {
+    "per_text_user_authorized_exception": true,
+    "ordinary_grip4_layout_remains_forbidden": true,
+    "fixed_handle_coordinate_segment_bbox_or_object_count_literals": false,
+    "cross_structure_dwg": "UNVERIFIED"
+  }
+}

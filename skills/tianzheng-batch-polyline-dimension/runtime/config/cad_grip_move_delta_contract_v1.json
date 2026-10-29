@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "contract_id": "CAD-CXGRIPMOVE-DELTA-CONTRACT-V1",
+  "status": "active_with_regression",
+  "command": "CXGRIPMOVE",
+  "input_semantics": "WCS_DELTA_VECTOR",
+  "planner_output_semantics": "WCS_DELTA_VECTOR",
+  "adapter_rule": "PASS_THROUGH_UNCHANGED",
+  "controller_recalculation_count": 0,
+  "algebra": "target_point = current_grip_point + delta_vector",
+  "forbidden": [
+    "absolute WCS target point passed as DX or DY",
+    "controller recomputation of planner DX or DY",
+    "screenshot-derived coordinates"
+  ],
+  "boundary": "The contract proves only CXGRIPMOVE input and adapter semantics. It does not validate target selection, aesthetic formula, endpoint association, save authority, or cross-structure DWG generality."
+}

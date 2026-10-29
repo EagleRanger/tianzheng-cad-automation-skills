@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "version": "1.1.1",
+  "commercial_sdk_included": false,
+  "modules": [
+    {
+      "id": "own_helper_job",
+      "output": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/bin/CadCommandOwnHelperJobV2.dll",
+      "sources": [
+        "reports/cad_multi_window_interface_research/command_uia_inspection_v1/OwnHelperJobV2.cs"
+      ],
+      "references": [
+        "mscorlib.dll",
+        "System.dll"
+      ],
+      "commands": []
+    },
+    {
+      "id": "native_generation_target",
+      "output": "build/CodexNativeGenerationAuditTarget_20260830_08.dll",
+      "sources": [
+        "src/CodexNativeGenerationPlacementAuditV2.cs",
+        "src/CodexNativeGenerationPlacementAuditV3.cs",
+        "src/CodexNativeGenerationPlacementAuditV4.cs",
+        "src/CodexNativeGenerationPlacementAuditV5.cs",
+        "src/CodexNativePlacementTargetPointV1.cs",
+        "src/CodexNativePlacementGrip0MoverV1.cs",
+        "src/CodexNativePlacementTranslatorV1.cs",
+        "src/CodexNativePlacementTranslatorV2.cs"
+      ],
+      "references": [
+        "mscorlib.dll",
+        "System.dll",
+        "System.Core.dll",
+        "acmgd.dll",
+        "acdbmgd.dll",
+        "accoremgd.dll"
+      ],
+      "commands": [],
+      "lisp_functions": [
+        "CXNATIVEPLACEMENTAUDITV2",
+        "CXNATIVEPLACEMENTAUDITV3",
+        "CXNATIVEPLACEMENTAUDITV4",
+        "CXNATIVEPLACEMENTAUDITV5",
+        "CXNATIVEPLACEMENTTARGETPOINTV1",
+        "CXNATIVEPLACEMENTMOVEGRIP0V1",
+        "CXNATIVEPLACEMENTTRANSLATEV1",
+        "CXNATIVEPLACEMENTTRANSLATEV2"
+      ],
+      "invocation": "AutoLISP LispFunction attributes; not CommandMethod commands; registration still requires receiver NETLOAD verification"
+    },
+    {
+      "id": "scalar_converger",
+      "output": "build/CodexQuantizedGripScalarConverger_20260824_01.dll",
+      "sources": [
+        "src/CodexQuantizedGripScalarConverger.cs"
+      ],
+      "references": [
+        "mscorlib.dll",
+        "System.dll",
+        "System.Core.dll",
+        "acmgd.dll",
+        "acdbmgd.dll",
+        "accoremgd.dll"
+      ],
+      "commands": [
+        "CXQUANTIZEDGRIPSCALARCONVERGE"
+      ]
+    },
+    {
+      "id": "document_preview",
+      "output": "build/CodexCadDocumentPreviewCapture_20260831_01.dll",
+      "sources": [
+        "src/CodexCadDocumentPreviewCaptureV1.cs"
+      ],
+      "references": [
+        "mscorlib.dll",
+        "System.dll",
+        "System.Core.dll",
+        "System.Drawing.dll",
+        "WPF/WindowsBase.dll",
+        "WPF/PresentationCore.dll",
+        "acmgd.dll",
+        "acdbmgd.dll",
+        "accoremgd.dll"
+      ],
+      "commands": [
+        "CXCADDOCUMENTPREVIEWCAPTUREV1"
+      ]
+    },
+    {
+      "id": "semantic_inventory",
+      "output": "build/CodexNativeDimensionSemanticInventory_20260831_01.dll",
+      "sources": [
+        "src/CodexNativeDimensionSemanticInventoryV1.cs"
+      ],
+      "references": [
+        "mscorlib.dll",
+        "System.dll",
+        "System.Core.dll",
+        "acmgd.dll",
+        "acdbmgd.dll",
+        "accoremgd.dll"
+      ],
+      "commands": [
+        "CXNATIVEDIMSEMANTICINVENTORYV1"
+      ]
+    },
+    {
+      "id": "grip_probe",
+      "output": "build/CodexTzGripProbe_20260821_11.dll",
+      "sources": [
+        "src/CodexTzGripProbe.cs"
+      ],
+      "references": [
+        "mscorlib.dll",
+        "System.dll",
+        "System.Core.dll",
+        "acmgd.dll",
+        "acdbmgd.dll",
+        "accoremgd.dll"
+      ],
+      "commands": [
+        "CXNATIVEGRIPINVENTORY",
+        "CXGRIPMOVE",
+        "CXNATIVEDIMDUALGRIPMOVE"
+      ]
+    },
+    {
+      "id": "native_text_metrics",
+      "output": "build/CodexDimensionTextMetricsProbeV2.dll",
+      "sources": [
+        "src/CodexDimensionTextMetricsProbeV2.cs",
+        "src/CodexDimensionTextGeometryRecipeV1.cs"
+      ],
+      "references": [
+        "mscorlib.dll",
+        "System.dll",
+        "System.Core.dll",
+        "acmgd.dll",
+        "acdbmgd.dll",
+        "accoremgd.dll"
+      ],
+      "commands": [
+        "CXTDIMTEXTMETRICSV2"
+      ]
+    }
+  ]
+}

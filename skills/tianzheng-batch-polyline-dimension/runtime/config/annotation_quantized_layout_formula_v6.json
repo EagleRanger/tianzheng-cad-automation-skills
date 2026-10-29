@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "formula_id": "CAD-ANNOTATION-QUANTIZED-LAYOUT-V6",
+  "status": "validation_only",
+  "extends": "config/annotation_quantized_layout_formula_v5.json",
+  "normalization": "all capacities and clearances are normalized by the measured native text height H",
+  "arc_capacity_side_flip": {
+    "scope": "runtime discovered ARC mappings only",
+    "current_inner_side_required": true,
+    "available_length_formula": "theta_abs_rad * current_grip0_radius",
+    "required_length_formula": "measured_or_conservative_text_width + 2*arrow_size + 2*text_arrow_hard_gap",
+    "measured_text_width_source": "native exploded text bbox plus native rotation",
+    "conservative_text_width_per_visible_character_h": 0.44,
+    "minimum_angle_text_width_h": 2.0,
+    "arrow_size_h": 0.5,
+    "text_arrow_hard_gap_h": 0.25,
+    "current_capacity_fail_below": 1.0,
+    "opposite_capacity_hard_pass_at_or_above": 1.25,
+    "minimum_capacity_advantage": 0.5,
+    "opposite_radius_formula": "2*source_radius-current_grip0_radius",
+    "target_formula": "source_center + unit(current_grip0-source_center)*opposite_radius",
+    "selection": "all runtime candidates satisfying every gate; no handle coordinate segment bbox or object-count literal",
+    "mutation": "grip0 only",
+    "protected_grips": [
+      2,
+      3
+    ],
+    "freeze_nonselected_objects": true,
+    "maximum_correction_rounds": 1,
+    "same_run_retry": false,
+    "post_condition": "exact native handle and grip key set; selected grip0 reaches target; selected grips2/3 and every nonselected grip remain within 1e-6",
+    "visual_condition": "one observed REGEN must complete before the acceptance screenshot"
+  },
+  "evidence_boundary": {
+    "same_board_regression": "user identified the 168.41 degree inner-radius arrow-text crowding sample; business code does not reference its handle, coordinates, source key, bbox, or total count",
+    "cross_structure_dwg": "UNVERIFIED",
+    "promotion": "requires real-host one-object pass plus a different-structure DWG falsification before generic claim"
+  }
+}

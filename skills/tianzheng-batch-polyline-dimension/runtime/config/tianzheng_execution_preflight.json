@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "status": "active",
+  "dispatch_status": "active_production_and_validation_under_project_execution_contract",
+  "required_decisions": [
+    "DEC-20260806-025",
+    "DEC-20260806-026",
+    "DEC-20260806-027",
+    "DEC-20260806-028",
+    "DEC-20260818-002",
+    "DEC-20260823-CANONICAL-OPEN-SEMANTIC-BINDING"
+  ],
+  "phase_entrypoints": {
+    "launch": [
+      "reference/project-orchestration/scripts/start_owned_tianzheng_supervised.ps1",
+      "reference/project-orchestration/scripts/start_owned_tianzheng_direct_dwg.ps1",
+      "reference/project-orchestration/scripts/watch_tianzheng_dialogs.ps1"
+    ],
+    "inventory": [
+      "scripts/inventory_route_centerlines_fast.lsp",
+      "reference/project-orchestration/scripts/invoke_owned_tianzheng_whitelist_action.ps1"
+    ],
+    "dispatch": [
+      "scripts/compile_tianzheng_dispatch_task.ps1",
+      "scripts/invoke_owned_tianzheng_dispatch.ps1",
+      "reference/project-orchestration/scripts/invoke_owned_tianzheng_whitelist_action.ps1"
+    ],
+    "governance": [
+      "reference/project-orchestration/scripts/assert_cad_project_loop.ps1",
+      "reference/project-orchestration/scripts/assert_cad_canonical_open_consistency.ps1",
+      "reference/project-orchestration/scripts/assert_project_execution_contract.ps1",
+      "reference/project-orchestration/scripts/assert_verified_workflow.ps1",
+      "reference/project-orchestration/scripts/assert_no_blocked_workflow_references.ps1",
+      "reference/project-orchestration/scripts/new_cad_execution_manifest.ps1",
+      "reference/project-orchestration/scripts/complete_cad_execution_manifest.ps1",
+      "scripts/assert_tdimarc_full_batch_promotion_ready.ps1"
+    ]
+  },
+  "quarantined_paths": [
+    "scripts/tdimarc_v2/*",
+    "scripts/cad_*hxbz*",
+    "scripts/cad_*rot*",
+    "scripts/cad_*mouse*",
+    "scripts/cad_ui_batch_native_tdimarc.ps1",
+    "scripts/tianzheng_whitelist_dispatcher.lsp",
+    "HISTORICAL_SOURCE_OR_RECEIVER_LOCAL_INPUT_NOT_DISTRIBUTED",
+    "HISTORICAL_SOURCE_OR_RECEIVER_LOCAL_INPUT_NOT_DISTRIBUTED"
+  ],
+  "blocked_legacy_paths_authority": "config/verified_workflow_registry.json",
+  "verified_entrypoints": [
+    "scripts/tdimarc_inprocess_parameter_probe.lsp",
+    "scripts/tdimarc_inprocess_batch_probe.lsp",
+    "scripts/tdimarc_native_full_batch.lsp"
+  ],
+  "forbidden_content_patterns": [
+    "mouse_event",
+    "SetCursorPos",
+    "SendKeys",
+    "NativeOM",
+    "GetActiveObject",
+    "fixed_three_click",
+    "run_tdimarc_three_click"
+  ],
+  "required_live_conditions": {
+    "isolated_dwg": true,
+    "source_hash_match": true,
+    "owned_pid": true,
+    "single_acad_process": true,
+    "visible_ready_window": true,
+    "no_blocking_dialog": true
+  },
+  "transient_retry": {
+    "enabled": true,
+    "max_identical_retries": 3,
+    "retry_only_after_revalidating": [
+      "owned_pid",
+      "window_handle",
+      "drawing_title",
+      "operation_identity"
+    ],
+    "never_retry_as_transient": [
+      "policy_denial",
+      "target_changed",
+      "unknown_dialog",
+      "destructive_scope_changed"
+    ]
+  },
+  "receiver_configuration_required": true
+}

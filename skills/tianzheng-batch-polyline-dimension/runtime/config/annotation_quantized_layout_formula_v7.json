@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "formula_id": "CAD-ANNOTATION-QUANTIZED-LAYOUT-V7",
+  "status": "validation_only",
+  "extends": "config/annotation_quantized_layout_formula_v5.json",
+  "normalization": "all capacities and clearances are normalized by the measured native text height H",
+  "arc_capacity_side_flip": {
+    "scope": "runtime discovered ARC mappings only",
+    "current_inner_side_required": true,
+    "available_length_formula": "theta_abs_rad * current_grip0_radius",
+    "required_length_formula": "measured_or_conservative_text_width + 2*arrow_size + 2*text_arrow_hard_gap",
+    "measured_text_width_source": "native exploded text bbox plus native rotation",
+    "conservative_text_width_per_visible_character_h": 0.44,
+    "minimum_angle_text_width_h": 2.0,
+    "arrow_size_h": 0.5,
+    "text_arrow_hard_gap_h": 0.25,
+    "current_capacity_fail_below": 1.0,
+    "opposite_capacity_hard_pass_at_or_above": 1.25,
+    "minimum_capacity_advantage": 0.5,
+    "opposite_radius_formula": "2*source_radius-current_grip0_radius",
+    "target_formula": "source_center + unit(current_grip0-source_center)*opposite_radius",
+    "selection": "all runtime candidates satisfying every gate; no handle coordinate segment bbox or object-count literal",
+    "mutation": "grip0 only",
+    "protected_grips": [
+      2,
+      3
+    ],
+    "freeze_nonselected_objects": true,
+    "maximum_correction_rounds": 1,
+    "same_run_retry": false,
+    "post_condition": "exact native handle and grip key set; selected grip0 reaches target; selected grips2/3 and every nonselected grip remain within 1e-6",
+    "visual_condition": "one observed REGEN must complete before the acceptance screenshot"
+  },
+  "outer_capacity_escalation": {
+    "scope": "runtime discovered ARC mappings whose predicted grip0 is already on the source-circle outer side",
+    "activation": "current_capacity_ratio below required_capacity_ratio after ordinary common-band prediction",
+    "current_capacity_ratio_formula": "theta_abs_rad * current_grip0_radius / required_length",
+    "required_capacity_ratio": 1.25,
+    "raw_target_radius_formula": "required_capacity_ratio * required_length / theta_abs_rad",
+    "raw_outer_band_h_formula": "(raw_target_radius - source_radius) / H",
+    "minimum_outer_band_h": 1.85,
+    "outer_band_quantum_h": 0.25,
+    "minimum_effective_move_h": 0.05,
+    "target_radius_formula": "source_radius + ceil(max(minimum_outer_band_h, raw_outer_band_h) / outer_band_quantum_h) * outer_band_quantum_h * H",
+    "target_formula": "source_center + unit(current_grip0-source_center) * target_radius",
+    "selection": "all runtime outer-side candidates requiring a larger quantized radius; no handle coordinate source key segment bbox or object-count literal",
+    "mutation": "grip0 only",
+    "protected_grips": [
+      2,
+      3,
+      4
+    ],
+    "freeze_nonselected_objects": true,
+    "same_run_retry": false,
+    "visual_condition": "user-visible screenshot after observed REGEN"
+  },
+  "evidence_boundary": {
+    "same_board_regression": "user identified both inner-side and already-outer-side short-arc arrow crowding samples; business code references only runtime geometry text metrics H and grip feedback",
+    "cross_structure_dwg": "UNVERIFIED",
+    "promotion": "requires real-host one-object pass plus a different-structure DWG falsification before generic claim"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "kind": "RECEIVER_EXPLICIT_SOURCE_ADMISSION",
+  "path": null,
+  "sha256": null,
+  "meaning": "Template only. Record the actual receiver-owned source DWG relative path and SHA-256, approve separately, then pin the admission JSON through CAD_SOURCE_ADMISSION_SHA256. No drawing is distributed."
+}

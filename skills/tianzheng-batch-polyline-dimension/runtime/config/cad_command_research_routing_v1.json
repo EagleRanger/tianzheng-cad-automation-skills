@@ -1,0 +1,52 @@
+{
+  "routes": {
+    "batch_polyline_dimension": {
+      "owner_lane": "command_research_batch_polyline_dimension",
+      "ready_issuer_lane": "command_research_batch_polyline_dimension",
+      "ready_publisher": "scripts/publish_cad_ready_handoff_v8.ps1",
+      "command_package_id": "CAD-CMD-BATCH-POLYLINE-DIM-V1",
+      "shared_bootstrap_profile": "CAD_COMMAND_RESEARCH_SHARED_BOOTSTRAP_V1",
+      "scope": "batch_polyline_arc_angle_and_line_dimension_generation_layout_and_regression",
+      "optional_background_transport": {
+        "profile_id": "CAD-DIM-EXACT-B-ACTION-V1",
+        "entry": "scripts/cad_exact_b_action_transport_v1.ps1",
+        "status": "OFFLINE_ADAPTER_TESTED_REAL_BUSINESS_VALIDATION_PENDING",
+        "scope": "exact_declared_B_test_copy_only__A_OS_identity_and_disk_protected__two_runtime_selected_ARC_LINE_reproduction__no_parallel_writes",
+        "runtime_contract": "OwnHelperJob_MTA_with_parent_hard_deadline__exact_file_Document_once__held_reference_strict_identity__one_SendCommand_per_bound_operation__atomic_reservation_no_retry__native_ACK_COMPLETE_and_business_audit_separate",
+        "forbidden": "global_ROT_fallback__MDI_PostText__focus_or_input__SECURELOAD_changes__arbitrary_command_text__in_place_save__CAD_close_or_kill",
+        "fixed_stage_invocation": {
+          "mode": "FIXED_DIMENSION_STAGE_V2",
+          "entry": "scripts/cad_exact_b_fixed_stage_transport_v2.ps1",
+          "status": "OFFLINE_VALIDATED__NATIVE_BACKGROUND_PENDING",
+          "scope": "same_exact_B_same_route_same_lease__one_stable_manifest_bound_stage_file__scope_derived_data_only__no_run_local_executable_wrappers",
+          "admission_boundary": "Reuse unchanged already_admitted_stage_and_transitive_load_paths; new_or_changed_code_requires_its_own_bounded_admission_and_cannot_be_claimed_background_by_static_checks. No_SECURELOAD_or_global_trust_changes. Actual_prompt_foreground_and_business_evidence_remain_required.",
+          "abi": "reports/exact_b_transport_offline/SHARED_ABI.json#fixed_stage_extension",
+          "indexed_validation": {
+            "id": "INDEXED_FIXED_STAGE_V3",
+            "entry": "scripts/cad_exact_b_indexed_stage_transport_v3.ps1",
+            "status": "OFFLINE_EQUIVALENCE_AND_COST_TESTED__RUNTIME_PENDING",
+            "scope": "per_call_canonical_path_index_only__fresh_all_file_hashes__unchanged_V1_strict_COM_lease_and_atomic_sender__no_deadline_increase",
+            "abi": "reports/exact_b_transport_offline/SHARED_ABI.json#fixed_stage_extension/indexed_validation"
+          },
+          "focus_observation": {
+            "id": "EXACT_OWNER_FOCUS_OBSERVATION_V4",
+            "entry": "scripts/cad_exact_b_focus_independent_transport_v4.ps1",
+            "focus_policy": "OBSERVE_ONLY",
+            "status": "SOURCE_INTEGRATED__EXACT_B_RUNTIME_PASS__NOT_AB_CONCURRENCY",
+            "scope": "explicit_scope_and_READY_opt_in__exact_B_isolation_not_background_admission__no_activation_or_input__unchanged_lease_identity_files_atomic_send_and_deadlines__no_parallel_write_authority",
+            "abi": "reports/exact_b_transport_offline/SHARED_ABI.json#fixed_stage_extension/focus_observation"
+          }
+        }
+      },
+      "ready_issuer_thread_id": null,
+      "research_thread_id": null
+    }
+  },
+  "schema_version": 1,
+  "status": "RECEIVER_CONFIGURATION_REQUIRED",
+  "execution": {
+    "thread_id": null,
+    "dispatch_enabled": false
+  },
+  "receiver_configuration_required": true
+}

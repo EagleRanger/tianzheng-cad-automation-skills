@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "formula_id": "CAD-ANGLE-VECTOR-LAYOUT-FORMULA-V2",
+  "status": "validation_only",
+  "revision": "2.2-distance-only-active",
+  "normalization": "all distances are model-space multiples of the native text height H",
+  "candidate_geometry": {
+    "pick_fractions": [
+      0.35,
+      0.42,
+      0.5,
+      0.58,
+      0.65
+    ],
+    "radius_pick_fractions": [
+      0.06,
+      0.15,
+      0.3,
+      0.5,
+      0.7,
+      0.85,
+      0.94
+    ],
+    "text_states": [
+      "BASELINE"
+    ],
+    "text_to_dimension_target_h": 0.65,
+    "text_to_source_hard_h": 0.15,
+    "text_to_source_preferred_h": 0.45,
+    "source_visible_edge_to_text_preferred_h": 0.3333333333333333,
+    "source_width_policy": "per_source_constant_width_from_polyline_inventory",
+    "text_text_hard_gap_h": 0.25,
+    "text_text_preferred_gap_h": 0.28,
+    "sequence_seam_target_h": 0.1,
+    "sequence_seam_hard_h": 0.25,
+    "dimension_dimension_hard_gap_h": 0.18,
+    "dimension_dimension_preferred_gap_h": 0.35,
+    "dimension_shared_endpoint_exclusion_h": 0.35,
+    "arrow_size_h": 0.5,
+    "dimension_arc_max_step_degrees": 4.0,
+    "clearance_footprint_samples": 5,
+    "radius_slide_sample_spacing_h": 0.9,
+    "radius_slide_endpoint_clearance_h": 0.5,
+    "radius_slide_max_samples": 17,
+    "radius_leader_text_gap_h": 0.1,
+    "radius_marker_to_text_offsets_h": [
+      4.71,
+      5.31,
+      7.43,
+      8.08
+    ],
+    "radius_marker_to_text_calibration": {
+      "source": "HISTORICAL_SOURCE_OR_RECEIVER_LOCAL_INPUT_NOT_DISTRIBUTED",
+      "native_control_relation": "radial distance from the source marker to the collinear outside radius text band",
+      "measured_reference_h": [
+        4.71,
+        5.31,
+        7.43,
+        8.08
+      ],
+      "status": "measured_from_user_reference_pending_full_dwg_replay"
+    },
+    "text_width_per_visible_character_h": 0.44,
+    "angle_text_min_width_h": 2.0,
+    "radius_text_min_width_h": 2.2,
+    "thin_stroke_kinds": [
+      "dimension",
+      "leader",
+      "extension"
+    ],
+    "text_width_calibration": {
+      "source": "HISTORICAL_SOURCE_OR_RECEIVER_LOCAL_INPUT_NOT_DISTRIBUTED",
+      "native_text_height": 1.785,
+      "measured_angle_width_range_h": [
+        1.976,
+        2.635
+      ],
+      "status": "measured_native_bbox_conservative_upper_envelope"
+    },
+    "orientation_bbox_residual_h": {
+      "top": 0.0,
+      "bottom": 0.0,
+      "left": 0.0,
+      "right": 0.0
+    },
+    "orientation_bbox_residual_status": "zero_until_native_bbox_calibration_passes"
+  },
+  "short_arc": {
+    "capacity_primary_threshold": 1.25,
+    "capacity_support_threshold": 2.5,
+    "classification_text_width_per_visible_character_h": 0.327,
+    "classification_angle_text_min_width_h": 1.73,
+    "closed_path_preferred_side": "exterior",
+    "closed_path_allow_interior_fallback": false,
+    "candidate_tangential_capacity_min": 0.75,
+    "inner_radius_floor_h": 0.25,
+    "pick_fractions": [
+      0.03,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.97
+    ],
+    "inner_band_factors_h": [
+      1.6,
+      1.85,
+      2.1,
+      2.35
+    ],
+    "inner_text_band_factors_h": [
+      0.0
+    ],
+    "text_text_hard_gap_h": 0.25,
+    "text_text_preferred_gap_h": 0.5,
+    "dimension_dimension_hard_gap_h": 0.5,
+    "dimension_dimension_preferred_gap_h": 0.75,
+    "independent_band_rank": false,
+    "fallback_order": [
+      "along_arc",
+      "adjacent_cluster_next_band",
+      "manual_review"
+    ]
+  },
+  "directional_clearance": {
+    "base_band_h": 1.6,
+    "closed_exterior_band_h": 1.85,
+    "below_source_band_h": 1.85,
+    "minimum_increment_h": 0.25,
+    "exterior_polygon_arc_step_degrees": 6.0
+  },
+  "quantified_common_band": {
+    "source_visible_edge_gap_h": 0.3333333333333333,
+    "text_dimension_gap_h": 0.3333333333333333,
+    "minimum_band_h": 1.6,
+    "aggregation": "maximum_required_band_per_source_path",
+    "snap_policy": "ceiling_to_versioned_candidate_band",
+    "text_thickness_input": "measured_native_text_height_on_target_tangent",
+    "source_width_input": "measured_polyline_constant_width",
+    "observed_obb_role": "post_layout_local_failure_detection_only",
+    "observed_obb_failure_action": "report_only__never_mutate_text_or_inflate_global_band"
+  },
+  "active_native_text_policy": {
+    "scope": "distance_only",
+    "default_state": "preserve_native_generated_state__readability_is_a_read_only_gate",
+    "allowed_automatic_mutable_grip_indexes": [
+      0
+    ],
+    "frozen_grip_indexes": [
+      2,
+      3,
+      4
+    ],
+    "tmirdim": "forbidden_in_default_workflow",
+    "along_arc_text_move": "forbidden_in_default_workflow",
+    "per_text_exception": "requires_separate_user_authorized_component"
+  },
+  "four_direction_text_alignment": {
+    "status": "diagnostic_only_not_active",
+    "orientation_classes": [
+      "TOP",
+      "BOTTOM",
+      "LEFT",
+      "RIGHT"
+    ],
+    "orientation_basis": "dominant_component_of_source_midpoint_to_text_center",
+    "observed_native_states": [
+      "BASELINE",
+      "MIRRORED"
+    ],
+    "mirror_command": "TMirDim",
+    "target_visible_clearance_h": 0.3333333333333333,
+    "reference_selection": "minimum_hard_pass_clearance_at_or_above_target",
+    "alignment_scope": "one_continuous_source_polyline",
+    "common_band_priority": "preserve_before_local_exception",
+    "normal_correction_order": [
+      "choose_baseline_or_mirrored",
+      "along_arc_shift",
+      "promote_contiguous_failed_cluster_one_band"
+    ],
+    "single_item_radial_exception": "last_resort_only_after_all_normal_candidates_fail",
+    "exception_receipt_required": true
+  },
+  "two_pass_batch_policy": {
+    "role": "development_bounded_convergence_only__not_a_mandatory_production_layout_sequence",
+    "reference_profile": "blue_shore_user_adjusted_20260814",
+    "target_count_mode": "dynamic_exact_inventory",
+    "required_completeness_ratio": 1.0,
+    "initial_batch_mode": "one_offline_formula_one_owned_batch",
+    "initial_base_band_h": 1.6,
+    "initial_closed_exterior_band_h": 1.85,
+    "initial_below_source_band_h": 1.85,
+    "candidate_bands_h": [
+      1.6,
+      1.85,
+      2.1,
+      2.35
+    ],
+    "audit_mode": "one_native_vector_and_source_audit",
+    "correction_mode": "one_failed_subset_only",
+    "maximum_subset_correction_rounds": 1,
+    "freeze_passed_items": true,
+    "allow_full_batch_retry_for_local_defects": false,
+    "sample_count_is_global_constant": false
+  },
+  "source_path_continuity": {
+    "planning_unit": "one_continuous_source_polyline",
+    "closed_path_side": "topology_exterior",
+    "common_base_band_required": true,
+    "isolated_band_promotion_forbidden": true,
+    "local_failure_first_action": "along_arc_shift",
+    "local_failure_second_action": "promote_contiguous_failed_cluster_to_immediately_adjacent_band",
+    "automatic_radial_grip4_feedback": false,
+    "visual_hard_failures": [
+      "isolated_far_band",
+      "unjustified_side_switch",
+      "adjacent_band_jump",
+      "radially_flying_text"
+    ],
+    "status": "single_closed_path_user_review_pending"
+  },
+  "sandwich_layout": {
+    "activation": "second_pass_native_vector_audit",
+    "required_order": "source_visible_edge_then_text_obb_then_dimension_curve",
+    "source_to_text_gap_h": 0.3333333333333333,
+    "text_to_dimension_gap_h": 0.3333333333333333,
+    "source_half_width_fallback_h": 0.18,
+    "require_text_between_source_and_dimension": true,
+    "failed_item_action": "recompute_side_and_band",
+    "endpoint_cluster_action": "flip_or_escalate_as_one_group",
+    "candidate_order": [
+      "same_side_balanced_band",
+      "cluster_shared_opposite_side_balanced_band",
+      "cluster_shared_side_next_band",
+      "manual_review"
+    ],
+    "maximum_correction_rounds": 1,
+    "freeze_passed_items": true,
+    "status": "validation_only_seven_red_corner_patterns"
+  },
+  "sharp_corner_correction": {
+    "activation": "calibration_candidate_only__runtime_dispatch_disabled_until_promotion",
+    "calibration_sequence": [
+      "assistant_local_candidate_optimization",
+      "user_visual_target_and_true_offset_confirmation",
+      "native_parameter_readback_and_dimensionless_quantization",
+      "independent_similar_topology_replay",
+      "atomic_profile_promotion"
+    ],
+    "runtime_dispatch_after_promotion": "geometry_feature_match_applies_verified_quantified_offset_directly__no_mandatory_second_pass",
+    "unmatched_runtime_action": "retain_as_failed_subset_and_return_to_project_calibration",
+    "target_visible_gap_h": 0.3333333333333333,
+    "target_text_center_formula": "source_radius + side_sign * (source_half_width + target_visible_gap_h * H + projected_text_half_extent)",
+    "projected_text_half_extent": "max_abs_obb_support_about_text_center_on_current_grip0_radial",
+    "move_grip_index": 0,
+    "move_direction": "current_grip0_radial_unit",
+    "maximum_correction_rounds": 1,
+    "freeze_source_association_grips": [
+      2,
+      3
+    ],
+    "freeze_passed_items": true,
+    "status": "single_uturn_sample_candidate_pending_user_true_offset_confirmation_and_independent_topology"
+  },
+  "endpoint_cluster": {
+    "activation": "adjacent_short_arcs_sharing_source_endpoint",
+    "promote_full_cluster_on_member_failure": true,
+    "common_side_required": true,
+    "common_band_required": true,
+    "common_band_tolerance_h": 0.05,
+    "same_band_first": true,
+    "preferred_band_rank": 0,
+    "allow_shared_endpoint_arrow_touch": true,
+    "allow_shared_endpoint_dimension_touch": true,
+    "text_arrow_overlap_is_hard": true,
+    "text_text_overlap_is_hard": true,
+    "band_escalation_only_after_hard_collision": true,
+    "next_band_increment_h": 0.25,
+    "maximum_exterior_band_rank": 3,
+    "interior_fallback": false,
+    "fallback_order": [
+      "along_arc",
+      "next_exterior_band",
+      "manual_review"
+    ],
+    "maximum_correction_rounds": 1,
+    "freeze_passed_items": true,
+    "status": "formula_candidate_pending_native_corner_replay"
+  },
+  "hard_constraints": [
+    "source_association_or_locked_grip_changed",
+    "text_or_arrow_body_overlap",
+    "short_arc_text_gap_below_0.25H",
+    "short_arc_dimension_gap_below_0.5H",
+    "text_over_source_below_0.15H",
+    "non_text_body_or_heavy_stroke_intersection",
+    "insufficient_corridor"
+  ],
+  "soft_weights": {
+    "profile_deviation": 1200.0,
+    "wide_space": 20000.0,
+    "side_switch": 25000.0,
+    "band_step": 5000.0,
+    "offset_delta": 500.0,
+    "along_shift": 100.0,
+    "non_dominant_side": 18000.0,
+    "source_clearance_preference": 500000.0,
+    "text_line_target": 120.0,
+    "radius_inside_angle": 250000.0,
+    "radius_angle_gap": 2500.0,
+    "dimension_spacing": 4000.0,
+    "text_thin_stroke_overlap": 1500.0
+  },
+  "solver": {
+    "objective": "lexicographic_hard_vector_then_soft_score",
+    "require_zero_hard_solution": true,
+    "no_zero_hard_solution_status": "NEEDS_MANUAL_REVIEW",
+    "closed_path_first_last_adjacency": true,
+    "screen_resolution_independent": true
+  },
+  "acceptance": [
+    "vector_hard_constraints_clear",
+    "native_object_audit",
+    "source_association_audit",
+    "normalized_local_screenshot",
+    "codex_visual_review",
+    "save_close_reopen"
+  ]
+}

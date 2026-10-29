@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "formula_id": "CAD-ANNOTATION-COLLAPSE-RESCUE-ONLY-V2",
+  "status": "validation_only",
+  "normalization": "all distances are dimensionless multiples of measured native text height H; arc angle is runtime geometry",
+  "activation": {
+    "endpoint_association_max": 1E-06,
+    "required_segment_type": "ARC",
+    "required_mapping_status": "PASS",
+    "double_inward_collapse": {
+      "maximum_curve_radial_clearance_h": -0.25,
+      "maximum_text_radial_clearance_h": -0.25,
+      "minimum_curve_text_radial_separation_h": 0.5
+    },
+    "short_reflex_capacity_split": {
+      "minimum_arc_angle_deg": 150.0,
+      "maximum_arc_length_h": 12.0,
+      "maximum_curve_radial_clearance_h": -1.5,
+      "minimum_text_radial_clearance_h": 0.0,
+      "maximum_text_radial_clearance_h": 1.1,
+      "maximum_curve_text_radial_separation_h": -2.0
+    }
+  },
+  "rescue": {
+    "target_source": "existing standard quantized grip0 target for the same runtime native handle",
+    "commanded_grips": [
+      0
+    ],
+    "commanded_text_grip_count": 0,
+    "normal_objects_frozen": true,
+    "same_run_retry": false
+  },
+  "genericity": "runtime geometry, H, topology, mapping, native grips, endpoint association and existing standard target only; no handle, coordinate, segment key, bbox or object count literal",
+  "cross_structure_dwg": "UNVERIFIED"
+}

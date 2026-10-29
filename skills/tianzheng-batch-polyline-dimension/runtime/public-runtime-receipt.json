@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "version": "1.1.1",
+  "status": "SOURCE_PACKAGE_OFFLINE_VALIDATED__RECEIVER_CONFIGURATION_REQUIRED",
+  "source_inventory_sha256": "8BB4E2203B85C328565AE6452664289AF0EA43711F8E79B92F787A3099A8C282",
+  "cad_calls": 0,
+  "CAD_command_registration": "UNVERIFIED",
+  "whole_command_new_DWG_execution": "UNVERIFIED",
+  "algorithm_changes": "No geometric formula or selection algorithm rewritten; environment/dependency/identity binding only",
+  "offline_tests": {
+    "status": "PASS_OFFLINE_SYNTHETIC_ONLY",
+    "cases": 20,
+    "suites": [
+      {
+        "suite": "test_compile_selected_typed_segment_batch.py",
+        "runner": "unittest",
+        "expected_cases": 10,
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.581s\n\nOK\n"
+      },
+      {
+        "suite": "test_typed_dimension_quantified_common_band.py",
+        "runner": "unittest",
+        "expected_cases": 6,
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nOK\n"
+      },
+      {
+        "suite": "test_native_dimension_semantics_v1.py",
+        "runner": "existing_functions_with_fresh_tmp_path_stdlib_adapter",
+        "cases": 4,
+        "returncode": 0
+      }
+    ],
+    "cad_calls": 0
+  },
+  "static_validation": {
+    "public_config_templates": 7,
+    "forbidden_artifact_count": 0,
+    "powershell_parse": {
+      "files": 167,
+      "status": "PASS"
+    },
+    "private_author_path_or_task_id_count": 0,
+    "python_ast": {
+      "status": "PASS",
+      "files": 53
+    }
+  },
+  "local_compile_check": {
+    "compiler_job_limits_unchanged": {
+      "bootstrap_active_limit": 4,
+      "bootstrap_job_mib": 384,
+      "bootstrap_process_mib": 256,
+      "process_mib": 128,
+      "timeout_seconds": 20,
+      "active_limit": 3,
+      "job_mib": 192
+    },
+    "status": "PASS_7_MODULES_COMPILED_NOT_LOADED",
+    "wrong_manifest_pin_rejected": true,
+    "trusted_manifest_positive_checks": 7,
+    "verification_artifacts": "Kept outside public package in isolated local validation directory; no binary or observed process state distributed",
+    "modules": [
+      {
+        "module_id": "own_helper_job",
+        "sha256": "54B5F369CB41550DBBF0BBF14DDA04BC51C3EBE7ADAA68D16E35F74D44180998",
+        "source_hashes_match_public": true,
+        "compiled": true,
+        "loaded": false,
+        "registered_in_CAD": "UNVERIFIED",
+        "reused_settled_build": true
+      },
+      {
+        "module_id": "native_generation_target",
+        "sha256": "5AAAD44967C9BE6A1A0404AFB23258F98C26CC25A4B7A827AA5C2AED7D2D573D",
+        "source_hashes_match_public": true,
+        "compiled": true,
+        "loaded": false,
+        "registered_in_CAD": "UNVERIFIED",
+        "reused_settled_build": true
+      },
+      {
+        "module_id": "scalar_converger",
+        "sha256": "ACDD5E71C940A22EF5791BFABFE8EFB7C33B01BFFEFA919B293D342BFB4B8C41",
+        "source_hashes_match_public": true,
+        "compiled": true,
+        "loaded": false,
+        "registered_in_CAD": "UNVERIFIED",
+        "reused_settled_build": true
+      },
+      {
+        "module_id": "document_preview",
+        "sha256": "88437A9EB9CD61CB7341E302F12B0F9014BBC8593F68A1BED2F3AD8D9D5AC8BA",
+        "source_hashes_match_public": true,
+        "compiled": true,
+        "loaded": false,
+        "registered_in_CAD": "UNVERIFIED",
+        "reused_settled_build": true
+      },
+      {
+        "module_id": "semantic_inventory",
+        "sha256": "8504C920D763C8C7CF58DBCB3955A1189B693CEBE42AC2CC0A349DCB227FE389",
+        "source_hashes_match_public": true,
+        "compiled": true,
+        "loaded": false,
+        "registered_in_CAD": "UNVERIFIED",
+        "reused_settled_build": true
+      },
+      {
+        "module_id": "grip_probe",
+        "sha256": "43C90D0548792C872432809139AEE1817F1558C1C1F4A558663A7FD1173B13C7",
+        "source_hashes_match_public": true,
+        "compiled": true,
+        "loaded": false,
+        "registered_in_CAD": "UNVERIFIED",
+        "reused_settled_build": false
+      },
+      {
+        "module_id": "native_text_metrics",
+        "sha256": "8F35F9551425F7D7138D3999AF7CAFBCB8AFB2281302642F75F45F04D7B77F8B",
+        "source_hashes_match_public": true,
+        "compiled": true,
+        "loaded": false,
+        "registered_in_CAD": "UNVERIFIED",
+        "reused_settled_build": false
+      }
+    ]
+  },
+  "build_adapter_repairs": {
+    "retained_image_race": {
+      "retest_job_empty_and_roots_exited": true,
+      "retest_wait_ms": [
+        17,
+        29
+      ],
+      "previous_5_modules_reused_without_recompilation": true,
+      "observed": "Created child Path null at 18ms caused GetFullPath failure; own retained child terminated and confirmed exited",
+      "repair": "At most 500ms retained-child Refresh/nonempty observed-image wait; exact image comparison unchanged; original prebind 128MiB/bootstrap4s/outer35s gates kept"
+    },
+    "path_length": "Use short build/c/8hex/module-index/cases location for legacy csc path limit",
+    "SDK_reference": "Add explicit System.Core.dll previously implicit in default csc.rsp"
+  },
+  "core_execution_entries": [
+    {
+      "public": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_workflow.ps1",
+      "maturity": "VALIDATION_CANDIDATE",
+      "kind": "registered_full_single_owner_workflow",
+      "source_chain": "supplied_source_paths_rebound",
+      "original": "scripts/invoke_selected_typed_dimension_workflow.ps1",
+      "receiver_gap": "Receiver project-level governance/context/scope/owner inputs required; no author current state copied"
+    },
+    {
+      "public": "reference/project-orchestration/scripts/invoke_selected_typed_dimension_polyline_controller.ps1",
+      "maturity": "validation_only",
+      "kind": "registered_partial_convergence_controller",
+      "source_chain": "supplied_source_paths_rebound",
+      "original": "scripts/invoke_selected_typed_dimension_polyline_controller.ps1",
+      "receiver_gap": "Same exact owner, component contract and failed-subset inputs; production promotion not implied"
+    },
+    {
+      "public": "scripts/invoke_special_text_peer_normal_restore_observed_v4.ps1",
+      "maturity": "historical_current_board_3of3__adapted_environment_requires_receiver_validation",
+      "kind": "current_board_special_text_controller",
+      "source_chain": "14-file original literal dependency subchain present, public environment paths adapted",
+      "original": "scripts/invoke_special_text_peer_normal_restore_observed_v4.ps1",
+      "receiver_gap": "Single acad process gate kept; manifests/data/source identity must be receiver-bound"
+    },
+    {
+      "public": "scripts/cad_exact_b_focus_independent_transport_v4.ps1",
+      "maturity": "historical_scoped_mixed_ARC_LINE_functional_only",
+      "kind": "exact_B_generic_native_transport_library",
+      "source_chain": "17-file exact source subchain plus OwnHelperJob build/trust adapter supplied",
+      "original": "scripts/cad_exact_b_focus_independent_transport_v4.ps1",
+      "receiver_gap": "Real receiver READY/controller claim/lease/owners/scope/manifest and bounded worker still required"
+    }
+  ],
+  "nondefault_scoped_or_excluded": [
+    "Old two-representative-segment resume harness depends on author prior run/admission evidence: not a generic receiver preparer.",
+    "10/29 failed B-document bridge is not the default transport; only original nondefault guard source may be retained as reference.",
+    "Original project governance checkers and historical branch assertions are references, not new receiver authority or a whole-project clone."
+  ],
+  "required_receiver_inputs": [
+    "config/receiver_runtime.json from explicit receiver configuration; disabled template is not permission",
+    "config/cad_command_research_routing_v1.json actual issuer/executor and opt-in route binding",
+    "receiver-generated config/current_execution_handoff.json plus immutable run handoff/controller claim and source manifests",
+    "current A/B process/image/start/HWND/document path/protected hashes and already-held serial lease",
+    "trusted receiver_build_manifest.json pin via CAD_BUILD_MANIFEST_SHA256",
+    "explicit source admission and pin only if invoking source-preparation functions"
+  ]
+}

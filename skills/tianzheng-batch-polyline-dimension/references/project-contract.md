@@ -5,8 +5,8 @@
 - 项目实体：`auto-CAD-project-loop`
 - 命令包：`CAD-CMD-BATCH-POLYLINE-DIM-V1`
 - 用户名称：`自动批量多段线尺寸`
-- 项目根：由调用方提供；默认使用本机登记的天正自动化项目根。
-- Skill 是稳定入口和执行路由，不是第二份业务实现。
+- 源码根：默认 Skill 内的 `runtime/`，或接收方明确指定的兼容工作副本。
+- 公开 Skill 内附既有业务实现；作者项目身份只描述来源，不是接收方应伪造的运行身份。
 
 ## 固定架构
 
@@ -59,14 +59,14 @@
 ## 成熟度边界
 
 - `CAD-DIM-SPECIAL-TEXT-PEER-NORMAL-V2`：当前底板连续 3/3，证明固定公式与控制器可重复恢复同一类 grip-4 异常。
-- 完整命令包：以 `config/command_packages/batch_polyline_dimension_v1.json` 的实时状态为准。
+- 完整命令包：本次源码快照为 `VALIDATION_CANDIDATE`；以 `runtime/public-runtime-manifest.json` 记录的来源成熟度和接收方实际验证结果分开判断。作者后续变更不会自动进入本快照。
 - 不同结构 DWG：未完成前必须明确写 `UNVERIFIED`，不得宣称通用。
 
 - 用户样本认可、落盘、重开几何和重开文字语义分别判断；细化边界见 [current-scope-practices.md](current-scope-practices.md)。专项3/3不覆盖后来其他对象或整条流程的接受状态。
 
 ## READY 与回传
 
-- 只使用 `config/project_execution_index.json` 指向的当前 V8 READY 发布器。
-- 目标任务 ID 只从 `config/cad_native_task_registry.json` 读取。
+- 使用接收方真实的执行协调机制；复用原治理控制器时，提供对应 schema 的本机输入，不复制作者 task ID 或 current 状态。
+- 精确 owner、文档、范围、指纹、授权与保存策略必须来自接收方当前任务，不能删断言或写入假 PASS。
 - 派发后不重复控制CAD；来源任务沿实际等待/回传机制接收并核对结果，阶段完成不自动结束尚未完成的原目标。
 - 执行必须生成不可变回执并向项目任务回传；回传失败不授权重跑。

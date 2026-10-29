@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "profile_id": "CAD-DIM-EXACT-B-ACTION-V1",
+  "route": "batch_polyline_dimension",
+  "target_owner": "B",
+  "run_id": null,
+  "invocation_mode": "FIXED_DIMENSION_STAGE_V2",
+  "validation_engine": "INDEXED_FIXED_STAGE_V3",
+  "focus_policy": "OBSERVE_ONLY",
+  "parallel_writes": false,
+  "retry": false,
+  "foreground_input": false,
+  "global_rot_fallback": false,
+  "save_in_place": false,
+  "close_or_kill_cad": false,
+  "owners": [
+    {"id":"A","scope_kind":"AUTHORIZED_ISOLATED_TEST_COPY","process_id":null,"process_start_time_utc":null,"process_image_path":null,"window_handle":null,"document_full_path":null,"protected_sha256":null},
+    {"id":"B","scope_kind":"AUTHORIZED_ISOLATED_TEST_COPY","process_id":null,"process_start_time_utc":null,"process_image_path":null,"window_handle":null,"document_full_path":null,"protected_sha256":null}
+  ],
+  "operations": [],
+  "_template_notice": "Not an executable scope. Discover actual authorized isolated A/B copies, owners and hashes; supply fresh operations/nonce and source manifests. A receiver's real READY/controller claim/serial lease remain separately required."
+}

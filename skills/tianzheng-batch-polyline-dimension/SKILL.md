@@ -5,15 +5,15 @@ description: Automate native Tianzheng/AutoCAD dimensions for selected or runtim
 
 # Tianzheng Batch Polyline Dimension
 
-Use this Skill as the stable project entry for the `自动批量多段线尺寸` capability. Reuse the project's registered scripts and contracts. Do not recreate the business algorithm inside the Skill.
+Use this Skill as the entry for `自动批量多段线尺寸`. Its `runtime/` directory contains the existing business implementation and native-control source. Reuse that code instead of recreating the geometry algorithm from prose. Package version: 1.1.1; publication does not promote the complete command's validation maturity.
 
 ## Start from authority
 
-1. Resolve the project root from `TIANZHENG_CAD_AUTOMATION_HOME` or an explicit compatible checkout path; this packaged Skill does not contain a private project checkout.
-2. Read the root and project `AGENTS.md`, then the minimal hot layer declared by `config/project_execution_index.json`.
-3. Run `scripts/inspect_capability.ps1` from this Skill to read back the current package and special-text validation status.
-4. Treat `config/current_execution_handoff.json` and `config/current_execution_return.json` as authoritative for the latest run. Never infer live state from an old conversation preview.
-5. Read `references/project-contract.md` before changing formulas, publishing a READY handoff, or claiming acceptance.
+1. Read [migration.md](references/migration.md). Use bundled `runtime/` as the source root unless the receiver explicitly selects an equivalent local checkout; do not look for the author's private computer or task IDs.
+2. Read the receiver's current instructions and the runtime's source/build/input documentation. Local software, owner, document, scope and permission must be bound to the receiver's real environment.
+3. Run `scripts/inspect_capability.ps1` to verify the packaged source manifest. This read-only check never starts CAD and does not authorize execution.
+4. Runtime owner, selection ledger, scope, task handoff and return records are new local inputs, not author data to copy. If using the original governed controller, provide its same-schema inputs or equivalent host adapters while preserving scope/hash/owner checks.
+5. Read `references/project-contract.md` before changing formulas or claiming acceptance. Default to offline preparation; native mutations require an authorized isolated drawing and a fresh exact session binding.
 
 ## Reuse the two-layer implementation
 
@@ -43,13 +43,13 @@ Apply the rescue chain only when runtime measurements identify the anomaly. Neve
 
 ## Execute through the governed lane
 
-The project/strategy task may inspect, design, patch, test statically, and publish. It must not directly drive Tianzheng.
+Separate planning/inspection from the one owner that actually drives Tianzheng; task titles do not confer permission. The receiver may use its own equivalent coordination rather than copying the author's project task system.
 
 For a real CAD mutation:
 
 1. Verify no active CAD lease conflict.
-2. Build one immutable schema-v3 READY handoff with the current V8 publisher named by `config/project_execution_index.json`.
-3. Dispatch it to the exact registered execution task.
+2. Bind a fresh immutable handoff to the actual target, permitted actions, file hashes and save policy. When using the original controller schema, satisfy its real input contract; do not delete assertions or fabricate READY/PASS.
+3. Dispatch only to the receiver's exact execution owner, never an author task ID.
 4. Permit only the actions named by the handoff. Default test policy is `save=false` and `retry=0`.
 5. The bounded executor stops at its contract boundary. The source task retains its active outcome and uses the host's existing wait/return mechanism to review the immutable result; do not replay the run or imply automatic continuation without an actual wake-up path.
 
@@ -66,7 +66,7 @@ Read [current-scope reuse and acceptance](references/current-scope-practices.md)
 
 ## Keep the package clean
 
-- Do not copy run directories, screenshots, historical preparers, or superseded controllers into this Skill.
+- Keep current run directories, drawings, screenshots, identities and credentials outside the distributed source. Bundled source dependencies may include a versioned helper required by the selected call chain; that does not make every optional action a default route.
 - Do not revive routes listed as forbidden or rejected by the project.
 - Fix repeatable workflow faults in the shared layer and add a regression; do not accumulate one-run workarounds.
 - Follow the current handoff's explicit save/checkpoint authority; otherwise preserve test drafts unsaved. A checkpoint is not a formal accepted deliverable.

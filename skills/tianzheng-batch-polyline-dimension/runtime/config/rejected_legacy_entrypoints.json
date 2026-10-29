@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "status": "active_tombstone",
+  "policy": "Deleted entrypoints are historical evidence only. They must not be recreated, referenced by active registries or selected by automation.",
+  "blocked_ready_semantic_contracts": [
+    {
+      "id": "SEMANTIC_RANK1_ENDPOINT_UNPROVEN_GRIP0_ONLY_RELAYOUT",
+      "status": "rejected",
+      "predicate": "first_pass_semantic_rank_lt_2__endpoint_rank2_claimed_false__allowed_commanded_grips_exact_0__business_layout_send_count_gt_0__unless_all_provisional_rank1_handles_are_explicitly_frozen_and_commanded_count_is_zero",
+      "reason": "Run276 rejects using ordinary grip0 relayout to repair an endpoint-unproven semantic-rank1 object. Rank2-only layout is admissible only when every provisional rank1 handle is runtime-discovered, explicitly frozen, receives zero commands, and is reported outside whole-drawing acceptance.",
+      "reconsider_when": "A new generation or promotion mechanism proves valid native endpoint association. Freezing a provisional object is not reconsideration and must not be reported as whole-drawing layout acceptance."
+    }
+  ],
+  "deleted_entrypoints": [
+    {
+      "path": "scripts/start_owned_tianzheng_human_flow.ps1",
+      "reason": "Competing TGStart and in-app-open route bypassed the verified Explorer-file-open path."
+    },
+    {
+      "path": "scripts/run_652bb_source_repair_gate.ps1",
+      "reason": "One-off superseded experiment runner with no active registry reference."
+    },
+    {
+      "path": "scripts/run_all_five_angle_replay_gate.ps1",
+      "reason": "One-off superseded replay runner with no active registry reference."
+    },
+    {
+      "path": "scripts/run_annotation_internal_layout_live_gate.ps1",
+      "reason": "Old live mutation runner bypassed the current component and human-review gates."
+    },
+    {
+      "path": "scripts/run_corner_dense_stage_e5.ps1",
+      "reason": "Hard-coded TGSTART_WITH_DWG_ARGUMENT route contradicted the verified lifecycle."
+    },
+    {
+      "path": "scripts/run_multi_source_angle_replay_e5_gate.ps1",
+      "reason": "One-off superseded E5 runner with no active registry reference."
+    },
+    {
+      "path": "scripts/run_multi_source_angle_replay_gate.ps1",
+      "reason": "One-off superseded replay runner with no active registry reference."
+    },
+    {
+      "path": "scripts/run_native_dim_endpoint_repair_gate.ps1",
+      "reason": "Rejected endpoint repair path could report success without a valid final association."
+    },
+    {
+      "path": "scripts/run_native_stage_visual_acceptance_session.ps1",
+      "reason": "Old visual session runner allowed machine review to stand in for user acceptance."
+    },
+    {
+      "path": "scripts/tdimarc_prompt_single_probe.lsp",
+      "reason": "Rejected PICK_SIDE_SIDE single-arc probe created zero candidates and was removed from every callable path.",
+      "removed_workflow_ids": [
+        "TZ-TDIMARC-PROMPT-SINGLE-V1"
+      ],
+      "removed_component_ids": [
+        "CAD-DIM-ANGLE-SHORT-ARC-PROMPT-PROBE-V1"
+      ],
+      "removed_actions": [
+        "TDIMARC_PROMPT_SINGLE"
+      ],
+      "boundary": "Only the exact PICK_SIDE_SIDE validation adapter on 652BB segment 6 is disproven. The independently E4/E5-verified pick-pick-place-empty production kernel remains active."
+    }
+  ],
+  "receiver_configuration_required": true
+}

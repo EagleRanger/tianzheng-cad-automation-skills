@@ -1,0 +1,51 @@
+;; Owner/data-directory adaptation only. Frozen geometric generator unchanged.
+(load (strcat cxbg:root "/reports/dimension_background_reproduction_v7/native_stages.lsp"))
+(defun cxbg:emit (stage / f tick)
+ (setq tick (rem (+ (getvar "MILLISECS") 4294967296.0) 4294967296.0) f (open cxbg:signal-path "a"))
+ (write-line (strcat "CX_CAD_SIGNAL_V1|CAD_COMMAND_" stage "|" (rtos tick 2 0)) f)
+ (write-line (strcat "CX_MULTI_OWNER_PROBE_V1|" cxbg:nonce "|" cxbg:run-id "|" cxbg:operation-id "|" cxdual:owner "|"
+  (rtos (rem (+ (vla-get-HWND (vlax-get-acad-object)) 4294967296.0) 4294967296.0) 2 0) "|" stage "|" (rtos tick 2 0) "|"
+  (itoa (getvar "DBMOD")) "|" (itoa (vla-get-Count (vla-get-ModelSpace (vla-get-ActiveDocument (vlax-get-acad-object)))))) f)
+ (close f))
+(defun cxdual:postread (/ handles csv h)
+ (cxbg:grips "grips_after.tsv")
+ (cxbg:inventory "after")
+ (cxbg:snapshot "model_after.tsv")
+ (setq handles (cxbg:read-handles) csv "")
+ (foreach h handles (setq csv (strcat csv (if (= csv "") "" ",") h)))
+ (cxbg:metrics csv "text_metrics_after.tsv"))
+(defun cxdual:business-emit (stage / cxdual:stage-signal cxdual:stage-op)
+ ;; Same proven signal writer and clock, separate full file. This interval
+ ;; excludes task parsing and generated-grip inventory from generation proof.
+ (setq cxdual:stage-signal cxbg:signal-path
+       cxbg:signal-path cxdual:business-signal-path)
+ (cxbg:emit stage)
+ (setq cxbg:signal-path cxdual:stage-signal))
+(defun cxdual:generate (/ f)
+ ;; Exact frozen GENERATE orchestration; only two timing emissions are added
+ ;; immediately around its one unchanged mature business function invocation.
+ (setq f (open (cxbg:path "native_tasks.txt") "r") cx:*full-batch-tasks* (read (read-line f)))
+ (close f)
+ (setq cx:*full-batch-cleanup-handles* '() cx:*full-batch-clean-slate-object-names* '()
+       cx:*full-batch-expected-drawing* cxbg:expected-drawing
+       cx:*full-batch-summary-path* (cxbg:path "generation_summary.tsv")
+       cx:*full-batch-details-path* (cxbg:path "generation_details.tsv")
+       cx:*full-batch-save-on-success* nil)
+ (if (not (member "C:CXTDIMARCFULLBATCH" (atoms-family 1))) (error "MATURE_GENERATOR_NOT_ADMITTED_NO_AUTOLOAD"))
+ (cxdual:business-emit "ACK")
+ (c:CXTDIMARCFULLBATCH)
+ (cxdual:business-emit "COMPLETE")
+ (cxbg:grips "grips_generated.tsv"))
+(defun cxdual:run (/ outcome f)
+ (if (/= (getvar "TILEMODE") 1) (error "DUAL_REQUIRES_EXISTING_MODELSPACE_NO_AUTO_SWITCH"))
+ (if (not (member cxdual:owner '("A" "B"))) (error "DUAL_INVALID_OWNER"))
+ (if (not (member cxbg:stage '("DISCOVER" "GENERATE" "POSTREAD"))) (error "DUAL_FIXED_STAGE_ONLY"))
+ (foreach cxbg:required-command '("CXNATIVEGRIPINVENTORY" "CXTDIMTEXTMETRICSV2")
+  (if (not (getcname cxbg:required-command)) (error "DUAL_PREREGISTRATION_MISSING_NO_AUTOLOAD")))
+ (if (not (member "C:CXTDIMARCFULLBATCH" (atoms-family 1))) (error "DUAL_GENERATOR_NOT_ADMITTED_NO_AUTOLOAD"))
+ (cxbg:emit "ACK")
+ (setq outcome (vl-catch-all-apply (cond ((= cxbg:stage "POSTREAD") 'cxdual:postread) ((= cxbg:stage "GENERATE") 'cxdual:generate) (T 'cxbg:stage-body)) '()))
+   (if (vl-catch-all-error-p outcome)
+    (progn (setq f (open (cxbg:path (strcat cxbg:operation-id "_error.txt")) "w")) (write-line (vl-catch-all-error-message outcome) f) (close f))
+    (cxbg:emit "COMPLETE"))
+ (princ))

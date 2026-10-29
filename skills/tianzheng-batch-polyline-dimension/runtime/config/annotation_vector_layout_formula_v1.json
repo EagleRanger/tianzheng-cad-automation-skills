@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "formula_id": "CAD-ANGLE-VECTOR-LAYOUT-FORMULA-V1",
+  "status": "validation_only",
+  "normalization": "all distances are model-space multiples of the native text height H",
+  "candidate_geometry": {
+    "pick_fractions": [
+      0.35,
+      0.42,
+      0.5,
+      0.58,
+      0.65
+    ],
+    "radius_pick_fractions": [
+      0.06,
+      0.15,
+      0.3,
+      0.5,
+      0.7,
+      0.85,
+      0.94
+    ],
+    "text_states": [
+      "BASELINE",
+      "MIRRORED"
+    ],
+    "text_to_dimension_target_h": 0.65,
+    "text_to_source_hard_h": 0.15,
+    "text_to_source_preferred_h": 0.45,
+    "text_text_hard_gap_h": 0.25,
+    "text_text_preferred_gap_h": 0.28,
+    "sequence_seam_target_h": 0.1,
+    "sequence_seam_hard_h": 0.25,
+    "dimension_dimension_hard_gap_h": 0.18,
+    "dimension_dimension_preferred_gap_h": 0.35,
+    "dimension_shared_endpoint_exclusion_h": 0.35,
+    "arrow_size_h": 0.5,
+    "dimension_arc_max_step_degrees": 4.0,
+    "clearance_footprint_samples": 5,
+    "radius_slide_sample_spacing_h": 0.9,
+    "radius_slide_endpoint_clearance_h": 0.5,
+    "radius_slide_max_samples": 17,
+    "radius_leader_text_gap_h": 0.1,
+    "radius_marker_to_text_offsets_h": [
+      4.71,
+      5.31,
+      7.43,
+      8.08
+    ],
+    "radius_marker_to_text_calibration": {
+      "source": "HISTORICAL_SOURCE_OR_RECEIVER_LOCAL_INPUT_NOT_DISTRIBUTED",
+      "native_control_relation": "radial distance from the source marker to the collinear outside radius text band",
+      "measured_reference_h": [
+        4.71,
+        5.31,
+        7.43,
+        8.08
+      ],
+      "status": "historical_native_reference_calibration_pending_receiver_replay"
+    },
+    "text_width_per_visible_character_h": 0.44,
+    "angle_text_min_width_h": 2.0,
+    "radius_text_min_width_h": 2.2,
+    "text_width_calibration": {
+      "source": "HISTORICAL_SOURCE_OR_RECEIVER_LOCAL_INPUT_NOT_DISTRIBUTED",
+      "native_text_height": 1.785,
+      "measured_angle_width_range_h": [
+        1.976,
+        2.635
+      ],
+      "status": "measured_native_bbox_conservative_upper_envelope"
+    },
+    "orientation_bbox_residual_h": {
+      "top": 0.0,
+      "bottom": 0.0,
+      "left": 0.0,
+      "right": 0.0
+    },
+    "orientation_bbox_residual_status": "zero_until_native_bbox_calibration_passes"
+  },
+  "short_arc": {
+    "capacity_primary_threshold": 1.25,
+    "capacity_support_threshold": 2.5,
+    "classification_text_width_per_visible_character_h": 0.327,
+    "classification_angle_text_min_width_h": 1.73,
+    "closed_path_preferred_side": "interior",
+    "inner_radius_floor_h": 0.25,
+    "pick_fractions": [
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9
+    ],
+    "inner_band_factors_h": [
+      0.1,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "inner_text_band_factors_h": [
+      0.0,
+      1.0,
+      2.0
+    ],
+    "text_text_hard_gap_h": 1.0,
+    "text_text_preferred_gap_h": 1.25,
+    "independent_band_rank": true,
+    "fallback_order": [
+      "along_arc",
+      "next_band",
+      "other_side",
+      "manual_review"
+    ]
+  },
+  "hard_constraints": [
+    "source_association_or_locked_grip_changed",
+    "text_or_arrow_body_overlap",
+    "text_over_source_below_0.15H",
+    "heavy_stroke_body_intersection",
+    "insufficient_corridor"
+  ],
+  "soft_weights": {
+    "profile_deviation": 1200.0,
+    "wide_space": 20000.0,
+    "side_switch": 25000.0,
+    "band_step": 5000.0,
+    "offset_delta": 500.0,
+    "along_shift": 100.0,
+    "non_dominant_side": 18000.0,
+    "source_clearance_preference": 500000.0,
+    "text_line_target": 120.0,
+    "radius_inside_angle": 250000.0,
+    "radius_angle_gap": 2500.0,
+    "dimension_spacing": 4000.0
+  },
+  "solver": {
+    "objective": "lexicographic_hard_vector_then_soft_score",
+    "require_zero_hard_solution": true,
+    "no_zero_hard_solution_status": "NEEDS_MANUAL_REVIEW",
+    "closed_path_first_last_adjacency": true,
+    "screen_resolution_independent": true
+  },
+  "acceptance": [
+    "vector_hard_constraints_clear",
+    "native_object_audit",
+    "source_association_audit",
+    "normalized_local_screenshot",
+    "codex_visual_review",
+    "save_close_reopen"
+  ]
+}

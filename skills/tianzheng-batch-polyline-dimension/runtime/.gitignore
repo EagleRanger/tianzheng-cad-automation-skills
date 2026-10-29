@@ -1,0 +1,12 @@
+build/
+runs/
+__pycache__/
+*.pyc
+*.dll
+*.dwg
+*.dxf
+.cad-operation-owner.json
+config/current_*.json
+config/receiver_runtime.json
+config/receiver_source_admission.json
+config/receiver_build_manifest.json

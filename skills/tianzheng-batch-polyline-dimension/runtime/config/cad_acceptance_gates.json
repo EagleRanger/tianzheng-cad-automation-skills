@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "status": "active",
+  "canonical_source": "HISTORICAL_SOURCE_OR_RECEIVER_LOCAL_INPUT_NOT_DISTRIBUTED",
+  "reuse_profile": {
+    "id": "CAD-ACCEPTANCE-REUSE-V1",
+    "knowledge_type": "user_requirement_with_scoped_historical_evidence",
+    "automatic_recall": true,
+    "default_for_development": "ordinary_test",
+    "test_checkpoint_policy": {
+      "id": "CAD-TEST-DRAWING-CHECKPOINT-V4",
+      "default_after_completed_test": true,
+      "entry": "scripts/save_owned_test_drawing_checkpoint_v4.ps1",
+      "native_action": "SAVE_COPY_OWNED",
+      "history_module": "scripts/common/TestDrawingHistory.psm1",
+      "history_root": "HISTORICAL_SOURCE_OR_RECEIVER_LOCAL_INPUT_NOT_DISTRIBUTED",
+      "new_unique_dwg_only": true,
+      "overwrite_source_or_working": false,
+      "qsave_allowed": false,
+      "close_or_reopen_allowed": false,
+      "automatic_retention_delete": false,
+      "save_after": "completed_or_partial_test_effect_settled_and_exact_owner_document_idle__not_during_unknown_command",
+      "required_evidence": [
+        "native_save_copy_receipt",
+        "pre_post_exact_document_read_only_state",
+        "new_copy_path_time_run_and_sha256",
+        "existing_history_checkpoint_manifest"
+      ],
+      "current_dbmod_need_not_be_zero": true,
+      "formal_reopen_required": false,
+      "production_promotion": false,
+      "new_geometry_or_screenshot_required": false,
+      "failure_policy": "checkpoint_missing_or_unsettled_remains_reported__preserve_current_and_any_created_copy__no_same_run_save_retry__do_not_revoke_proven_business",
+      "override": "supersedes_ordinary_test_unsaved_default_only__old_sealed_runs_unchanged__formal_saved_delivery_and_destructive_cleanup_keep_separate_authority",
+      "integration": "bind_this_existing_save_copy_wrapper_and_preserve_all_history_in_the_next_READY_test_completion_stage__not_a_background_autosave_or_new_state_source"
+    },
+    "routine_three_repeat_required": false,
+    "final_stability_consecutive_complete_passes": 3,
+    "sequence": [
+      "recall_matching_verified_pattern_and_bound_implementation",
+      "bind_source_copy_owner_and_run",
+      "read_native_semantics_and_mapping_for_authorized_test_scope",
+      "necessary_zoom_regen_then_existing_document_preview",
+      "inspect_actual_readability_and_embed_exact_PNG_in_origin_research_reply",
+      "immutable_return_direct_to_origin_research_then_scoped_repair",
+      "user_confirmation_of_exact_candidate_when_final_acceptance_is_requested",
+      "save_candidate_and_reopen_independent_audit_copy_only_for_explicit_saved_delivery"
+    ],
+    "semantic_classes": [
+      "included_angle_degrees",
+      "arc_length_when_explicitly_requested",
+      "linear_length",
+      "radius"
+    ],
+    "capture": {
+      "preferred_backend": "AUTOCAD_DOCUMENT_CAPTURE_PREVIEW_IMAGE",
+      "complete_canvas": true,
+      "detail_when_needed": true,
+      "inspect_after_generation": true,
+      "embed_real_PNG_in_user_reply": true,
+      "queued_path_only_or_thumbnail_is_not_delivery": true,
+      "old_image_cannot_prove_current_DWG": true
+    },
+    "scope_rules": {
+      "view_only_requires_aesthetic_PASS": false,
+      "ordinary_test_requires_full_stability_or_saved_delivery": false,
+      "known_successes_frozen": true,
+      "diagnostics_target_failed_boundary_only": true,
+      "missing_visual_never_revokes_proven_business": true,
+      "new_kernel_or_runtime_gate": false,
+      "new_CAD_authority": false,
+      "already_issued_READY_unchanged": true
+    },
+    "candidate_binding": "existing_ready.reasoning.reuse_admission__reference_this_profile_and_actual_reused_entry_versions__no_new_publisher_field",
+    "gap_policy": "state_exact_reuse_gap_then_minimal_versioned_adapter_and_targeted_regression__no_unverified_substitute",
+    "maturity": "historical_subchains_only__new_DWG_and_end_to_end_composition_require_own_evidence"
+  },
+  "profiles": {
+    "view_only": {
+      "required_gate_ids": [
+        "MUTATION_SCOPE_AUDIT",
+        "CODEX_VISUAL_REVIEW"
+      ],
+      "generation_or_layout_required": false,
+      "aesthetic_PASS_required": false,
+      "save_required": false,
+      "repeat_count_required": 0,
+      "meaning": "show_existing_technical_draft_and_label_quality__no_object_inventory_needed_solely_to_view",
+      "bounded_detail_review": {
+        "id": "CAD-BOUNDED-DETAIL-REVIEW-V1",
+        "optional": true,
+        "eligibility": "business_finished__object_effect_settled__successful_layout_frozen__finite_current_review_questions",
+        "delivery_class": "LIMITED_EXPERIMENT",
+        "visual_review_scope": "LOCAL_CALIBRATION_OR_DIAGNOSTIC_ONLY",
+        "scope_binding": "existing_READY_reuse_admission_and_bound_scope__explicit_unique_view_ids_target_groups_native_frames_and_total_view_budget__no_global_sample_count",
+        "max_views_source": "bound_scope.max_views",
+        "max_capture_per_view": 1,
+        "duplicate_views_allowed": false,
+        "execution": "one_READY__serial_existing_native_view_frame_zoom_regen_and_Document_CapturePreviewImage__reuse_proven_loader_lifecycle__no_core_change",
+        "native_preservation_audit_count": 1,
+        "source_evidence_reuse": "same_frozen_state_with_continuous_provenance_only__otherwise_rebind_before_publication",
+        "forbidden_actions": [
+          "generation",
+          "layout",
+          "object_move",
+          "save",
+          "open",
+          "close",
+          "business_retry",
+          "recapture",
+          "foreground_input",
+          "new_capture_backend"
+        ],
+        "per_view_failure": "missing_or_unreadable_image_marks_only_that_view_unsettled__continue_other_views_only_after_command_settled_and_exact_owner_idle__unknown_command_or_native_change_stops_remaining_views",
+        "origin_review": "read_every_planned_view_from_immutable_evidence__verify_identity_hash_scope_and_readability__embed_relevant_current_PNGs__report_unsettled_views__no_whole_drawing_or_aesthetic_claim_from_partial_views",
+        "candidate_regression": "existing_reuse_admission.regression_proves_scope_budget_dedup_one_capture_per_view_zero_business_and_unsettled_command_stops_downstream__not_a_new_publisher_or_runtime_layer",
+        "new_runtime_gate": false,
+        "new_publisher_mode": false,
+        "ordinary_business_capture_limit_unchanged": true
+      }
+    },
+    "ordinary_test": {
+      "required_gate_ids": [
+        "NATIVE_OBJECT_AUDIT",
+        "MUTATION_SCOPE_AUDIT",
+        "SCREENSHOT_RASTER_QA",
+        "CODEX_VISUAL_REVIEW"
+      ],
+      "repeat_count_required": 1,
+      "save_required": true,
+      "save_scope": "settled_test_checkpoint_SAVE_COPY_ONLY__not_saved_delivery",
+      "meaning": "one_authorized_targeted_or_two_pass_test__judge_declared_hypothesis__partial_and_evidence_gaps_allowed__not_final_PASS"
+    },
+    "final_stability": {
+      "required_gate_ids": [
+        "NATIVE_OBJECT_AUDIT",
+        "MUTATION_SCOPE_AUDIT",
+        "FINAL_QUANTIFIED_LAYOUT_AUDIT",
+        "SCREENSHOT_RASTER_QA",
+        "CODEX_VISUAL_REVIEW",
+        "HUMAN_VISUAL_APPROVAL"
+      ],
+      "consecutive_complete_passes": 3,
+      "save_required": true,
+      "save_scope": "settled_test_checkpoint_SAVE_COPY_ONLY__not_saved_delivery",
+      "meaning": "same_version_clean_base_to_generation_layout_audit_readable_capture__local_three_pass_is_not_whole_command"
+    },
+    "saved_delivery": {
+      "required_gate_ids": [
+        "NATIVE_OBJECT_AUDIT",
+        "MUTATION_SCOPE_AUDIT",
+        "FINAL_QUANTIFIED_LAYOUT_AUDIT",
+        "SCREENSHOT_RASTER_QA",
+        "CODEX_VISUAL_REVIEW",
+        "HUMAN_VISUAL_APPROVAL",
+        "E4_SAVE_CLOSE",
+        "E5_STANDARD_REOPEN"
+      ],
+      "explicit_save_authority_required": true,
+      "meaning": "source_readonly__save_separate_candidate__reopen_independent_audit_copy__bind_DWG_and_image_to_same_state",
+      "planning": "After explicit save authority and exact candidate acceptance, plan save-copy, frozen candidate, necessary temporary-copy reopen/readback and direct downstream delivery once in one bounded package by default. Split only for a real new risk, error, changed scope or unresolved evidence; never append to a terminal run.",
+      "reuse": "Reuse unchanged accepted layout/semantic evidence within its proven scope; verify persistence and material changes without rerunning generation/layout or building a generic wrapper at delivery time. Empty readback remains missing evidence and cannot satisfy NATIVE_OBJECT_AUDIT.",
+      "readback_entry": "scripts/get_cad_native_text_readback_v1.ps1",
+      "evidence_efficiency": "Reuse the same verified authority/evidence in the current turn while hashes, scope and freshness remain valid; native status/approvals remain live authority. Use existing run timings to separate preparation, CAD and callback costs. Do not add a timer, approval chain, heartbeat or state source."
+    }
+  },
+  "gates": [
+    {
+      "id": "NATIVE_OBJECT_AUDIT",
+      "description": "Object type, value and source association are correct and remain Tianzheng-native."
+    },
+    {
+      "id": "MUTATION_SCOPE_AUDIT",
+      "description": "Only targets declared mutable by the component execution contract changed."
+    },
+    {
+      "id": "FINAL_QUANTIFIED_LAYOUT_AUDIT",
+      "description": "When final layout is in scope, audit the bound formula and frozen successful members; do not move every object again or block view-only/diagnostic screenshots."
+    },
+    {
+      "id": "SCREENSHOT_RASTER_QA",
+      "description": "Raster inspection flags readability and possible clutter; tessellation, black frames and coarse overlaps are diagnostic evidence, not native collision proof."
+    },
+    {
+      "id": "CODEX_VISUAL_REVIEW",
+      "description": "Codex inspects the exact isolated screenshot and records readability, continuity, spacing and short-arc order."
+    },
+    {
+      "id": "HUMAN_VISUAL_APPROVAL",
+      "description": "User approval binds the exact final candidate or a new scope. A previously authorized two-pass contract does not require a second approval between passes."
+    },
+    {
+      "id": "E4_SAVE_CLOSE",
+      "description": "The isolated DWG is saved and Tianzheng is closed through the verified lifecycle path."
+    },
+    {
+      "id": "E5_STANDARD_REOPEN",
+      "description": "The saved drawing is reopened through the standard Tianzheng route and native objects plus layout remain stable."
+    }
+  ],
+  "visual_layout_minimum": [
+    "NATIVE_OBJECT_AUDIT",
+    "MUTATION_SCOPE_AUDIT",
+    "SCREENSHOT_RASTER_QA",
+    "CODEX_VISUAL_REVIEW",
+    "HUMAN_VISUAL_APPROVAL",
+    "E4_SAVE_CLOSE",
+    "E5_STANDARD_REOPEN"
+  ],
+  "receiver_configuration_required": true
+}

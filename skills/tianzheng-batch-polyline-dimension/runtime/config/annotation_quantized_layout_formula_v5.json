@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "formula_id": "CAD-ANNOTATION-QUANTIZED-LAYOUT-V5",
+  "normalization": "all distances are model-space multiples of each native annotation text height H",
+  "runtime_quantized_layout": {
+    "status": "active_validation",
+    "ordinary_common_band_tolerance_h": 0.05,
+    "reference_policy": "smallest_zero_hard_collision_band",
+    "base_band": {
+      "raw_formula": "max(W/2 + H/3 + T_target + H/3, 1.6H)",
+      "candidate_bands_h": [
+        1.6,
+        1.85,
+        2.1,
+        2.35,
+        2.6,
+        2.85,
+        3.1,
+        3.35,
+        3.6,
+        3.85,
+        4.1,
+        4.35,
+        4.6,
+        4.85,
+        5.1,
+        5.35
+      ],
+      "snap_policy": "ceiling_to_first_zero_hard_collision_band",
+      "ordinary_neighbor_max_deviation_h": 0.05
+    },
+    "side_selection": {
+      "closed_path_default": "topology_exterior",
+      "open_path_default": "endpoint_chord_virtual_exterior",
+      "open_path_native_side_fallback": false,
+      "open_path_segment_or_cluster_flip_allowed": false,
+      "open_path_collision_response": "same_virtual_exterior_side_outward_band_only",
+      "switch_scope": "whole_contiguous_cluster",
+      "isolated_switch_allowed": false,
+      "opposite_side_minimum_advantage_h": 0.5,
+      "opposite_side_requires_hard_pass": true,
+      "closed_path_inside_switch_forbidden": true
+    },
+    "sharp_endpoint_cluster": {
+      "activation": "adjacent_short_arcs_sharing_source_endpoint",
+      "common_side_required": true,
+      "common_band_required": true,
+      "common_band_tolerance_h": 0.05,
+      "text_text_hard_gap_h": 0.25,
+      "next_band_increment_h": 0.25,
+      "maximum_band_rank": 15,
+      "fallback_order": [
+        "same_side_shared_base_band",
+        "same_side_shared_next_band",
+        "same_side_bounded_adjacent_band_stagger",
+        "whole_cluster_wider_opposite_side",
+        "manual_review"
+      ],
+      "bounded_stagger_allowed_after_shared_band_exhausted": true,
+      "max_stagger_span_h": 3.5
+    },
+    "control_axis_contract": {
+      "authoritative_target": "ARC=source_center_radius__LINE=source_midpoint_signed_normal_distance",
+      "target_xy_role": "preview_only__never_acceptance_metric_when_scalar_contract_present",
+      "text_bbox_roles": [
+        "collision_detection",
+        "clearance_comparison",
+        "whole_source_exterior_validation"
+      ],
+      "forbidden_axis_sources": [
+        "text_bbox_center",
+        "text_bbox_orientation",
+        "predicted_text_displacement",
+        "screen_or_OCR_direction"
+      ],
+      "native_response_probe": "signed_source_axis__opposite_axis__tangent__opposite_tangent__four_diagonals",
+      "probe_transactions": "rollback_only__commit_only_scaled_candidate_that_reduces_scalar_error_without_source_drift",
+      "acceptance_metric": "absolute_source_geometry_scalar_residual",
+      "source_endpoint_drift_tolerance": 1E-06
+    },
+    "mutation_boundary": {
+      "allowed_grip_indexes": [
+        0
+      ],
+      "preserve_native_text_orientation": true,
+      "per_item_mirror_forbidden": true,
+      "per_item_side_flip_forbidden": true,
+      "source_geometry_mutation_forbidden": true
+    },
+    "visual_calibration_mapping": {
+      "user_zoom_20260829_figure_1": "missing_87_arc_2_is_a_D2_coverage_failure",
+      "user_zoom_20260829_figure_2": "open_path_83_uses_one_virtual_exterior_side",
+      "user_zoom_20260829_figure_3": "open_path_8B_uses_one_virtual_exterior_side",
+      "ordinary_neighbor_rule": "same_path_same_exterior_and_common_band_unless_real_hard_collision_requires_outward_escalation"
+    }
+  }
+}

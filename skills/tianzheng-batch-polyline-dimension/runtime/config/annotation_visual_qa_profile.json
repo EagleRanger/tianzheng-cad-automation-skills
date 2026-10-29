@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "profile_id": "CAD-ANNOTATION-VISUAL-QA-V1",
+  "status": "validation_only",
+  "purpose": "Fail closed on obvious screenshot disorder before Codex visual review; never replace native-object audits.",
+  "isolation_required": true,
+  "max_analysis_dimension": 1600,
+  "default_text_height_px": 34.0,
+  "mask": {
+    "blue_min": 110,
+    "blue_dominance": 45,
+    "green_min": 100,
+    "green_dominance": 35,
+    "white_min": 145,
+    "white_chroma_max": 55
+  },
+  "ignored_regions_normalized": [
+    [
+      0.0,
+      0.0,
+      0.16,
+      0.08
+    ],
+    [
+      0.86,
+      0.0,
+      1.0,
+      1.0
+    ]
+  ],
+  "thresholds": {
+    "minimum_blue_pixels": 250,
+    "minimum_green_pixels": 120,
+    "minimum_white_pixels": 80,
+    "minimum_text_source_clearance_h": 0.18,
+    "maximum_near_source_components": 0,
+    "hotspot_window_h": 4.0,
+    "hotspot_stride_h": 1.0,
+    "maximum_hotspot_ink_ratio": 0.145,
+    "maximum_offset_mad_h": 2.75
+  },
+  "required_ai_criteria": [
+    "text_readability",
+    "dimension_continuity",
+    "short_arc_order",
+    "consistent_offset",
+    "no_self_collision",
+    "no_duplicate_annotation",
+    "wide_side_preference",
+    "corner_cluster_order",
+    "print_scale_legibility",
+    "overall_visual_order"
+  ]
+}
