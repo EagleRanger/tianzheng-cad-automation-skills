@@ -8,9 +8,21 @@
 $ErrorActionPreference = 'Stop'
 
 $KnownSkills = @(
+    'cad-area-hatch',
     'cad-check-review',
+    'cad-dimension-annotation',
+    'cad-drawing-visual-review',
+    'cad-layout-sheet',
+    'cad-quantity-table-review',
+    'cad-text-style',
+    'cad-tree-group-annotation',
     'tianzheng-batch-polyline-dimension',
-    'tianzheng-cad-automation-framework'
+    'tianzheng-cad-automation-framework',
+    'tianzheng-coordinate-annotation',
+    'tianzheng-elevation-annotation',
+    'tianzheng-groundcover-annotation',
+    'tianzheng-index-annotation',
+    'tianzheng-planting-annotation'
 )
 
 if (-not $All -and (-not $Skill -or $Skill.Count -eq 0)) {

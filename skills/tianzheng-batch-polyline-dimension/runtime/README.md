@@ -1,4 +1,4 @@
-# Tianzheng native dimension runtime sources — 1.1.1
+# Tianzheng native dimension runtime sources — 1.2.0
 
 本目录补齐已有原生 ARC/LINE 标注、布局公式/规划、特殊文字恢复、原生读写、精确 owner 传输和构建源。不是任意 DWG 一键全自动成品，也不继承作者电脑的运行权限。
 
@@ -6,7 +6,7 @@
 
 ## 文件与真实执行入口
 
-`public-runtime-manifest.json` 是唯一公共文件清单，`files` 含相对路径和 SHA-256；`public-runtime-receipt.json` 是本次离线验证记录，不是 CAD 运行状态。`config/public_module_builds.json` 记录 7 个自有模块的真实源码与构建依赖，区分 `CommandMethod` 命令和 `LispFunction`。
+`public-runtime-manifest.json` 是唯一公共文件清单，`files` 含相对路径和 SHA-256；`public-runtime-receipt.json` 是本次离线验证记录，不是 CAD 运行状态。`config/public_module_builds.json` 记录 8 个自有模块的真实源码与构建依赖，区分 `CommandMethod` 命令和 `LispFunction`。
 
 | 能力 | 已附公开路径 | 接入边界 |
 | --- | --- | --- |
@@ -32,11 +32,12 @@
 ## 构建与信任
 
 ```powershell
-$env:CAD_PYTHON = '<实际 python.exe 完整路径>'
-./scripts/build_public_modules.ps1 -AutoCadSdkDirectory '<实际 AutoCAD SDK 目录>'
+python scripts/build_public_modules.py --sdk '<实际 AutoCAD SDK 目录>'
 ```
 
-这是显式构建操作，不加载 DLL、不启动 CAD、不登记身份、不创建 READY。结果只证明本机编译；将返回的本机 `config/receiver_build_manifest.json` SHA-256 从可信构建过程保存到 `CAD_BUILD_MANIFEST_SHA256`。精确 B 不再写死作者旧 DLL hash，但仍核验该 pin、模块 hash 与绑定源码 hash。manifest 或源码改变即拒绝。构建残留不覆盖；仅显式 `-ReuseExistingVerifiedModules` 且成功回执/源/引用/产物 hash 与已清空 Job 均匹配时复用成功子集。
+这是标准编译，不是安全沙箱；不加载 DLL、不启动 CAD、不登记身份、不创建 READY。结果只证明本机编译；将返回的本机 `config/receiver_build_manifest.json` SHA-256 从可信构建过程保存到 `CAD_BUILD_MANIFEST_SHA256`。精确 B 不再写死作者旧 DLL hash，但仍核验该 pin、模块 hash 与绑定源码 hash。manifest 或源码改变即拒绝。已有输出或清单不覆盖，失败保留已构建子集供核对，不自动清理或重试。
+
+原 `scripts/build_public_modules.ps1` 和资源边界研究封装继续保留为可选路线，其解释器进程身份及辅助进程观察可能在不同环境下拒绝；不绕过其失败门，不把标准编译的成功宣称为资源隔离验证。只有明确选择原路线且成功回执、源/引用/产物 hash 与已清空 Job 均匹配时，其 `-ReuseExistingVerifiedModules` 才能复用成功子集。
 
 新机编译产物不得冒用原 DLL 哈希；`CommandMethod`/`LispFunction` 源码存在和编译通过都不证明 CAD 已加载/注册。源图 admission 另需 `CAD_SOURCE_ADMISSION_SHA256`，与构建信任分开。
 
@@ -47,3 +48,7 @@ python -B tests/run_offline_tests.py
 ```
 
 执行原有三项合成算法测试，共 20 个断言案例：ledger 10、公共带几何 6、语义 4。最后 4 项按原 pytest 风格函数提供同等新鲜 `tmp_path` 标准库适配，无需安装 pytest；不改测试断言或算法。不会启动 CAD、消费 READY 或读取作者 runs。真实 CAD 操作仍须由接收方明确授权并完成原生回读和相应验收。
+
+## v1.2.0 补充源码
+
+[数组式原生对象模块与布局策略](docs/native-annotation-job.md)作为已有源码的公开迁移整理附入；批量命令成熟度和各模块实机验证范围不因家族扩充而提升。

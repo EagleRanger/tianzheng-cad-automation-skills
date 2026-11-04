@@ -1,0 +1,4 @@
+interface:
+  display_name: "CAD文字与字体字高"
+  short_description: "识别原生文字类型，核字体、纸面字高、联动与实际字形显示"
+  default_prompt: "使用 $cad-text-style 按当前项目要求调用已验证方法，并核实际后态。"

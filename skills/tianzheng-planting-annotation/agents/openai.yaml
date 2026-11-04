@@ -1,0 +1,3 @@
+interface:
+  display_name: "天正绿化种植标注"
+  short_description: "按真实树群和有效填充范围调整原生绿化种植标注并复核图面"

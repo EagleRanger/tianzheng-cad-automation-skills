@@ -1,0 +1,4 @@
+interface:
+  display_name: "乔木组串线与标注"
+  short_description: "检查真实树组、图例中心、头尾引出及同类批量排版与原生读回"
+  default_prompt: "使用 $cad-tree-group-annotation 按当前项目要求处理对应标注，并核实际原生后态与图面。"

@@ -18,7 +18,7 @@ Use this framework to connect a planning controller to a local Tianzheng/AutoCAD
 
 ## Operating rules
 
-1. Treat a native command return as execution evidence, not delivery. Require object audit, visual review, and save-close-reopen evidence.
+1. Treat a native command return as execution evidence, not delivery. Require native object checks, actual visual review and the current authorized save/checkpoint evidence. Reopen only for an explicit persistence check, actual save/host anomaly or the agreed delivery gate; not after every small edit.
 2. Protect the source drawing. Write to an isolated working drawing unless in-place mutation is explicitly authorized.
 3. Prefer semantic discovery and native commands over fixed handles, coordinates, or blind GUI replay.
 4. Adapt every contract to the installed Tianzheng/AutoCAD release, company review process, and security policy before production use.

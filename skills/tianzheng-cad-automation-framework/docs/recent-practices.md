@@ -1,3 +1,5 @@
+> v1.2.0 current policy: reuse the bound host and document. Routine review uses actual CAD captures and saves; do not cold-start or reopen after each edit. Reopen only when the current task or a real persistence anomaly requires it. The current `cad-check-review` and专项 Skill rules override historical case procedures below.
+
 # 原生校审与交付：近期可迁移实践
 
 本版将已经进入原项目方法入口的经验去标识化整理，不附项目图纸、商业软件或作者运行状态。配套批量标注 Skill 附已有执行源码。主要实测环境为 T20 V10 / AutoCAD 2021；其他版本、图纸拓扑和适配器须重新确认。
@@ -34,7 +36,7 @@
 
 ## 6. 固化候选与独立重开
 
-保存后冻结候选和哈希，审计及截图只打开另外的临时副本。天正可能在DBMOD为零或不保存退出时重写容器；审计结束后核对固化候选和源文件，不能直接把被会话重写的副本提升为交付稿。
+常规审计和截图复用当前准确绑定的工作文档及保存点，不为检查另开宿主。确需打开冻结交付件做独立持久化诊断时，才冻结候选和相应哈希、另用临时副本打开。天正可能在DBMOD为零或不保存退出时重写容器；该类审计结束后核对固化候选和源文件，不能直接把被会话重写的副本提升为交付稿。
 
 只读观察可能影响临时显示部件或DBMOD。先核实际对象、样式、源关联与容器差异，不以DBMOD单值推断一切。保存、几何重开、文字语义、视觉结果和用户认可分别留证；文字读取为空或零样本不等于文字审计通过。
 

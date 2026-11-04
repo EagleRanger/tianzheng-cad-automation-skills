@@ -1,0 +1,2036 @@
+{
+  "version": "1.2.0",
+  "kind": "public-file-integrity-only",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 69,
+      "sha256": "23ff9bb654d1c074e1e52dad4583c18e1ce8e573f4c35265016b786489de34b1"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 2766,
+      "sha256": "39fc94e23ed4232e2209befce15e01a02899607c00ed76408b7326cf7311f4bd"
+    },
+    {
+      "path": "install.ps1",
+      "bytes": 3950,
+      "sha256": "3a03305baf9a20db5e8fd2ea176804a8d5b8067708a3a1ac34e4a5b35c87ac2b"
+    },
+    {
+      "path": "LICENSES.md",
+      "bytes": 418,
+      "sha256": "bb3dc75f2d1c46b831b6682e8fa6dd09af7bdaf95c808d2c92106aebb4242840"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5132,
+      "sha256": "f6ca4edbc6e8d256c132f474c46c9de5d590a5464db6d9efaccb05f57adb7308"
+    },
+    {
+      "path": "release.json",
+      "bytes": 267,
+      "sha256": "0ae3dc4b8b79c50b5925ee656769411a6c8bea94dc6edaf143bb3d2ec86a0e5f"
+    },
+    {
+      "path": "skills/cad-area-hatch/agents/openai.yaml",
+      "bytes": 282,
+      "sha256": "2de065a2a2c76f14f6bc849821a100f3de503337df55d3063490be3824191dd0"
+    },
+    {
+      "path": "skills/cad-area-hatch/SKILL.md",
+      "bytes": 6957,
+      "sha256": "c204bc67fbec51095cdfc663bc7f1ce8f21adf0a13935a9cb4a73bf531d14a4e"
+    },
+    {
+      "path": "skills/cad-check-review/agents/openai.yaml",
+      "bytes": 278,
+      "sha256": "438ed4166b5e0042652f7486ed7c356367bd1889045412958bb788b569a7cdb0"
+    },
+    {
+      "path": "skills/cad-check-review/library/knowledge/CAD_ANNOTATION_AESTHETIC_USER_REQUIREMENTS.md",
+      "bytes": 12233,
+      "sha256": "e9372562cf6e5bc4679850a6171611c4a245addd2c63825b5f6b401362670c1e"
+    },
+    {
+      "path": "skills/cad-check-review/library/knowledge/CAD_ANNOTATION_VIEWPORT_SCALE_CONTRACT_V1.md",
+      "bytes": 2397,
+      "sha256": "7721e0d8d5fca116ac11e8ef4144746c5fd450e780c72751820ba32dabff5b10"
+    },
+    {
+      "path": "skills/cad-check-review/library/knowledge/project_guides/CAD_DESIGN_CHANGE_ASSOCIATED_REVIEW.md",
+      "bytes": 5581,
+      "sha256": "a91a2293ab1824418ebf11fd00c74ecb03f510ba507e99196aa4154254a6e309"
+    },
+    {
+      "path": "skills/cad-check-review/library/knowledge/project_guides/CAD_TECHNICAL_RECALL.md",
+      "bytes": 3968,
+      "sha256": "f25988a31de2ee6b4ffc649a2baeb701dc51d4806a230fcd38426c1774cab7ed"
+    },
+    {
+      "path": "skills/cad-check-review/library/knowledge/templates/CAD_执行清单模板.md",
+      "bytes": 3119,
+      "sha256": "69cb2b547a889ae6c7521a5f634536d7b855e7c4295722ee7572c8c8fb5814ae"
+    },
+    {
+      "path": "skills/cad-check-review/library/knowledge/TIANZHENG_NATIVE_ANNOTATION_ADJUSTMENT_AND_COLLISION.md",
+      "bytes": 8765,
+      "sha256": "266886dc12a4b2da3185ba0a8389b2217a7ad91c060084858070162ea927968e"
+    },
+    {
+      "path": "skills/cad-check-review/library/knowledge/USER_REFERENCE_ANNOTATION_SCALE_OFFSET_CONTRACT.md",
+      "bytes": 2681,
+      "sha256": "cab0b01ac5f50a695bef9e036cc6a3322406e4e04f5018ec4cfb4952257d254a"
+    },
+    {
+      "path": "skills/cad-check-review/references/annotation-control.md",
+      "bytes": 18019,
+      "sha256": "f9cd2d33983658160ab17f5f6095994ec34fc83d8f66726df6a3f69f976e9545"
+    },
+    {
+      "path": "skills/cad-check-review/references/cad-method-index.json",
+      "bytes": 24433,
+      "sha256": "e506871a759276bcd37de934569962369f839142eb6f91d49a130e0614597cda"
+    },
+    {
+      "path": "skills/cad-check-review/references/construction-drawing-workflow.md",
+      "bytes": 8954,
+      "sha256": "308b77e11a91fd5e84d0c27fa9e26a7f22df77956e7a464b72d34a4be659926c"
+    },
+    {
+      "path": "skills/cad-check-review/references/drawing-change-workflow.md",
+      "bytes": 23342,
+      "sha256": "e82c71568ee012891339a52c3136ac9513835c4c9c66e03bd383ddf0e82f2ccb"
+    },
+    {
+      "path": "skills/cad-check-review/references/large-area-hatch.md",
+      "bytes": 2166,
+      "sha256": "5b39f1d2d5e85b59741f4ed5fc2e052967be5093d9f29b0fb60ea4fc16f4e5a2"
+    },
+    {
+      "path": "skills/cad-check-review/references/markup-config.example.json",
+      "bytes": 795,
+      "sha256": "89a306b444e1d06ca21317ea121c46309539657e22035c8fdd793291f52fab65"
+    },
+    {
+      "path": "skills/cad-check-review/references/markup-schema.md",
+      "bytes": 2154,
+      "sha256": "984cd0205f817edfb87dfbf9047139b192f476f19e99509eb750bc08add07154"
+    },
+    {
+      "path": "skills/cad-check-review/references/polyline-fitting.md",
+      "bytes": 5598,
+      "sha256": "021be49a05d3b1cc6179b75923aa7607964046fae6e1724cadc66f48e36fd066"
+    },
+    {
+      "path": "skills/cad-check-review/references/review-workflow.md",
+      "bytes": 3101,
+      "sha256": "27bdf3340945e0f0cef485b7d6ac5802016d4528e9293c5687e31506d488e742"
+    },
+    {
+      "path": "skills/cad-check-review/references/validation-gates.md",
+      "bytes": 3519,
+      "sha256": "0bb85bbc92aeb8dc74e36cc06c3f10b752d7a1379e9f9f8fc0df61a321303914"
+    },
+    {
+      "path": "skills/cad-check-review/scripts/cad_capture_compat.ps1",
+      "bytes": 11982,
+      "sha256": "5a66a32f12d0220546bec3718d8a6481328f7545c32b3962ec5db4ad3a5a19c1"
+    },
+    {
+      "path": "skills/cad-check-review/scripts/generate_markup_bundle.py",
+      "bytes": 20992,
+      "sha256": "60e926ab51124c043af69364b657a195666be25afded45e12ff501f72494e048"
+    },
+    {
+      "path": "skills/cad-check-review/scripts/new_review_run.ps1",
+      "bytes": 2680,
+      "sha256": "a4ba05bc159cb900225d18b2bbb10e44f0fb5d60a4cd52d6a6122486bd0f33d1"
+    },
+    {
+      "path": "skills/cad-check-review/scripts/resolve_cad_method.py",
+      "bytes": 4539,
+      "sha256": "cae7c0308fbb9849db86cc5e27d82e8c9b5338cd6cf3cbdc70367fa3ef72dd62"
+    },
+    {
+      "path": "skills/cad-check-review/scripts/test_resolve_cad_method.py",
+      "bytes": 3695,
+      "sha256": "ddac41bde347f5ad8dd35fc501d0904541a876b589d7721f4260bae63644f137"
+    },
+    {
+      "path": "skills/cad-check-review/scripts/verify_review_run.ps1",
+      "bytes": 3074,
+      "sha256": "e6ae1bce8ef23d5d06664f3982da8c35cb21d567e1552415f6d981d97345f98a"
+    },
+    {
+      "path": "skills/cad-check-review/SKILL.md",
+      "bytes": 15151,
+      "sha256": "80aa8c7def597faba49ea77efcd60ffa503252651b1fcc0367cbbf8d010eb832"
+    },
+    {
+      "path": "skills/cad-dimension-annotation/agents/openai.yaml",
+      "bytes": 295,
+      "sha256": "b746db86b1b5cf323bced84e52a942b8d0383c744dec99efdb40e9e3a634de8c"
+    },
+    {
+      "path": "skills/cad-dimension-annotation/SKILL.md",
+      "bytes": 3917,
+      "sha256": "d9f03214e5ff446824efab3f52e5de2e8f56d465027be61f354995ff08952a52"
+    },
+    {
+      "path": "skills/cad-drawing-visual-review/agents/openai.yaml",
+      "bytes": 281,
+      "sha256": "93aa02d8df2f81b6dffde482cc9143b2cb28c47b0f1ebccf011d464851402c65"
+    },
+    {
+      "path": "skills/cad-drawing-visual-review/SKILL.md",
+      "bytes": 3846,
+      "sha256": "36eb88a46e548a85950c2b84d3b813880b8d5e4a3cb2698275a6466c66b67b84"
+    },
+    {
+      "path": "skills/cad-layout-sheet/agents/openai.yaml",
+      "bytes": 275,
+      "sha256": "48c2f7eb797e3b2a495a0bd32c30c649d0337bc6eebf5a63630dcdb3db7fb7a4"
+    },
+    {
+      "path": "skills/cad-layout-sheet/SKILL.md",
+      "bytes": 4425,
+      "sha256": "095acb172cafc9328b5b125eebef071b18b514ab83a705aee8560af3508f6828"
+    },
+    {
+      "path": "skills/cad-quantity-table-review/agents/openai.yaml",
+      "bytes": 290,
+      "sha256": "3d77727d4ab338874b483911f5920f5c645ff2ed490c5fce087c4c1a770c2b87"
+    },
+    {
+      "path": "skills/cad-quantity-table-review/SKILL.md",
+      "bytes": 2382,
+      "sha256": "0f473a1477fdbc57579f1c1cfcecf522dae853123efd405f7caf7170122b00ba"
+    },
+    {
+      "path": "skills/cad-text-style/agents/openai.yaml",
+      "bytes": 273,
+      "sha256": "2902b2fff5540f29e5ec8a4fb331dbcbcc85e4d4667afe4e84fbaee193194c54"
+    },
+    {
+      "path": "skills/cad-text-style/SKILL.md",
+      "bytes": 4270,
+      "sha256": "ce2f6e755107dd8be3f9da426e4e5296409679e3623850ab93f6daa39cdd8fb3"
+    },
+    {
+      "path": "skills/cad-tree-group-annotation/agents/openai.yaml",
+      "bytes": 299,
+      "sha256": "6da6de2f1aae1c80ea459f3a34f7263b69e2e63deffaedb910d2da0c67f82f4a"
+    },
+    {
+      "path": "skills/cad-tree-group-annotation/scripts/preflight_tree_groups.py",
+      "bytes": 7749,
+      "sha256": "f31e80da2fccaf1469585a2a3c3a22af4ad187b2d5977443f052462f926bd47b"
+    },
+    {
+      "path": "skills/cad-tree-group-annotation/scripts/test_preflight_tree_groups.py",
+      "bytes": 4511,
+      "sha256": "6411e05152a4c54f0ecd2219df55691a543cd2b04fcbabb500d51d5694f50941"
+    },
+    {
+      "path": "skills/cad-tree-group-annotation/SKILL.md",
+      "bytes": 6128,
+      "sha256": "952fd11d6147f6743ccd068a7e478e5076d860f57a63512be8d7afa6a904bff4"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/agents/openai.yaml",
+      "bytes": 352,
+      "sha256": "65ba3e3709e1e0818a9ff8bc0f2370cf906eefe60ca869966330d62506d50cb2"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/references/current-scope-practices.md",
+      "bytes": 2533,
+      "sha256": "df20df5179b240b4e33154300363cb0d9aa8db6dd4995efa3fdbe803033d6f40"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/references/migration.md",
+      "bytes": 3970,
+      "sha256": "3749dee8abfd5b20ded272e0bf73f8b16cfba3c27df22b297210886ed8b01962"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/references/project-contract.md",
+      "bytes": 4435,
+      "sha256": "4f0c0022ea3ae675e1fefc46318c4b36829adf535e0444218736e5f23e70424c"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/.gitignore",
+      "bytes": 201,
+      "sha256": "48a22506ab0ce1ffc9b58569f181d9778f752b6a3f45a28b6e671934016690f5"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/annotation_collapse_rescue_formula_v2.json",
+      "bytes": 1402,
+      "sha256": "c53456df8c6db1e839685074873900985a3effa2a5d5128aea9477198b2619b9"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/annotation_quantized_layout_formula_v5.json",
+      "bytes": 3725,
+      "sha256": "a6288685d2998d0b0ca03b262e54a44289e8b86c1adfd0e1f4dd2046c16e2ba4"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/annotation_quantized_layout_formula_v6.json",
+      "bytes": 2114,
+      "sha256": "ed2ec92f50c2ebcbe625d532a4d8dbc7c848497736ea86ddf2cf2062b3ae28d9"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/annotation_quantized_layout_formula_v7.json",
+      "bytes": 3438,
+      "sha256": "87258de1dc74d39e734b2f5e99ef5dcb7124a564a86d8046adf17475357dc415"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/annotation_special_text_peer_normal_formula_v2.json",
+      "bytes": 1795,
+      "sha256": "3a4b562ce6b5e6b6f989c0f46f6bbb2794d4fccbb28642dcbd27ec78e756fcf8"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/annotation_vector_layout_formula_v1.json",
+      "bytes": 4301,
+      "sha256": "5700354e95ff430e68ff71915603bbd37589259febd509df1195aa2111e79b06"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/annotation_vector_layout_formula_v2.json",
+      "bytes": 11557,
+      "sha256": "8c055283de22a993618c610f2746a5c4f4919f427544917b6061ab97840fd98b"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/annotation_visual_qa_profile.json",
+      "bytes": 1331,
+      "sha256": "89768a7d93191af1226e23f9f2c2fcd96ed9cb37ba30adf491fccaf97504bae6"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/cad_acceptance_gates.json",
+      "bytes": 10948,
+      "sha256": "1636da46c0f43f66c994e031df3f25e673df81f304b722f9ff9b2fa683498aa3"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/cad_automation_component_packages.json",
+      "bytes": 23882,
+      "sha256": "c3f07c6e43cc276757e5919920325cb54b555668149834ece9588d3bb405fcea"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/cad_command_research_routing_v1.json",
+      "bytes": 3527,
+      "sha256": "9983866383d34770a638e2268515bbfb4ce6d1ab3cb6df4aeab607ff1dd78a7e"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/cad_grip_move_delta_contract_v1.json",
+      "bytes": 774,
+      "sha256": "ce8341885f1ccede2eedf01359ecb62b60cfd8357b741d45f0f15baecdd48aed"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/public_module_builds.json",
+      "bytes": 4819,
+      "sha256": "ccad68b2bb71e04aeeeb3f75127a07e4cc85551e244c27340281e7d94cac4392"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/rejected_legacy_entrypoints.json",
+      "bytes": 3433,
+      "sha256": "2568730695cc95464aa00f8fccfb15a8fbed0e08cdb121a9c9da860c31d4bc2a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/tianzheng_dialog_whitelist.json",
+      "bytes": 3294,
+      "sha256": "167b706db6deb97648aea6977fe76511f4033c63d79aaf27b2365363e37c824a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/tianzheng_execution_preflight.json",
+      "bytes": 3229,
+      "sha256": "fe355d1335503036d34f98384eb2357bc4f5febf3c8d5ea209056f9cb150a863"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/config/verified_workflow_registry.json",
+      "bytes": 13439,
+      "sha256": "55561586f4f92a0414fe84cd4fc6e1a7f696d4653fa460e6f1362dbaa547f514"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/docs/native-annotation-job.md",
+      "bytes": 3296,
+      "sha256": "e9508e691c19f55534014d9de9a8f63913517c6bac7d0646344a106b3e3847b5"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/public-runtime-manifest.json",
+      "bytes": 152753,
+      "sha256": "f9acd344d841d767283e5740e6f3b08a4d0021bf163ace539b9a6373019b2015"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/public-runtime-receipt.json",
+      "bytes": 425,
+      "sha256": "1bfcf3fb06232549ba857f2aa8e1c39debf0cc6270bfc2bb14b6604a36345fd9"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/README.md",
+      "bytes": 6961,
+      "sha256": "4d2fc62b164635d249625080d10768179f6b59a6128d3decdc06fa0037a9053e"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/background_operation_reproduction_v1/native_read_contract_v1.ps1",
+      "bytes": 10176,
+      "sha256": "e7446f5061798445ffef54bb0c5c3f79fcbe12fb76d3aacaeff446150ca14111"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/background_operation_reproduction_v4/native_read_contract_v4.ps1",
+      "bytes": 10619,
+      "sha256": "1843fc28fbc6a7d4ffcbf2ca38b91f5f8616eb429595d164e26d02dc0fc22808"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/background_operation_reproduction_v7/native_read_contract_v7.ps1",
+      "bytes": 9826,
+      "sha256": "71258f40a19330e55a12db864e331db6a010c243f046e549769c7c32128f139d"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/background_operation_reproduction_v8/native_read_contract_v8.ps1",
+      "bytes": 8021,
+      "sha256": "f1278a158af425a22385e4e185b1494184e4ae163ff6105ea934bf2e13a68eea"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/background_operation_reproduction_v8/operation_adapter_v8.ps1",
+      "bytes": 3509,
+      "sha256": "ab4041325b8f6e7be63b95435ec6b85c7df4bf573ce28f9d11da802cce9c07b7"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/background_operation_reproduction_v9/read_settlement_v9.ps1",
+      "bytes": 4921,
+      "sha256": "0561bcefd54a7729198b9d55a103ee883570f8fa3573c848cc902c4b2c9e1b65"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/command_probe_v1/probe_contract_v1.ps1",
+      "bytes": 12616,
+      "sha256": "dc026a3bd3f6fd02c24c3f748ba807b363158a8c4a2818241c27b7b8cea36dbd"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/command_probe_v2/probe_expression_fix_v2.ps1",
+      "bytes": 786,
+      "sha256": "a5cc3458df7a9f11df7d7aac384c0cf336876ccbe8971e5ad59eed6d8752be80"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/command_probe_v3/probe_contract_v3.ps1",
+      "bytes": 7269,
+      "sha256": "ea51d3c62238b316467afc845c89ed282bf220b60e97f0c7138ba6580a29e31d"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/command_probe_v4/file_binding_v4.ps1",
+      "bytes": 1466,
+      "sha256": "83e506ad54f36f484ed55cc5bff7ca2f19299cda0ac021991b8a0780c9433aed"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/command_probe_v4/probe_contract_v4.ps1",
+      "bytes": 2769,
+      "sha256": "1cccc380f598dcc3d8ef89c1392c938fe26258e76c9df17d6ebba4999ae5b430"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/dual_business_concurrency_v1/build_draft.ps1",
+      "bytes": 10642,
+      "sha256": "5611a01188bb6e49184999278eae578af2448c822a347f66537d55b2804ae7e5"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/dual_business_concurrency_v1/command_worker_v1.ps1",
+      "bytes": 8241,
+      "sha256": "0b9513e2a65a184a8c95139cfff2c019dc2c29bcfeb1795bb219d3c77d9857a4"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/dual_business_concurrency_v1/dual_contract.ps1",
+      "bytes": 11811,
+      "sha256": "8e9f8e797f7c9c563f14516c72dfaab5018387bb02ed0517bf75a5591c4fab44"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/dual_business_concurrency_v1/invoke_dual.ps1",
+      "bytes": 13247,
+      "sha256": "fbe6bd2111986a22463dd99a49e46379fdd356edf1dd002e1377470b364891e2"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/dual_business_concurrency_v1/native_dual_stages.lsp",
+      "bytes": 3304,
+      "sha256": "b66e220db93f24b4b85686dec535a164fc3c4aa1feabc89a79612df8b3b2a640"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/dual_business_concurrency_v1/process_dual.py",
+      "bytes": 4666,
+      "sha256": "59e3e5828d3c2cb137da9d05692d5d1b6a0f96073e8b6303d89334d30f1f7c8d"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v1/batch_contract.ps1",
+      "bytes": 11796,
+      "sha256": "85b79605358500acea67dc70f4e5c1356ac8e4a9d36efa970086903ef7218b96"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v1/command_worker_v1.ps1",
+      "bytes": 7894,
+      "sha256": "9cb22c709435b4212a857e7a606880215fd8f87fc8ae142b7010bc06d669ebb2"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v1/invoke_batch.ps1",
+      "bytes": 12085,
+      "sha256": "0d44ca6a00a1b6988c07c3e311631bae29f6434de37add8f84e7cc40554e692c"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v1/process_batch.py",
+      "bytes": 7365,
+      "sha256": "14f68e5fd6675fe5e943b60b66d78dcb702d0099826f2cb3374cb8b69bd8cf1a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v2/batch_contract.ps1",
+      "bytes": 11511,
+      "sha256": "1fc9ddf4345d75b598f8e57924f92f6ebb8af3d7ef9c34078a7b5ccd853fefeb"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v2/command_worker_v1.ps1",
+      "bytes": 8092,
+      "sha256": "8f49f95b348afa2ad4afe224b95c252cc10829499869a47dd69541095b185280"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v2/invoke_batch.ps1",
+      "bytes": 12360,
+      "sha256": "c52b267864316b8de60738761d898c98d84af772cbefa5ee1dbece339a42e7a9"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v2/process_batch.py",
+      "bytes": 255,
+      "sha256": "9a9cf4c150f7e357b39d93d35d77a504f783c6a7335ecff0456d2d9f351a5937"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/representative_command_batch_v3/process_batch.py",
+      "bytes": 5405,
+      "sha256": "5bfcd7a4347717a9b7cfa6d6c16fa38209f38f5050df8c33d3ac7dfbc4218070"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/single_background_input_v1/background_contract_v1.ps1",
+      "bytes": 6617,
+      "sha256": "bc02883289f06ed2030d814f89ba7eb6684393a548dd809cdb69318e1674b0f8"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/single_background_input_v3/background_contract_v3.ps1",
+      "bytes": 7166,
+      "sha256": "059cc6af4821d6c9afc6bc74089f609603823bc9360e2f9e3df2ff585609d7e8"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/single_background_input_v3/base_contract_v1.ps1",
+      "bytes": 6617,
+      "sha256": "bc02883289f06ed2030d814f89ba7eb6684393a548dd809cdb69318e1674b0f8"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/dimension_background_reproduction_v3/discover_source_geometry.lsp",
+      "bytes": 1553,
+      "sha256": "275e190b1a29eec57d3d959a77901c75124ca03547df96e22693e88fc2caae53"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/dimension_background_reproduction_v7/native_stages.lsp",
+      "bytes": 10583,
+      "sha256": "543bf0bc999ada031de2f96fbce22e28e6808501f88ed240647a45a52ffdda18"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/dimension_background_reproduction_v8/plan_with_full_topology.py",
+      "bytes": 2578,
+      "sha256": "9556108d4c6a43f52829d8882a8de0d68f49105cadb76fbde2bfa12daa293ba9"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/dimension_background_reproduction_v8/popup_snapshot_v3.ps1",
+      "bytes": 3879,
+      "sha256": "1532781cd6a832e7b85b2d1d3e1588a5854f63a7ffef3f90bcc72620ef5cf697"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/dimension_background_reproduction_v8/process_artifacts.py",
+      "bytes": 12807,
+      "sha256": "ad88025d863dd526ce7aea18eb08579e50b0b8d91e64b5303778204c51662c30"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/dimension_background_reproduction_v8/runtime_contract.ps1",
+      "bytes": 6288,
+      "sha256": "c1a323cd80278ec9d8eecb624bedc378bd42d0cb5970099684a4b40bddb98c25"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_b_document_background_read_v1.ps1",
+      "bytes": 6865,
+      "sha256": "152bddc90bdb7f5d2993e43bc9c11ada518d2977e128c5a7ebcf59187a55ed3c"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_background_native_read_v1.ps1",
+      "bytes": 18113,
+      "sha256": "665cb988796b78c5439af0cee56e6498ffb351a0730d1df44c194cf5a320c914"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_canonical_open_consistency.ps1",
+      "bytes": 27143,
+      "sha256": "1dd84f5d9149eea4a99740349ada0157ab2aa156b42b28cf19f7f67e2f21660c"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_command_research_routing_v1.ps1",
+      "bytes": 54680,
+      "sha256": "cfd21d1e2347536606bdacb3617a09ebff2168b85e61d0219fa2f58869d7c8bc"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_component_execution_contract.ps1",
+      "bytes": 13107,
+      "sha256": "01da1904e40b62fc17134d03af8a3029b28c677eeb62d501095d98cb6193c2f5"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_dual_business_concurrency_v1.ps1",
+      "bytes": 4808,
+      "sha256": "dbde063de9f90075dcdb8e0190b1b808a8b7b8bc2790f5b3fd9f6084363d3cac"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_existing_a_fixture_open_v1.ps1",
+      "bytes": 9389,
+      "sha256": "5ad9ec4d8782c924646d1dff75d887925a4f337d11eb7c24fbbb249109d83bb6"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_existing_b_arm_background_read_v1.ps1",
+      "bytes": 7639,
+      "sha256": "48dbcfd1089efe2d9432f66b853c7a2da8b2b7e3345292eab7fe8eff2a4ce554"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_iteration_learning.ps1",
+      "bytes": 6589,
+      "sha256": "7d43e4625d587e019a98e849c6009effad72c21eb13f84828b7928d6c8d0f643"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_knowledge_promotion_consistency.ps1",
+      "bytes": 8425,
+      "sha256": "c3ec21c248c7541a6bb92b26f25a991e0952315871c80232acfcb261bc5a0f42"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_multi_owner_binding_diagnostic_v1.ps1",
+      "bytes": 45254,
+      "sha256": "92466c5b7e5b1fddfd2a296d44a59480be4e6799a3f0afce910d6eff85570f88"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_multi_owner_non_db_probe_v1.ps1",
+      "bytes": 15787,
+      "sha256": "e64ad68a64b7856fc6acf11df1ba22ca68cacbcc00455990e7b0c09f6f66a193"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_multi_owner_read_profile_v1.ps1",
+      "bytes": 62205,
+      "sha256": "67fbb085c2d54d3c4ee23dbf89a1137c9dd2abf86e9c63f1c1fe68ac93e4d2d7"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_multi_owner_test_preparation_v1.ps1",
+      "bytes": 14176,
+      "sha256": "5dd9213a087a5ff0c8c072b36ce661e86473f94bf02b15f7c0265e7399a9dfbc"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_project_loop.ps1",
+      "bytes": 2224,
+      "sha256": "64617d963fc9d11c7a2d50dab624af28121167fb1bd675ec1ef7426d740fb81e"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_project_loop_core.ps1",
+      "bytes": 20146,
+      "sha256": "e729cd63b6a0b82fcadfa428c497ad4ecfc1bba34e3a37049d1466c356e56f48"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_ready_verified_reuse_v1.ps1",
+      "bytes": 4086,
+      "sha256": "c1b93466419b8ac2c7f418a74004ad6b71bc9211967daeea751eee8e2c7ca0de"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_record_chain_integrity.ps1",
+      "bytes": 14865,
+      "sha256": "8ba0b3c519048f135e49eba8487e9d7ea5df244be1f0a58d3c8e93f20220024f"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_recovery_context.ps1",
+      "bytes": 7140,
+      "sha256": "a4406dca8392e3cdc353c8183febc3b214f6cada2eff2f6363b383667003dddb"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_representative_command_batch_v1.ps1",
+      "bytes": 8586,
+      "sha256": "5d0c4b2971adba36f02cf0f98b05d5af9b51eff491988d9d4bae15be559d4873"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_research_bootstrap_v1.ps1",
+      "bytes": 8630,
+      "sha256": "823b4f8e859c23d6bdc2967017f77c2feefaaf94dd7b666ee9abba0c0a873464"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_return_delivery_contract.ps1",
+      "bytes": 9816,
+      "sha256": "6e51563815c046f8257b1fe725a1754f290b1e779b0694fb164dc05d553dee2b"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_single_a_passive_input_settlement_v1.ps1",
+      "bytes": 9515,
+      "sha256": "d45db014e2abbb165d1917d409f97cb653b49a543bc6ab081d958441c537fa0e"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_single_background_input_v1.ps1",
+      "bytes": 18967,
+      "sha256": "04772c6dfe683be3bce26036637ab6ea8677592607174b8ef38904f7d16b8449"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_cad_task_channel_architecture.ps1",
+      "bytes": 13527,
+      "sha256": "aa467a1aff15b4ba96d529f870cadee82e7852a5c7aaf6e2290b6c7ba4049952"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_native_generation_bundle_semantics_v1.ps1",
+      "bytes": 3729,
+      "sha256": "a332fc14189a5f4683fd37e1672172223444b1f02af9fd028aa0a79acdb71c68"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_native_generation_bundle_semantics_v3.ps1",
+      "bytes": 2152,
+      "sha256": "a5889f7f073b22946a141579303a65689a38b74d1d68f02e68bf8e23e001bf9d"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_no_blocked_workflow_references.ps1",
+      "bytes": 8240,
+      "sha256": "d8969857cc42debd92d08e232af94a6430162afaab8d5baef197e45c74d7846a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_owned_stage_checkpoint.ps1",
+      "bytes": 5684,
+      "sha256": "acbb0be21702d0f98f0fe3e4a41e66d21cd24901741b919e43cb0292db8eb1de"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_project_execution_contract.ps1",
+      "bytes": 4231,
+      "sha256": "6a88299c812297ba998868e7dc5d323667d36d6f3f229406cd185db33c977bc4"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_selected_typed_workflow_convergence.ps1",
+      "bytes": 11260,
+      "sha256": "2427a4aa48542db889bfd300a7fcde3971080f2056c28782dcabc67033c5ebab"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_sheet_layout_baseboard_extract_scope_v1.ps1",
+      "bytes": 28558,
+      "sha256": "efeaac0a6a8900f767b5e6e66eae9db82f8ce5f673249fcdfbd5763942e20180"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_targeted_confirm_arc_dimension_positive_v40_semantics.ps1",
+      "bytes": 3370,
+      "sha256": "3268cbb4652e360fd29eb82d4f9ae54fb118a36e83bee7ad44fe2bd4d31dcfbd"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_tianzheng_one_shot_handoff.ps1",
+      "bytes": 2409,
+      "sha256": "6793fc0f4247eb26c24697d85c5ba1441f2a94b3b8a00d2d53abfcef9c2c426b"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_typed_dimension_layout_composition.ps1",
+      "bytes": 19417,
+      "sha256": "f09f43a26c53ce2401d44fdb1cd5dfbb8bfbdd8f771611b7e0a6a43f04b7882e"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/assert_verified_workflow.ps1",
+      "bytes": 5403,
+      "sha256": "9c91a93d821b1b12a932b9436c6bfff1ffd687f699ddc3ea54b5216356382eae"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/cad_ui_helper.ps1",
+      "bytes": 17112,
+      "sha256": "66bb169e8e698f641c83ad70c9e686511034324218bd3def45a079ae0cc6b442"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/complete_cad_execution_manifest.ps1",
+      "bytes": 1410,
+      "sha256": "f2d7034f4f7851f5430ea2c0d1376170ac921158145c31a8b42186f10f2ff56a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/get_cad_iteration_context.ps1",
+      "bytes": 20319,
+      "sha256": "23538c60cc7aeebf5474240c85bff08d35b82248e33c46e63697b980b659080f"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/get_cad_pre_run_authority_snapshot.ps1",
+      "bytes": 5940,
+      "sha256": "a50e1911fea475bc8de45416253ff97123fcca3a04a006a8e1d76a355b2e2b47"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/get_tianzheng_adaptive_startup_budget.ps1",
+      "bytes": 4607,
+      "sha256": "57bb62c7bdd0c7ebb0c13f6d9c4de1b517dd8db4952f8c2b26fd5947b4bf4409"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_clean_full_generation_semantic_probe_trusted_v31.ps1",
+      "bytes": 6810,
+      "sha256": "9c4a3ce8c3b4dbe200d76df23c484e3b06fff6368ae58da4992d9c3c79282256"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_clean_full_generation_semantic_probe_v30.ps1",
+      "bytes": 16006,
+      "sha256": "72cc4de37d218cab00c24182ce8605fd49c87fe8f217e1206d1d5e0e96a35bc2"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_composed_layout_continuation_trusted_v34.ps1",
+      "bytes": 5152,
+      "sha256": "3ad016f4b8410508a3a30938d64b6da3ee8f4d208d0cf2d9732e6da269a41d33"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_composed_layout_continuation_v33.ps1",
+      "bytes": 38939,
+      "sha256": "a55849d57c9e692b804ebf02058a799fa92162583087120cf00ab2cd4e17393e"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_owned_cad_visual_capture.ps1",
+      "bytes": 13158,
+      "sha256": "ab88b682872265f5e421ac034542ce0b716a8dce05c908ea4ac1a34e504a0a18"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_owned_stage_transition.ps1",
+      "bytes": 3244,
+      "sha256": "2d07bcd32dd0712b0ed0e88664afdc5f79b611b2b9c662f66ac9875dd3115e61"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_owned_tianzheng_one_shot_validation.ps1",
+      "bytes": 12010,
+      "sha256": "784d73855cdc0a4fe0c07a69036c88e7958a02266ed285b3ea9dba24fd7fb0a3"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_owned_tianzheng_whitelist_action.ps1",
+      "bytes": 177403,
+      "sha256": "929d8655c3a6bbe4cb00b7cdd1d3d2de6426b1bc84a6c261c478ee770918d89b"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_owned_tianzheng_whitelist_action_v5.ps1",
+      "bytes": 176258,
+      "sha256": "5fab6a7ce569d83c48d46d4d046d7bd6dd3f45dbd542b87e888d41a19c2447e6"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_post_ordinary_rescue_audit_visual_trusted_v36.ps1",
+      "bytes": 2373,
+      "sha256": "b257248d9db4974cb1294c12645058f2e17523e19cc64052922640c1f12bffd7"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_post_ordinary_rescue_audit_visual_v35.ps1",
+      "bytes": 23708,
+      "sha256": "f09705c2299a370da779b2d9730f161ddb9c7d738a29f68b3bc4527e4590e37e"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_selected_typed_dimension_batch.ps1",
+      "bytes": 18255,
+      "sha256": "0e093948240fe004a5222fb3dd124068dc3f8e8e770a767e1bca20a3b556494b"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_selected_typed_dimension_layout_stage.ps1",
+      "bytes": 15804,
+      "sha256": "d195cd20c2ff7bb6ee8fb2a32ff06a1a6c224b6c9ef038312fc058739ff27057"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_selected_typed_dimension_polyline_controller.ps1",
+      "bytes": 52066,
+      "sha256": "55ebe1f4f9f683be5314b368a3895cfe34d7a89b94aa616be70bc2a109b09c97"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_selected_typed_dimension_quantized_plan_v15.ps1",
+      "bytes": 11573,
+      "sha256": "b42ea9af465dba9a0e84f6bceb3242c1d8bb37122dec1697dde69049ce2e3f13"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_selected_typed_dimension_quantized_plan_v17.ps1",
+      "bytes": 12957,
+      "sha256": "6dc6ed3585b9399a9e2a2cb93a1ed2decf5b8c7b720e1c88f494b431c3c4a557"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_selected_typed_dimension_quantized_plan_v21.ps1",
+      "bytes": 12549,
+      "sha256": "2a8e8be32362a4b67bcb1246861388f88f7a27c0ecfbd4b3beb4ecaaf2f1ad0b"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_selected_typed_dimension_quantized_plan_v22.ps1",
+      "bytes": 13972,
+      "sha256": "6e662591fc04838c7a09264472ef2a9cc7bfd9c3c6a1b559b09d47c86fe93ab7"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/invoke_selected_typed_dimension_workflow.ps1",
+      "bytes": 20377,
+      "sha256": "5d60fbaf0aa91b0bb70c86090a6f223856759ef9bab66471282f7b1b18375ed0"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/merge_generation_details_pass_overlay_v1.ps1",
+      "bytes": 3852,
+      "sha256": "74b50086cefdb4c595abaed832e846173c3c1c4a400ea5124925bfcd9838f200"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/new_cad_component_execution_contract.ps1",
+      "bytes": 8134,
+      "sha256": "0355c1515384e4fe5f650f5695977cc7ca1472f10fea3fd9a45f0d6a909ce656"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/new_cad_execution_manifest.ps1",
+      "bytes": 12018,
+      "sha256": "257cf4d34f5b66b1a6926c04cfa258a82929d410c975c47a62d50ba0f00d100a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/refresh_cad_project_state.ps1",
+      "bytes": 11023,
+      "sha256": "6300897afbec47a16d7bde4cbfaca6e27588df3607b89549d59cbfb270567f90"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/save_owned_test_drawing_checkpoint.ps1",
+      "bytes": 6422,
+      "sha256": "472db4d5610f8d8b7bad37cdcb052b0ca8576d88f16c8100b437ca2728e83647"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/settle_cad_hot_state_v2.ps1",
+      "bytes": 7374,
+      "sha256": "9aa00d663bccb4cc5a69e5013222e53a6598fe947c5824c32525771b8645fec5"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/start_owned_tianzheng_direct_dwg.ps1",
+      "bytes": 26408,
+      "sha256": "2771d2fd9ae49f0397af77c4c01d4c9ae842af06d81733bbe0f7f1f9177fbd55"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/start_owned_tianzheng_supervised.ps1",
+      "bytes": 14205,
+      "sha256": "e7e9c46e3620e302145fd338be6aca603380fcf2e1a3152ad946fca6026dde1c"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/wait_tianzheng_resource_quiescence.ps1",
+      "bytes": 4345,
+      "sha256": "35324fdb8a60b44691d962a781f8a84a698849fe1c3a28c83c84a1b2eccc42e7"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/watch_tianzheng_dialogs.ps1",
+      "bytes": 17079,
+      "sha256": "ede7ab94d5350e2e8294a289219a473ad7c23574cd531319f4afd5e2822a27e0"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/b_existing_settlement_v4/selector_trace_v4.ps1",
+      "bytes": 8518,
+      "sha256": "6da8d345d6167897ab101285ae2b1d0838ea65605fa73c3707bf2573e3ab056a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/binding_diagnostic_v2/diagnostic_contract_v1.ps1",
+      "bytes": 9600,
+      "sha256": "f20a216c245dfa30f5f88dcad0924cbdb9c31f532ecc541f9e747895efc2ecb8"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/command_probe_v1/strict_binding_adapter_v1.ps1",
+      "bytes": 5147,
+      "sha256": "567c0bf888ab3bde758cd39b0951f4042248357d543554c4c9683a7df43ec314"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/command_probe_v3/file_binding_v3.ps1",
+      "bytes": 1708,
+      "sha256": "09fcc0bc09e2f5acae1acba967840a871a3e1891ad5369743d7b407a90b53889"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/command_uia_inspection_v1/command_contract_v1.ps1",
+      "bytes": 8454,
+      "sha256": "22a90f06fe485396fc69de583f5a79d58749351fa0bd909b6f4767ccf7cee307"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/command_uia_inspection_v1/command_worker_v1.ps1",
+      "bytes": 9086,
+      "sha256": "44778fe2daa46cbe25f2b92d2c5d3c86e23e2c36c23fab51182454a84528b956"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/command_uia_inspection_v1/CommandNative.cs",
+      "bytes": 3115,
+      "sha256": "1444d6ec8a37f60d349762359aef3afa75d0fac29a2801e7621388fdeb0b3e9f"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/command_uia_inspection_v1/evidence_policy_v1.ps1",
+      "bytes": 3449,
+      "sha256": "ef889ab053f5bf29a4097e70f5b8f2d596188fe5116c19d5042816d7bb3aed46"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/command_uia_inspection_v1/job_build_v2/bounded_job_compile_v2.py",
+      "bytes": 25628,
+      "sha256": "0181d34627818261fab67d5d1338b98190ab41853d321813b7adb63d15fa616c"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/command_uia_inspection_v1/job_build_v2/invoke_job_compile_v2.ps1",
+      "bytes": 10992,
+      "sha256": "9928ca26279e14d04fcc9c338749cb6c60bfc5a4608852f4ce7e8c67eae12235"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/command_uia_inspection_v1/native_anchor_v1.ps1",
+      "bytes": 2433,
+      "sha256": "81dc597c63d397db1b424e48153036de17aca12357cf3d2f21fb2330c9ff28ae"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/command_uia_inspection_v1/OwnHelperJobV2.cs",
+      "bytes": 12018,
+      "sha256": "ed4b2feb1106b9c11cb62a5bc4fbd001503d4f24368f9d5e22e5e9b4d8d7a741"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/command_uia_inspection_v1/uia_adapter_v1.ps1",
+      "bytes": 2811,
+      "sha256": "3df52023cd23dbd3f599db81af404c5bef4c5f54f2144d37e252274407c70f1b"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/command_uia_inspection_v1/uia_walk_kernel_v1.ps1",
+      "bytes": 3394,
+      "sha256": "9c95598169eccfce91cd97fdf71472d538f1794c77dfbd496a4ed79c8974a923"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/fixture_job_boundary_v1/bounded_fixture_job_v1.py",
+      "bytes": 19161,
+      "sha256": "ffa1ca568cb35d4e1a990ac876f95327d3f943a2113bc00bcadbcbb3601962d2"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/lifecycle_v1/preparation_contract_v1.ps1",
+      "bytes": 6085,
+      "sha256": "58a91176e1dd9da91ba6cb31b79566e176e9fdb70a6f90a8ea34f57fb32c902c"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/read_session_v8/com_identity_v1.ps1",
+      "bytes": 2338,
+      "sha256": "d39f0877e06869d68f0faad3dbb9a7b0666613f7a6e3c655a4b26a05edfc7921"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/read_session_v8/file_document_normalizer_v8.ps1",
+      "bytes": 4720,
+      "sha256": "6315980d5c3be89ae82fadb9943fa2a31523e6cc3bee30b15c6ea2ea5de3293d"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/read_session_v8/file_rot_backend_v5.ps1",
+      "bytes": 4105,
+      "sha256": "7546c963668ef2f887769324bfe3ccd9150e7f5ecf207c2b024fef8a433ac598"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/single_background_input_v3/BackgroundNative.cs",
+      "bytes": 820,
+      "sha256": "c61470eb76ea6757fcd967c6865dca75d3aed3052a3bc3e663d84ffd4c4a26f2"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/single_background_input_v3/send_once_v3.ps1",
+      "bytes": 463,
+      "sha256": "ee3e226bc59e80d78955524e26f1e35e65794232a3855a141182e6bf9b0a8085"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/v2/cad_exact_target_candidate_v2.ps1",
+      "bytes": 9602,
+      "sha256": "6d017bb3a96d4194ab63e5accf36d985bb42cef41f4162b9c1ded67ad3357d4c"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/v3/cad_multi_owner_preflight_contract_v3.ps1",
+      "bytes": 6199,
+      "sha256": "50a62d086623504d8b09717c0154d44366772896e786516320ce93ea8834882f"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/analyze_quantized_grip_response_v1.py",
+      "bytes": 7658,
+      "sha256": "8e21a339b62ac00bd10fda6d4ad14f3f694657aba92b8bf8644bb22146ed4c4f"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/annotation_layout_formula.py",
+      "bytes": 45215,
+      "sha256": "0eaba480b46dc4a3eb34361c6ebc5d741c2cd95bbd05d77d2f9231215e4b8041"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/annotation_layout_model.py",
+      "bytes": 48331,
+      "sha256": "3fd2dea3664115d3405c67c1c1166a5b8c5d70db4526c3738c9a6d6afd36e941"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/annotation_quantized_layout_v3.py",
+      "bytes": 7364,
+      "sha256": "e2b35c24981bdb70801ebcab0eac4501bc5e69be3e12c34295356ffadcb781d2"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/annotation_vector_geometry.py",
+      "bytes": 10189,
+      "sha256": "21a96089827dab498ddd4136dcfb917023c41b0a90f8d9b95af5ddec44c686c6"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/apply_axis_targets_to_grip_inventory_v1.py",
+      "bytes": 3862,
+      "sha256": "f668b0572f551dab9b55b0e2b40f0562d3d4792c8f3709ab638f3cc900bb05da"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/assert_autolisp_lexical_balance_v1.ps1",
+      "bytes": 1339,
+      "sha256": "825ab4d2e7fb67d9bd45cfcff9fa172da8baeedbdab49a512c99e6933be9881e"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_annotation_screenshot_layout.py",
+      "bytes": 10381,
+      "sha256": "9281e16152a3ddcd2ac5ab08494a638c5c6b419b95b9e03f5457ef1c41f3d1cb"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_axis_scalar_grip0_targets_v2.py",
+      "bytes": 4273,
+      "sha256": "6c7d420b9075bee20cd1f8fd303ae39c5dc33767e0f736085cf4aa6606bdacbe"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_blue_arc_hard_collisions.py",
+      "bytes": 13172,
+      "sha256": "622d43b0921668580cf57b99d59bec939c9548dd1bd5ecb32c180d4af2d6202e"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_cad_loop_historical_regressions.py",
+      "bytes": 23209,
+      "sha256": "4bce34fe592c4f9525279e3c90c15d5811d4ac25925466f7b6cf91342c0e0eb4"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_full_native_layout_effect_v4.py",
+      "bytes": 13102,
+      "sha256": "79481bc714ddc325d15c8df29a04a7d8daf7eda5e449029a9551fc5875fb6a16"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_modelspace_tail.lsp",
+      "bytes": 1562,
+      "sha256": "5bf9e475b931c734b44844d5fedbdc5d02d0fa67d71219d39a455d90f271518c"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_native_angle_source_text_clearance.py",
+      "bytes": 8496,
+      "sha256": "260f67dadbbd76063d40331da18df4226160a9277710c0a8a2a9f181e6d97858"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_native_dimension_semantics_v1.py",
+      "bytes": 8388,
+      "sha256": "488338aab8a137f3657530747a664b6e19128e406230d0857a1a480ce59b4395"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_native_typed_source_mapping.py",
+      "bytes": 13365,
+      "sha256": "d3e4e2241fd64b1be5978cd745c6ce3b6143a902f33fec70d322bd9320aa0501"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_owned_document_state.lsp",
+      "bytes": 901,
+      "sha256": "bda3afb652f3883592380033a12fb492bedb2f26d8c61adf7cc697f530a6bf27"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_owned_object_visibility.lsp",
+      "bytes": 2390,
+      "sha256": "1fa5ee563ff22f395fb6087ec1ce841423819245fefda5bb4dea08b5a1ea7cf9"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_owned_view_state.lsp",
+      "bytes": 1493,
+      "sha256": "d8f9b2f96f1289d16c9b2e085bd1f1c9eeec8b4380ea2a94008dd8260a469400"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_preexisting_typed_source_coverage.py",
+      "bytes": 4152,
+      "sha256": "84178e8ed0b0d1a8c91202c84697cc3d62eef90ba6dcf5592c0598ec5ba90aae"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_tianzheng_dimension_bboxes.lsp",
+      "bytes": 3672,
+      "sha256": "500070011d765802efdfa148cc7b28183f94086f62997f2be958ade25fe03101"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/audit_tianzheng_dimension_text_bboxes.lsp",
+      "bytes": 8477,
+      "sha256": "72372893daab90b80f8fb3308175d24d34f9c6aa997079f4cd4419c2c5ed2faf"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_axis_constrained_grip0_targets_v3.py",
+      "bytes": 8267,
+      "sha256": "282a939117eb57525183024cc250a74d6a23634a741fb7728eeaa832bdcabd1d"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_bounded_lsp_load_command_v3.ps1",
+      "bytes": 2715,
+      "sha256": "4abe1325d870bf4eda641edadbf9282a123e9869af2bfed524496344fa5663f5"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_cad_document_preview_capture_v1.ps1",
+      "bytes": 1943,
+      "sha256": "12354b8b555318d1ae7368f0c4e77106f220f5739fd563aa24ba3e2d4486fa02"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_continuous_selection_bundle_v11.ps1",
+      "bytes": 4989,
+      "sha256": "89a46188895aeb784e9092ab6be1b779940d31ec9446882a8067797079b2a426"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_continuous_selection_bundle_v12.ps1",
+      "bytes": 2364,
+      "sha256": "69c945df15c8843b4933d40047656a29f152580306af3f273100f0053ed4928d"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_dimension_text_metrics_probe_v2.ps1",
+      "bytes": 999,
+      "sha256": "bd922cae1df797dd9300ac340f1b672a5502e6f865c658692893e4afa8d3d794"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_runtime_candidate_chain_v1.ps1",
+      "bytes": 3950,
+      "sha256": "a16d6ba8c724e993daa081adb726e17551111649affbcb82cb647d246c053dd2"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_runtime_candidate_chain_v10.ps1",
+      "bytes": 2934,
+      "sha256": "d86db9a6892f857fce31105ea6740d8e971b2bd50607e55e4b57d7136c71e398"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_runtime_candidate_chain_v11.ps1",
+      "bytes": 2635,
+      "sha256": "109ec6ddead8520fdc90cac91db5f5ebd50c287383bf817e7c24d87d8f9b8fa0"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_runtime_candidate_chain_v2.ps1",
+      "bytes": 3073,
+      "sha256": "5fd8b9bbfb15f87c2a8f9b2df8f3c50c1249864b2c217541879b79c850bc725c"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_runtime_candidate_chain_v20.ps1",
+      "bytes": 2929,
+      "sha256": "b6b4c15b835c7ae4f58d5bcf9d12e3fd279834efe6dbb09e012d1ae254d2b63a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_runtime_candidate_chain_v21.ps1",
+      "bytes": 3068,
+      "sha256": "c4a0571b2b1507f51f449ee2b644e5444b5d5a0b20a7f7afce8b2c6ade7e57b3"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_runtime_candidate_chain_v3.ps1",
+      "bytes": 3401,
+      "sha256": "a9ce0d4284dea620e0e37e24df938e5e877ecdee89c23db99f9c3ff22a5bdfa3"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_runtime_candidate_chain_v6.ps1",
+      "bytes": 2635,
+      "sha256": "c5176209f3fdd01b02bd64ed282f0e13d02cb22c24cace479d4b9709c54d4560"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_runtime_candidate_chain_v7.ps1",
+      "bytes": 4807,
+      "sha256": "9a8f339d2a7d18ee147cc8f25e7f122c5e8be78dcf226ba18ee974e5c82126ce"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_runtime_candidate_chain_v8.ps1",
+      "bytes": 3838,
+      "sha256": "42734908b267a82169547bf422809c0ea4a5ceb7ce173fcbc14cdfbe8c1f535f"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_runtime_ordinary_v1.ps1",
+      "bytes": 5122,
+      "sha256": "b9afa7059420ccd0265ec7d5572c573915e3328941ba4a36f08b7bffacc3bdc7"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_semantic_promote_v31.ps1",
+      "bytes": 3176,
+      "sha256": "6e635096e77d5f10eedd2385fab451c0d02e6d43bdac87fd0958bdc5eb4760d8"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_semantic_promote_v34.ps1",
+      "bytes": 3834,
+      "sha256": "c930db7f5e3bfe2035a0e573694453456cad3db9ee743ba9c85b0def81a475fe"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_semantic_promote_v35.ps1",
+      "bytes": 2936,
+      "sha256": "68bb8178a77053649975593e61f79589e808eb5816f46900e7a4acdf4c41d777"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_semantic_promote_v36.ps1",
+      "bytes": 2812,
+      "sha256": "589603f3508f7809fc0bc52eea4c23193a4bcd7cbed61ec4bc019804dc679389"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_full_scope_semantic_promote_v37.ps1",
+      "bytes": 2897,
+      "sha256": "249ab4b2f9f39426275945f4b0606d69aec2c98b5c862f2da01e2474bcbe8a7a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_generation_details_mapping_v3.ps1",
+      "bytes": 3932,
+      "sha256": "be36d7486b83cd52fb2984f59b0b5c5cce5f7d947c23be9880d409dcb8684dbd"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_generation_details_mapping_v4.ps1",
+      "bytes": 3401,
+      "sha256": "5093bdc19ffeac900da40f808544608f11a5a089c5c82c993d40c90a535b0fbb"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_inline_observed_cad_command_v3.ps1",
+      "bytes": 2167,
+      "sha256": "32fb42f90f8b1ed8901ef858e288299bb3f54f3ccc131451d496cdf7bf226417"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_native_dimension_semantic_inventory_v1.ps1",
+      "bytes": 1486,
+      "sha256": "bc7033c676056ac3d0d030bb04766765112227f6919db0390053ad73ab4a9ffb"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_native_generation_audit_target_combined_v7.ps1",
+      "bytes": 2112,
+      "sha256": "b12b0dadf2c976af08c06d4a4d66605e56c178c9e981d4792d1997f2f3fc9bc4"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_public_modules.ps1",
+      "bytes": 7995,
+      "sha256": "491e2f68894c8fceb96bd0a8d779f35ccbc754cb715a3993158d3a3fa15b26b7"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_public_modules.py",
+      "bytes": 3828,
+      "sha256": "d92a058cb161bcd3f727380a5c38a57b53f807c605a55c1a2b53c5d5fe6ad6b0"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_quantized_grip_scalar_converger_v3.ps1",
+      "bytes": 1495,
+      "sha256": "7458a07ce0046123914046d92683cc5fde41cd2839841be41c20186c33612459"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_targeted_confirm_arc_dimension_positive_v25.ps1",
+      "bytes": 3623,
+      "sha256": "d9077abdd74e5b0da7a7b9b2487b5033d0263b389c62236b5c0253603a8f5a75"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_targeted_confirm_arc_dimension_positive_v27.ps1",
+      "bytes": 1873,
+      "sha256": "ab83a6a2b2247ce8ca04668234cecf0094a7a76bc1d16059bf056e29f01e762c"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_targeted_confirm_arc_dimension_positive_v40.ps1",
+      "bytes": 1824,
+      "sha256": "6236f3eba0424174e7e699f3a3e290ee22d05f0755814ebefd2752dcb1d2269a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_targeted_direct_positive_dispatch_v21.ps1",
+      "bytes": 2743,
+      "sha256": "e95af97db2770aedb31271dec6c4469bc42224382ea1c9d69afc87cd737f1c38"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_targeted_direct_positive_xy_v22.ps1",
+      "bytes": 1985,
+      "sha256": "d857e9538ffc322a53dcdbc39b5ab2c4b544594ddb78fc12c0a486a0c4518e92"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_targeted_prompt_staged_probe_v2.ps1",
+      "bytes": 4703,
+      "sha256": "f6f2a1c5e309cd52c4e70a2482aa67fa75d49a5c5ab67e981d5cd881d64ead77"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/build_targeted_prompt_staged_user_positive_v19_v2.ps1",
+      "bytes": 2659,
+      "sha256": "e00e9f357663d1c730bd3f7282c8736357c65d9c9fa1301e4483012ccfd04692"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cad_capture_compat.ps1",
+      "bytes": 15635,
+      "sha256": "3b40953922d7e592bf62c77e4795552c268d40d4bb77b420b828c533fe4c99e5"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cad_com_rejected_call_settlement_v1.ps1",
+      "bytes": 1846,
+      "sha256": "d32c174c352db89226279bb19da8ba40a82f177abc6b8015fcdcb8815d1aa22b"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cad_command_observer_signal_v1.lsp",
+      "bytes": 764,
+      "sha256": "289ef15ddc32bca841c549fab018b839cb08614c16624e27a08fe5b49dcd0321"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cad_command_signal_parser_v3.ps1",
+      "bytes": 1895,
+      "sha256": "0cd222dd102b894f30fd6a3fd9138f65539816d75b3659af5e053c8b7aac8f68"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cad_exact_b_action_transport_v1.ps1",
+      "bytes": 15846,
+      "sha256": "e2e8b09966f4a697d25d078633b81861995ef2dddd7e0b1ebd22cd69b7caff6b"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cad_exact_b_fixed_stage_transport_v2.ps1",
+      "bytes": 7877,
+      "sha256": "7bd11908f6f86ba3633bc82ea9ce2936fe00a723de4b54f8ff086af07d1a1e06"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cad_exact_b_focus_independent_transport_v4.ps1",
+      "bytes": 7166,
+      "sha256": "2be042e5bde2f7e2669e73bac78692904c3b7a37565553c521d91a50c0357b0f"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cad_exact_b_indexed_stage_transport_v3.ps1",
+      "bytes": 8128,
+      "sha256": "15065c6ceb0a713dce8d2ef80b9b8bef7f57e9545973693d827fc054a08a15a8"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cad_rot_exact_document_binding_v2.ps1",
+      "bytes": 5592,
+      "sha256": "d8ef051df910b54dd2c508c2a2faa57799a15f1e07ae47c4733eddab8f6a0a26"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cad_rot_netload_manifest_exact_v2.ps1",
+      "bytes": 9813,
+      "sha256": "dd64a20a116d589a1f717e3b90401127344d8b6831107bbe2d2ca700e2bda602"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cad_rot_send_command_observed_v12.ps1",
+      "bytes": 9714,
+      "sha256": "970297ac28d90de169a78b18437702e8b7fced255acc834fa263f7ac2bcbd5f9"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cad_rot_send_command_worker_v10.ps1",
+      "bytes": 7435,
+      "sha256": "5c7919b29c075389e608fc64727e21e01542e87c180ad23ddafb6fd22579d471"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cad_worker_receipt_settlement_v1.ps1",
+      "bytes": 2154,
+      "sha256": "913d1a47a604cf128cc6d9034bad78ca56a1c6ee9789beefb4009d85029b0db2"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/capture_cad_commandline_passive_v1.ps1",
+      "bytes": 1866,
+      "sha256": "27ed54ed62f2f74bb049836c6d927592e44740eedcd384337220e454274b26d8"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cleanup_probe_standard_dimensions.lsp",
+      "bytes": 1951,
+      "sha256": "5783cd4398bfeb284d38c56e4b0a1a37197851a7c6bf6a401cbd71321dceb2de"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/common/CadOperationGuard.psm1",
+      "bytes": 3393,
+      "sha256": "396e051c4c083239102cdd906dd2872eedeef86eeb6884bbdd3e29a6f647b411"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/common/CadPublicBuildTrust.ps1",
+      "bytes": 4303,
+      "sha256": "b333f4e218d9face5ffc81879b4b9a5e2508e60e9ebf644c1ee30f5106dcc2c7"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/compile_selected_typed_segment_batch.py",
+      "bytes": 13620,
+      "sha256": "4610a9f68e91366b3c44d2c2ab82cd6679e5c7fe0c97bd37517f492f9a9f53d1"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/cx_tdimarc_batch_command.lsp",
+      "bytes": 12862,
+      "sha256": "cf25ca1bf995a18c602fcbb46eb051c157f2ceb046ce98d20dd35ac48ab5abb7"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/discover_runtime_polyline_targets_v1.py",
+      "bytes": 10532,
+      "sha256": "9289cc6b866bc924a4bae90588fc06bb9c6cc3f838dc22b17719bf864026aaba"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/earthwork_elevation_inventory_fast.lsp",
+      "bytes": 5168,
+      "sha256": "c19be70648796a5bfe8aae70856f015d1ddfaad61e1e888f34ac6717f2ae543f"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/export_test_subset_wblock.lsp",
+      "bytes": 3997,
+      "sha256": "3ada1b007aabf08bc3b553fa6fb0908f1d6f60db6b48f1184e5fa1ec4f3f07fb"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/extract_cad_canvas_roi.py",
+      "bytes": 3769,
+      "sha256": "6489ce7e3b703d0d89d80b56381313bf65d1c6cbee3a9b602e8d913960323331"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/get_shared_file_sha256_v1.ps1",
+      "bytes": 507,
+      "sha256": "55e5c237ff9b00ae8a067dd45804852b18f2eb933f58ff14dc4de3d1960d662a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/inventory_polyline_styles_fast.lsp",
+      "bytes": 7469,
+      "sha256": "ff435f0a4e89af5e51df15589c98f00dd7a27bc8816a3c270a0e00b25313d57a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/inventory_route_centerlines_fast.lsp",
+      "bytes": 8256,
+      "sha256": "950fc68c5e9c384a837dabe46e1a0432661950836d81cedec614f9115c6a3f5e"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/inventory_target_polyline_arcs.lsp",
+      "bytes": 5581,
+      "sha256": "bfa57180df524b1f547e48a9d519b0a64324ccde0226597b5e0c60ca3b6e21a1"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/inventory_target_polyline_segments.lsp",
+      "bytes": 7560,
+      "sha256": "da6c1f29319c117d5b17033a6a765ff6d9715ecf2ff7d01526d2f7b54c1be636"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/invoke_special_text_peer_normal_restore_observed_v4.ps1",
+      "bytes": 10948,
+      "sha256": "c80d4033bc1f76cbf1f51778c9379fdb0137ae9bd2bda5f7509bb29e616234ff"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/merge_axis_capacity_targets_v1.py",
+      "bytes": 2850,
+      "sha256": "33756746abbbc0ad1a3ad64981dbd0c4375e3267e691480393f9032b8705b69d"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/merge_axis_capacity_targets_v2.py",
+      "bytes": 3032,
+      "sha256": "d94a642dafd356c1d7c82483dab907b2d8ecf8553492f3ba7e207f7b1f490626"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/native_angle_mirror_batch.lsp",
+      "bytes": 6074,
+      "sha256": "dc32f9258ca87d02813ffbb82c801c3326284a9e176c41e877e7c64e41f55169"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/native_annotation_mirror_probe.lsp",
+      "bytes": 5135,
+      "sha256": "2b3f97a2d7ed74345b41e415713355f2f05939f684fc2857fb69c5adc8ee1484"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/parse_quantized_scalar_report_v1.py",
+      "bytes": 3187,
+      "sha256": "34486959ef1b21c0d9fbd0876ec456960fe736d87c6c7512ebddd366fd55a8ff"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/plan_arc_capacity_resolution_v3.py",
+      "bytes": 6929,
+      "sha256": "90124e933056eaf8ef30bd156aec90b727517979799637bc1ba311495df2bf5a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/plan_arc_capacity_side_flip_v1.py",
+      "bytes": 5669,
+      "sha256": "5a6ad939096ba18dea35e30bad956231a5e8f19df688711a30327b99e0f83311"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/plan_arc_capacity_side_flip_v2.py",
+      "bytes": 2555,
+      "sha256": "db19cd7009ff8b34362d8549279403dca7743357abeb3edc226df1379a13ef50"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/plan_arc_collapse_rescue_only_v3.py",
+      "bytes": 6624,
+      "sha256": "96c4d0c60cb0d5029a89ed61af4b3dc61cc4559d6c5e8e7c5b486eec8faa9e44"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/plan_native_angle_grip0_beauty.py",
+      "bytes": 59988,
+      "sha256": "074cc98efdc8ea4ef8aea162d9d3bf00c22a009bab54b929ce14bb7fad2d327a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/plan_native_angle_text_relief.py",
+      "bytes": 16865,
+      "sha256": "a418264e89cf46fd277628066cc5022ca8fdb625d288f1ef294cb49357d9dcc2"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/plan_native_failed_cluster_band.py",
+      "bytes": 7465,
+      "sha256": "f10f151df00e195d50614e0a4c804d65dd8c15df42af7a5a76cd76f545522842"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/plan_quantized_sharp_cluster_band_v3.py",
+      "bytes": 20619,
+      "sha256": "079a3c0cab4d72aad29a53b194810c93e8861ab8b5b402a654272719c0065e38"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/plan_quantized_sharp_cluster_band_v4.py",
+      "bytes": 639,
+      "sha256": "d8e39e082731db6f6cb5757d6f33826be3e388a1ae7f51fa464f1db820becc50"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/plan_special_text_peer_normal_restore_v2.py",
+      "bytes": 5783,
+      "sha256": "a61205832722009ad1564471617739190ac141b9017eaed34c908190a7e8ecc5"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/plan_strict_blue_shore_layout.py",
+      "bytes": 106719,
+      "sha256": "82527dd7ba090d50996b042b33f6aff5d60a2d9aee683d0092cb8c582f7ab3dd"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/plan_typed_dimension_quantified_common_band.py",
+      "bytes": 14720,
+      "sha256": "3f0829881b32505e8441f601986e9261fff62f700074623ee002f716c51071e4"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/plan_typed_dimension_quantified_common_band_v2.py",
+      "bytes": 4445,
+      "sha256": "b91d76a9933b667a5a9533bf6e84e86e7ccc8bd7ed9d84160b1f97d05d1e1b80"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/prepare_runtime_arc_probe_audit_inputs_v1.py",
+      "bytes": 3123,
+      "sha256": "102ae5dba2c66f71f89de11084b6e494d1e08a0cbf6815f9df403b01e150cdaa"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/probe_tianzheng_dimension_explode.lsp",
+      "bytes": 6937,
+      "sha256": "bd2855ce1d71347a1e7c756cd9494f42dc0888c352986001a695d73f1063bc09"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/rebind_runtime_typed_dimension_evidence_v1.py",
+      "bytes": 15962,
+      "sha256": "cdcf6968ad5d9dcbf5fe1fb04fbbf89c6be36c8c580bd47da1b33dc5027666dc"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/reset_owned_viewport_target.lsp",
+      "bytes": 3209,
+      "sha256": "e8ea11e768112cce2bd478b8a42b6f3c89bdda9ce5ab4ffae7e5e0869d1f0370"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/resolve_native_dimension_text_bboxes_v1.py",
+      "bytes": 15433,
+      "sha256": "c4a9754d99e1a5e3ad506c3df41e47088654252878da516d8d547241730b0474"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/resolve_native_dimension_text_bboxes_v2.py",
+      "bytes": 17916,
+      "sha256": "5c0f1b048107a18bee7b7bebcaf117ac75fc6d22bc0d795a500ceed5eb41c191"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/resolve_native_dimension_text_bboxes_v4.py",
+      "bytes": 5766,
+      "sha256": "8e351358cee26558851702377fcd16c7cd2c72912938aeb6be3499af498a465b"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/select_native_angle_text_state.py",
+      "bytes": 16351,
+      "sha256": "47eaa884e7cb04e24655fdd0241a2c37452dca0ac7f1eed865bdc1a98b1de6b1"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_adjust_probe.lsp",
+      "bytes": 7823,
+      "sha256": "8d85f0b0091985ebacaf5f238dcd696329a8a6680a5e0a38048be5a1fbe78dbe"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_candidate_diagnostic_vector_v1.lsp",
+      "bytes": 4778,
+      "sha256": "4b7788d3ce6f0afc5c15f58d1a2dd832107b3dc2d4105093672d4dcc03dd2d26"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_continuous_batch_error_finalizer_v1.lsp",
+      "bytes": 5243,
+      "sha256": "c1313306f908b927fd92c9dbfba840a3b246ba88aad3abfbb84fb24c7519c99e"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_continuous_batch_v1.lsp",
+      "bytes": 11801,
+      "sha256": "01b33a28171f6f07a3d8e5b70761c030409148c1116c52657a2052c10cf8c1d6"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_full_batch.lsp",
+      "bytes": 34286,
+      "sha256": "28a7ca500cadc4c3a90c4e899a2f5edb43e4db778bbe593b6e07800941754c8b"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_full_batch_source_serial_v3.lsp",
+      "bytes": 5548,
+      "sha256": "3bad33d691846e14ecb10d3019d60c720146878900d835e8e4e1498529dc1b56"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_full_batch_source_serial_v4.lsp",
+      "bytes": 12096,
+      "sha256": "d05306bfe7783128125b110faf0e2072e1360625765da9f6a939199bede69f80"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_full_batch_source_serial_v5.lsp",
+      "bytes": 11120,
+      "sha256": "93ad41eb9d72a217355298f1343f74a6cd755cc3068de192dd63ff1cb28aee89"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_angle_semantic_vector_v4.lsp",
+      "bytes": 7550,
+      "sha256": "4ac026a6c7d86d8c20b02803c2523d830da368a1395ce2a177eab4157b53e29d"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_born_angle_confirm_vector_v1.lsp",
+      "bytes": 5028,
+      "sha256": "a1fabef181232236ab41758ef427da562528c1adb62b9fde5a7a4d0afb452813"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_born_angle_confirm_vector_v2.lsp",
+      "bytes": 5926,
+      "sha256": "44bcb1c99f64897f6b7d71b8c5d3809217fe6fa2b274d0faf523d331bb6d1b79"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_born_angle_true_wcs_adaptive_v10.lsp",
+      "bytes": 5475,
+      "sha256": "76039c580d1559c55efedc2495a76e94c2ff5c013ee5c3979f9d9e9b37a2a11d"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_born_angle_true_wcs_v9.lsp",
+      "bytes": 3461,
+      "sha256": "ff6af414e9ee2bf3b696aae762c5ba344b87f8ad97b6971eaaf8779cf0a6c912"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_born_angle_vector_v5.lsp",
+      "bytes": 4552,
+      "sha256": "ba4a2b823e092100f7b70a8faae7a90e2c751e96c051ac562cdf964c9f8e9a00"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_candidate_chain_v1.lsp",
+      "bytes": 1096,
+      "sha256": "b562fdfd0e5de0d7e7ed1a20411851cfb5317c08b27e0dd3962cf7e583bde6e8"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_confirm_arc_place_v5.lsp",
+      "bytes": 2613,
+      "sha256": "cc7e33ad2d915ce63512bc79d70737d7684f2918aff10eae5e8f25199ee60b94"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_creation_settle_v3.lsp",
+      "bytes": 11426,
+      "sha256": "cf3b69d101cd5872ad331e4f4bfac8a7e438fc2b83ac83e2566f1ec81f2f77f4"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_creation_settle_v5.lsp",
+      "bytes": 11498,
+      "sha256": "6fdfbea6c282453ad57b7e680538e196c119831db034643efb8302da4a1d4734"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_direct_positive_dispatch_v2.lsp",
+      "bytes": 3932,
+      "sha256": "da866448390c202cff4511252636a3f48693913dd8f42d91596b6fe89c50e30a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_direct_positive_dispatch_v3.lsp",
+      "bytes": 4684,
+      "sha256": "c3d37b0d12280dbb07671ede4b76c27562da7c7d1bf1280a902ad543f6c67a95"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_direct_positive_dispatch_v4.lsp",
+      "bytes": 5609,
+      "sha256": "9dd1b577adfc8d5317e2923e40a83251a922493863c589cb0678e6d4b405b4a8"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_dynamic_candidate_promotion_v1.lsp",
+      "bytes": 11929,
+      "sha256": "08b1ab792fd34e694b58dd68e2e8280a9975b7e5f137c622c40f6c0666ec37d3"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_endpoint_matched_helper_generic_v1.lsp",
+      "bytes": 4832,
+      "sha256": "a0f368684c1f9ee660d6bf3afa379c4e3630c4469418abd9ffd3775e2836a6a0"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_endpoint_xy_gate_v1.lsp",
+      "bytes": 967,
+      "sha256": "4c7aa2a970f5edc9e61242314539b2808c5ad1bf178f0c969fe24f0d3984b977"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_exception_rescue_v21.lsp",
+      "bytes": 2319,
+      "sha256": "ef4b0e96c59e2270733b22d83184535a93ca4b5a9a081ce89d2044cdc7068b61"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_exception_rescue_v22.lsp",
+      "bytes": 4038,
+      "sha256": "0f2b0c422f8e3e47f1c3d42a9af594ad7551fc4e35d7f310af602382c180f18e"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_exception_rescue_v23.lsp",
+      "bytes": 2899,
+      "sha256": "2e9ccc6fe059f58042aa4e2ddf75dc773b7b734f6ef3167977008d851cf152cb"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_placement_gate_v3.lsp",
+      "bytes": 9226,
+      "sha256": "dbedd5ee46b7c1ea991a716aa19884777b680c8ecb7c579c431e384cdca19284"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_post_create_grip0_outer_v1.lsp",
+      "bytes": 4238,
+      "sha256": "addd610041afe9af2d13adea1601742824a265d3a82a47462b99796b53712aab"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_prompt_settlement_v1.lsp",
+      "bytes": 1884,
+      "sha256": "c950699714ec91e6387f4f092a47c3c7dc7f0d4252d7461cd2825086e0221986"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_prompt_staged_v2.lsp",
+      "bytes": 4479,
+      "sha256": "8da6251f5dd0c42700c9e312d64fedf2ab3e379b4db68bc0fd278c33f9cb58f7"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_retry_formula_v6.lsp",
+      "bytes": 5476,
+      "sha256": "ebcf13ebd2be4cbf619241a067c3098a7e0a889260976408850dfb14a95b549d"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_retry_formula_v7.lsp",
+      "bytes": 6467,
+      "sha256": "e70715cdd63f570f33b9436273fdeb5be88e0c8b8d7d9648b6aa07248bbdfde4"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_semantic_exception_only_v24.lsp",
+      "bytes": 3766,
+      "sha256": "389d5cab060409862a8f6e67f099a5e666a699294ec26707b3d01a3f9d2b666d"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_true_wcs_semantic_promote_v19.lsp",
+      "bytes": 3346,
+      "sha256": "fda040556503b19ef6e52bb3fa8bd01233306cb8bb87a6827b8070bc980d975f"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_generation_user_positive_v1.lsp",
+      "bytes": 9409,
+      "sha256": "f0726e56f1d1ff75bdc5225364c9435fa3d78c327fd158b1f63a5f8dab48ec46"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_outer_batch_finalizer_v2.lsp",
+      "bytes": 10776,
+      "sha256": "77f5ce9dde242713af4212bb5bd219281f7f989cf4719d7bf7a7d7fd0144de9d"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_selection_entry_v1.lsp",
+      "bytes": 2698,
+      "sha256": "2bfa04be87a9d6f0584f0daebf179ce69a5919de93d02fd72673e1bdc28e631a"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_source_repair.lsp",
+      "bytes": 14174,
+      "sha256": "5e2674c45bde303b09293b489f7e4cdeb00ce6fa6b22337d7cf760f03c77a1c2"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_targeted_replacement_v2.lsp",
+      "bytes": 16422,
+      "sha256": "d4abb75d39331525dd2d5be127dd16fdb3fb5420d7812ef9452ced1092f577a2"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_native_targeted_replacement_v3.lsp",
+      "bytes": 17529,
+      "sha256": "2c31afd3638eedb09736678981aa62b7fb2706fa1faab636a50ef087191abce3"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_prompt_v10_batch_probe.lsp",
+      "bytes": 12303,
+      "sha256": "8f9e692f98e7d61907937ca4a892fe77005fc71c4c289f6c17d30afb7cb49453"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tdimarc_user_positive_xy_plane_v2.lsp",
+      "bytes": 1428,
+      "sha256": "07fa0aff69f3c8d0f7a3a057a63ba14d599ebf4fd6a0739fcdfb82ec2c695e80"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tianzheng_adjust_command_prompt_probe.lsp",
+      "bytes": 8096,
+      "sha256": "28c2cb9c0a937e0e9096975ead438585dcfb3d95980b5a1cd66c95ba5d294d1b"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/tianzheng_adjust_group_probe.lsp",
+      "bytes": 6353,
+      "sha256": "91691c9bce808adf3d8fdfd6a60d68c47e9303fa805cac120b5d26710c80b63e"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/annotation_layout_policy.py",
+      "bytes": 9485,
+      "sha256": "acad44b686822f383bd6dcbbccb339a419ad1da06eb64866abe7ddc1b87283e8"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/CodexCadDocumentPreviewCaptureV1.cs",
+      "bytes": 8037,
+      "sha256": "2b2d316ac8c061157efc4d502cdc5cc959b2d94cf5dd7cae4fcf54997c438150"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/CodexDimensionTextGeometryRecipeV1.cs",
+      "bytes": 7695,
+      "sha256": "a99c640bd1851f2052223a3ba0956c759e9c17fe58d7277fe52dc17de954e27c"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/CodexDimensionTextMetricsProbeV2.cs",
+      "bytes": 15999,
+      "sha256": "482ea54001e844c33e8833c3b8f01f0c7cf643dba29475704ef0de1deec34585"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/CodexNativeDimensionSemanticInventoryV1.cs",
+      "bytes": 6644,
+      "sha256": "7eee6034c28e03a9befae8f022495cfce6f7e8189c9bdd067e3831e4a46b0546"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/CodexNativeGenerationPlacementAuditV2.cs",
+      "bytes": 10625,
+      "sha256": "7600147142f2d3fb845d77a07f0aee2c2d61c9d9b8eb16a51243f27c6546d9d5"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/CodexNativeGenerationPlacementAuditV3.cs",
+      "bytes": 11589,
+      "sha256": "fee5b1a629906268d0bc4376f2daec094cfb50eeac65cf5e83f41b737d250406"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/CodexNativeGenerationPlacementAuditV4.cs",
+      "bytes": 7125,
+      "sha256": "6d71ec8a8892371c51a37bc59a0dda0bb81edce4515ddbed126cde3e130d08c5"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/CodexNativeGenerationPlacementAuditV5.cs",
+      "bytes": 12042,
+      "sha256": "5ac2e897518df242fe224606600593d7fe4002f0c94b19a585b802d6bd8458cd"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/CodexNativePlacementGrip0MoverV1.cs",
+      "bytes": 12085,
+      "sha256": "69a605d2ea0eb135e2bad8bea079c81a3fa42db5128e1b4c15942e3a44bd42be"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/CodexNativePlacementTargetPointV1.cs",
+      "bytes": 7166,
+      "sha256": "bea59ddaf4389bc3301741565e63e92dbe66c307935109a3c7f22f958bc8fb46"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/CodexNativePlacementTranslatorV1.cs",
+      "bytes": 6804,
+      "sha256": "30641ab728c05939cf702f2716b792c165442c8b835e47e33506a29a67717e15"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/CodexNativePlacementTranslatorV2.cs",
+      "bytes": 6988,
+      "sha256": "60d5949ff98c501f067461423afae5175bba179c75e0a3c8565583efd19d08bb"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/CodexQuantizedGripScalarConverger.cs",
+      "bytes": 24075,
+      "sha256": "8de618197c0e1ad4d51765997cb1d8807e6deefd53309f0f06c41539182ab7fd"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/CodexTzGripProbe.cs",
+      "bytes": 62555,
+      "sha256": "25db4f3e4bba198444890403f44437fbc114f96d2055d130448589f2cdaed23f"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/src/NativeAnnotationJob.cs",
+      "bytes": 21213,
+      "sha256": "fe93a4a3722074caa96847618fa4f8ffe33c46e65774fa0889c4921fc86ec651"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/templates/exact_b_scope.json.template",
+      "bytes": 1147,
+      "sha256": "9388ae148c43c86b85958914dcfe76ad0c7bc1cd0e984702f4351d241722335d"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/templates/receiver_runtime.json.template",
+      "bytes": 306,
+      "sha256": "f4d7525bc912ad88234cc220a9cc628ec7bcb907c71c795d19e410862dc2d7aa"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/templates/receiver_source_admission.json.template",
+      "bytes": 322,
+      "sha256": "41a56bd0e56e56ba302027036a0310302018f10625efec19403aab3cc818b4c7"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/tests/run_offline_tests.py",
+      "bytes": 1999,
+      "sha256": "599411312ee0ad0621dad92607582813fa36c40011f9abc83a53eb407151b2a2"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/tests/test_compile_selected_typed_segment_batch.py",
+      "bytes": 9788,
+      "sha256": "dba4b700a4655ab85e3f499a323c331743b1bb2f4b89992280b18f68718a141c"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/tests/test_native_dimension_semantics_v1.py",
+      "bytes": 4979,
+      "sha256": "82e47319ac230ae5d2b18ed391bfd0e5672ddd4b2319ce0bc342f28323a99a51"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/tests/test_typed_dimension_quantified_common_band.py",
+      "bytes": 3869,
+      "sha256": "a93952aa7c26f370638986095ad2035c836eadc6384fb8f6e2b220993340d329"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/scripts/inspect_capability.ps1",
+      "bytes": 2566,
+      "sha256": "afd0f7fac4ce17b6c749519d5f811ca8c43474f82699d889058a6a72a3842164"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/SKILL.md",
+      "bytes": 7007,
+      "sha256": "a9a2ae631d4f9e083cab429b9ee53abc9d010521c16780f34c781845fc1b6d63"
+    },
+    {
+      "path": "skills/tianzheng-cad-automation-framework/docs/acceptance.md",
+      "bytes": 4394,
+      "sha256": "c690bc700480ca9c0e60ee61f51ecfbe63cd4e7ef20a3f384870d312327d31cc"
+    },
+    {
+      "path": "skills/tianzheng-cad-automation-framework/docs/automation-contracts.md",
+      "bytes": 4080,
+      "sha256": "1df32146679fc8e05ab812ca0ca88d14db4352ac497740dbf5efba94a9c9cd0c"
+    },
+    {
+      "path": "skills/tianzheng-cad-automation-framework/docs/capabilities.md",
+      "bytes": 4713,
+      "sha256": "3f22068b6e7525640a94601511039c1ba6e6ba0e16bbc56988fea9bc18c029e9"
+    },
+    {
+      "path": "skills/tianzheng-cad-automation-framework/docs/framework.md",
+      "bytes": 6649,
+      "sha256": "39b0e3c1fa4f9de24280ebdf6abf7b30a5a8d12e07ff8459113ead68554d0804"
+    },
+    {
+      "path": "skills/tianzheng-cad-automation-framework/docs/recent-practices.md",
+      "bytes": 5794,
+      "sha256": "99feffc3ca0e2799d10b07d4382c153c9213851904ae0845b12075742e723350"
+    },
+    {
+      "path": "skills/tianzheng-cad-automation-framework/examples/request-arc-angle.json",
+      "bytes": 728,
+      "sha256": "be8352b9b38a9de3395f75060d188e9afdb59b21e4aa6f133c8afaee921b97f0"
+    },
+    {
+      "path": "skills/tianzheng-cad-automation-framework/README.md",
+      "bytes": 2400,
+      "sha256": "f98ec1f9d95b1b3d983b3305965d9ff1f70cdab34281960f324d8a116993c8b8"
+    },
+    {
+      "path": "skills/tianzheng-cad-automation-framework/SKILL.md",
+      "bytes": 2590,
+      "sha256": "206fca5d27ce1c33e9f2140f63664c650b745b05b97a934fba8e53bf9f272d5f"
+    },
+    {
+      "path": "skills/tianzheng-coordinate-annotation/agents/openai.yaml",
+      "bytes": 302,
+      "sha256": "b0eb1a4d940a1c319ccd4837974eb8b8e6b2fcd175ac17329eb90374189878bd"
+    },
+    {
+      "path": "skills/tianzheng-coordinate-annotation/scripts/check_leader_angle.py",
+      "bytes": 4847,
+      "sha256": "c893946338129c5081654125c007cd96fab22347a984fde6f5754db44997e49a"
+    },
+    {
+      "path": "skills/tianzheng-coordinate-annotation/scripts/test_leader_angle.py",
+      "bytes": 3294,
+      "sha256": "42d31c7a1f68996889c19d437c328faed54cfc7b5df4966b07b9daeba1f4f4d3"
+    },
+    {
+      "path": "skills/tianzheng-coordinate-annotation/SKILL.md",
+      "bytes": 6332,
+      "sha256": "7b714234cacaffa861a321c1b18365277fffc721cf77b8c4886b0ebcb668fb80"
+    },
+    {
+      "path": "skills/tianzheng-elevation-annotation/agents/openai.yaml",
+      "bytes": 304,
+      "sha256": "afcfd7752591f9b52d5c79b1126351f5ea30802dab286540e82a031c6f4d0767"
+    },
+    {
+      "path": "skills/tianzheng-elevation-annotation/SKILL.md",
+      "bytes": 3804,
+      "sha256": "38096bc53f39e32b8c9c3f645a6d56a215739d7ca22887ce649b625ec6da6248"
+    },
+    {
+      "path": "skills/tianzheng-groundcover-annotation/agents/openai.yaml",
+      "bytes": 306,
+      "sha256": "800a9995bcd5966d5a774c779f8ed662070f861c149d13e69260d5099548363d"
+    },
+    {
+      "path": "skills/tianzheng-groundcover-annotation/SKILL.md",
+      "bytes": 4098,
+      "sha256": "cda2b8f3a1acbc9e0c9ea066049b4deeb55b64615a0e2ae733883aed476bd305"
+    },
+    {
+      "path": "skills/tianzheng-index-annotation/agents/openai.yaml",
+      "bytes": 300,
+      "sha256": "3ea3d63833c99bb7b11915fcc8f59524f6b0eb0a9aaf0cc254a8bc52a076c993"
+    },
+    {
+      "path": "skills/tianzheng-index-annotation/SKILL.md",
+      "bytes": 5800,
+      "sha256": "154f09736745ed06098eb3987d0bd6880c0cb50dd98b88c97a439f0ee94b214e"
+    },
+    {
+      "path": "skills/tianzheng-planting-annotation/agents/openai.yaml",
+      "bytes": 162,
+      "sha256": "4f3f80f5bb8c1d683250bd0352c9b9ec6e113f919ee305c3a985722f1fff240a"
+    },
+    {
+      "path": "skills/tianzheng-planting-annotation/SKILL.md",
+      "bytes": 2366,
+      "sha256": "f660626decbb922cc2f544edbcbf88de6ca2378584f2e49f258f1dc29f6e50ec"
+    }
+  ]
+}

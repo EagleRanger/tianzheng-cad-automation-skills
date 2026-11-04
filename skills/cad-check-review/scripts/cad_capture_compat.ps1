@@ -1,4 +1,4 @@
-﻿param(
+param(
     [Parameter(Mandatory = $true)]
     [string]$OutputPath,
 
@@ -11,7 +11,7 @@
     [string]$TitleContains = '',
 
     [ValidateSet('Auto', 'PrintWindow', 'ScreenCopy')]
-    [string]$Backend = 'Auto'
+    [string]$Backend = 'PrintWindow'
 )
 
 $ErrorActionPreference = 'Stop'

@@ -1,0 +1,4 @@
+interface:
+  display_name: "天正坐标定位标注"
+  short_description: "分清真实测点与显示位置，核轴序数值、图种密度及坐标引线"
+  default_prompt: "使用 $tianzheng-coordinate-annotation 按当前项目要求处理对应标注，并核实际原生后态与图面。"

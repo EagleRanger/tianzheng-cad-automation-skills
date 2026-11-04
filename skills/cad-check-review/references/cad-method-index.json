@@ -1,0 +1,826 @@
+{
+  "schema_version": 1,
+  "purpose": "Read-only experience navigation; project current state and authorization remain outside this index.",
+  "library_root": "@skills/cad-check-review/library",
+  "modules": {
+    "source": {
+      "label": "来源、版本、专业目录和原件保护",
+      "skill": "@skills/cad-check-review/SKILL.md",
+      "tags": [
+        "正式底稿",
+        "源图",
+        "原件",
+        "外参",
+        "版本",
+        "专业目录"
+      ],
+      "sources": [
+        {
+          "path": "@skills/cad-check-review/references/construction-drawing-workflow.md",
+          "sections": [
+            "来源/版本/专业清单"
+          ]
+        },
+        {
+          "path": "@skills/cad-check-review/references/validation-gates.md",
+          "sections": []
+        }
+      ],
+      "required_current_facts": [
+        "唯一项目入口/原意见",
+        "源与候选准确路径和指纹",
+        "当前保存状态/宿主归属"
+      ],
+      "acceptance": [
+        "当前有效来源与用途明确",
+        "原件保护与依赖完整"
+      ],
+      "implementations": [
+        {
+          "path": "@skills/cad-check-review/scripts/verify_review_run.ps1",
+          "entry": "verify existing review run",
+          "verified_scope": "Existing run format only; does not replace current project acceptance",
+          "maturity": "case_verified_or_local_tested; verify current conditions"
+        }
+      ]
+    },
+    "geometry": {
+      "label": "底板几何、线形和工程接口",
+      "skill": "@skills/cad-check-review/SKILL.md",
+      "tags": [
+        "园路",
+        "岸线",
+        "坡脚",
+        "水工轴线",
+        "稀疏拟合",
+        "圆弧多段线",
+        "底板几何",
+        "桥界",
+        "翼墙",
+        "汀步",
+        "接边",
+        "交接点"
+      ],
+      "sources": [
+        {
+          "path": "@skills/cad-check-review/references/polyline-fitting.md",
+          "sections": []
+        },
+        {
+          "path": "@skills/cad-check-review/references/drawing-change-workflow.md",
+          "sections": [
+            "接头留删和区域清理"
+          ]
+        },
+        {
+          "path": "@skills/cad-check-review/references/construction-drawing-workflow.md",
+          "sections": [
+            "底板几何/工程接口"
+          ]
+        }
+      ],
+      "required_current_facts": [
+        "最新有效测量/工程线角色",
+        "真实XY/Z",
+        "保留与取消及允许误差"
+      ],
+      "acceptance": [
+        "少点平顺且真实接口保留",
+        "有接头留删时，从被保留的来向追到来源接点，分别核保留段连续、越界延伸消失",
+        "失效旧实体清净",
+        "受影响全段/首末原生及实际图面"
+      ],
+      "implementations": []
+    },
+    "native_base": {
+      "label": "专业原生底板、块组和本地复制",
+      "skill": "@skills/cad-check-review/SKILL.md",
+      "tags": [
+        "园建底板",
+        "本地复制",
+        "重影",
+        "块组",
+        "置石",
+        "原生底板"
+      ],
+      "sources": [
+        {
+          "path": "@skills/cad-check-review/references/construction-drawing-workflow.md",
+          "sections": [
+            "原生专业底板组织",
+            "换底与整册修改"
+          ]
+        },
+        {
+          "path": "@skills/cad-check-review/references/drawing-change-workflow.md",
+          "sections": [
+            "先真实几何"
+          ]
+        }
+      ],
+      "required_current_facts": [
+        "本地可编辑/XREF分别用途",
+        "源目标映射与组块成员",
+        "当前已验证数据库接口"
+      ],
+      "acceptance": [
+        "源到目标语义完整",
+        "真实世界变换与高程不变",
+        "重复清理无误删"
+      ],
+      "implementations": []
+    },
+    "hatch": {
+      "label": "范围识别、绿化铺装填充",
+      "skill": "@skills/cad-area-hatch/SKILL.md",
+      "tags": [
+        "填充",
+        "GRASS",
+        "HATCH",
+        "闭区",
+        "农田切割",
+        "岛环",
+        "漏填",
+        "叠压",
+        "绿化范围",
+        "绿化识别",
+        "识别轮廓",
+        "补草",
+        "填充收口",
+        "工作封口"
+      ],
+      "sources": [
+        {
+          "path": "@skills/cad-check-review/references/large-area-hatch.md",
+          "sections": []
+        },
+        {
+          "path": "@skills/cad-check-review/references/drawing-change-workflow.md",
+          "sections": [
+            "接头留删和区域清理"
+          ]
+        },
+        {
+          "path": "@library/knowledge/TIANZHENG_NATIVE_ANNOTATION_ADJUSTMENT_AND_COLLISION.md",
+          "sections": [
+            "填充与视口的限定反例"
+          ]
+        },
+        {
+          "path": "@library/knowledge/project_guides/CAD_TECHNICAL_RECALL.md",
+          "sections": [
+            "填充先确认实际绿地"
+          ]
+        }
+      ],
+      "required_current_facts": [
+        "已验当前底板",
+        "区域角色/孔洞/硬质",
+        "正常原生图案样本与工作平面"
+      ],
+      "acceptance": [
+        "新有效闭区而非旧HATCH搬运",
+        "XY/Z回位与格式实际显示",
+        "全部范围/孔洞/接缝/面积",
+        "清理时按点名区域及有效硬质边界检查多余表达，保留真实图例；局部抽样不核销整区",
+        "两实界未交而人工收口：查实界依据及相邻工程线是否穿入填充，不能只核闭合和面积"
+      ],
+      "implementations": []
+    },
+    "plant_objects": {
+      "label": "种植实物、位置、图例和分组身份",
+      "skill": "@skills/tianzheng-planting-annotation/SKILL.md",
+      "tags": [
+        "植物本体",
+        "实测绿化",
+        "树种",
+        "种植位置",
+        "图例块",
+        "苗木分组"
+      ],
+      "sources": [
+        {
+          "path": "@library/knowledge/CAD_ANNOTATION_AESTHETIC_USER_REQUIREMENTS.md",
+          "sections": [
+            "N15 乔木组",
+            "N16 灌草地被",
+            "N17 数量、面积与待核"
+          ]
+        },
+        {
+          "path": "@skills/cad-check-review/references/construction-drawing-workflow.md",
+          "sections": [
+            "种植本体/分组"
+          ]
+        }
+      ],
+      "required_current_facts": [
+        "最新种植来源",
+        "原生块定义及每实例变换",
+        "独立源注/已核数量"
+      ],
+      "acceptance": [
+        "真实成员与品种/位置",
+        "实物唯一性",
+        "不以图块实例或顶点数凑株数"
+      ],
+      "implementations": []
+    },
+    "layout": {
+      "label": "分幅、视口、图框和图签布局",
+      "skill": "@skills/cad-layout-sheet/SKILL.md",
+      "tags": [
+        "布局",
+        "分幅",
+        "视口",
+        "比例",
+        "图框",
+        "图签",
+        "指北针",
+        "缩印"
+      ],
+      "sources": [
+        {
+          "path": "@library/knowledge/CAD_ANNOTATION_VIEWPORT_SCALE_CONTRACT_V1.md",
+          "sections": []
+        },
+        {
+          "path": "@library/knowledge/CAD_ANNOTATION_AESTHETIC_USER_REQUIREMENTS.md",
+          "sections": [
+            "N02 分幅与坐标",
+            "N03 完整覆盖与余量",
+            "N04 版式、图名与文字",
+            "N13 详图承接",
+            "N14 指北针",
+            "N18 可见性与跨幅"
+          ]
+        },
+        {
+          "path": "@skills/cad-check-review/references/construction-drawing-workflow.md",
+          "sections": [
+            "换底与整册修改"
+          ]
+        }
+      ],
+      "required_current_facts": [
+        "真实单位与覆盖视口",
+        "已确认图幅/图种",
+        "当前图框与目标纸张"
+      ],
+      "acceptance": [
+        "范围完整",
+        "C/旋转/冻结/裁边实际读回",
+        "图名图号目录和跨幅可读"
+      ],
+      "implementations": []
+    },
+    "text": {
+      "label": "原生文字、字体和纸面字高",
+      "skill": "@skills/cad-text-style/SKILL.md",
+      "tags": [
+        "字体",
+        "字高",
+        "文字",
+        "乱码",
+        "上下行",
+        "行距",
+        "原生文字"
+      ],
+      "sources": [
+        {
+          "path": "@library/knowledge/CAD_ANNOTATION_VIEWPORT_SCALE_CONTRACT_V1.md",
+          "sections": []
+        },
+        {
+          "path": "@library/knowledge/project_guides/CAD_TECHNICAL_RECALL.md",
+          "sections": [
+            "原生接口",
+            "CAD-NATIVE-TEXT-READBACK-V1"
+          ]
+        },
+        {
+          "path": "@library/knowledge/CAD_ANNOTATION_AESTHETIC_USER_REQUIREMENTS.md",
+          "sections": [
+            "N04 版式、图名与文字",
+            "N05 字号与近带"
+          ]
+        }
+      ],
+      "required_current_facts": [
+        "实际RX类型",
+        "原生字体/属性/显示字形",
+        "本图合格样例和视口C"
+      ],
+      "acceptance": [
+        "内容符号完整",
+        "原生编辑和实际字形",
+        "纸面字高/行距/朝向及符号关系"
+      ],
+      "implementations": []
+    },
+    "tree": {
+      "label": "乔木组串线、中心和头尾引出",
+      "skill": "@skills/cad-tree-group-annotation/SKILL.md",
+      "tags": [
+        "乔木",
+        "树组",
+        "串线",
+        "头尾",
+        "图例中心",
+        "偏心"
+      ],
+      "sources": [
+        {
+          "path": "@library/knowledge/CAD_ANNOTATION_AESTHETIC_USER_REQUIREMENTS.md",
+          "sections": [
+            "正式种植整组串线",
+            "N07 真碰撞",
+            "N15 乔木组",
+            "N18 可见性与跨幅",
+            "N19 真实验收"
+          ]
+        }
+      ],
+      "required_current_facts": [
+        "独立确认组成员和期望数量",
+        "真实符号中心依据与变换",
+        "本图样式/视口及邻注"
+      ],
+      "acceptance": [
+        "所有树位顶点中心",
+        "自由引出实际接首尾",
+        "完整组/数量/自然近处/全部受影响图面"
+      ],
+      "implementations": [
+        {
+          "path": "@skills/cad-tree-group-annotation/scripts/preflight_tree_groups.py",
+          "entry": "audit_group / audit_batch",
+          "verified_scope": "Local offline three-point external topology; not full CAD visual acceptance",
+          "maturity": "case_verified_or_local_tested; verify current conditions"
+        }
+      ]
+    },
+    "groundcover": {
+      "label": "灌草地被水生名称面积引出",
+      "skill": "@skills/tianzheng-groundcover-annotation/SKILL.md",
+      "tags": [
+        "灌木",
+        "草本",
+        "地被引出",
+        "水生标注",
+        "草坪标注",
+        "面积标注",
+        "灌草"
+      ],
+      "sources": [
+        {
+          "path": "@library/knowledge/TIANZHENG_NATIVE_ANNOTATION_ADJUSTMENT_AND_COLLISION.md",
+          "sections": [
+            "原生单源灌草引出"
+          ]
+        },
+        {
+          "path": "@library/knowledge/CAD_ANNOTATION_AESTHETIC_USER_REQUIREMENTS.md",
+          "sections": [
+            "N16 灌草地被",
+            "N17 数量、面积与待核",
+            "N18 可见性与跨幅"
+          ]
+        }
+      ],
+      "required_current_facts": [
+        "真实当前有效填充分区",
+        "原生RX及实际夹点拓扑",
+        "本图纸面方向/样式"
+      ],
+      "acceptance": [
+        "整体TDbSymbMultiLeader",
+        "指向有效核心/正确品种面积",
+        "实际引线/字形/跨幅"
+      ],
+      "implementations": [
+        {
+          "path": "@skills/tianzheng-batch-polyline-dimension/runtime/src/NativeAnnotationJob.cs",
+          "entry": "CAD_ANNOTATION_RUN; explicit receiver-bound job.json",
+          "verified_scope": "Existing native array job logic; public file-binding adaptation offline checked, receiver CAD validation required",
+          "maturity": "case_verified_or_local_tested; verify current conditions"
+        },
+        {
+          "path": "@skills/tianzheng-batch-polyline-dimension/runtime/src/annotation_layout_policy.py",
+          "entry": "interior_anchor / planting_standard_leaders",
+          "verified_scope": "Pure geometry candidates; source/actual topology/current layout required",
+          "maturity": "case_verified_or_local_tested; verify current conditions"
+        }
+      ]
+    },
+    "coordinate": {
+      "label": "坐标定位、轴序和图种密度",
+      "skill": "@skills/tianzheng-coordinate-annotation/SKILL.md",
+      "tags": [
+        "坐标",
+        "轴序",
+        "真实测点",
+        "苗木网格",
+        "十字"
+      ],
+      "sources": [
+        {
+          "path": "@library/knowledge/TIANZHENG_NATIVE_ANNOTATION_ADJUSTMENT_AND_COLLISION.md",
+          "sections": [
+            "园建原生控制",
+            "坐标标注",
+            "坐标符号形状"
+          ]
+        },
+        {
+          "path": "@library/knowledge/CAD_ANNOTATION_AESTHETIC_USER_REQUIREMENTS.md",
+          "sections": [
+            "N06 外引模式",
+            "N12 图种内容与竖向表达"
+          ]
+        }
+      ],
+      "required_current_facts": [
+        "RX/测点/真实XValue YValue",
+        "本图轴序/单位/精度",
+        "该图种密度和全部相关视口"
+      ],
+      "acceptance": [
+        "测点与值正确",
+        "原生十字/两行实际字形",
+        "显示位移/邻注和跨幅"
+      ],
+      "implementations": []
+    },
+    "elevation": {
+      "label": "标高符号、坡向和文字联动",
+      "skill": "@skills/tianzheng-elevation-annotation/SKILL.md",
+      "tags": [
+        "标高",
+        "高程",
+        "坡向",
+        "竖向",
+        "符号脱离"
+      ],
+      "sources": [
+        {
+          "path": "@library/knowledge/CAD_ANNOTATION_AESTHETIC_USER_REQUIREMENTS.md",
+          "sections": [
+            "N12 图种内容与竖向表达",
+            "N18 可见性与跨幅",
+            "N19 真实验收"
+          ]
+        }
+      ],
+      "required_current_facts": [
+        "真实高程/源构件和点",
+        "当前RX及符号文字夹点拓扑",
+        "当前原生合格样例"
+      ],
+      "acceptance": [
+        "真实高程不被排版改变",
+        "文字符号贴合",
+        "坡向和所有相关视口"
+      ],
+      "implementations": []
+    },
+    "index": {
+      "label": "索引、剖切、详图引用和组成标注",
+      "skill": "@skills/tianzheng-index-annotation/SKILL.md",
+      "tags": [
+        "索引",
+        "剖切",
+        "详图",
+        "图号引用",
+        "多落点",
+        "TDbSymbComposing"
+      ],
+      "sources": [
+        {
+          "path": "@library/knowledge/TIANZHENG_NATIVE_ANNOTATION_ADJUSTMENT_AND_COLLISION.md",
+          "sections": [
+            "园建原生控制",
+            "总图双圈索引",
+            "多落点说明",
+            "纸面符号与剖切"
+          ]
+        }
+      ],
+      "required_current_facts": [
+        "实际源构件及当前详图承接",
+        "RX/完整原生拓扑",
+        "模型纸空间实际变换"
+      ],
+      "acceptance": [
+        "正文/图号/范围框齐全",
+        "源指向与全部控制点保持",
+        "实际跨空间可见碰撞"
+      ],
+      "implementations": []
+    },
+    "dimension": {
+      "label": "线性尺寸、路宽、角度及半径",
+      "skill": "@skills/cad-dimension-annotation/SKILL.md",
+      "tags": [
+        "尺寸",
+        "路宽",
+        "圆心角",
+        "半径",
+        "直径",
+        "角度",
+        "多段线尺寸"
+      ],
+      "sources": [
+        {
+          "path": "@library/knowledge/TIANZHENG_NATIVE_ANNOTATION_ADJUSTMENT_AND_COLLISION.md",
+          "sections": [
+            "园建原生控制",
+            "半径标注"
+          ]
+        },
+        {
+          "path": "@library/knowledge/CAD_ANNOTATION_AESTHETIC_USER_REQUIREMENTS.md",
+          "sections": [
+            "N05 字号与近带",
+            "N08 语义去重与源资格",
+            "N09 道路宽度",
+            "N11 圆弧、角度与半径"
+          ]
+        },
+        {
+          "path": "@skills/tianzheng-batch-polyline-dimension/SKILL.md",
+          "sections": []
+        }
+      ],
+      "required_current_facts": [
+        "真实源段/中线和用途",
+        "当前原生类型/单位/测量",
+        "已验H公式和实际覆盖C"
+      ],
+      "acceptance": [
+        "长度/度数/R语义正确",
+        "源端点和原生测量",
+        "近带排版/数值/字形"
+      ],
+      "implementations": [
+        {
+          "path": "@skills/tianzheng-batch-polyline-dimension/runtime/src/annotation_layout_policy.py",
+          "entry": "road_annotation_semantics / native_ccw_arc_endpoints",
+          "verified_scope": "Previously classified inputs only; no automatic recognition of arbitrary roads",
+          "maturity": "case_verified_or_local_tested; verify current conditions"
+        }
+      ]
+    },
+    "quantities": {
+      "label": "图例、苗木表、面积和工程量对账",
+      "skill": "@skills/cad-quantity-table-review/SKILL.md",
+      "tags": [
+        "工程量",
+        "苗木表",
+        "数量表",
+        "统计表",
+        "对账",
+        "面积合计"
+      ],
+      "sources": [
+        {
+          "path": "@library/knowledge/CAD_ANNOTATION_AESTHETIC_USER_REQUIREMENTS.md",
+          "sections": [
+            "N15 乔木组",
+            "N16 灌草地被",
+            "N17 数量、面积与待核",
+            "N19 真实验收"
+          ]
+        },
+        {
+          "path": "@skills/cad-check-review/references/construction-drawing-workflow.md",
+          "sections": [
+            "图例/数量表/说明"
+          ]
+        }
+      ],
+      "required_current_facts": [
+        "独立实物/有效分区全集",
+        "原始期望与计量单位",
+        "原生表单元格及实际显示"
+      ],
+      "acceptance": [
+        "平面标注图例表一致",
+        "分片合计/跨幅不重计",
+        "表数据及缓存图面同时正确"
+      ],
+      "implementations": []
+    },
+    "discipline_linkage": {
+      "label": "园建种植给排水及节点接口联动",
+      "skill": "@skills/cad-check-review/SKILL.md",
+      "tags": [
+        "专业联动",
+        "给排水",
+        "管线",
+        "断面",
+        "标准大样",
+        "专业接口"
+      ],
+      "sources": [
+        {
+          "path": "@skills/cad-check-review/references/construction-drawing-workflow.md",
+          "sections": [
+            "施工图各专业的边界"
+          ]
+        },
+        {
+          "path": "@library/knowledge/project_guides/CAD_DESIGN_CHANGE_ASSOCIATED_REVIEW.md",
+          "sections": []
+        }
+      ],
+      "required_current_facts": [
+        "实际专业清单与授权",
+        "相关已验最新底板",
+        "原设计/实测参数和接口含义"
+      ],
+      "acceptance": [
+        "只同步授权对象/真实依赖",
+        "平面详图和各专业接口对照",
+        "未知工程设计不猜算"
+      ],
+      "implementations": []
+    },
+    "visual_review": {
+      "label": "完整范围图审、层级和审美",
+      "skill": "@skills/cad-drawing-visual-review/SKILL.md",
+      "tags": [
+        "审美",
+        "图审",
+        "排版",
+        "压线",
+        "交叉",
+        "留白",
+        "可读性",
+        "整体核验"
+      ],
+      "sources": [
+        {
+          "path": "@library/knowledge/CAD_ANNOTATION_AESTHETIC_USER_REQUIREMENTS.md",
+          "sections": [
+            "A1 先后顺序与要求对账",
+            "A2 字高、比例和偏移",
+            "A3 原生形状、大小与整体控制",
+            "A4 就近排布与真实碰撞",
+            "N19 真实验收"
+          ]
+        },
+        {
+          "path": "@skills/cad-check-review/references/drawing-change-workflow.md",
+          "sections": [
+            "截图与正式出图"
+          ]
+        }
+      ],
+      "required_current_facts": [
+        "固化候选和原ID全集",
+        "完整当前可见集合",
+        "真实CAD图面/必要局部"
+      ],
+      "acceptance": [
+        "语义/范围/原生/审美分层",
+        "实际全幅及关键局部",
+        "集中返修/未过不冒称完成"
+      ],
+      "implementations": []
+    },
+    "delivery": {
+      "label": "正式出图、完整依赖和成果收口",
+      "skill": "@skills/cad-check-review/SKILL.md",
+      "tags": [
+        "出图",
+        "交付",
+        "目录",
+        "PDF",
+        "打印",
+        "打包",
+        "保存重开"
+      ],
+      "sources": [
+        {
+          "path": "@skills/cad-check-review/references/validation-gates.md",
+          "sections": []
+        },
+        {
+          "path": "@library/knowledge/project_guides/CAD_TECHNICAL_RECALL.md",
+          "sections": [
+            "打印与目录收口"
+          ]
+        },
+        {
+          "path": "@skills/cad-check-review/references/construction-drawing-workflow.md",
+          "sections": [
+            "最终全套核对",
+            "换底与整册修改"
+          ]
+        }
+      ],
+      "required_current_facts": [
+        "当前真正已验候选",
+        "原件/输出和完整依赖",
+        "用户要的DWG/PDF等格式"
+      ],
+      "acceptance": [
+        "可编辑DWG与原生对象",
+        "源指纹/依赖/目录图号正确",
+        "重开及实际全套图面"
+      ],
+      "implementations": [
+        {
+          "path": "@skills/cad-check-review/scripts/verify_review_run.ps1",
+          "entry": "verify existing run",
+          "verified_scope": "Structural checks only; native content and real drawing acceptance remain separate",
+          "maturity": "case_verified_or_local_tested; verify current conditions"
+        }
+      ]
+    }
+  },
+  "workflow": [
+    {
+      "id": "inputs",
+      "modules": [
+        "source"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "base",
+      "modules": [
+        "geometry",
+        "native_base"
+      ],
+      "depends_on": [
+        "inputs"
+      ]
+    },
+    {
+      "id": "regions",
+      "modules": [
+        "hatch",
+        "plant_objects"
+      ],
+      "depends_on": [
+        "base"
+      ]
+    },
+    {
+      "id": "sheet_style",
+      "modules": [
+        "layout",
+        "text"
+      ],
+      "depends_on": [
+        "base"
+      ]
+    },
+    {
+      "id": "annotations",
+      "modules": [
+        "tree",
+        "groundcover",
+        "coordinate",
+        "elevation",
+        "index",
+        "dimension"
+      ],
+      "depends_on": [
+        "regions",
+        "sheet_style"
+      ]
+    },
+    {
+      "id": "reconciliation",
+      "modules": [
+        "quantities",
+        "discipline_linkage"
+      ],
+      "depends_on": [
+        "annotations"
+      ]
+    },
+    {
+      "id": "major_review",
+      "modules": [
+        "visual_review"
+      ],
+      "depends_on": [
+        "reconciliation"
+      ]
+    },
+    {
+      "id": "deliver",
+      "modules": [
+        "delivery"
+      ],
+      "depends_on": [
+        "major_review"
+      ]
+    }
+  ],
+  "dependency_note": "Reuse valid accepted inputs, do not redo phases; project-specific stage priorities and real local dependencies override this schematic sequence."
+}

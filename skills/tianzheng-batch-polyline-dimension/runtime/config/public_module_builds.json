@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "1.1.1",
+  "version": "1.2.0",
   "commercial_sdk_included": false,
   "modules": [
     {
@@ -144,6 +144,26 @@
       "commands": [
         "CXTDIMTEXTMETRICSV2"
       ]
+    },
+    {
+      "id": "native_annotation_job",
+      "output": "build/NativeAnnotationJob.dll",
+      "sources": [
+        "src/NativeAnnotationJob.cs"
+      ],
+      "references": [
+        "mscorlib.dll",
+        "System.dll",
+        "System.Core.dll",
+        "System.Web.Extensions.dll",
+        "acmgd.dll",
+        "acdbmgd.dll",
+        "accoremgd.dll"
+      ],
+      "commands": [
+        "CAD_ANNOTATION_RUN"
+      ],
+      "invocation": "Explicit receiver-bound job.json via CAD_NATIVE_JOB_DIRECTORY. No startup/NETLOAD by packaging or build."
     }
   ]
 }

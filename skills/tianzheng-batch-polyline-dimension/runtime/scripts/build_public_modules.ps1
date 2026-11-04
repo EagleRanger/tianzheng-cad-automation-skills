@@ -4,7 +4,7 @@ param(
  [string]$FrameworkDirectory=(Join-Path $env:WINDIR 'Microsoft.NET/Framework64/v4.0.30319'),
  [switch]$ReuseExistingVerifiedModules
 )
-# Builds this package's own seven modules only. No NETLOAD, CAD, fixture EXE,
+# Builds this package's own eight modules only. No NETLOAD, CAD, fixture EXE,
 # external publishing, owner registration, READY or COM. The existing bounded
 # compiler retains its original Job memory/process/deadline/drain constraints.
 $ErrorActionPreference='Stop';Set-StrictMode -Version Latest

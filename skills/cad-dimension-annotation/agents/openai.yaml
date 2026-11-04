@@ -1,0 +1,4 @@
+interface:
+  display_name: "CAD尺寸与圆弧标注"
+  short_description: "区分线性尺寸、圆心角与半径，核真实源段、语义和外带排布"
+  default_prompt: "使用 $cad-dimension-annotation 按当前项目要求处理对应标注，并核实际原生后态与图面。"
