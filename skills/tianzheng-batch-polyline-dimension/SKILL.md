@@ -9,6 +9,8 @@ Use this Skill as the entry for `自动批量多段线尺寸`. Its `runtime/` di
 
 ## Start from authority
 
+For this local test build, start with [the isolated single-drawing test](runtime/docs/portable-test.md). It generates fresh receiver scope and ownership and uses the bundled native implementation; the original Exact-B route is a separate integration.
+
 1. Read [migration.md](references/migration.md). Use bundled `runtime/` as the source root unless the receiver explicitly selects an equivalent local checkout; do not look for the author's private computer or task IDs.
 2. Read the receiver's current instructions and the runtime's source/build/input documentation. Local software, owner, document, scope and permission must be bound to the receiver's real environment.
 3. Run `scripts/inspect_capability.ps1` to verify the packaged source manifest. This read-only check never starts CAD and does not authorize execution.

@@ -1,5 +1,7 @@
 # Tianzheng native dimension runtime sources — 1.2.0
 
+本地迁移测试包新增 [单图测试入口](docs/portable-test.md)：监督启动、当前机器的图纸/进程绑定、真实串行锁及一次性领取。它与下文原项目 Exact-B / V8 编排不同，不导入作者状态。
+
 本目录补齐已有原生 ARC/LINE 标注、布局公式/规划、特殊文字恢复、原生读写、精确 owner 传输和构建源。不是任意 DWG 一键全自动成品，也不继承作者电脑的运行权限。
 
 成熟度保持不变：完整命令包是 `VALIDATION_CANDIDATE`；特殊文字子链只有原底板 3/3 证据；精确 B 通道只有限定混合 ARC/LINE 功能验证。跨结构 DWG、新机加载、整图视觉、保存重开与完整连续三次均未由本包证明。

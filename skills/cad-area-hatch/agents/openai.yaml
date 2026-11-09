@@ -1,4 +1,4 @@
-interface:
-  display_name: "CAD范围识别与原生填充"
-  short_description: "按新底板识别有效闭区，核草地农田铺装图案、孔洞与精确回位"
-  default_prompt: "使用 $cad-area-hatch 按当前项目要求调用已验证方法，并核实际后态。"
+interface:
+  display_name: "CAD范围识别与原生填充"
+  short_description: "按新底板识别有效闭区，核草地农田铺装图案、孔洞与精确回位"
+  default_prompt: "使用 $cad-area-hatch 按当前项目要求调用已验证方法，并核实际后态。"

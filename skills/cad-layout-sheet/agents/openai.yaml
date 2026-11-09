@@ -1,4 +1,4 @@
-interface:
-  display_name: "CAD分幅与布局视口"
-  short_description: "核真实视口比例和全范围覆盖，整理图框图签及跨幅施工表达"
-  default_prompt: "使用 $cad-layout-sheet 按当前项目要求调用已验证方法，并核实际后态。"
+interface:
+  display_name: "CAD分幅与布局视口"
+  short_description: "核真实视口比例和全范围覆盖，整理图框图签及跨幅施工表达"
+  default_prompt: "使用 $cad-layout-sheet 按当前项目要求调用已验证方法，并核实际后态。"

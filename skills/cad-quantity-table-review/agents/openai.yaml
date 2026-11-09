@@ -1,4 +1,4 @@
-interface:
-  display_name: "CAD工程量与苗木表对账"
-  short_description: "按独立实物分区和计量口径核平面、标注、图例及原生数量表"
-  default_prompt: "使用 $cad-quantity-table-review 按当前项目要求调用已验证方法，并核实际后态。"
+interface:
+  display_name: "CAD工程量与苗木表对账"
+  short_description: "按独立实物分区和计量口径核平面、标注、图例及原生数量表"
+  default_prompt: "使用 $cad-quantity-table-review 按当前项目要求调用已验证方法，并核实际后态。"

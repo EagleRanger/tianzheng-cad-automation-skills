@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "package": "cad-session-components",
+  "version": "0.6.6",
+  "protocol": "V736",
+  "backend": "autocad2021-tarch20v10",
+  "components": [
+    {
+      "id": "protocol",
+      "entry": "cad_runtime/protocol.py",
+      "owns": "operation parameter contracts",
+      "effects": "none"
+    },
+    {
+      "id": "storage",
+      "entry": "cad_runtime/storage.py",
+      "owns": "atomic queue publication, lock, stable request identity",
+      "effects": "files in the bound session"
+    },
+    {
+      "id": "host_identity",
+      "entry": "cad_runtime/host.py",
+      "owns": "PID, creation time, executable identity",
+      "effects": "read only"
+    },
+    {
+      "id": "native_backend",
+      "entry": "V736BaseSession.cs",
+      "owns": "native read/write, exact object checks, save/switch",
+      "effects": "bound isolated DWG only"
+    },
+    {
+      "id": "lifecycle",
+      "entry": "SafeCadSessionLifecycleV42.cs",
+      "owns": "protection, close, exit evidence",
+      "effects": "bound task host"
+    },
+    {
+      "id": "capture",
+      "entry": "capture_private_session.ps1",
+      "owns": "actual private-desktop PrintWindow image",
+      "effects": "image and receipt; no foreground fallback"
+    },
+    {
+      "id": "private_host",
+      "entry": "start_cad_module.ps1",
+      "owns": "configured host startup and native registration",
+      "effects": "dedicated private desktop"
+    },
+    {
+      "id": "deployment",
+      "entry": "cad_components.py",
+      "owns": "dependency discovery, preflight, build and bounded export",
+      "effects": "requested local output only"
+    },
+    {
+      "id": "binding",
+      "entry": "cad_runtime/binding.py",
+      "owns": "original session pointer only",
+      "effects": "project technical pointer",
+      "inputs": "base_job/launch identity",
+      "outputs": "bound session",
+      "dependencies": []
+    },
+    {
+      "id": "receipts",
+      "entry": "cad_runtime/receipts.py",
+      "owns": "native request/receipt settlement",
+      "effects": "read only",
+      "inputs": "bound queue",
+      "outputs": "settled/unsettled request records",
+      "dependencies": [
+        "storage",
+        "protocol"
+      ]
+    },
+    {
+      "id": "session",
+      "entry": "cad_runtime/session.py",
+      "owns": "host/checkpoint readiness",
+      "effects": "read only",
+      "inputs": "binding and receipts",
+      "outputs": "current snapshot",
+      "dependencies": [
+        "binding",
+        "receipts",
+        "host_identity"
+      ]
+    },
+    {
+      "id": "planning",
+      "entry": "cad_runtime/planning.py",
+      "owns": "parameter/checkpoint to complete job",
+      "effects": "read only",
+      "inputs": "operation, parameters, stable ID, snapshot",
+      "outputs": "job with resolved paths and source identity",
+      "dependencies": [
+        "protocol",
+        "receipts"
+      ]
+    },
+    {
+      "id": "submission",
+      "entry": "cad_runtime/submission.py",
+      "owns": "once-only queue publication",
+      "effects": "bound queue files",
+      "inputs": "validated job and latest checkpoint",
+      "outputs": "submitted or already submitted; never saved",
+      "dependencies": [
+        "planning",
+        "session",
+        "storage"
+      ]
+    },
+    {
+      "id": "evidence",
+      "entry": "cad_runtime/evidence.py",
+      "owns": "capture already-positioned view",
+      "effects": "capture request/image/receipt",
+      "inputs": "completed inspect ID and unchanged checkpoint",
+      "outputs": "actual CAD image receipt",
+      "dependencies": [
+        "session",
+        "capture"
+      ]
+    },
+    {
+      "id": "cli",
+      "entry": "cad_session_client.py",
+      "owns": "compatible dispatch and compact display",
+      "effects": "delegates only",
+      "inputs": "existing CLI arguments",
+      "outputs": "owning module result",
+      "dependencies": [
+        "binding",
+        "session",
+        "planning",
+        "submission",
+        "evidence"
+      ]
+    },
+    {
+      "id": "layers",
+      "entry": "cad_runtime/layers.py",
+      "owns": "bound global layer table query via existing private host",
+      "effects": "read-only COM; query manifest and receipt only",
+      "inputs": "current session binding, stable ID, exact layer names",
+      "outputs": "layer snapshot, missing names, document/checkpoint identity, explicit failure",
+      "dependencies": [
+        "session",
+        "private_host",
+        "storage"
+      ]
+    },
+    {
+      "id": "bound_native_extensions",
+      "entry": "cad_runtime/bound_edits.py -> BoundCadEditsV1.cs",
+      "owns": "global layer flag edits, native paper note read/copy, complete polyline geometry sync, supported layout views",
+      "effects": "existing bound host; original receipt registry; exact native transactions and save",
+      "dependencies": [
+        "session",
+        "protocol",
+        "storage",
+        "native_backend"
+      ],
+      "boundary": "validated adapter hash only; no general Tianzheng annotation or arbitrary native code execution"
+    }
+  ],
+  "not_implemented_here": [
+    "general paper-space cross-drawing copy beyond native text notes",
+    "all Tianzheng annotation commands",
+    "generic CAD version compatibility"
+  ],
+  "project_inputs": "Existing unique checklist plus project state/base job; never embedded in the runtime package.",
+  "acceptance": "Module import, offline tests and compilation do not establish an engineering result or another machine's compatibility.",
+  "execution_steps": [
+    {
+      "step": "source_and_scope",
+      "owner": "project checklist and applicable object Skill",
+      "output": "current source, exact target set, preserved items",
+      "boundary": "business judgment; not inferred from READY or successful copy"
+    },
+    {
+      "step": "observe",
+      "owner": "session",
+      "entry": "status",
+      "output": "host/checkpoint/pending state",
+      "failure_owner": "management for control-chain fault"
+    },
+    {
+      "step": "locate",
+      "owner": "native_backend / layers",
+      "entry": "inspect / page_map / layers",
+      "output": "native objects or sheet map",
+      "boundary": "never substitute DCS/view center for model WCS"
+    },
+    {
+      "step": "plan_and_validate",
+      "owner": "planning + protocol",
+      "entry": "submit performs required validation; prepare optional for draft preview",
+      "output": "complete job, no request publication",
+      "boundary": "operation-specific object/space contracts"
+    },
+    {
+      "step": "publish_once",
+      "owner": "submission",
+      "entry": "submit <kind>",
+      "output": "one request or prior receipt pointer",
+      "boundary": "does not mean saved or accepted"
+    },
+    {
+      "step": "native_operation_and_save",
+      "owner": "native_backend + lifecycle",
+      "entry": "operation-specific native handler",
+      "output": "read/mutation/lifecycle receipt",
+      "boundary": "mutation save stays in native transaction flow; no extra model save roundtrip"
+    },
+    {
+      "step": "settle",
+      "owner": "receipts + session",
+      "entry": "status",
+      "output": "settled checkpoint or exact unresolved receipt",
+      "boundary": "never replay to obtain evidence"
+    },
+    {
+      "step": "capture",
+      "owner": "evidence + capture",
+      "entry": "capture --id <completed inspect ID>",
+      "output": ".cad.png and receipt",
+      "boundary": "view-only positioning precedes capture; native preview is not actual CAD screen"
+    },
+    {
+      "step": "review_and_handoff",
+      "owner": "existing technical self-check, independent review, original checklist",
+      "output": "affected-scope acceptance or precise failure",
+      "boundary": "no new approval queue, no duplicate task ledger"
+    }
+  ],
+  "whole_base_module": {
+    "entry": "base_replace",
+    "source": "BaseReplaceV3.cs",
+    "release": "BaseReplaceV1.release.json",
+    "steps": [
+      "classify",
+      "delete",
+      "native_purge",
+      "clone",
+      "map_groups",
+      "save_reopen",
+      "activate"
+    ],
+    "deferred_scope_not_completion": true
+  },
+  "project_flow": {
+    "source": "cad_runtime/project_flow.py",
+    "state": "original checklist CAD_WORKFLOW_V1",
+    "no_second_ledger": true,
+    "direct_review_packet": true
+  }
+}

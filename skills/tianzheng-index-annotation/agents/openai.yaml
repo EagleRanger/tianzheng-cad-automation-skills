@@ -1,4 +1,4 @@
-interface:
-  display_name: "天正索引与组成标注"
-  short_description: "核构件指向和详图引用，控制完整原生索引拓扑与跨空间碰撞"
-  default_prompt: "使用 $tianzheng-index-annotation 按当前项目要求处理对应标注，并核实际原生后态与图面。"
+interface:
+  display_name: "天正索引与组成标注"
+  short_description: "核构件指向和详图引用，控制完整原生索引拓扑与跨空间碰撞"
+  default_prompt: "使用 $tianzheng-index-annotation 按当前项目要求处理对应标注，并核实际原生后态与图面。"

@@ -1,0 +1,735 @@
+{
+  "schema_version": 1,
+  "package": "cad-session-components",
+  "version": "0.6.6",
+  "source_version_metadata": {
+    "python": "0.6.6",
+    "components_original": "0.6.4"
+  },
+  "target_install_subdirectory": "skills/cad-check-review/runtime/",
+  "target_machine_acceptance": "not performed",
+  "business_logic_changes": false,
+  "excluded": [
+    "drawings",
+    "screenshots",
+    "compiled binaries",
+    "actual release registrations",
+    "machine profiles",
+    "jobs",
+    "queues",
+    "project state",
+    "credentials"
+  ],
+  "files": {
+    "BaseReplaceDiagnosticV3.cs": {
+      "sha256": "45b6056b2606b22239627b0af7c24c782cd58bc0591a02eda2fd4874bd348e5d",
+      "source_sha256": "45b6056b2606b22239627b0af7c24c782cd58bc0591a02eda2fd4874bd348e5d",
+      "adapted": false
+    },
+    "BaseReplaceTestsV3.cs": {
+      "sha256": "070974e428d3b53e2967e1aaf737ef39fd337c4ae97039ea7e48df03f436b08c",
+      "source_sha256": "070974e428d3b53e2967e1aaf737ef39fd337c4ae97039ea7e48df03f436b08c",
+      "adapted": false
+    },
+    "BaseReplaceV3.cs": {
+      "sha256": "50d86120437ffcf263cf261924b4a079a031c887fed359ad9294f595943cfd5b",
+      "source_sha256": "50d86120437ffcf263cf261924b4a079a031c887fed359ad9294f595943cfd5b",
+      "adapted": false
+    },
+    "BoundCadEditsTestsV1.cs": {
+      "sha256": "b0f2a93f4e4c32c17d6bc82422a02c6963e1a82959a018b977ad5d7a0179b7fc",
+      "source_sha256": "b0f2a93f4e4c32c17d6bc82422a02c6963e1a82959a018b977ad5d7a0179b7fc",
+      "adapted": false
+    },
+    "BoundCadEditsV1.cs": {
+      "sha256": "07777cac023c0476ccced8a755d3f7719d43ed7fbecabbbe0126cb36ad3a616c",
+      "source_sha256": "07777cac023c0476ccced8a755d3f7719d43ed7fbecabbbe0126cb36ad3a616c",
+      "adapted": false
+    },
+    "BoundCadEditsV6.cs": {
+      "sha256": "945b756ede4fbd8d40267b3abc8ef07608ef08eae2f2501ffad311415bf6620b",
+      "source_sha256": "945b756ede4fbd8d40267b3abc8ef07608ef08eae2f2501ffad311415bf6620b",
+      "adapted": false
+    },
+    "BoundPreflightRecoveryV1.cs": {
+      "sha256": "f033441170765221b2edd8348066bfc6869d88c9d606c4eb3b68ab760228e7a2",
+      "source_sha256": "f033441170765221b2edd8348066bfc6869d88c9d606c4eb3b68ab760228e7a2",
+      "adapted": false
+    },
+    "BoundViewportOpsV5.cs": {
+      "sha256": "abd71e553ef446dc0b38041b496e229ce3589ae1c6693b72bedb454ddd098356",
+      "source_sha256": "abd71e553ef446dc0b38041b496e229ce3589ae1c6693b72bedb454ddd098356",
+      "adapted": false
+    },
+    "CAD组件接入.md": {
+      "sha256": "57712edf5a51f026944042812c89368b20513350da933bc708c243ecaf2562c8",
+      "source_sha256": "d96411c10de2402732c897b61eb49017ffbf7e7a2baaf8131a473fcb3eb0fe9f",
+      "adapted": true
+    },
+    "CadAdapterContractV1.cs": {
+      "sha256": "426e2cbb631bf410ba5e488a426fc72aa2af861db218b7c3f418030d29959848",
+      "source_sha256": "426e2cbb631bf410ba5e488a426fc72aa2af861db218b7c3f418030d29959848",
+      "adapted": false
+    },
+    "CadValueCompareV1.cs": {
+      "sha256": "bd28bc648c6438f585d68349955d270c3feefe8c5757e9e961b55d78ecfac1dd",
+      "source_sha256": "bd28bc648c6438f585d68349955d270c3feefe8c5757e9e961b55d78ecfac1dd",
+      "adapted": false
+    },
+    "EntityDisplayDispatchV29.cs": {
+      "sha256": "c01b4801d0f76138bb3e6004aab8d76ce7e2140ba728facf5cccd76e5f30575b",
+      "source_sha256": "c01b4801d0f76138bb3e6004aab8d76ce7e2140ba728facf5cccd76e5f30575b",
+      "adapted": false
+    },
+    "EntityDisplayOpsV1.cs": {
+      "sha256": "7c0073bbb861c672b74aaccd97e9e6e4e0b80bf5f3583b989b6c102214595ade",
+      "source_sha256": "7c0073bbb861c672b74aaccd97e9e6e4e0b80bf5f3583b989b6c102214595ade",
+      "adapted": false
+    },
+    "EntityScaleTestsV1.cs": {
+      "sha256": "e0b2f72e18e4e3ff3b9d9c07cb7b7ab1c830e543ca57b5edadd40a99d099ec4f",
+      "source_sha256": "e0b2f72e18e4e3ff3b9d9c07cb7b7ab1c830e543ca57b5edadd40a99d099ec4f",
+      "adapted": false
+    },
+    "GroundcoverSavedRecoveryV1.cs": {
+      "sha256": "ff1d5abb1498a4e2d4f3fbb96400d0dae0197c888320ffcdc324835126b47678",
+      "source_sha256": "ff1d5abb1498a4e2d4f3fbb96400d0dae0197c888320ffcdc324835126b47678",
+      "adapted": false
+    },
+    "HatchPatternPatchV1.cs": {
+      "sha256": "4fc73ef7ec0770a184bc542db94e1b02f9b6c99016dc0e3d5b0b511e557212f9",
+      "source_sha256": "4fc73ef7ec0770a184bc542db94e1b02f9b6c99016dc0e3d5b0b511e557212f9",
+      "adapted": false
+    },
+    "HatchWorkplaneV2.cs": {
+      "sha256": "7b817742592a4059e3278697a67772d33446e47b9453609d49b505dc787d8d7f",
+      "source_sha256": "7b817742592a4059e3278697a67772d33446e47b9453609d49b505dc787d8d7f",
+      "adapted": false
+    },
+    "IndexAnchorV1.cs": {
+      "sha256": "0acfb1e834c4365056a107111a16d42d3916f79ec762bf00eaa1896d0c20b4a5",
+      "source_sha256": "0acfb1e834c4365056a107111a16d42d3916f79ec762bf00eaa1896d0c20b4a5",
+      "adapted": false
+    },
+    "NativeAnnotationUpdateV1.cs": {
+      "sha256": "eb1490a1af7439005b81c481e40667dbeb0505b97e9bb3ba122c4fb6c49b5745",
+      "source_sha256": "eb1490a1af7439005b81c481e40667dbeb0505b97e9bb3ba122c4fb6c49b5745",
+      "adapted": false
+    },
+    "NativeCoordCreateV1.cs": {
+      "sha256": "c104bde2c50eb6bb93be080e8834f120d7661462d158017ad5bb2285f30015f2",
+      "source_sha256": "c104bde2c50eb6bb93be080e8834f120d7661462d158017ad5bb2285f30015f2",
+      "adapted": false
+    },
+    "NativeCoordUpdateV1.cs": {
+      "sha256": "d93a3ab897805fa760acc472f58a35384c16266d543b4fb55c269c87b72e5336",
+      "source_sha256": "d93a3ab897805fa760acc472f58a35384c16266d543b4fb55c269c87b72e5336",
+      "adapted": false
+    },
+    "NativeDbTextFormatTestsV1.cs": {
+      "sha256": "1d03db1ebf41923b604729f78909d8a7a31754dad4e8b5374ba33ea399b7ff5f",
+      "source_sha256": "1d03db1ebf41923b604729f78909d8a7a31754dad4e8b5374ba33ea399b7ff5f",
+      "adapted": false
+    },
+    "NativeDbTextFormatV1.cs": {
+      "sha256": "252f06d5cb7edca06e58842e92871cb9d06be219579020b78eeefc177373dc19",
+      "source_sha256": "252f06d5cb7edca06e58842e92871cb9d06be219579020b78eeefc177373dc19",
+      "adapted": false
+    },
+    "NativeDetailsReadV1.cs": {
+      "sha256": "ba4065b6e6e15527b310f273bafbbdf7acd96be77d8425aeeeb28349daf81531",
+      "source_sha256": "ba4065b6e6e15527b310f273bafbbdf7acd96be77d8425aeeeb28349daf81531",
+      "adapted": false
+    },
+    "NativeDisplayStateReadV1.cs": {
+      "sha256": "4a3ce3417f8f2a8b91f5731c00df6d8313f348970b0863051f6819ad9701a3d2",
+      "source_sha256": "4a3ce3417f8f2a8b91f5731c00df6d8313f348970b0863051f6819ad9701a3d2",
+      "adapted": false
+    },
+    "NativeGeometryReadV1.cs": {
+      "sha256": "622e294f5d2669b819edd3f9cc8da7d9b7c2ffb361f7a2103fd56fade9ae2420",
+      "source_sha256": "622e294f5d2669b819edd3f9cc8da7d9b7c2ffb361f7a2103fd56fade9ae2420",
+      "adapted": false
+    },
+    "NativeGroundcoverCreateV1.cs": {
+      "sha256": "a6436f88474b5d24490361cdeb840d7e5d69631a983065ffb3fa944311bd27a2",
+      "source_sha256": "a6436f88474b5d24490361cdeb840d7e5d69631a983065ffb3fa944311bd27a2",
+      "adapted": false
+    },
+    "NativeHatchSplitV1.cs": {
+      "sha256": "221ea4f387ea7358a5e815772a9cc9cea9a291f4bc1cf3819aa2e534f018c966",
+      "source_sha256": "221ea4f387ea7358a5e815772a9cc9cea9a291f4bc1cf3819aa2e534f018c966",
+      "adapted": false
+    },
+    "NativeLayoutDeleteV1.cs": {
+      "sha256": "6d058e84900a6c813988fe1e5f5362f3c30bb11a580bb02ec7d5bfcec7d500da",
+      "source_sha256": "6d058e84900a6c813988fe1e5f5362f3c30bb11a580bb02ec7d5bfcec7d500da",
+      "adapted": false
+    },
+    "NativeLayoutOpsV1.cs": {
+      "sha256": "08cf25c962c9426c7b49fa317dbb978514dfad7966a3ed6902ac05462e26991d",
+      "source_sha256": "08cf25c962c9426c7b49fa317dbb978514dfad7966a3ed6902ac05462e26991d",
+      "adapted": false
+    },
+    "NativePaperIndexCreateV1.cs": {
+      "sha256": "09f76da238bac2710e045307e09959342e92951baf353f1f9e6002a1e75a8c7d",
+      "source_sha256": "09f76da238bac2710e045307e09959342e92951baf353f1f9e6002a1e75a8c7d",
+      "adapted": false
+    },
+    "NativePaperLeadersCopyV1.cs": {
+      "sha256": "863de4555348fb8efb69a7ab51753d211a8a72f55db7ce69d0d1d1757b0c15b4",
+      "source_sha256": "863de4555348fb8efb69a7ab51753d211a8a72f55db7ce69d0d1d1757b0c15b4",
+      "adapted": false
+    },
+    "NativePaperPatchV1.cs": {
+      "sha256": "67a8821c368e0bc0c0b7c559c8921c4fe8ef2c097d6abe448042cc0d9d11af2d",
+      "source_sha256": "67a8821c368e0bc0c0b7c559c8921c4fe8ef2c097d6abe448042cc0d9d11af2d",
+      "adapted": false
+    },
+    "NativePaperRootsCopyV1.cs": {
+      "sha256": "03f7fef859094917c7b14094335a9ede989e60e6dbbfada4fe22e1cf9eb49979",
+      "source_sha256": "03f7fef859094917c7b14094335a9ede989e60e6dbbfada4fe22e1cf9eb49979",
+      "adapted": false
+    },
+    "NativePaperTransferTestsV1.cs": {
+      "sha256": "08a89bd37ac9eb8012e0fff958b12c4cb82ea1e27a6877bfbc5d58c5a3f39b54",
+      "source_sha256": "08a89bd37ac9eb8012e0fff958b12c4cb82ea1e27a6877bfbc5d58c5a3f39b54",
+      "adapted": false
+    },
+    "NativeSourceRegisterV1.cs": {
+      "sha256": "fe338a7c0f61f809292a40e0e81ed87231841def124b1e20395e81f2f7f47293",
+      "source_sha256": "fe338a7c0f61f809292a40e0e81ed87231841def124b1e20395e81f2f7f47293",
+      "adapted": false
+    },
+    "NativeTDbTextTestsV1.cs": {
+      "sha256": "2917ca2c16178b9da31eca9635518a00c8bbe0755fe09469098ea863f831c518",
+      "source_sha256": "2917ca2c16178b9da31eca9635518a00c8bbe0755fe09469098ea863f831c518",
+      "adapted": false
+    },
+    "NativeTDbTextV1.cs": {
+      "sha256": "572b05fcc635d1ec238d808eb6bad0b074b58c2540063fb5cae5e89fbd2ec7d0",
+      "source_sha256": "572b05fcc635d1ec238d808eb6bad0b074b58c2540063fb5cae5e89fbd2ec7d0",
+      "adapted": false
+    },
+    "NativeTableExpandV1.cs": {
+      "sha256": "15e8a6611ec0d216f481a1efdd5e54d471c89aa5a0f407fed44176e48d3f809a",
+      "source_sha256": "15e8a6611ec0d216f481a1efdd5e54d471c89aa5a0f407fed44176e48d3f809a",
+      "adapted": false
+    },
+    "NativeTableOutlineV1.cs": {
+      "sha256": "18a4e00f4f2b4f5c2ec644d8f819073bd7ab5fe45d787aa843fd800e7bc43cf3",
+      "source_sha256": "18a4e00f4f2b4f5c2ec644d8f819073bd7ab5fe45d787aa843fd800e7bc43cf3",
+      "adapted": false
+    },
+    "NativeTablePatchV1.cs": {
+      "sha256": "f60e5ef04b3f57de853b5ae4a5d9ddc089a5659ffde2f20154192eb34bce4612",
+      "source_sha256": "f60e5ef04b3f57de853b5ae4a5d9ddc089a5659ffde2f20154192eb34bce4612",
+      "adapted": false
+    },
+    "NativeTableReadFormatTestsV1.cs": {
+      "sha256": "66d173e9423a8e9834cdf985ef431369054f946c0bb0070bbdf10142c814e505",
+      "source_sha256": "66d173e9423a8e9834cdf985ef431369054f946c0bb0070bbdf10142c814e505",
+      "adapted": false
+    },
+    "NativeTableRowsMoveV1.cs": {
+      "sha256": "c3df0a522fc8ee41616f76c330fc46afd3902ee21675daa03354bfe22a48ca60",
+      "source_sha256": "c3df0a522fc8ee41616f76c330fc46afd3902ee21675daa03354bfe22a48ca60",
+      "adapted": false
+    },
+    "NativeTextFormatV1.cs": {
+      "sha256": "9915c0b741cae1fd475bbaaebacd6cc677ef4a0bef5a55f60c8b44f2776076da",
+      "source_sha256": "9915c0b741cae1fd475bbaaebacd6cc677ef4a0bef5a55f60c8b44f2776076da",
+      "adapted": false
+    },
+    "NativeTextStylesV1.cs": {
+      "sha256": "f3085f09156e2981778e190c5f17d4b308791641b9bad3c21c7d7b17af57ac8e",
+      "source_sha256": "f3085f09156e2981778e190c5f17d4b308791641b9bad3c21c7d7b17af57ac8e",
+      "adapted": false
+    },
+    "NativeTitleTextV1.cs": {
+      "sha256": "c09c0b300462018df4655e41906fee51158f01dc7fe57ae4e0e1079cbac08c8c",
+      "source_sha256": "c09c0b300462018df4655e41906fee51158f01dc7fe57ae4e0e1079cbac08c8c",
+      "adapted": false
+    },
+    "NativeViewV1.cs": {
+      "sha256": "2c15a1cd097cf92a79018340c914bb1d0c123e6a5932e50110a7ed822f7f0228",
+      "source_sha256": "2c15a1cd097cf92a79018340c914bb1d0c123e6a5932e50110a7ed822f7f0228",
+      "adapted": false
+    },
+    "NativeViewportRestoreV1.cs": {
+      "sha256": "6e60c071e9c603c2a48a7fe3443058e07524343dd147635a418fbe29e5604229",
+      "source_sha256": "6e60c071e9c603c2a48a7fe3443058e07524343dd147635a418fbe29e5604229",
+      "adapted": false
+    },
+    "OffsetDispatchCheckV1.cs": {
+      "sha256": "8eb11aa50843a632b552696528b5ed1400a60f806319670c6d63ea63d0857b42",
+      "source_sha256": "8eb11aa50843a632b552696528b5ed1400a60f806319670c6d63ea63d0857b42",
+      "adapted": false
+    },
+    "PaperEntitiesTestsV1.cs": {
+      "sha256": "9a20da72289fd1f3ca62063976da3eef007190d8b745af95a2d626b20a5ecf0a",
+      "source_sha256": "9a20da72289fd1f3ca62063976da3eef007190d8b745af95a2d626b20a5ecf0a",
+      "adapted": false
+    },
+    "PaperGroundcoverTestsV1.cs": {
+      "sha256": "7cc1e60f17b309afe36044d7b48e40f49104ecddcc7a54bc937fe3ee94690ccd",
+      "source_sha256": "7cc1e60f17b309afe36044d7b48e40f49104ecddcc7a54bc937fe3ee94690ccd",
+      "adapted": false
+    },
+    "PaperTransformOpsV1.cs": {
+      "sha256": "6242d5963452b5af6d5e8717e57c8e75c4cee68f8dcc900d245b009abd243e2d",
+      "source_sha256": "6242d5963452b5af6d5e8717e57c8e75c4cee68f8dcc900d245b009abd243e2d",
+      "adapted": false
+    },
+    "PaperTransformRecoveryV1.cs": {
+      "sha256": "9b9379816cdd21daec0a0f71b682f6bd6912514148102f6d07404b05cabc1daa",
+      "source_sha256": "9b9379816cdd21daec0a0f71b682f6bd6912514148102f6d07404b05cabc1daa",
+      "adapted": false
+    },
+    "PaperTransformTestsV1.cs": {
+      "sha256": "34655f4b242c29d9c03e4f24418e779ae058c7f57943e932e1a9c2077a6ca9b8",
+      "source_sha256": "34655f4b242c29d9c03e4f24418e779ae058c7f57943e932e1a9c2077a6ca9b8",
+      "adapted": false
+    },
+    "PlantLayerSplitV1.cs": {
+      "sha256": "9bdbee3cbf78873d872d631eb320847fea9d72a2d01695e1bfb08c6dc9535460",
+      "source_sha256": "9bdbee3cbf78873d872d631eb320847fea9d72a2d01695e1bfb08c6dc9535460",
+      "adapted": false
+    },
+    "PolylineEndpointTestsV1.cs": {
+      "sha256": "0244deecf1b9c70a3411094f0452b451f8757074f85db212a04fcff4b35fbbe0",
+      "source_sha256": "0244deecf1b9c70a3411094f0452b451f8757074f85db212a04fcff4b35fbbe0",
+      "adapted": false
+    },
+    "PolylineGeometryTestsV1.cs": {
+      "sha256": "f4ff20da5cf9c05a6112628b0768dc8fdc755cf412bd82ed71862969ed225bff",
+      "source_sha256": "f4ff20da5cf9c05a6112628b0768dc8fdc755cf412bd82ed71862969ed225bff",
+      "adapted": false
+    },
+    "PolylineGeometryV1.cs": {
+      "sha256": "613050cab1a1b6d73c179b41e95d3334376cd26e5da6df381fb127799c258320",
+      "source_sha256": "613050cab1a1b6d73c179b41e95d3334376cd26e5da6df381fb127799c258320",
+      "adapted": false
+    },
+    "PresentationPatchV1.cs": {
+      "sha256": "20aa161bbba2928a59bac1ffa103b9612c15766c094fe0de4e863e7f1b00f30a",
+      "source_sha256": "20aa161bbba2928a59bac1ffa103b9612c15766c094fe0de4e863e7f1b00f30a",
+      "adapted": false
+    },
+    "PresentationTestsV1.cs": {
+      "sha256": "b5ac943d0468a969fdc3c1168f9cc6fa6e3c8d7c0d2c0df9a5e021ef86bd29c6",
+      "source_sha256": "b5ac943d0468a969fdc3c1168f9cc6fa6e3c8d7c0d2c0df9a5e021ef86bd29c6",
+      "adapted": false
+    },
+    "RecoverPaperCheckpointV1.cs": {
+      "sha256": "7f5b9e80d3337a14d6001bdd9ab15e2687f584a5ed7b7a098ed71a64a306e816",
+      "source_sha256": "7f5b9e80d3337a14d6001bdd9ab15e2687f584a5ed7b7a098ed71a64a306e816",
+      "adapted": false
+    },
+    "SafeCadSessionLifecycleV42.cs": {
+      "sha256": "b2363fe934cd4f52160696e53d71ee5b1ef371e932084650abde9e50319f6bf9",
+      "source_sha256": "b2363fe934cd4f52160696e53d71ee5b1ef371e932084650abde9e50319f6bf9",
+      "adapted": false
+    },
+    "Session客户端说明.md": {
+      "sha256": "8fdda5ca018dbc2c850f735d7257c271d607af803b2f60ff7c9878f57e4673eb",
+      "source_sha256": "a7cdd5591c955c34f0eefb25052da103bef5900ed0b4235c29ac2ca0b8f6f9ce",
+      "adapted": true
+    },
+    "TextPatchDispatchV30.cs": {
+      "sha256": "fc99eef0e8940a1e381214428c66583db79e206fb4d2c01e2768229dd8f1cf01",
+      "source_sha256": "fc99eef0e8940a1e381214428c66583db79e206fb4d2c01e2768229dd8f1cf01",
+      "adapted": false
+    },
+    "V736BaseSession.cs": {
+      "sha256": "2ca81c4e510ff72b73fc0c33b1e559561fe7a0f1ba5adba7eef84a79db88834c",
+      "source_sha256": "2ca81c4e510ff72b73fc0c33b1e559561fe7a0f1ba5adba7eef84a79db88834c",
+      "adapted": false
+    },
+    "ViewportCameraDataV3.cs": {
+      "sha256": "4801bc629991ca6a26f5ec07e17cae44a6c09da95709a6d210dbe20d6146fc7b",
+      "source_sha256": "4801bc629991ca6a26f5ec07e17cae44a6c09da95709a6d210dbe20d6146fc7b",
+      "adapted": false
+    },
+    "ViewportDocumentV2.cs": {
+      "sha256": "c7a18e3f8507cbd638dd4abb1c8273f1bb08ed9849b4e94e0e85a118b7df9b46",
+      "source_sha256": "c7a18e3f8507cbd638dd4abb1c8273f1bb08ed9849b4e94e0e85a118b7df9b46",
+      "adapted": false
+    },
+    "ViewportFreezeDispatchV1.cs": {
+      "sha256": "c5c063f675001c79d470d12514f26289e19e15048eb128bd20723a2f8a074e97",
+      "source_sha256": "c5c063f675001c79d470d12514f26289e19e15048eb128bd20723a2f8a074e97",
+      "adapted": false
+    },
+    "cad_components.py": {
+      "sha256": "a0deffc91269656501a124a03a14b252e2d5a9883e14dccef530730ec188daa1",
+      "source_sha256": "6c8539a4355b22b2f8d9ce3e03c7a42a0b720e7190eb8b5bf9b453a5d2e096ee",
+      "adapted": true
+    },
+    "cad_geometry_read.py": {
+      "sha256": "471f726a0de59ee8795f021e925d38d06e625f6927f2952a8cbfd50794eee6dc",
+      "source_sha256": "471f726a0de59ee8795f021e925d38d06e625f6927f2952a8cbfd50794eee6dc",
+      "adapted": false
+    },
+    "cad_hatch_split.py": {
+      "sha256": "dd1df0142898deb011da5a3bcb17b3e55bfcd315a651ae418106c17fa5ab3a10",
+      "source_sha256": "dd1df0142898deb011da5a3bcb17b3e55bfcd315a651ae418106c17fa5ab3a10",
+      "adapted": false
+    },
+    "cad_module_diagnostic.py": {
+      "sha256": "c9fa4db004fd91748ed3be67ec53d982863f278dd7a37804668d3d88876284d5",
+      "source_sha256": "c9fa4db004fd91748ed3be67ec53d982863f278dd7a37804668d3d88876284d5",
+      "adapted": false
+    },
+    "cad_runtime/__init__.py": {
+      "sha256": "c517f0f6d10c9e0a7adaa4dca67c8d0a8eac73d097dc97199efbfc24f1f3a539",
+      "source_sha256": "c517f0f6d10c9e0a7adaa4dca67c8d0a8eac73d097dc97199efbfc24f1f3a539",
+      "adapted": false
+    },
+    "cad_runtime/binding.py": {
+      "sha256": "19c06970e276c532cbe5c72264dc588777bc82c9f4fa1e0c028021a4e66293d3",
+      "source_sha256": "19c06970e276c532cbe5c72264dc588777bc82c9f4fa1e0c028021a4e66293d3",
+      "adapted": false
+    },
+    "cad_runtime/bound_edits.py": {
+      "sha256": "8a8d98f3926655d27df7c5bc995db5605fe583b0eb7eab43c670d3f2cff4ebc3",
+      "source_sha256": "8a8d98f3926655d27df7c5bc995db5605fe583b0eb7eab43c670d3f2cff4ebc3",
+      "adapted": false
+    },
+    "cad_runtime/common.py": {
+      "sha256": "364001a8631007eacddf03cc9d28eaf341594c0045e118754e6eeb0b83c383cb",
+      "source_sha256": "364001a8631007eacddf03cc9d28eaf341594c0045e118754e6eeb0b83c383cb",
+      "adapted": false
+    },
+    "cad_runtime/components.json": {
+      "sha256": "8b055e36f00016468f29b4e80dc86ff7cfbd2d6f15422a7895871d927ea21f7d",
+      "source_sha256": "1030f2fdb76e43b8f9233259f3031f13cbfd65c195354c0f1cabfc16c02e9a7e",
+      "adapted": true
+    },
+    "cad_runtime/evidence.py": {
+      "sha256": "b2c6cf33b62f24213ce452c20f133c682855bda97f7246b3ea9e8f737f0af6fd",
+      "source_sha256": "b2c6cf33b62f24213ce452c20f133c682855bda97f7246b3ea9e8f737f0af6fd",
+      "adapted": false
+    },
+    "cad_runtime/host.py": {
+      "sha256": "2ed47edf7e222c007e447486337f8d9915aad193e3ddcf554e4a4f3a8da416b3",
+      "source_sha256": "2ed47edf7e222c007e447486337f8d9915aad193e3ddcf554e4a4f3a8da416b3",
+      "adapted": false
+    },
+    "cad_runtime/layers.py": {
+      "sha256": "425e3b840fd45d5742520dbbe6f7f8dca07cde0026cb6d622e2700174189bd79",
+      "source_sha256": "425e3b840fd45d5742520dbbe6f7f8dca07cde0026cb6d622e2700174189bd79",
+      "adapted": false
+    },
+    "cad_runtime/lifecycle.py": {
+      "sha256": "4bc7444b8e63ff5f9ddd87c8119d3cdeddf3339f6ee7bb941cedfa21193b8bb3",
+      "source_sha256": "4bc7444b8e63ff5f9ddd87c8119d3cdeddf3339f6ee7bb941cedfa21193b8bb3",
+      "adapted": false
+    },
+    "cad_runtime/machine.py": {
+      "sha256": "683e6642cb426fbd7738acfd89522faa27beb02021a7a0430703892c14137714",
+      "source_sha256": "683e6642cb426fbd7738acfd89522faa27beb02021a7a0430703892c14137714",
+      "adapted": false
+    },
+    "cad_runtime/paper_index_create.py": {
+      "sha256": "ca39e3005fbfce8063245798fe343c6fdd61c8e0e25fbf3beecbb58ba32ce881",
+      "source_sha256": "ca39e3005fbfce8063245798fe343c6fdd61c8e0e25fbf3beecbb58ba32ce881",
+      "adapted": false
+    },
+    "cad_runtime/paper_patch.py": {
+      "sha256": "d9a2652d71d62bb4a500fbfbe1a3e909ad160ddf9f012cba00ea2b934571957f",
+      "source_sha256": "d9a2652d71d62bb4a500fbfbe1a3e909ad160ddf9f012cba00ea2b934571957f",
+      "adapted": false
+    },
+    "cad_runtime/paper_roots_copy.py": {
+      "sha256": "5a787405c0fbd4cf7cf3ee4c3324a1fc4a31100976af6cc8c299281183de81cf",
+      "source_sha256": "5a787405c0fbd4cf7cf3ee4c3324a1fc4a31100976af6cc8c299281183de81cf",
+      "adapted": false
+    },
+    "cad_runtime/planning.py": {
+      "sha256": "0a1793128c4e70aa327ae43f008af37803e26e37da9d10fe50b9c63581eaed93",
+      "source_sha256": "0a1793128c4e70aa327ae43f008af37803e26e37da9d10fe50b9c63581eaed93",
+      "adapted": false
+    },
+    "cad_runtime/project_flow.py": {
+      "sha256": "27e559c9249f95f840e17e9c55d63a52f209a6d431444410999156399d47bf8f",
+      "source_sha256": "27e559c9249f95f840e17e9c55d63a52f209a6d431444410999156399d47bf8f",
+      "adapted": false
+    },
+    "cad_runtime/protocol.py": {
+      "sha256": "f7b014ac3ff3ebc2989e42b7ea16d6bffb0bde6bff833e0028da1e04522ac7e4",
+      "source_sha256": "f7b014ac3ff3ebc2989e42b7ea16d6bffb0bde6bff833e0028da1e04522ac7e4",
+      "adapted": false
+    },
+    "cad_runtime/receipts.py": {
+      "sha256": "d2cf6758dbaa43289709c4018e69b0fcba728a46128b31bc8f0a920dd5b19a7f",
+      "source_sha256": "d2cf6758dbaa43289709c4018e69b0fcba728a46128b31bc8f0a920dd5b19a7f",
+      "adapted": false
+    },
+    "cad_runtime/review_contract.py": {
+      "sha256": "9fcd4f41a62f892dc16af0f816e9ec7ee1cfa5cb4c0bed5f295d180930fb571c",
+      "source_sha256": "9fcd4f41a62f892dc16af0f816e9ec7ee1cfa5cb4c0bed5f295d180930fb571c",
+      "adapted": false
+    },
+    "cad_runtime/scoped_waits.py": {
+      "sha256": "f820191c4d802ce3e6d77c3a76f234d0c717102ca63ef62707dded7390f9ef4d",
+      "source_sha256": "f820191c4d802ce3e6d77c3a76f234d0c717102ca63ef62707dded7390f9ef4d",
+      "adapted": false
+    },
+    "cad_runtime/session.py": {
+      "sha256": "f336f88162178edea13ca260cfe9775a415544a46bcf82a4dd82261992a438ae",
+      "source_sha256": "f336f88162178edea13ca260cfe9775a415544a46bcf82a4dd82261992a438ae",
+      "adapted": false
+    },
+    "cad_runtime/storage.py": {
+      "sha256": "1af8145d0e0080fc122bbd897489a00ced2deeba61d2dcf1018a4ee95fa6f0c6",
+      "source_sha256": "1af8145d0e0080fc122bbd897489a00ced2deeba61d2dcf1018a4ee95fa6f0c6",
+      "adapted": false
+    },
+    "cad_runtime/submission.py": {
+      "sha256": "03d8a38eb064d988e6e31d2c02b2b6dec1768fec1fe655b73ee2e80e54b63889",
+      "source_sha256": "03d8a38eb064d988e6e31d2c02b2b6dec1768fec1fe655b73ee2e80e54b63889",
+      "adapted": false
+    },
+    "cad_runtime/table_expand.py": {
+      "sha256": "04da12fe424addc10d81734358da567249d5bea499c29201986ba0a06f9eeef1",
+      "source_sha256": "04da12fe424addc10d81734358da567249d5bea499c29201986ba0a06f9eeef1",
+      "adapted": false
+    },
+    "cad_runtime/table_rows_move.py": {
+      "sha256": "53aa6aae9cd9e98b191542808719f1405aaa2255973994bc9c685f11619ab79d",
+      "source_sha256": "53aa6aae9cd9e98b191542808719f1405aaa2255973994bc9c685f11619ab79d",
+      "adapted": false
+    },
+    "cad_runtime/workflow.py": {
+      "sha256": "cf01e79f83cffc41b4dae1943e1863751196bd7f034ec89ea9838a5844246bcd",
+      "source_sha256": "cf01e79f83cffc41b4dae1943e1863751196bd7f034ec89ea9838a5844246bcd",
+      "adapted": false
+    },
+    "cad_session_client.py": {
+      "sha256": "7221a40a5b5712116a7385178c88f19b4633eeb3993ac81504418c7cf95e5388",
+      "source_sha256": "7221a40a5b5712116a7385178c88f19b4633eeb3993ac81504418c7cf95e5388",
+      "adapted": false
+    },
+    "capture_private_session.ps1": {
+      "sha256": "3e182bda4e7e05bd0dde7d07839db9b6ea3b8262d61bef66c2235742556200f0",
+      "source_sha256": "3e182bda4e7e05bd0dde7d07839db9b6ea3b8262d61bef66c2235742556200f0",
+      "adapted": false
+    },
+    "close_owned_after_receipt_utf8.ps1": {
+      "sha256": "d73a118520fed98e9d89ca095c8037ef371ae7830408cb106f50dfecd6d98dd9",
+      "source_sha256": "d73a118520fed98e9d89ca095c8037ef371ae7830408cb106f50dfecd6d98dd9",
+      "adapted": false
+    },
+    "handle_cad_startup.ps1": {
+      "sha256": "72bafdf1dfdcec639ef262d8d780018d046183fbf6dedb4ad4f02689b009d2d9",
+      "source_sha256": "72bafdf1dfdcec639ef262d8d780018d046183fbf6dedb4ad4f02689b009d2d9",
+      "adapted": false
+    },
+    "inspect_cad_dialogs.ps1": {
+      "sha256": "5fd2699242fd4478953a6f1e77fa9dda707a73098254e0664ea263c117eb201f",
+      "source_sha256": "5fd2699242fd4478953a6f1e77fa9dda707a73098254e0664ea263c117eb201f",
+      "adapted": false
+    },
+    "invoke_bound_cad_module.ps1": {
+      "sha256": "994601d522064ef04483f0019b691be128eccbc1e562f36ab2d651fa8531ec02",
+      "source_sha256": "994601d522064ef04483f0019b691be128eccbc1e562f36ab2d651fa8531ec02",
+      "adapted": false
+    },
+    "read_cad_layers.ps1": {
+      "sha256": "83233969be91f3be142d135044524e55720b3c631ec382733489862945478cdf",
+      "source_sha256": "83233969be91f3be142d135044524e55720b3c631ec382733489862945478cdf",
+      "adapted": false
+    },
+    "recover_cad_checkpoint.py": {
+      "sha256": "0aa10968d371cf51d93b27252639bc96aeff522da9aede9882878ec2e0bf292e",
+      "source_sha256": "0aa10968d371cf51d93b27252639bc96aeff522da9aede9882878ec2e0bf292e",
+      "adapted": false
+    },
+    "recover_cad_paper_checkpoint.py": {
+      "sha256": "9083ce5223fa737158db0f58f998fb8c375625dbef9e83e138ae2a8429073660",
+      "source_sha256": "9083ce5223fa737158db0f58f998fb8c375625dbef9e83e138ae2a8429073660",
+      "adapted": false
+    },
+    "recover_cad_paper_transform.py": {
+      "sha256": "f6768d8d9be25ffab43e1212c337f924dd4ddee641a372faed3578f85e08d165",
+      "source_sha256": "f6768d8d9be25ffab43e1212c337f924dd4ddee641a372faed3578f85e08d165",
+      "adapted": false
+    },
+    "recover_cad_read_hold.py": {
+      "sha256": "bfbce6168e81d361704c648d4433a6fc8a767bc1672df48b1ce28b12490faa67",
+      "source_sha256": "bfbce6168e81d361704c648d4433a6fc8a767bc1672df48b1ce28b12490faa67",
+      "adapted": false
+    },
+    "recover_cad_saved_groundcover.py": {
+      "sha256": "878eee8b8dcc2d5270429e90add71624589e7813207a72d9efd6a5cea7d83ed6",
+      "source_sha256": "878eee8b8dcc2d5270429e90add71624589e7813207a72d9efd6a5cea7d83ed6",
+      "adapted": false
+    },
+    "recover_cad_saved_text.py": {
+      "sha256": "5cf7b18ca070db36bd645603ff7dc62d6feaefd03042f02f52dd1778e955ca18",
+      "source_sha256": "5cf7b18ca070db36bd645603ff7dc62d6feaefd03042f02f52dd1778e955ca18",
+      "adapted": false
+    },
+    "run_private_cad_script.ps1": {
+      "sha256": "8fd2031cacdb8cdb0d3dd8939eeb1c59798ef491ab7e75935e88ebdd7173d7ea",
+      "source_sha256": "8fd2031cacdb8cdb0d3dd8939eeb1c59798ef491ab7e75935e88ebdd7173d7ea",
+      "adapted": false
+    },
+    "start_cad_module.ps1": {
+      "sha256": "ce683f51db26ad190a140614d7fcd2bad9006429e8b087290d939fdf667f447e",
+      "source_sha256": "ce683f51db26ad190a140614d7fcd2bad9006429e8b087290d939fdf667f447e",
+      "adapted": false
+    },
+    "test_bound_cad_edits.py": {
+      "sha256": "cc656edebdce5c357cacd207134d40120b47c75e6a792c17525b47381796a80c",
+      "source_sha256": "cc656edebdce5c357cacd207134d40120b47c75e6a792c17525b47381796a80c",
+      "adapted": false
+    },
+    "test_cad_components.py": {
+      "sha256": "e7b006ef1dc91e4cf5a7a839793e38ab2d32f032445e160425162ca082d5330d",
+      "source_sha256": "e7b006ef1dc91e4cf5a7a839793e38ab2d32f032445e160425162ca082d5330d",
+      "adapted": false
+    },
+    "test_cad_diagnostic.py": {
+      "sha256": "82f2e5e315fb7d1ccff05908d06e1acfe65c2dae5ff705ecc9dc4d4b9532d336",
+      "source_sha256": "82f2e5e315fb7d1ccff05908d06e1acfe65c2dae5ff705ecc9dc4d4b9532d336",
+      "adapted": false
+    },
+    "test_cad_layers.py": {
+      "sha256": "2f24a4edf5edd850532c2ff124a7fbb1a965dd3823c7ebb2a47d58eb696f66cd",
+      "source_sha256": "2f24a4edf5edd850532c2ff124a7fbb1a965dd3823c7ebb2a47d58eb696f66cd",
+      "adapted": false
+    },
+    "test_cad_module_steps.py": {
+      "sha256": "c0a56801eb5c066635b3f5153d27068ed6095335b6a3e6d86ed856e4d570e6e4",
+      "source_sha256": "ab1f39d76f64fdded2f2166d3a2d7d26991946183979ce9f47c6ebbdef122c93",
+      "adapted": true
+    },
+    "test_cad_session_client.py": {
+      "sha256": "174b22fceaefa442c304c12c14a998453ce216ddd01f23b16a02a6d7f34b7616",
+      "source_sha256": "174b22fceaefa442c304c12c14a998453ce216ddd01f23b16a02a6d7f34b7616",
+      "adapted": false
+    },
+    "test_correction_continuity.py": {
+      "sha256": "e810416effeb54cec60d7e3abf0c38601ca041ba1d06c98bac32819d6c6a51da",
+      "source_sha256": "e810416effeb54cec60d7e3abf0c38601ca041ba1d06c98bac32819d6c6a51da",
+      "adapted": false
+    },
+    "test_elevation_rotation.py": {
+      "sha256": "5a072183663e2314c0d106a08b223010fb5aa90a456fbc17eec2786991fc00f9",
+      "source_sha256": "5a072183663e2314c0d106a08b223010fb5aa90a456fbc17eec2786991fc00f9",
+      "adapted": false
+    },
+    "test_finish_check.py": {
+      "sha256": "f19aad1020fa1fb04dfed6f25fecae58a9cc1bb241cb3b4a8b3abd2a88e62f25",
+      "source_sha256": "f19aad1020fa1fb04dfed6f25fecae58a9cc1bb241cb3b4a8b3abd2a88e62f25",
+      "adapted": false
+    },
+    "test_groundcover_update.py": {
+      "sha256": "97a7a6df9c214e823aa69b995da87dacda2b107e104bb8c08ea66881aa623f2e",
+      "source_sha256": "97a7a6df9c214e823aa69b995da87dacda2b107e104bb8c08ea66881aa623f2e",
+      "adapted": false
+    },
+    "test_index_bearing7.py": {
+      "sha256": "277275052d45cc3c2d1cee8f758bf7ffc295903ed5510a8a51ef47042949d1c0",
+      "source_sha256": "277275052d45cc3c2d1cee8f758bf7ffc295903ed5510a8a51ef47042949d1c0",
+      "adapted": false
+    },
+    "test_layout_native.py": {
+      "sha256": "376535a5d1a29aa965453cc0d92fd0fe2ea117e3d2843b9236f6210766c280d5",
+      "source_sha256": "376535a5d1a29aa965453cc0d92fd0fe2ea117e3d2843b9236f6210766c280d5",
+      "adapted": false
+    },
+    "test_native_transfer_contracts.py": {
+      "sha256": "fa3bd60cca1b9add88651f72e7f0c5a168a9996756f906f9806416d093967f76",
+      "source_sha256": "fa3bd60cca1b9add88651f72e7f0c5a168a9996756f906f9806416d093967f76",
+      "adapted": false
+    },
+    "test_paper_index_create.py": {
+      "sha256": "247d8fed1a1263f480c55034375843f9fce9964cafd33eb1580479984f8fa02a",
+      "source_sha256": "247d8fed1a1263f480c55034375843f9fce9964cafd33eb1580479984f8fa02a",
+      "adapted": false
+    },
+    "test_paper_patch.py": {
+      "sha256": "9449e09eb391d835ecc3f1cc65d38d17d1fdac635328b629b417338bac16d239",
+      "source_sha256": "9449e09eb391d835ecc3f1cc65d38d17d1fdac635328b629b417338bac16d239",
+      "adapted": false
+    },
+    "test_paper_roots_copy.py": {
+      "sha256": "b6f5f1e0d3f7444c26c645eefea949cb54ee2435511b7070e721f55e0b29e2ad",
+      "source_sha256": "b6f5f1e0d3f7444c26c645eefea949cb54ee2435511b7070e721f55e0b29e2ad",
+      "adapted": false
+    },
+    "test_polyline_geometry.py": {
+      "sha256": "9aac70b267b2c804e8fa619844568de58e2e2505b51b7bfa27b1f2f07560457e",
+      "source_sha256": "9aac70b267b2c804e8fa619844568de58e2e2505b51b7bfa27b1f2f07560457e",
+      "adapted": false
+    },
+    "test_project_flow.py": {
+      "sha256": "1e7869e99b03a94c233d6bd4b22fa262ead0ab279c8309824b5c8ed1f76606bd",
+      "source_sha256": "1e7869e99b03a94c233d6bd4b22fa262ead0ab279c8309824b5c8ed1f76606bd",
+      "adapted": false
+    },
+    "test_read_hold_recovery.py": {
+      "sha256": "66e24d01dcf6529cecf2864acae8dee27fd14ef1702bbbf149276c40d0340eb8",
+      "source_sha256": "66e24d01dcf6529cecf2864acae8dee27fd14ef1702bbbf149276c40d0340eb8",
+      "adapted": false
+    },
+    "test_review_contract_20261108.py": {
+      "sha256": "262740406bc52839e2320545b3b5a5d2594b9c7e59e3d5b3ada5d0ab52969b0f",
+      "source_sha256": "262740406bc52839e2320545b3b5a5d2594b9c7e59e3d5b3ada5d0ab52969b0f",
+      "adapted": false
+    },
+    "test_review_coverage.py": {
+      "sha256": "d5ed9556b264d97717f69d5edbdb3f4dfc95044bf30bde900fedd24bfb5468ff",
+      "source_sha256": "d5ed9556b264d97717f69d5edbdb3f4dfc95044bf30bde900fedd24bfb5468ff",
+      "adapted": false
+    },
+    "test_scoped_waits.py": {
+      "sha256": "3db05063adb1c65d7cc549bc84531f0d80ad2bb023085d1e206f6fb56fa51fa5",
+      "source_sha256": "3db05063adb1c65d7cc549bc84531f0d80ad2bb023085d1e206f6fb56fa51fa5",
+      "adapted": false
+    },
+    "test_supervision.py": {
+      "sha256": "3e7ef5bc4e1108e6314141e40db7307929dcf76c990505ecc7111744abe2171e",
+      "source_sha256": "3e7ef5bc4e1108e6314141e40db7307929dcf76c990505ecc7111744abe2171e",
+      "adapted": false
+    },
+    "test_table_expand.py": {
+      "sha256": "6dc22c1c619392b54008f535b11824bae5e2687c568581562df02afcc4fa05a0",
+      "source_sha256": "6dc22c1c619392b54008f535b11824bae5e2687c568581562df02afcc4fa05a0",
+      "adapted": false
+    },
+    "test_table_patch.py": {
+      "sha256": "0d795548a77e47beb02700f351276bc5aa5f8dbc15c3e1facd25e90e42e1b08b",
+      "source_sha256": "0d795548a77e47beb02700f351276bc5aa5f8dbc15c3e1facd25e90e42e1b08b",
+      "adapted": false
+    },
+    "test_table_rows_move.py": {
+      "sha256": "cb2476820a80660a53375d27b98891ebadff37654e946ea30c09e55ddb8b2093",
+      "source_sha256": "cb2476820a80660a53375d27b98891ebadff37654e946ea30c09e55ddb8b2093",
+      "adapted": false
+    },
+    "test_text_format.py": {
+      "sha256": "ebc04a33f7902f3e107b48fde576a861000e13a201bd1612d8a23891c32773b5",
+      "source_sha256": "ebc04a33f7902f3e107b48fde576a861000e13a201bd1612d8a23891c32773b5",
+      "adapted": false
+    },
+    "test_viewport_camera_move.py": {
+      "sha256": "5dd893d84e5d6dceb6635e28ffbe3d03cc00feba6fb6814f5ad5a9f94530b850",
+      "source_sha256": "5dd893d84e5d6dceb6635e28ffbe3d03cc00feba6fb6814f5ad5a9f94530b850",
+      "adapted": false
+    },
+    "vendor/cad_capture_compat.ps1": {
+      "sha256": "65c62c6ee3f63089d0df31fac7ba0068897df193429a529aef1acf517bc69fad",
+      "source_sha256": "1fca56b1188491f8af035ab54124fff49540a7c1d193f31e0a15e4d815c7b06d",
+      "adapted": true
+    },
+    "README.md": {
+      "sha256": "78844045d25213de116fca021222374faa2a82929b2258ce05cc7fb5a172e6c8",
+      "generated": true,
+      "adapted": true
+    }
+  }
+}

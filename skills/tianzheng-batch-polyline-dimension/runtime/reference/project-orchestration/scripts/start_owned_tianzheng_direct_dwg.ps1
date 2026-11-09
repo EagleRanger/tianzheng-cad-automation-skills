@@ -3,6 +3,9 @@ param(
     [Parameter(Mandatory = $true)][string]$ExpectedSha256,
     [Parameter(Mandatory = $true)][string]$OwnerStatePath,
     [Parameter(Mandatory = $true)][string]$DialogLogPath,
+    [string]$TianzhengShortcutPath = '',
+    [switch]$ManualPlatformSelection,
+    [switch]$PreserveOnFailure,
     [ValidateRange(0,840)][int]$StartupTimeoutSeconds = 0,
     [ValidateRange(0,840)][int]$NoProgressTimeoutSeconds = 0,
     [int]$DialogWatchSeconds = 20,
@@ -287,9 +290,15 @@ function Request-DrawingOpen([string]$Detail) {
     # Reuse the complete lifecycle route that already passed two-cycle Tianzheng
     # open/close validation: invoke the unique Start-menu Tianzheng shortcut via
     # Explorer ShellExecute and give the isolated DWG as its normal launch input.
-    $startMenuRoot = 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs'
-    $shortcutCandidates = @(Get-ChildItem -LiteralPath $startMenuRoot -Recurse -Filter '*.lnk' |
-        Where-Object { $_.Name -like '*T20*Arch*V10.0*' })
+    $startMenuRoot = Join-Path ([Environment]::GetFolderPath('CommonStartMenu')) 'Programs'
+    $shortcutCandidates = if ($TianzhengShortcutPath) {
+        @(Get-Item -LiteralPath $TianzhengShortcutPath -ErrorAction Stop |
+            Where-Object { -not $_.PSIsContainer -and $_.Extension -ieq '.lnk' })
+    } else {
+        @(Get-ChildItem -LiteralPath $startMenuRoot -Recurse -Filter '*.lnk' |
+            Where-Object { $_.Name -like '*T20*Arch*V10.0*' })
+    }
+    $shortcutCandidates = @($shortcutCandidates)
     if ($shortcutCandidates.Count -ne 1) {
         throw "TIANZHENG_SHORTCUT_NOT_UNIQUE=count:$($shortcutCandidates.Count)"
     }
@@ -370,13 +379,17 @@ while ($timer.Elapsed.TotalSeconds -lt $hardCapSeconds) {
     if($script:ownedProcessObserved-and-not$script:documentIdentityVerified-and
        ($timer.Elapsed.TotalSeconds-$script:ownedProcessObservedAtSeconds)-ge$identityTimeoutSeconds){
         $ownedLive=@(Get-Process -Name acad -ErrorAction SilentlyContinue | Where-Object { $ownedAcadIds.Contains([int]$_.Id) })
-        foreach($stuck in $ownedLive){Stop-Process -Id $stuck.Id -Force -ErrorAction SilentlyContinue}
+        if (-not $PreserveOnFailure) {
+            foreach($stuck in $ownedLive){Stop-Process -Id $stuck.Id -Force -ErrorAction SilentlyContinue}
+        }
         $identityTimeoutCode=('TARGET_WINDOW_IDENTITY_TIMEOUT_{0}S'-f$identityTimeoutSeconds)
         Write-OwnerState -Status 'failed' -Process $null -Detail $identityTimeoutCode
         throw $identityTimeoutCode
     }
     $platformHandled = $false
-    foreach ($launcher in @(Get-Process -Name TGStart -ErrorAction SilentlyContinue | Where-Object { $launcherIdsBefore -notcontains $_.Id })) {
+    foreach ($launcher in $(if (-not $ManualPlatformSelection) {
+        @(Get-Process -Name TGStart -ErrorAction SilentlyContinue | Where-Object { $launcherIdsBefore -notcontains $_.Id })
+    })) {
         $platform = Invoke-TianzhengPlatformSelection2021 -ProcessId $launcher.Id -LogPath $DialogLogPath
         if ($platform.confirmed) {
             Write-OwnerState -Status 'launching' -Process $null -Detail 'PLATFORM_AUTOCAD_2021_CONFIRMED'
@@ -391,6 +404,10 @@ while ($timer.Elapsed.TotalSeconds -lt $hardCapSeconds) {
     }
     if ($platformHandled) { Start-Sleep -Milliseconds 500; continue }
     if (($timer.Elapsed.TotalSeconds - $lastProgressAt) -ge $NoProgressTimeoutSeconds) {
+        if ($PreserveOnFailure) {
+            Write-OwnerState -Status 'failed' -Process $null -Detail 'NO_PROGRESS_PRESERVED_FOR_REVIEW'
+            throw 'NO_PROGRESS_PRESERVED_FOR_REVIEW'
+        }
         $currentAcad = @(Get-Process -Name acad -ErrorAction SilentlyContinue)
         $ownedStuck = @($currentAcad | Where-Object {
             $ownedAcadIds.Contains([int]$_.Id) -and

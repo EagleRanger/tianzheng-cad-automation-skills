@@ -30,7 +30,7 @@ function Initialize-TzDialogRuleDefaults([object]$Rule){
     return $Rule
 }
 if([string]::IsNullOrWhiteSpace($WhitelistPath)){
-    $WhitelistPath=Join-Path (Split-Path $PSScriptRoot -Parent) 'config\tianzheng_dialog_whitelist.json'
+    $WhitelistPath=Join-Path ([IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../../..'))) 'config/tianzheng_dialog_whitelist.json'
 }
 $rules=@((Get-Content -LiteralPath $WhitelistPath -Raw -Encoding UTF8|ConvertFrom-Json).rules|Where-Object{
     @('observed_and_user_approved','observed_and_workflow_authorized','observed_safe_failure')-contains$_.status-or

@@ -1,0 +1,1 @@
+using Autodesk.AutoCAD.Runtime;public class EntityDisplayDispatchV29 {[CommandMethod("HLCADENTITYDISPLAYV29",CommandFlags.Session)]public void Run(){new BoundCadEditsV6().Run();}}

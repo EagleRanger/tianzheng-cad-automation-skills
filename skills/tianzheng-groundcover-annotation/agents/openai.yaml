@@ -1,4 +1,4 @@
-interface:
-  display_name: "灌草地被面积标注"
-  short_description: "核有效种植区与面积，控制原生灌草引出、夹点联动及跨幅避让"
-  default_prompt: "使用 $tianzheng-groundcover-annotation 按当前项目要求处理对应标注，并核实际原生后态与图面。"
+interface:
+  display_name: "灌草地被面积标注"
+  short_description: "核有效种植区与面积，控制原生灌草引出、夹点联动及跨幅避让"
+  default_prompt: "使用 $tianzheng-groundcover-annotation 按当前项目要求处理对应标注，并核实际原生后态与图面。"

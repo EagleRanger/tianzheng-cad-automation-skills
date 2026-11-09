@@ -1,0 +1,73 @@
+// Whole native TDbSymbCoord clones. Input positions are an engineering decision.
+using System;using System.IO;using System.Linq;using System.Collections.Generic;using System.Reflection;using System.Web.Script.Serialization;
+using Autodesk.AutoCAD.Runtime;using Autodesk.AutoCAD.DatabaseServices;using Autodesk.AutoCAD.Geometry;using Autodesk.AutoCAD.EditorInput;using Autodesk.AutoCAD.ApplicationServices;
+using App=Autodesk.AutoCAD.ApplicationServices.Core.Application;
+public class NativeCoordCreateV2 {
+ public class Item {public string template_handle,layer,layout;public double expected_template_rotation;public double[][] grips;public double[] world_xy;public NativeCoordUpdateV1.Expected expected;}
+ public class Layer {public string name;public short color;public string[] freeze_viewports;}
+ public class Job {public string input,input_sha256,output,receipt,axis_order;public Item[] items;public Layer[] new_layers;public bool update_existing,display_only;}
+ public class Host {public int pid;public long created;public string image;}
+ public class Manifest {public string request,request_sha256,loaded_dll,loaded_dll_sha256,session_dir;public Host host;}
+ public class Request {public string kind,job_path,job_sha256;}
+ static readonly JavaScriptSerializer J=new JavaScriptSerializer{MaxJsonLength=100000000,RecursionLimit=100};
+ static readonly BindingFlags F=BindingFlags.Static|BindingFlags.NonPublic;
+ static void Need(bool x,string why){if(!x)throw new InvalidOperationException(why);}
+ static bool Eq(string a,string b){return String.Equals(Path.GetFullPath(a),Path.GetFullPath(b),StringComparison.OrdinalIgnoreCase);}
+ static object Get(Type t,string n){return t.GetField(n,F).GetValue(null);}static object Call(Type t,string n,params object[] a){return t.GetMethod(n,F).Invoke(null,a);}
+ static void Write(string p,object o){using(var f=new FileStream(p,FileMode.CreateNew))using(var w=new StreamWriter(f,new System.Text.UTF8Encoding(false)))w.Write(J.Serialize(o));}
+ static Point3d P(double[] p){Need(p!=null&&p.Length==3&&p.All(x=>!Double.IsNaN(x)&&!Double.IsInfinity(x)),"FINITE_3D_POINT_REQUIRED");return new Point3d(p[0],p[1],p[2]);}
+ static GripDataCollection Grips(Entity e){var g=new GripDataCollection();e.GetGripPoints(g,1,5,Vector3d.ZAxis,GetGripPointsFlags.GripPointsOnly);Need(g.Count==3,"COORD_TEMPLATE_TOPOLOGY_NOT_THREE_GRIPS");return g;}
+ static object Prop(Entity e,string n){var c=e.AcadObject;return c.GetType().InvokeMember(n,BindingFlags.GetProperty,null,c,null);}
+ static void Put(Entity e,string n,object v){var c=e.AcadObject;c.GetType().InvokeMember(n,BindingFlags.SetProperty,null,c,new[]{v});}
+ static void Verify(Entity e,Item item){
+  var g=Grips(e);for(int i=0;i<3;i++)Need(g[i].GripPoint.DistanceTo(P(item.grips[i]))<1e-8,"COORD_GRIP_MISMATCH:"+i);
+  Need(Math.Abs(Convert.ToDouble(Prop(e,"XValue"))-g[0].GripPoint.Y)<1e-8&&Math.Abs(Convert.ToDouble(Prop(e,"YValue"))-g[0].GripPoint.X)<1e-8,"COORD_VALUES_NOT_AT_MEASURE_POINT");
+  Need(Math.Abs(Convert.ToDouble(Prop(e,"LayoutRotation"))-item.expected_template_rotation)<1e-8,"COORD_ROTATION_CHANGED");
+ }
+ static string LayerState(Document doc,Job job,bool exclude){
+  var rows=new SortedDictionary<string,object>();var names=new HashSet<string>((job.new_layers??new Layer[0]).Select(x=>x.name),StringComparer.OrdinalIgnoreCase);
+  using(var tr=doc.Database.TransactionManager.StartTransaction()){
+   foreach(ObjectId id in (LayerTable)tr.GetObject(doc.Database.LayerTableId,OpenMode.ForRead)){var l=(LayerTableRecord)tr.GetObject(id,OpenMode.ForRead);if(exclude&&names.Contains(l.Name))continue;rows["layer:"+l.Name]=new{handle=l.Handle.ToString(),color=l.Color.ToString(),off=l.IsOff,frozen=l.IsFrozen,locked=l.IsLocked,plot=l.IsPlottable};}
+   var layouts=(DBDictionary)tr.GetObject(doc.Database.LayoutDictionaryId,OpenMode.ForRead);foreach(DBDictionaryEntry row in layouts){var layout=(Layout)tr.GetObject(row.Value,OpenMode.ForRead);if(layout.ModelType)continue;foreach(ObjectId id in (BlockTableRecord)tr.GetObject(layout.BlockTableRecordId,OpenMode.ForRead)){var vp=tr.GetObject(id,OpenMode.ForRead) as Viewport;if(vp==null)continue;rows["vp:"+vp.Handle.ToString()]=vp.GetFrozenLayers().Cast<ObjectId>().Select(i=>((LayerTableRecord)tr.GetObject(i,OpenMode.ForRead)).Name).Where(n=>!exclude||!names.Contains(n)).OrderBy(n=>n).ToArray();}}
+   tr.Commit();
+  }return J.Serialize(rows);
+ }
+ public static string[] Apply(Document doc,Job job,Action mutate){
+  if(job.update_existing)return NativeCoordUpdateV1.Apply(doc,job,mutate);
+  Need(job.axis_order=="YX"&&job.items!=null&&job.items.Length>0,"YX_ITEMS_REQUIRED");var db=doc.Database;var created=new List<string>();
+  string unrelated=LayerState(doc,job,true);var layers=job.new_layers??new Layer[0];Need(layers.Select(x=>x.name).Distinct(StringComparer.OrdinalIgnoreCase).Count()==layers.Length,"DUPLICATE_LAYER_REQUEST");
+  using(var tr=db.TransactionManager.StartTransaction()){
+   var ms=(BlockTableRecord)tr.GetObject(SymbolUtilityServices.GetBlockModelSpaceId(db),OpenMode.ForRead);var lt=(LayerTable)tr.GetObject(db.LayerTableId,OpenMode.ForRead);
+   foreach(var layer in layers){Need(!String.IsNullOrWhiteSpace(layer.name)&&layer.name!="0"&&layer.name!="Defpoints"&&layer.color>=1&&layer.color<=255&&job.items.Any(i=>i.layer==layer.name),"ONLY_USED_COORD_LAYER_ALLOWED");if(lt.Has(layer.name)){var l=(LayerTableRecord)tr.GetObject(lt[layer.name],OpenMode.ForRead);Need(l.Color.ColorMethod==Autodesk.AutoCAD.Colors.ColorMethod.ByAci&&l.Color.ColorIndex==layer.color&&!l.IsOff&&!l.IsFrozen&&!l.IsLocked&&l.IsPlottable,"EXISTING_LAYER_STATE_MISMATCH");}foreach(var h in layer.freeze_viewports??new string[0]){var vp=tr.GetObject(db.GetObjectId(false,new Handle(Convert.ToInt64(h,16)),0),OpenMode.ForRead) as Viewport;Need(vp!=null&&vp.Number!=1,"FLOATING_VIEWPORT_REQUIRED:"+h);}}
+   foreach(var item in job.items){Need(item.grips!=null&&item.grips.Length==3&&(lt.Has(item.layer)||layers.Any(l=>l.name==item.layer)),"THREE_GRIPS_AND_DECLARED_LAYER_REQUIRED");var p=P(item.grips[0]);var e=P(item.grips[1]);var t=P(item.grips[2]);var u=p-e;var v=t-e;Need(u.Length>1e-6&&v.Length>1e-6,"ZERO_LENGTH_LEADER");var dot=u.DotProduct(v)/(u.Length*v.Length);Need(dot<=1e-8&&dot>-1+1e-8,"LEADER_MUST_BE_RIGHT_OR_OBTUSE");
+    var source=(Entity)tr.GetObject(db.GetObjectId(false,new Handle(Convert.ToInt64(item.template_handle,16)),0),OpenMode.ForRead);Need(source.GetRXClass().Name=="TDbSymbCoord"&&source.OwnerId==ms.ObjectId,"MODEL_NATIVE_COORD_TEMPLATE_REQUIRED");var g=Grips(source);Need(Math.Abs(Convert.ToDouble(Prop(source,"XValue"))-g[0].GripPoint.Y)<1e-8&&Math.Abs(Convert.ToDouble(Prop(source,"YValue"))-g[0].GripPoint.X)<1e-8,"TEMPLATE_AXIS_OR_VALUE_MISMATCH");Need(Math.Abs(Convert.ToDouble(Prop(source,"LayoutRotation"))-item.expected_template_rotation)<1e-8,"TEMPLATE_ROTATION_MISMATCH");
+   }
+   mutate();foreach(var layer in layers){if(!lt.Has(layer.name)){lt.UpgradeOpen();var l=new LayerTableRecord{Name=layer.name,Color=Autodesk.AutoCAD.Colors.Color.FromColorIndex(Autodesk.AutoCAD.Colors.ColorMethod.ByAci,layer.color)};lt.Add(l);tr.AddNewlyCreatedDBObject(l,true);}foreach(var h in layer.freeze_viewports??new string[0]){var vp=(Viewport)tr.GetObject(db.GetObjectId(false,new Handle(Convert.ToInt64(h,16)),0),OpenMode.ForWrite);vp.FreezeLayersInViewport(new ObjectIdCollection(new[]{lt[layer.name]}).GetEnumerator());}}
+   ms.UpgradeOpen();foreach(var item in job.items){var id=db.GetObjectId(false,new Handle(Convert.ToInt64(item.template_handle,16)),0);var map=new IdMapping();db.DeepCloneObjects(new ObjectIdCollection(new[]{id}),ms.ObjectId,map,false);var clone=(Entity)tr.GetObject(map[id].Value,OpenMode.ForWrite);clone.LayerId=lt[item.layer];
+    for(int i=0;i<3;i++){var g=Grips(clone);var one=new GripDataCollection();one.Add(g[i]);clone.MoveGripPointsAt(one,P(item.grips[i])-g[i].GripPoint,(MoveGripPointsFlags)0);}
+    Put(clone,"XValue",item.grips[0][1]);Put(clone,"YValue",item.grips[0][0]);clone.RecordGraphicsModified(true);Verify(clone,item);created.Add(clone.Handle.ToString());
+   }tr.Commit();
+  }Need(unrelated==LayerState(doc,job,true),"UNSELECTED_LAYER_OR_VIEWPORT_CHANGED");return created.ToArray();
+ }
+ static string Read(Document d,string[] h){return J.Serialize(NativeDetailsReadV2.Read(d,h));}
+ [CommandMethod("HLCADCOORDCREATETESTV4",CommandFlags.Session)]public void Test(){
+  var original=App.DocumentManager.MdiActiveDocument;var previous=HostApplicationServices.WorkingDatabase;var a=original.Editor.GetString(new PromptStringOptions("\nIsolated coordinate job: "){AllowSpaces=true});if(a.Status!=PromptStatus.OK)return;Job job=null;Document staging=null;
+  try{job=J.Deserialize<Job>(File.ReadAllText(a.StringResult.Trim('"')));Need(NativeGeometryReadV1.Hash(job.input)==job.input_sha256&&!File.Exists(job.output)&&!File.Exists(job.receipt),"INPUT_OUTPUT_IDENTITY");string copy=job.output+".staging.dwg";File.Copy(job.input,copy,false);staging=App.DocumentManager.Open(copy,false);App.DocumentManager.MdiActiveDocument=staging;HostApplicationServices.WorkingDatabase=staging.Database;var templates=job.items.Select(i=>i.template_handle).Distinct().ToArray();string before,expected;string[] created;
+   string layerExpected;using(staging.LockDocument()){before=Read(staging,templates);created=Apply(staging,job,()=>{});staging.Editor.Regen();if(!job.update_existing)Need(CadValueCompareV1.Json(before,Read(staging,templates)),"TEMPLATE_CHANGED");expected=Read(staging,created);layerExpected=LayerState(staging,job,false);staging.Database.SaveAs(job.output,DwgVersion.AC1032);}
+   App.DocumentManager.MdiActiveDocument=original;HostApplicationServices.WorkingDatabase=previous;staging.CloseAndDiscard();staging=App.DocumentManager.Open(job.output,true);App.DocumentManager.MdiActiveDocument=staging;HostApplicationServices.WorkingDatabase=staging.Database;string actual;
+   using(staging.LockDocument()){actual=Read(staging,created);if(!job.update_existing)Need(CadValueCompareV1.Json(before,Read(staging,templates)),"REOPEN_TEMPLATE_CHANGED");Need(CadValueCompareV1.Json(expected,actual),"REOPEN_COORD_CHANGED");Need(layerExpected==LayerState(staging,job,false),"REOPEN_LAYER_OR_VIEWPORT_CHANGED");}
+   Write(job.receipt,new{status=job.update_existing?"ISOLATED_NATIVE_COORD_UPDATE_VERIFIED":"ISOLATED_NATIVE_COORD_CREATE_VERIFIED",output=job.output,sha256=NativeGeometryReadV1.Hash(job.output),source_unchanged=NativeGeometryReadV1.Hash(job.input)==job.input_sha256,template_unchanged=!job.update_existing,native_save_reopen_verified=true,unselected_layers_viewports_unchanged=true,layers_and_viewports=J.DeserializeObject(layerExpected),created=job.update_existing?new string[0]:created,updated=job.update_existing?created:new string[0],entities=J.DeserializeObject(actual)});
+  }catch(System.Exception e){if(job!=null&&!File.Exists(job.receipt))Write(job.receipt,new{status="COORD_CREATE_TEST_FAILED",error=e.ToString()});}
+  finally{App.DocumentManager.MdiActiveDocument=original;HostApplicationServices.WorkingDatabase=previous;if(staging!=null)staging.CloseAndDiscard();}
+ }
+ [CommandMethod("HLCADCOORDCREATEV3",CommandFlags.Session)]public void Run(){RunBound("coord_create");}
+ [CommandMethod("HLCADCOORDUPDATEV4",CommandFlags.Session)]public void RunUpdate(){RunBound("coord_update");}
+ void RunBound(string kind){
+  var a=App.DocumentManager.MdiActiveDocument.Editor.GetString(new PromptStringOptions("\nCoordinate manifest: "){AllowSpaces=true});if(a.Status!=PromptStatus.OK)return;Type adapter=null;Job job=null;bool owned=false,started=false,committed=false;
+  try{var m=J.Deserialize<Manifest>(File.ReadAllText(a.StringResult.Trim('"')));var p=System.Diagnostics.Process.GetCurrentProcess();Need(p.Id==m.host.pid&&p.StartTime.ToUniversalTime().ToFileTimeUtc()==m.host.created&&Eq(p.MainModule.FileName,m.host.image),"HOST_IDENTITY");adapter=AppDomain.CurrentDomain.GetAssemblies().Select(x=>x.GetType("V736BaseSession",false)).Single(x=>x!=null);CadAdapterContractV1.Check(adapter);Need(Eq(adapter.Assembly.Location,m.loaded_dll)&&NativeGeometryReadV1.Hash(m.loaded_dll)==m.loaded_dll_sha256&&Eq((string)Get(adapter,"dir"),m.session_dir),"ADAPTER_IDENTITY");Need(!(bool)Get(adapter,"busy")&&!(bool)Get(adapter,"blocked")&&!File.Exists(Path.Combine(m.session_dir,"request.json")),"SESSION_BUSY");Need(Eq(Path.GetDirectoryName(m.request),m.session_dir)&&NativeGeometryReadV1.Hash(m.request)==m.request_sha256,"REQUEST_IDENTITY");var req=J.Deserialize<Request>(File.ReadAllText(m.request));Need(req.kind==kind&&NativeGeometryReadV1.Hash(req.job_path)==req.job_sha256,"JOB_IDENTITY");Call(adapter,"CheckPath",req.job_path);job=J.Deserialize<Job>(File.ReadAllText(req.job_path));job.update_existing=kind=="coord_update";Call(adapter,"CheckLive",job.input,job.input_sha256);Call(adapter,"CheckOutput",job.output,job.receipt);var doc=(Document)Get(adapter,"doc");Need(doc==App.DocumentManager.MdiActiveDocument,"ACTIVE_DOCUMENT_CHANGED");adapter.GetField("busy",F).SetValue(null,true);owned=true;
+   using(doc.LockDocument()){var templates=job.items.Select(i=>i.template_handle).Distinct().ToArray();string before=Read(doc,templates);var created=Apply(doc,job,()=>started=true);committed=true;doc.Editor.Regen();if(!job.update_existing)Need(CadValueCompareV1.Json(before,Read(doc,templates)),"TEMPLATE_CHANGED");var rows=NativeDetailsReadV2.Read(doc,created);doc.Database.SaveAs(job.output,DwgVersion.AC1032);string path=Path.GetFullPath(job.output),sha=NativeGeometryReadV1.Hash(path);((Dictionary<string,string>)Get(adapter,"approved"))[path]=sha;adapter.GetField("currentPath",F).SetValue(null,path);adapter.GetField("currentHash",F).SetValue(null,sha);Write(job.receipt,new{status="SAVED_STILL_OPEN",output=path,sha256=sha,pid=p.Id,changes=new{operation=kind,axis_order="YX",created=job.update_existing?new string[0]:created,updated=job.update_existing?created:new string[0],template_unchanged=!job.update_existing,entities=rows}});Call(adapter,"State");}
+  }catch(System.Exception e){string emergency=null;if(started&&adapter!=null){adapter.GetField("blocked",F).SetValue(null,true);try{var doc=(Document)Get(adapter,"doc");emergency=Path.Combine((string)Get(adapter,"dir"),"coord_create_emergency_"+Guid.NewGuid().ToString("N")+".dwg");using(doc.LockDocument())doc.Database.SaveAs(emergency,DwgVersion.AC1032);}catch{}}
+   if(job!=null&&!File.Exists(job.receipt))Write(job.receipt,new{status=started?"BOUND_MODULE_FAILED":"REJECTED_BEFORE_WRITE",source_sha256=job.input_sha256,write_started=started,committed=committed,replayed=false,emergency=emergency,error=e.ToString()});
+  }finally{if(owned)adapter.GetField("busy",F).SetValue(null,false);}
+ }
+}

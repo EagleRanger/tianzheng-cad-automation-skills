@@ -1,0 +1,1 @@
+using Autodesk.AutoCAD.Runtime; public class TextPatchDispatchV30 { [CommandMethod("HLCADTEXTPATCHV32",CommandFlags.Session)] public void Run(){new BoundCadEditsV6().Run();} }

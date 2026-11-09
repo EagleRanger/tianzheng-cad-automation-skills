@@ -1,4 +1,4 @@
-interface:
-  display_name: "CAD图面与审美校核"
-  short_description: "按真实范围和当前可见集合核层级、近处排布、压线及跨幅"
-  default_prompt: "使用 $cad-drawing-visual-review 按当前项目要求调用已验证方法，并核实际后态。"
+interface:
+  display_name: "CAD图面与审美校核"
+  short_description: "按真实范围和当前可见集合核层级、近处排布、压线及跨幅"
+  default_prompt: "使用 $cad-drawing-visual-review 按当前项目要求调用已验证方法，并核实际后态。"

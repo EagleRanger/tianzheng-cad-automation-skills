@@ -4,6 +4,9 @@ param(
     [Parameter(Mandatory = $true)][string]$OwnerStatePath,
     [Parameter(Mandatory = $true)][string]$DialogLogPath,
     [Parameter(Mandatory = $true)][string]$LifecycleReportPath,
+    [string]$TianzhengShortcutPath = '',
+    [switch]$ManualPlatformSelection,
+    [switch]$PreserveOnFailure,
     [string[]]$PriorOwnerStatePaths = @(),
     [ValidateSet('Auto','ForceAll')][string]$CleanupMode = 'Auto',
     [switch]$ConfirmNoOtherCadProject,
@@ -28,7 +31,7 @@ if ($KeepAliveSeconds -ne 0) {
     throw 'BLOCKING_KEEPALIVE_FORBIDDEN__USE_ZERO_AND_CONTINUE_IN_SAME_CONTROLLER'
 }
 
-$projectRoot = Split-Path -Parent $PSScriptRoot
+$projectRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../../..'))
 $guardModule = Join-Path ([IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../../..'))) 'scripts/common/CadOperationGuard.psm1'
 $lifecycleModule = Join-Path $PSScriptRoot 'common\TianzhengLifecycle.psm1'
 $canonicalOpen = Join-Path ([IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../../..'))) 'reference/project-orchestration/scripts/start_owned_tianzheng_direct_dwg.ps1'
@@ -110,6 +113,7 @@ try {
         throw "CAD_RESTART_DECISION_REQUIRED=$reportPath"
     }
     if ($plan.target_count -gt 0) {
+        if ($PreserveOnFailure) { throw "CAD_EXISTING_PROCESS_PRESERVED=$reportPath" }
         $stopped = Stop-TianzhengProcessesExact -ProcessIds @($plan.targets.process_id)
         Add-LifecycleEvent -Stage 'cleanup' -Status 'PASS' -Data $stopped
     }
@@ -175,6 +179,9 @@ try {
                 -ExpectedSha256 $ExpectedSha256 `
                 -OwnerStatePath $ownerState `
                 -DialogLogPath $dialogLog `
+                -TianzhengShortcutPath $TianzhengShortcutPath `
+                -ManualPlatformSelection:$ManualPlatformSelection `
+                -PreserveOnFailure:$PreserveOnFailure `
                 -StartupTimeoutSeconds $effectiveStartupTimeout `
                 -NoProgressTimeoutSeconds $effectiveInitialFrameTimeout `
                 -DialogWatchSeconds $DialogWatchSeconds `
@@ -221,6 +228,7 @@ try {
             $current = @(Get-Process -Name acad,TGStart -ErrorAction SilentlyContinue)
             $newIds = @($current | Where-Object { $beforeIds -notcontains [int]$_.Id } | ForEach-Object { [int]$_.Id })
             Add-LifecycleEvent -Stage 'launch_attempt' -Status 'FAIL' -Data ([pscustomobject]@{ attempt=$attempt; error=$failure; new_pids=$newIds })
+            if ($PreserveOnFailure) { throw }
             if ($newIds.Count -gt 0) {
                 $stopped = Stop-TianzhengProcessesExact -ProcessIds $newIds
                 Add-LifecycleEvent -Stage 'failed_attempt_cleanup' -Status 'PASS' -Data $stopped

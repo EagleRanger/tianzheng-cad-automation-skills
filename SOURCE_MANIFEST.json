@@ -1,6 +1,6 @@
 {
-  "version": "1.2.0",
-  "kind": "public-file-integrity-only",
+  "version": "1.3.0",
+  "kind": "source-integrity-only",
   "files": [
     {
       "path": ".gitattributes",
@@ -14,8 +14,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2766,
-      "sha256": "39fc94e23ed4232e2209befce15e01a02899607c00ed76408b7326cf7311f4bd"
+      "bytes": 4525,
+      "sha256": "b6cb1ced8c192fe6f60329b7f595e7e1baaefe43ad9a5c5b5a53ac889cb09c31"
     },
     {
       "path": "install.ps1",
@@ -29,33 +29,33 @@
     },
     {
       "path": "README.md",
-      "bytes": 5132,
-      "sha256": "f6ca4edbc6e8d256c132f474c46c9de5d590a5464db6d9efaccb05f57adb7308"
+      "bytes": 5698,
+      "sha256": "64e1244ff1ce67b94a3b210ee032c01994431a3ca5ba4bf9a5a5f3b23ba105df"
     },
     {
       "path": "release.json",
-      "bytes": 267,
-      "sha256": "0ae3dc4b8b79c50b5925ee656769411a6c8bea94dc6edaf143bb3d2ec86a0e5f"
+      "bytes": 257,
+      "sha256": "8da93c324d62fee5ea584df3f4ead59970f0805816691fad2d4ad3f54cf9f854"
     },
     {
       "path": "skills/cad-area-hatch/agents/openai.yaml",
-      "bytes": 282,
-      "sha256": "2de065a2a2c76f14f6bc849821a100f3de503337df55d3063490be3824191dd0"
+      "bytes": 286,
+      "sha256": "e558faaa5926e6adab28d12534a91b740bc1c2f675891aaecf37fde923db1057"
     },
     {
       "path": "skills/cad-area-hatch/SKILL.md",
-      "bytes": 6957,
-      "sha256": "c204bc67fbec51095cdfc663bc7f1ce8f21adf0a13935a9cb4a73bf531d14a4e"
+      "bytes": 7025,
+      "sha256": "aed54915c48be858a51b3da6fee2e6b0b58f56837a50fb72d4f07e60f3ae2346"
     },
     {
       "path": "skills/cad-check-review/agents/openai.yaml",
-      "bytes": 278,
-      "sha256": "438ed4166b5e0042652f7486ed7c356367bd1889045412958bb788b569a7cdb0"
+      "bytes": 282,
+      "sha256": "9e09a0a027c2f01c59ac38df6150f35daadfd2dc5492ea744f8d7c7c6ef833c9"
     },
     {
       "path": "skills/cad-check-review/library/knowledge/CAD_ANNOTATION_AESTHETIC_USER_REQUIREMENTS.md",
-      "bytes": 12233,
-      "sha256": "e9372562cf6e5bc4679850a6171611c4a245addd2c63825b5f6b401362670c1e"
+      "bytes": 13772,
+      "sha256": "ec51f00530ad0f9b9ef7d320b21472ffec26b8af6424e2ff2e51931c269bb502"
     },
     {
       "path": "skills/cad-check-review/library/knowledge/CAD_ANNOTATION_VIEWPORT_SCALE_CONTRACT_V1.md",
@@ -89,13 +89,13 @@
     },
     {
       "path": "skills/cad-check-review/references/annotation-control.md",
-      "bytes": 18019,
-      "sha256": "f9cd2d33983658160ab17f5f6095994ec34fc83d8f66726df6a3f69f976e9545"
+      "bytes": 18598,
+      "sha256": "15c8b0a8da9f1095adda2b2cc681af913ae71ffe4d7d87ba57de121c84f178e6"
     },
     {
       "path": "skills/cad-check-review/references/cad-method-index.json",
-      "bytes": 24433,
-      "sha256": "e506871a759276bcd37de934569962369f839142eb6f91d49a130e0614597cda"
+      "bytes": 25761,
+      "sha256": "eddb1026d5b11c9aa18b190059ed5eaabcb98056b007eaa5a257fc86ea1f6917"
     },
     {
       "path": "skills/cad-check-review/references/construction-drawing-workflow.md",
@@ -104,13 +104,13 @@
     },
     {
       "path": "skills/cad-check-review/references/drawing-change-workflow.md",
-      "bytes": 23342,
-      "sha256": "e82c71568ee012891339a52c3136ac9513835c4c9c66e03bd383ddf0e82f2ccb"
+      "bytes": 27325,
+      "sha256": "4700d22cb8ca6680fadb2dcde896d607b6c0415c8d5ed278e71a99642d08ceec"
     },
     {
       "path": "skills/cad-check-review/references/large-area-hatch.md",
-      "bytes": 2166,
-      "sha256": "5b39f1d2d5e85b59741f4ed5fc2e052967be5093d9f29b0fb60ea4fc16f4e5a2"
+      "bytes": 2108,
+      "sha256": "bdcf8798f10df05d1d1cb1acfecf4f3b6ee0122f1a56e7db776536f89ca2acc4"
     },
     {
       "path": "skills/cad-check-review/references/markup-config.example.json",
@@ -124,8 +124,8 @@
     },
     {
       "path": "skills/cad-check-review/references/polyline-fitting.md",
-      "bytes": 5598,
-      "sha256": "021be49a05d3b1cc6179b75923aa7607964046fae6e1724cadc66f48e36fd066"
+      "bytes": 5568,
+      "sha256": "f598f7b72a2e85cc6c397427fdcb7d44f4313b2201ed5ad4b4a234cba81edb37"
     },
     {
       "path": "skills/cad-check-review/references/review-workflow.md",
@@ -133,9 +133,729 @@
       "sha256": "27bdf3340945e0f0cef485b7d6ac5802016d4528e9293c5687e31506d488e742"
     },
     {
+      "path": "skills/cad-check-review/references/runtime-components.md",
+      "bytes": 3722,
+      "sha256": "2fa0e887488bdc7e6de114876aafee29875a6bf8401060142756b127c869c220"
+    },
+    {
       "path": "skills/cad-check-review/references/validation-gates.md",
       "bytes": 3519,
       "sha256": "0bb85bbc92aeb8dc74e36cc06c3f10b752d7a1379e9f9f8fc0df61a321303914"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/BaseReplaceDiagnosticV3.cs",
+      "bytes": 1897,
+      "sha256": "45b6056b2606b22239627b0af7c24c782cd58bc0591a02eda2fd4874bd348e5d"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/BaseReplaceTestsV3.cs",
+      "bytes": 8694,
+      "sha256": "070974e428d3b53e2967e1aaf737ef39fd337c4ae97039ea7e48df03f436b08c"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/BaseReplaceV3.cs",
+      "bytes": 25767,
+      "sha256": "50d86120437ffcf263cf261924b4a079a031c887fed359ad9294f595943cfd5b"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/BoundCadEditsTestsV1.cs",
+      "bytes": 10087,
+      "sha256": "b0f2a93f4e4c32c17d6bc82422a02c6963e1a82959a018b977ad5d7a0179b7fc"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/BoundCadEditsV1.cs",
+      "bytes": 23578,
+      "sha256": "07777cac023c0476ccced8a755d3f7719d43ed7fbecabbbe0126cb36ad3a616c"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/BoundCadEditsV6.cs",
+      "bytes": 24923,
+      "sha256": "945b756ede4fbd8d40267b3abc8ef07608ef08eae2f2501ffad311415bf6620b"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/BoundPreflightRecoveryV1.cs",
+      "bytes": 5280,
+      "sha256": "f033441170765221b2edd8348066bfc6869d88c9d606c4eb3b68ab760228e7a2"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/BoundViewportOpsV5.cs",
+      "bytes": 5993,
+      "sha256": "abd71e553ef446dc0b38041b496e229ce3589ae1c6693b72bedb454ddd098356"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_components.py",
+      "bytes": 15540,
+      "sha256": "a0deffc91269656501a124a03a14b252e2d5a9883e14dccef530730ec188daa1"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_geometry_read.py",
+      "bytes": 5276,
+      "sha256": "471f726a0de59ee8795f021e925d38d06e625f6927f2952a8cbfd50794eee6dc"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_hatch_split.py",
+      "bytes": 599,
+      "sha256": "dd1df0142898deb011da5a3bcb17b3e55bfcd315a651ae418106c17fa5ab3a10"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_module_diagnostic.py",
+      "bytes": 4321,
+      "sha256": "c9fa4db004fd91748ed3be67ec53d982863f278dd7a37804668d3d88876284d5"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/__init__.py",
+      "bytes": 106,
+      "sha256": "c517f0f6d10c9e0a7adaa4dca67c8d0a8eac73d097dc97199efbfc24f1f3a539"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/binding.py",
+      "bytes": 3414,
+      "sha256": "19c06970e276c532cbe5c72264dc588777bc82c9f4fa1e0c028021a4e66293d3"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/bound_edits.py",
+      "bytes": 6235,
+      "sha256": "8a8d98f3926655d27df7c5bc995db5605fe583b0eb7eab43c670d3f2cff4ebc3"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/common.py",
+      "bytes": 172,
+      "sha256": "364001a8631007eacddf03cc9d28eaf341594c0045e118754e6eeb0b83c383cb"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/components.json",
+      "bytes": 8318,
+      "sha256": "8b055e36f00016468f29b4e80dc86ff7cfbd2d6f15422a7895871d927ea21f7d"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/evidence.py",
+      "bytes": 3075,
+      "sha256": "b2c6cf33b62f24213ce452c20f133c682855bda97f7246b3ea9e8f737f0af6fd"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/host.py",
+      "bytes": 1949,
+      "sha256": "2ed47edf7e222c007e447486337f8d9915aad193e3ddcf554e4a4f3a8da416b3"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/layers.py",
+      "bytes": 3208,
+      "sha256": "425e3b840fd45d5742520dbbe6f7f8dca07cde0026cb6d622e2700174189bd79"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/lifecycle.py",
+      "bytes": 2822,
+      "sha256": "4bc7444b8e63ff5f9ddd87c8119d3cdeddf3339f6ee7bb941cedfa21193b8bb3"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/machine.py",
+      "bytes": 6025,
+      "sha256": "683e6642cb426fbd7738acfd89522faa27beb02021a7a0430703892c14137714"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/paper_index_create.py",
+      "bytes": 1888,
+      "sha256": "ca39e3005fbfce8063245798fe343c6fdd61c8e0e25fbf3beecbb58ba32ce881"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/paper_patch.py",
+      "bytes": 3289,
+      "sha256": "d9a2652d71d62bb4a500fbfbe1a3e909ad160ddf9f012cba00ea2b934571957f"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/paper_roots_copy.py",
+      "bytes": 1688,
+      "sha256": "5a787405c0fbd4cf7cf3ee4c3324a1fc4a31100976af6cc8c299281183de81cf"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/planning.py",
+      "bytes": 4343,
+      "sha256": "0a1793128c4e70aa327ae43f008af37803e26e37da9d10fe50b9c63581eaed93"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/project_flow.py",
+      "bytes": 32983,
+      "sha256": "27e559c9249f95f840e17e9c55d63a52f209a6d431444410999156399d47bf8f"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/protocol.py",
+      "bytes": 90838,
+      "sha256": "f7b014ac3ff3ebc2989e42b7ea16d6bffb0bde6bff833e0028da1e04522ac7e4"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/receipts.py",
+      "bytes": 19452,
+      "sha256": "d2cf6758dbaa43289709c4018e69b0fcba728a46128b31bc8f0a920dd5b19a7f"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/review_contract.py",
+      "bytes": 7018,
+      "sha256": "9fcd4f41a62f892dc16af0f816e9ec7ee1cfa5cb4c0bed5f295d180930fb571c"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/scoped_waits.py",
+      "bytes": 7197,
+      "sha256": "f820191c4d802ce3e6d77c3a76f234d0c717102ca63ef62707dded7390f9ef4d"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/session.py",
+      "bytes": 3790,
+      "sha256": "f336f88162178edea13ca260cfe9775a415544a46bcf82a4dd82261992a438ae"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/storage.py",
+      "bytes": 2122,
+      "sha256": "1af8145d0e0080fc122bbd897489a00ced2deeba61d2dcf1018a4ee95fa6f0c6"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/submission.py",
+      "bytes": 3001,
+      "sha256": "03d8a38eb064d988e6e31d2c02b2b6dec1768fec1fe655b73ee2e80e54b63889"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/table_expand.py",
+      "bytes": 3290,
+      "sha256": "04da12fe424addc10d81734358da567249d5bea499c29201986ba0a06f9eeef1"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/table_rows_move.py",
+      "bytes": 1080,
+      "sha256": "53aa6aae9cd9e98b191542808719f1405aaa2255973994bc9c685f11619ab79d"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_runtime/workflow.py",
+      "bytes": 12761,
+      "sha256": "cf01e79f83cffc41b4dae1943e1863751196bd7f034ec89ea9838a5844246bcd"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/cad_session_client.py",
+      "bytes": 5421,
+      "sha256": "7221a40a5b5712116a7385178c88f19b4633eeb3993ac81504418c7cf95e5388"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/CadAdapterContractV1.cs",
+      "bytes": 2101,
+      "sha256": "426e2cbb631bf410ba5e488a426fc72aa2af861db218b7c3f418030d29959848"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/CadValueCompareV1.cs",
+      "bytes": 1530,
+      "sha256": "bd28bc648c6438f585d68349955d270c3feefe8c5757e9e961b55d78ecfac1dd"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/CAD组件接入.md",
+      "bytes": 46563,
+      "sha256": "57712edf5a51f026944042812c89368b20513350da933bc708c243ecaf2562c8"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/capture_private_session.ps1",
+      "bytes": 2119,
+      "sha256": "3e182bda4e7e05bd0dde7d07839db9b6ea3b8262d61bef66c2235742556200f0"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/close_owned_after_receipt_utf8.ps1",
+      "bytes": 3983,
+      "sha256": "d73a118520fed98e9d89ca095c8037ef371ae7830408cb106f50dfecd6d98dd9"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/EntityDisplayDispatchV29.cs",
+      "bytes": 179,
+      "sha256": "c01b4801d0f76138bb3e6004aab8d76ce7e2140ba728facf5cccd76e5f30575b"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/EntityDisplayOpsV1.cs",
+      "bytes": 11766,
+      "sha256": "7c0073bbb861c672b74aaccd97e9e6e4e0b80bf5f3583b989b6c102214595ade"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/EntityScaleTestsV1.cs",
+      "bytes": 4298,
+      "sha256": "e0b2f72e18e4e3ff3b9d9c07cb7b7ab1c830e543ca57b5edadd40a99d099ec4f"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/GroundcoverSavedRecoveryV1.cs",
+      "bytes": 6709,
+      "sha256": "ff1d5abb1498a4e2d4f3fbb96400d0dae0197c888320ffcdc324835126b47678"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/handle_cad_startup.ps1",
+      "bytes": 1944,
+      "sha256": "72bafdf1dfdcec639ef262d8d780018d046183fbf6dedb4ad4f02689b009d2d9"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/HatchPatternPatchV1.cs",
+      "bytes": 8312,
+      "sha256": "4fc73ef7ec0770a184bc542db94e1b02f9b6c99016dc0e3d5b0b511e557212f9"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/HatchWorkplaneV2.cs",
+      "bytes": 13384,
+      "sha256": "7b817742592a4059e3278697a67772d33446e47b9453609d49b505dc787d8d7f"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/IndexAnchorV1.cs",
+      "bytes": 8803,
+      "sha256": "0acfb1e834c4365056a107111a16d42d3916f79ec762bf00eaa1896d0c20b4a5"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/inspect_cad_dialogs.ps1",
+      "bytes": 1925,
+      "sha256": "5fd2699242fd4478953a6f1e77fa9dda707a73098254e0664ea263c117eb201f"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/invoke_bound_cad_module.ps1",
+      "bytes": 5684,
+      "sha256": "994601d522064ef04483f0019b691be128eccbc1e562f36ab2d651fa8531ec02"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeAnnotationUpdateV1.cs",
+      "bytes": 16779,
+      "sha256": "eb1490a1af7439005b81c481e40667dbeb0505b97e9bb3ba122c4fb6c49b5745"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeCoordCreateV1.cs",
+      "bytes": 14673,
+      "sha256": "c104bde2c50eb6bb93be080e8834f120d7661462d158017ad5bb2285f30015f2"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeCoordUpdateV1.cs",
+      "bytes": 8611,
+      "sha256": "d93a3ab897805fa760acc472f58a35384c16266d543b4fb55c269c87b72e5336"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeDbTextFormatTestsV1.cs",
+      "bytes": 5359,
+      "sha256": "1d03db1ebf41923b604729f78909d8a7a31754dad4e8b5374ba33ea399b7ff5f"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeDbTextFormatV1.cs",
+      "bytes": 3781,
+      "sha256": "252f06d5cb7edca06e58842e92871cb9d06be219579020b78eeefc177373dc19"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeDetailsReadV1.cs",
+      "bytes": 16677,
+      "sha256": "ba4065b6e6e15527b310f273bafbbdf7acd96be77d8425aeeeb28349daf81531"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeDisplayStateReadV1.cs",
+      "bytes": 6399,
+      "sha256": "4a3ce3417f8f2a8b91f5731c00df6d8313f348970b0863051f6819ad9701a3d2"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeGeometryReadV1.cs",
+      "bytes": 9026,
+      "sha256": "622e294f5d2669b819edd3f9cc8da7d9b7c2ffb361f7a2103fd56fade9ae2420"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeGroundcoverCreateV1.cs",
+      "bytes": 20294,
+      "sha256": "a6436f88474b5d24490361cdeb840d7e5d69631a983065ffb3fa944311bd27a2"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeHatchSplitV1.cs",
+      "bytes": 16257,
+      "sha256": "221ea4f387ea7358a5e815772a9cc9cea9a291f4bc1cf3819aa2e534f018c966"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeLayoutDeleteV1.cs",
+      "bytes": 7452,
+      "sha256": "6d058e84900a6c813988fe1e5f5362f3c30bb11a580bb02ec7d5bfcec7d500da"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeLayoutOpsV1.cs",
+      "bytes": 9700,
+      "sha256": "08cf25c962c9426c7b49fa317dbb978514dfad7966a3ed6902ac05462e26991d"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativePaperIndexCreateV1.cs",
+      "bytes": 13077,
+      "sha256": "09f76da238bac2710e045307e09959342e92951baf353f1f9e6002a1e75a8c7d"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativePaperLeadersCopyV1.cs",
+      "bytes": 4209,
+      "sha256": "863de4555348fb8efb69a7ab51753d211a8a72f55db7ce69d0d1d1757b0c15b4"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativePaperPatchV1.cs",
+      "bytes": 52320,
+      "sha256": "67a8821c368e0bc0c0b7c559c8921c4fe8ef2c097d6abe448042cc0d9d11af2d"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativePaperRootsCopyV1.cs",
+      "bytes": 21716,
+      "sha256": "03f7fef859094917c7b14094335a9ede989e60e6dbbfada4fe22e1cf9eb49979"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativePaperTransferTestsV1.cs",
+      "bytes": 9354,
+      "sha256": "08a89bd37ac9eb8012e0fff958b12c4cb82ea1e27a6877bfbc5d58c5a3f39b54"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeSourceRegisterV1.cs",
+      "bytes": 5599,
+      "sha256": "fe338a7c0f61f809292a40e0e81ed87231841def124b1e20395e81f2f7f47293"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeTableExpandV1.cs",
+      "bytes": 19339,
+      "sha256": "15e8a6611ec0d216f481a1efdd5e54d471c89aa5a0f407fed44176e48d3f809a"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeTableOutlineV1.cs",
+      "bytes": 5621,
+      "sha256": "18a4e00f4f2b4f5c2ec644d8f819073bd7ab5fe45d787aa843fd800e7bc43cf3"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeTablePatchV1.cs",
+      "bytes": 35531,
+      "sha256": "f60e5ef04b3f57de853b5ae4a5d9ddc089a5659ffde2f20154192eb34bce4612"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeTableReadFormatTestsV1.cs",
+      "bytes": 5210,
+      "sha256": "66d173e9423a8e9834cdf985ef431369054f946c0bb0070bbdf10142c814e505"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeTableRowsMoveV1.cs",
+      "bytes": 16240,
+      "sha256": "c3df0a522fc8ee41616f76c330fc46afd3902ee21675daa03354bfe22a48ca60"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeTDbTextTestsV1.cs",
+      "bytes": 4417,
+      "sha256": "2917ca2c16178b9da31eca9635518a00c8bbe0755fe09469098ea863f831c518"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeTDbTextV1.cs",
+      "bytes": 3046,
+      "sha256": "572b05fcc635d1ec238d808eb6bad0b074b58c2540063fb5cae5e89fbd2ec7d0"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeTextFormatV1.cs",
+      "bytes": 28340,
+      "sha256": "9915c0b741cae1fd475bbaaebacd6cc677ef4a0bef5a55f60c8b44f2776076da"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeTextStylesV1.cs",
+      "bytes": 5514,
+      "sha256": "f3085f09156e2981778e190c5f17d4b308791641b9bad3c21c7d7b17af57ac8e"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeTitleTextV1.cs",
+      "bytes": 8112,
+      "sha256": "c09c0b300462018df4655e41906fee51158f01dc7fe57ae4e0e1079cbac08c8c"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeViewportRestoreV1.cs",
+      "bytes": 3780,
+      "sha256": "6e60c071e9c603c2a48a7fe3443058e07524343dd147635a418fbe29e5604229"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/NativeViewV1.cs",
+      "bytes": 14106,
+      "sha256": "2c15a1cd097cf92a79018340c914bb1d0c123e6a5932e50110a7ed822f7f0228"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/OffsetDispatchCheckV1.cs",
+      "bytes": 6297,
+      "sha256": "8eb11aa50843a632b552696528b5ed1400a60f806319670c6d63ea63d0857b42"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/PaperEntitiesTestsV1.cs",
+      "bytes": 8820,
+      "sha256": "9a20da72289fd1f3ca62063976da3eef007190d8b745af95a2d626b20a5ecf0a"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/PaperGroundcoverTestsV1.cs",
+      "bytes": 11211,
+      "sha256": "7cc1e60f17b309afe36044d7b48e40f49104ecddcc7a54bc937fe3ee94690ccd"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/PaperTransformOpsV1.cs",
+      "bytes": 7466,
+      "sha256": "6242d5963452b5af6d5e8717e57c8e75c4cee68f8dcc900d245b009abd243e2d"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/PaperTransformRecoveryV1.cs",
+      "bytes": 8885,
+      "sha256": "9b9379816cdd21daec0a0f71b682f6bd6912514148102f6d07404b05cabc1daa"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/PaperTransformTestsV1.cs",
+      "bytes": 8078,
+      "sha256": "34655f4b242c29d9c03e4f24418e779ae058c7f57943e932e1a9c2077a6ca9b8"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/PlantLayerSplitV1.cs",
+      "bytes": 17482,
+      "sha256": "9bdbee3cbf78873d872d631eb320847fea9d72a2d01695e1bfb08c6dc9535460"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/PolylineEndpointTestsV1.cs",
+      "bytes": 5796,
+      "sha256": "0244deecf1b9c70a3411094f0452b451f8757074f85db212a04fcff4b35fbbe0"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/PolylineGeometryTestsV1.cs",
+      "bytes": 9552,
+      "sha256": "f4ff20da5cf9c05a6112628b0768dc8fdc755cf412bd82ed71862969ed225bff"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/PolylineGeometryV1.cs",
+      "bytes": 6323,
+      "sha256": "613050cab1a1b6d73c179b41e95d3334376cd26e5da6df381fb127799c258320"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/PresentationPatchV1.cs",
+      "bytes": 21740,
+      "sha256": "20aa161bbba2928a59bac1ffa103b9612c15766c094fe0de4e863e7f1b00f30a"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/PresentationTestsV1.cs",
+      "bytes": 13101,
+      "sha256": "b5ac943d0468a969fdc3c1168f9cc6fa6e3c8d7c0d2c0df9a5e021ef86bd29c6"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/read_cad_layers.ps1",
+      "bytes": 3783,
+      "sha256": "83233969be91f3be142d135044524e55720b3c631ec382733489862945478cdf"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/README.md",
+      "bytes": 6735,
+      "sha256": "78844045d25213de116fca021222374faa2a82929b2258ce05cc7fb5a172e6c8"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/recover_cad_checkpoint.py",
+      "bytes": 7354,
+      "sha256": "0aa10968d371cf51d93b27252639bc96aeff522da9aede9882878ec2e0bf292e"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/recover_cad_paper_checkpoint.py",
+      "bytes": 6554,
+      "sha256": "9083ce5223fa737158db0f58f998fb8c375625dbef9e83e138ae2a8429073660"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/recover_cad_paper_transform.py",
+      "bytes": 4068,
+      "sha256": "f6768d8d9be25ffab43e1212c337f924dd4ddee641a372faed3578f85e08d165"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/recover_cad_read_hold.py",
+      "bytes": 4649,
+      "sha256": "bfbce6168e81d361704c648d4433a6fc8a767bc1672df48b1ce28b12490faa67"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/recover_cad_saved_groundcover.py",
+      "bytes": 3343,
+      "sha256": "878eee8b8dcc2d5270429e90add71624589e7813207a72d9efd6a5cea7d83ed6"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/recover_cad_saved_text.py",
+      "bytes": 3967,
+      "sha256": "5cf7b18ca070db36bd645603ff7dc62d6feaefd03042f02f52dd1778e955ca18"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/RecoverPaperCheckpointV1.cs",
+      "bytes": 8292,
+      "sha256": "7f5b9e80d3337a14d6001bdd9ab15e2687f584a5ed7b7a098ed71a64a306e816"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/run_private_cad_script.ps1",
+      "bytes": 2520,
+      "sha256": "8fd2031cacdb8cdb0d3dd8939eeb1c59798ef491ab7e75935e88ebdd7173d7ea"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/SafeCadSessionLifecycleV42.cs",
+      "bytes": 6011,
+      "sha256": "b2363fe934cd4f52160696e53d71ee5b1ef371e932084650abde9e50319f6bf9"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/Session客户端说明.md",
+      "bytes": 4175,
+      "sha256": "8fdda5ca018dbc2c850f735d7257c271d607af803b2f60ff7c9878f57e4673eb"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/source-manifest.json",
+      "bytes": 35093,
+      "sha256": "a1ba685a2df1ab21227c2271e06408c89cf569bd92ba4d2c99fefaf64ab24ff5"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/start_cad_module.ps1",
+      "bytes": 12161,
+      "sha256": "ce683f51db26ad190a140614d7fcd2bad9006429e8b087290d939fdf667f447e"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_bound_cad_edits.py",
+      "bytes": 21815,
+      "sha256": "cc656edebdce5c357cacd207134d40120b47c75e6a792c17525b47381796a80c"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_cad_components.py",
+      "bytes": 3436,
+      "sha256": "e7b006ef1dc91e4cf5a7a839793e38ab2d32f032445e160425162ca082d5330d"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_cad_diagnostic.py",
+      "bytes": 5709,
+      "sha256": "82f2e5e315fb7d1ccff05908d06e1acfe65c2dae5ff705ecc9dc4d4b9532d336"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_cad_layers.py",
+      "bytes": 3404,
+      "sha256": "2f24a4edf5edd850532c2ff124a7fbb1a965dd3823c7ebb2a47d58eb696f66cd"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_cad_module_steps.py",
+      "bytes": 3388,
+      "sha256": "c0a56801eb5c066635b3f5153d27068ed6095335b6a3e6d86ed856e4d570e6e4"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_cad_session_client.py",
+      "bytes": 18413,
+      "sha256": "174b22fceaefa442c304c12c14a998453ce216ddd01f23b16a02a6d7f34b7616"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_correction_continuity.py",
+      "bytes": 3233,
+      "sha256": "e810416effeb54cec60d7e3abf0c38601ca041ba1d06c98bac32819d6c6a51da"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_elevation_rotation.py",
+      "bytes": 2051,
+      "sha256": "5a072183663e2314c0d106a08b223010fb5aa90a456fbc17eec2786991fc00f9"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_finish_check.py",
+      "bytes": 2204,
+      "sha256": "f19aad1020fa1fb04dfed6f25fecae58a9cc1bb241cb3b4a8b3abd2a88e62f25"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_groundcover_update.py",
+      "bytes": 5620,
+      "sha256": "97a7a6df9c214e823aa69b995da87dacda2b107e104bb8c08ea66881aa623f2e"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_index_bearing7.py",
+      "bytes": 1268,
+      "sha256": "277275052d45cc3c2d1cee8f758bf7ffc295903ed5510a8a51ef47042949d1c0"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_layout_native.py",
+      "bytes": 1801,
+      "sha256": "376535a5d1a29aa965453cc0d92fd0fe2ea117e3d2843b9236f6210766c280d5"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_native_transfer_contracts.py",
+      "bytes": 1869,
+      "sha256": "fa3bd60cca1b9add88651f72e7f0c5a168a9996756f906f9806416d093967f76"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_paper_index_create.py",
+      "bytes": 1978,
+      "sha256": "247d8fed1a1263f480c55034375843f9fce9964cafd33eb1580479984f8fa02a"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_paper_patch.py",
+      "bytes": 4262,
+      "sha256": "9449e09eb391d835ecc3f1cc65d38d17d1fdac635328b629b417338bac16d239"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_paper_roots_copy.py",
+      "bytes": 5623,
+      "sha256": "b6f5f1e0d3f7444c26c645eefea949cb54ee2435511b7070e721f55e0b29e2ad"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_polyline_geometry.py",
+      "bytes": 2394,
+      "sha256": "9aac70b267b2c804e8fa619844568de58e2e2505b51b7bfa27b1f2f07560457e"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_project_flow.py",
+      "bytes": 15097,
+      "sha256": "1e7869e99b03a94c233d6bd4b22fa262ead0ab279c8309824b5c8ed1f76606bd"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_read_hold_recovery.py",
+      "bytes": 1264,
+      "sha256": "66e24d01dcf6529cecf2864acae8dee27fd14ef1702bbbf149276c40d0340eb8"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_review_contract_20261108.py",
+      "bytes": 5201,
+      "sha256": "262740406bc52839e2320545b3b5a5d2594b9c7e59e3d5b3ada5d0ab52969b0f"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_review_coverage.py",
+      "bytes": 4870,
+      "sha256": "d5ed9556b264d97717f69d5edbdb3f4dfc95044bf30bde900fedd24bfb5468ff"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_scoped_waits.py",
+      "bytes": 6270,
+      "sha256": "3db05063adb1c65d7cc549bc84531f0d80ad2bb023085d1e206f6fb56fa51fa5"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_supervision.py",
+      "bytes": 2815,
+      "sha256": "3e7ef5bc4e1108e6314141e40db7307929dcf76c990505ecc7111744abe2171e"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_table_expand.py",
+      "bytes": 2842,
+      "sha256": "6dc22c1c619392b54008f535b11824bae5e2687c568581562df02afcc4fa05a0"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_table_patch.py",
+      "bytes": 9490,
+      "sha256": "0d795548a77e47beb02700f351276bc5aa5f8dbc15c3e1facd25e90e42e1b08b"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_table_rows_move.py",
+      "bytes": 1207,
+      "sha256": "cb2476820a80660a53375d27b98891ebadff37654e946ea30c09e55ddb8b2093"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_text_format.py",
+      "bytes": 6095,
+      "sha256": "ebc04a33f7902f3e107b48fde576a861000e13a201bd1612d8a23891c32773b5"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/test_viewport_camera_move.py",
+      "bytes": 1864,
+      "sha256": "5dd893d84e5d6dceb6635e28ffbe3d03cc00feba6fb6814f5ad5a9f94530b850"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/TextPatchDispatchV30.cs",
+      "bytes": 175,
+      "sha256": "fc99eef0e8940a1e381214428c66583db79e206fb4d2c01e2768229dd8f1cf01"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/V736BaseSession.cs",
+      "bytes": 33262,
+      "sha256": "2ca81c4e510ff72b73fc0c33b1e559561fe7a0f1ba5adba7eef84a79db88834c"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/vendor/cad_capture_compat.ps1",
+      "bytes": 11639,
+      "sha256": "65c62c6ee3f63089d0df31fac7ba0068897df193429a529aef1acf517bc69fad"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/ViewportCameraDataV3.cs",
+      "bytes": 2889,
+      "sha256": "4801bc629991ca6a26f5ec07e17cae44a6c09da95709a6d210dbe20d6146fc7b"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/ViewportDocumentV2.cs",
+      "bytes": 17384,
+      "sha256": "c7a18e3f8507cbd638dd4abb1c8273f1bb08ed9849b4e94e0e85a118b7df9b46"
+    },
+    {
+      "path": "skills/cad-check-review/runtime/ViewportFreezeDispatchV1.cs",
+      "bytes": 428,
+      "sha256": "c5c063f675001c79d470d12514f26289e19e15048eb128bd20723a2f8a074e97"
     },
     {
       "path": "skills/cad-check-review/scripts/cad_capture_compat.ps1",
@@ -143,9 +863,24 @@
       "sha256": "5a66a32f12d0220546bec3718d8a6481328f7545c32b3962ec5db4ad3a5a19c1"
     },
     {
+      "path": "skills/cad-check-review/scripts/capture_private_cad.ps1",
+      "bytes": 5250,
+      "sha256": "1388852be3aab582122bfd2dd03e58408c85f86d8554e1562d4c385fb6da07a3"
+    },
+    {
       "path": "skills/cad-check-review/scripts/generate_markup_bundle.py",
       "bytes": 20992,
       "sha256": "60e926ab51124c043af69364b657a195666be25afded45e12ff501f72494e048"
+    },
+    {
+      "path": "skills/cad-check-review/scripts/LeaderJointMath.cs",
+      "bytes": 1073,
+      "sha256": "3026c38ad134a4885ebc703bf507ef98303c23b8541273738fb93f437cbab2bb"
+    },
+    {
+      "path": "skills/cad-check-review/scripts/NativeAnnotationBatch.cs",
+      "bytes": 21090,
+      "sha256": "10f44ff1804582fefb1c0ed281241d4e49aefee5f614719452252d555e0bacac"
     },
     {
       "path": "skills/cad-check-review/scripts/new_review_run.ps1",
@@ -153,9 +888,19 @@
       "sha256": "a4ba05bc159cb900225d18b2bbb10e44f0fb5d60a4cd52d6a6122486bd0f33d1"
     },
     {
+      "path": "skills/cad-check-review/scripts/plan_native_leaders.py",
+      "bytes": 7950,
+      "sha256": "866a402f73fb44034fd59dc66548404fd45caf17502f590a95e93f7a660d3ae5"
+    },
+    {
       "path": "skills/cad-check-review/scripts/resolve_cad_method.py",
       "bytes": 4539,
       "sha256": "cae7c0308fbb9849db86cc5e27d82e8c9b5338cd6cf3cbdc70367fa3ef72dd62"
+    },
+    {
+      "path": "skills/cad-check-review/scripts/test_plan_native_leaders.py",
+      "bytes": 4220,
+      "sha256": "62c2539fb18dc452ce7f00a4172047fefca569d2be16688ceb8a1ae81511b9e6"
     },
     {
       "path": "skills/cad-check-review/scripts/test_resolve_cad_method.py",
@@ -169,43 +914,43 @@
     },
     {
       "path": "skills/cad-check-review/SKILL.md",
-      "bytes": 15151,
-      "sha256": "80aa8c7def597faba49ea77efcd60ffa503252651b1fcc0367cbbf8d010eb832"
+      "bytes": 17517,
+      "sha256": "7be3b2c4aae080de585619a661b71258f7ba5d2667ac69d1712cd7ad24bf58b5"
     },
     {
       "path": "skills/cad-dimension-annotation/agents/openai.yaml",
-      "bytes": 295,
-      "sha256": "b746db86b1b5cf323bced84e52a942b8d0383c744dec99efdb40e9e3a634de8c"
+      "bytes": 299,
+      "sha256": "537c874db7be682132445d6b1c8fae05774da115a8b7135d8eb26d00e9c30da5"
     },
     {
       "path": "skills/cad-dimension-annotation/SKILL.md",
-      "bytes": 3917,
-      "sha256": "d9f03214e5ff446824efab3f52e5de2e8f56d465027be61f354995ff08952a52"
+      "bytes": 3987,
+      "sha256": "00660244d31e37437e768abdbd2f74b9342b19010aaf24f5082fc256917f3094"
     },
     {
       "path": "skills/cad-drawing-visual-review/agents/openai.yaml",
-      "bytes": 281,
-      "sha256": "93aa02d8df2f81b6dffde482cc9143b2cb28c47b0f1ebccf011d464851402c65"
+      "bytes": 285,
+      "sha256": "7ab384934ef75e469c5a58d2ab73a2026445d1e895cf311470055a21b36f610a"
     },
     {
       "path": "skills/cad-drawing-visual-review/SKILL.md",
-      "bytes": 3846,
-      "sha256": "36eb88a46e548a85950c2b84d3b813880b8d5e4a3cb2698275a6466c66b67b84"
+      "bytes": 4393,
+      "sha256": "2800c29a7ebe9639a60268c42f9e0e40aaab0097a9c267bd24fb4bab0b974cdd"
     },
     {
       "path": "skills/cad-layout-sheet/agents/openai.yaml",
-      "bytes": 275,
-      "sha256": "48c2f7eb797e3b2a495a0bd32c30c649d0337bc6eebf5a63630dcdb3db7fb7a4"
+      "bytes": 279,
+      "sha256": "55ee0ab4ef38b64eddda94dba0c3f425ea1d9e15d2970e2efb6d6a95b586a035"
     },
     {
       "path": "skills/cad-layout-sheet/SKILL.md",
-      "bytes": 4425,
-      "sha256": "095acb172cafc9328b5b125eebef071b18b514ab83a705aee8560af3508f6828"
+      "bytes": 4445,
+      "sha256": "43f8b93a11b5909f6f7d04be9dd027f450c7960738f329fce74e4e9fe54b3ef5"
     },
     {
       "path": "skills/cad-quantity-table-review/agents/openai.yaml",
-      "bytes": 290,
-      "sha256": "3d77727d4ab338874b483911f5920f5c645ff2ed490c5fce087c4c1a770c2b87"
+      "bytes": 294,
+      "sha256": "5f0c34951d9c1a0cf24426a84977b397668aae87d3af9fe431a11a15d547dab4"
     },
     {
       "path": "skills/cad-quantity-table-review/SKILL.md",
@@ -214,23 +959,23 @@
     },
     {
       "path": "skills/cad-text-style/agents/openai.yaml",
-      "bytes": 273,
-      "sha256": "2902b2fff5540f29e5ec8a4fb331dbcbcc85e4d4667afe4e84fbaee193194c54"
+      "bytes": 277,
+      "sha256": "483d603e98401f6513e0741accaed3949a22a63e684a84fb3379ec109878c923"
     },
     {
       "path": "skills/cad-text-style/SKILL.md",
-      "bytes": 4270,
-      "sha256": "ce2f6e755107dd8be3f9da426e4e5296409679e3623850ab93f6daa39cdd8fb3"
+      "bytes": 4649,
+      "sha256": "f9d4503491aadfbdc14e7f9a54f6a03fc179ec5d4de4a9ec24ae16071ec793e8"
     },
     {
       "path": "skills/cad-tree-group-annotation/agents/openai.yaml",
-      "bytes": 299,
-      "sha256": "6da6de2f1aae1c80ea459f3a34f7263b69e2e63deffaedb910d2da0c67f82f4a"
+      "bytes": 303,
+      "sha256": "7ac64ea65654a07e9f2237b820639efdc7a41bf09174b5069ae63385932e3715"
     },
     {
       "path": "skills/cad-tree-group-annotation/scripts/preflight_tree_groups.py",
-      "bytes": 7749,
-      "sha256": "f31e80da2fccaf1469585a2a3c3a22af4ad187b2d5977443f052462f926bd47b"
+      "bytes": 7917,
+      "sha256": "224856a0d918f6f04128db5cebcd41ec174f825b1abe4288b5ff3e0a1ee11bab"
     },
     {
       "path": "skills/cad-tree-group-annotation/scripts/test_preflight_tree_groups.py",
@@ -239,8 +984,8 @@
     },
     {
       "path": "skills/cad-tree-group-annotation/SKILL.md",
-      "bytes": 6128,
-      "sha256": "952fd11d6147f6743ccd068a7e478e5076d860f57a63512be8d7afa6a904bff4"
+      "bytes": 6212,
+      "sha256": "ba3215c2d6f1fee92991cca7941cae5598f2c5ac4819e64e63af0dce136f47c7"
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/agents/openai.yaml",
@@ -254,8 +999,8 @@
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/references/migration.md",
-      "bytes": 3970,
-      "sha256": "3749dee8abfd5b20ded272e0bf73f8b16cfba3c27df22b297210886ed8b01962"
+      "bytes": 4143,
+      "sha256": "418cb37d844d840fee7f7c364c4c119789091b7b789628a138d4dc332c006867"
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/references/project-contract.md",
@@ -358,19 +1103,24 @@
       "sha256": "e9508e691c19f55534014d9de9a8f63913517c6bac7d0646344a106b3e3847b5"
     },
     {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/docs/portable-test.md",
+      "bytes": 3830,
+      "sha256": "c69f185cc9693d68d9e0434898d7695020902e4b506e9eaa637ab8e46ec87ca0"
+    },
+    {
       "path": "skills/tianzheng-batch-polyline-dimension/runtime/public-runtime-manifest.json",
-      "bytes": 152753,
-      "sha256": "f9acd344d841d767283e5740e6f3b08a4d0021bf163ace539b9a6373019b2015"
+      "bytes": 154469,
+      "sha256": "1e4f733af407b94d14f8a305e9fc6e3dd15b5ca7e35ea9618fc4929aa3eecdf0"
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/runtime/public-runtime-receipt.json",
-      "bytes": 425,
-      "sha256": "1bfcf3fb06232549ba857f2aa8e1c39debf0cc6270bfc2bb14b6604a36345fd9"
+      "bytes": 151,
+      "sha256": "8f66467feef7ecdabe51fad9e9702674858a1d705ebf195be875180b9a1bcf5a"
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/runtime/README.md",
-      "bytes": 6961,
-      "sha256": "4d2fc62b164635d249625080d10768179f6b59a6128d3decdc06fa0037a9053e"
+      "bytes": 7201,
+      "sha256": "d72192e9cbcaef895500b465231b2cab231c2954694e0195303357a6c87870a3"
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/reports/cad_multi_window_interface_research/background_operation_reproduction_v1/native_read_contract_v1.ps1",
@@ -733,6 +1483,21 @@
       "sha256": "66bb169e8e698f641c83ad70c9e686511034324218bd3def45a079ae0cc6b442"
     },
     {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/common/TestDrawingHistory.psm1",
+      "bytes": 10963,
+      "sha256": "256ec2d55a387b1c462ce50bc354993f16e7af34c155095390e0ca25903b6bb7"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/common/TianzhengLifecycle.psm1",
+      "bytes": 13528,
+      "sha256": "a0c0eaabbf085ecb8240676d0e22ca8104357e1d7c8be458ce83616b0a7e1258"
+    },
+    {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/common/TianzhengPlatformSelector.psm1",
+      "bytes": 6522,
+      "sha256": "afb7b6141b903f1cfecf345b6a0eb898dd08e540ecd79892267eb30224980f82"
+    },
+    {
       "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/complete_cad_execution_manifest.ps1",
       "bytes": 1410,
       "sha256": "f2d7034f4f7851f5430ea2c0d1376170ac921158145c31a8b42186f10f2ff56a"
@@ -879,13 +1644,13 @@
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/start_owned_tianzheng_direct_dwg.ps1",
-      "bytes": 26408,
-      "sha256": "2771d2fd9ae49f0397af77c4c01d4c9ae842af06d81733bbe0f7f1f9177fbd55"
+      "bytes": 27110,
+      "sha256": "b7265822462bc190d00999cfd258b627c588250db30655ef66c156d0c997c620"
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/start_owned_tianzheng_supervised.ps1",
-      "bytes": 14205,
-      "sha256": "e7e9c46e3620e302145fd338be6aca603380fcf2e1a3152ad946fca6026dde1c"
+      "bytes": 14665,
+      "sha256": "212ac1668b4058750d9204d07dd67efc9c514d481912f880ce5d2795671faf02"
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/wait_tianzheng_resource_quiescence.ps1",
@@ -894,8 +1659,8 @@
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/runtime/reference/project-orchestration/scripts/watch_tianzheng_dialogs.ps1",
-      "bytes": 17079,
-      "sha256": "ede7ab94d5350e2e8294a289219a473ad7c23574cd531319f4afd5e2822a27e0"
+      "bytes": 17107,
+      "sha256": "f1f61122c180c919509a643df8daf0a3e7f4b42b29663746916b2061e31272c0"
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/runtime/reports/cad_multi_window_interface_research/b_existing_settlement_v4/selector_trace_v4.ps1",
@@ -1448,6 +2213,11 @@
       "sha256": "da6c1f29319c117d5b17033a6a765ff6d9715ecf2ff7d01526d2f7b54c1be636"
     },
     {
+      "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/Invoke-PortableCadTest.ps1",
+      "bytes": 12770,
+      "sha256": "a8f464dfe411fa3f36d77d331a7da301da8b1db50b27a6da2c6d1e54bf882b17"
+    },
+    {
       "path": "skills/tianzheng-batch-polyline-dimension/runtime/scripts/invoke_special_text_peer_normal_restore_observed_v4.ps1",
       "bytes": 10948,
       "sha256": "c80d4033bc1f76cbf1f51778c9379fdb0137ae9bd2bda5f7509bb29e616234ff"
@@ -1925,12 +2695,12 @@
     {
       "path": "skills/tianzheng-batch-polyline-dimension/scripts/inspect_capability.ps1",
       "bytes": 2566,
-      "sha256": "afd0f7fac4ce17b6c749519d5f811ca8c43474f82699d889058a6a72a3842164"
+      "sha256": "5b90e6930ec04f281dc6e8d2385597f23ea60d9c9297c37227272b6020a1e4a4"
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/SKILL.md",
-      "bytes": 7007,
-      "sha256": "a9a2ae631d4f9e083cab429b9ee53abc9d010521c16780f34c781845fc1b6d63"
+      "bytes": 7261,
+      "sha256": "fdc123c9c6d3c1a538a707695df20f1f7ab296d9221e4ae6cb9e1a44595911c1"
     },
     {
       "path": "skills/tianzheng-cad-automation-framework/docs/acceptance.md",
@@ -1954,8 +2724,8 @@
     },
     {
       "path": "skills/tianzheng-cad-automation-framework/docs/recent-practices.md",
-      "bytes": 5794,
-      "sha256": "99feffc3ca0e2799d10b07d4382c153c9213851904ae0845b12075742e723350"
+      "bytes": 5746,
+      "sha256": "69b7f66cdca959f9dd6e3caab0d159c5caec8a4a3a66c0708bbc6da9dd109b1e"
     },
     {
       "path": "skills/tianzheng-cad-automation-framework/examples/request-arc-angle.json",
@@ -1974,8 +2744,8 @@
     },
     {
       "path": "skills/tianzheng-coordinate-annotation/agents/openai.yaml",
-      "bytes": 302,
-      "sha256": "b0eb1a4d940a1c319ccd4837974eb8b8e6b2fcd175ac17329eb90374189878bd"
+      "bytes": 306,
+      "sha256": "19779f8d42fc7c35d5d9298564f4d78c979c2e51076bcde2242e92942f02824a"
     },
     {
       "path": "skills/tianzheng-coordinate-annotation/scripts/check_leader_angle.py",
@@ -1989,48 +2759,48 @@
     },
     {
       "path": "skills/tianzheng-coordinate-annotation/SKILL.md",
-      "bytes": 6332,
-      "sha256": "7b714234cacaffa861a321c1b18365277fffc721cf77b8c4886b0ebcb668fb80"
+      "bytes": 6417,
+      "sha256": "19e9d063614b3dc9a4fc43a43d63ecd4875c4e97d8ea5ff9a75e852153222940"
     },
     {
       "path": "skills/tianzheng-elevation-annotation/agents/openai.yaml",
-      "bytes": 304,
-      "sha256": "afcfd7752591f9b52d5c79b1126351f5ea30802dab286540e82a031c6f4d0767"
+      "bytes": 308,
+      "sha256": "78a09fd9086ef0e6bc9b180e737ce49404d02baf6b4c02e22d341bf2dd682131"
     },
     {
       "path": "skills/tianzheng-elevation-annotation/SKILL.md",
-      "bytes": 3804,
-      "sha256": "38096bc53f39e32b8c9c3f645a6d56a215739d7ca22887ce649b625ec6da6248"
+      "bytes": 4332,
+      "sha256": "328a0a403f91a5c9a19c5908a3a4ccabc5d56f3ba21428a6c6e391f6628ca8b2"
     },
     {
       "path": "skills/tianzheng-groundcover-annotation/agents/openai.yaml",
-      "bytes": 306,
-      "sha256": "800a9995bcd5966d5a774c779f8ed662070f861c149d13e69260d5099548363d"
+      "bytes": 310,
+      "sha256": "fce6a5babb21e27e9e8fb2b6627507eb38746c338335e99f23b2f578cde65fae"
     },
     {
       "path": "skills/tianzheng-groundcover-annotation/SKILL.md",
-      "bytes": 4098,
-      "sha256": "cda2b8f3a1acbc9e0c9ea066049b4deeb55b64615a0e2ae733883aed476bd305"
+      "bytes": 4485,
+      "sha256": "af65015792ead220099a352f787df209d0565680f200ced09c8a2a3d8612d3fc"
     },
     {
       "path": "skills/tianzheng-index-annotation/agents/openai.yaml",
-      "bytes": 300,
-      "sha256": "3ea3d63833c99bb7b11915fcc8f59524f6b0eb0a9aaf0cc254a8bc52a076c993"
+      "bytes": 304,
+      "sha256": "6fe920e4fe42cd65517a25b915d1e7eba346b366dc5481491a277fb85e03be20"
     },
     {
       "path": "skills/tianzheng-index-annotation/SKILL.md",
-      "bytes": 5800,
-      "sha256": "154f09736745ed06098eb3987d0bd6880c0cb50dd98b88c97a439f0ee94b214e"
+      "bytes": 5917,
+      "sha256": "d64349fbb6ab01676c4bc3075f3c86725cadeea5bd76d5694d620777557f946c"
     },
     {
       "path": "skills/tianzheng-planting-annotation/agents/openai.yaml",
-      "bytes": 162,
-      "sha256": "4f3f80f5bb8c1d683250bd0352c9b9ec6e113f919ee305c3a985722f1fff240a"
+      "bytes": 165,
+      "sha256": "bae882eec32bc262814b9d885b4476568985f6cfa3899d81937070e1d50c879a"
     },
     {
       "path": "skills/tianzheng-planting-annotation/SKILL.md",
-      "bytes": 2366,
-      "sha256": "f660626decbb922cc2f544edbcbf88de6ca2378584f2e49f258f1dc29f6e50ec"
+      "bytes": 2412,
+      "sha256": "cbc35dafa7a3bfd437270c63c5807c9ccbb271967b9a1f056d54ac31ffce291a"
     }
   ]
 }

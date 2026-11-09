@@ -1,4 +1,4 @@
-> v1.2.0 current policy: reuse the bound host and document. Routine review uses actual CAD captures and saves; do not cold-start or reopen after each edit. Reopen only when the current task or a real persistence anomaly requires it. The current `cad-check-review` and专项 Skill rules override historical case procedures below.
+> 当前方法：复用已绑定宿主和文档，以实际 CAD 图面和保存结果校审，不在每次小修后冷启动或重开。只有当前任务要求或真实持久化异常才重开核验。当前 `cad-check-review` 和专项 Skill 优先于下列历史案例步骤。
 
 # 原生校审与交付：近期可迁移实践
 
