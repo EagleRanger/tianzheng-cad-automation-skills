@@ -35,7 +35,7 @@ foreach ($file in $manifest.files) {
 $result = [ordered]@{
     schema_version = 2
     skill = 'tianzheng-batch-polyline-dimension'
-    package_version = '1.3.0'
+    package_version = '1.3.1'
     runtime_root = $root
     source_files_checked = $checked
     implementation_hashes_pass = $true

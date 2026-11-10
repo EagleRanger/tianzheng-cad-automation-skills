@@ -1,0 +1,120 @@
+{
+  "project_control": {
+    "thread_id": "RECEIVER_COORDINATOR"
+  },
+  "loop_id": "RECEIVER_PROJECT_LOOP",
+  "execution": {
+    "thread_id": "RECEIVER_SOURCE_B"
+  },
+  "routes": {
+    "shared_annotation_interface_read": {
+      "owner_lane": "shared_interface_research",
+      "research_thread_id": "RECEIVER_SOURCE_A",
+      "detail_return_thread_id": "RECEIVER_SOURCE_A",
+      "milestone_thread_id": "RECEIVER_COORDINATOR",
+      "ready_issuer_lane": "shared_interface_research",
+      "ready_issuer_thread_id": "RECEIVER_SOURCE_A",
+      "ready_publisher": "RECEIVER_EXISTING_READY_PUBLISHER",
+      "optional_command_profiles": {
+        "CAD-AB-INDEPENDENT-PROJECT-JOBS-V3": {
+          "profile_id": "CAD-AB-INDEPENDENT-PROJECT-JOBS-V3",
+          "status": "RECEIVER_REVIEW_REQUIRED",
+          "scope_field": "independent_project_jobs",
+          "intent": "ValidateExactOwnerParallelNativeWrite",
+          "phase": "ISOLATED_PARALLEL_NATIVE_WRITE",
+          "implementation_version": 3,
+          "candidate_directory": "reports/cad_multi_window_interface_research/independent_project_jobs_v3",
+          "candidate_source_thread_id": "RECEIVER_SOURCE_A",
+          "candidate_contract_abi": "Assert-CadIndependentProjectScopeV3($Scope,$Root)",
+          "candidate_manifest_abi": "Assert-CadIndependentProjectManifestV3($Manifest,$Root)",
+          "candidate_contract_entry": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/channel_contract_v11.ps1",
+          "candidate_native_module": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/bin/CadChannelV11.dll",
+          "controller": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/invoke_channel_v11.ps1",
+          "canonical_entrypoint": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/launch_channel_v11.ps1",
+          "known_startup_tip_recovery": "exact_new_owned_private_desktop__known_daily_tip_identity_only__WM_CLOSE_once_per_owner__observe_natural_disappearance_as_zero__no_foreground_no_input_no_other_dialog_handling",
+          "validator": "scripts/assert_cad_independent_project_jobs_v3.ps1",
+          "transport": "NATIVE_TASK_REFERENCE_QUEUE",
+          "allowed_operations": [
+            "KNOWN_WRITE_BATCH"
+          ],
+          "candidate_capability_bounds": {
+            "serial_executor_required": true,
+            "original_global_guard_unchanged": true,
+            "case_ids": [
+              "AB"
+            ],
+            "owner_max_count": 2,
+            "case_owner_instance_max_count": 2,
+            "cad_stages_per_case_owner": 1,
+            "native_task_max_count": 2,
+            "external_com_business_send_max_count": 0,
+            "per_case_owner_generation_max_count": 1,
+            "per_generation_new_native_object_max_count": 1024,
+            "generation_max_count": 2,
+            "new_native_object_max_count": 2048,
+            "save_copy_max_count": 2,
+            "independent_readback_max_count": 2,
+            "cad_launch_max_count": 2,
+            "known_startup_tip_close_per_owner_max_count": 1,
+            "known_startup_tip_close_max_count": 2,
+            "fixed_plugin_load_max_count": 2,
+            "tianzheng_fixed_arx_load_max_count": 14,
+            "fixed_dependency_lsp_load_max_count": 0,
+            "helper_max_simultaneous": 2,
+            "job_memory_limit_bytes": 536870912,
+            "job_active_process_limit": 1,
+            "owner_preparation_timeout_seconds": 90,
+            "native_entry_timeout_seconds": 15,
+            "cad_stage_timeout_seconds": 90,
+            "local_stage_timeout_seconds": 30,
+            "owner_workflow_timeout_seconds": 360,
+            "overall_timeout_seconds": 420,
+            "evidence_settlement_timeout_seconds": 15,
+            "drain_timeout_seconds": 3,
+            "private_desktop_required": true,
+            "protected_owner_policy": "EXCLUDE_ALL_PREEXISTING_ACAD",
+            "focus_policy": "NO_FOREGROUND_ACTION",
+            "activation_allowed": false,
+            "keyboard_mouse_allowed": false,
+            "save_original_allowed": false,
+            "production_host_access_allowed": false,
+            "production_deliverable_access_allowed": false,
+            "retry_allowed": false,
+            "fallback_allowed": false,
+            "arbitrary_payload_allowed": false,
+            "two_chat_control_allowed": true,
+            "aesthetic_gate": false,
+            "artificial_native_hold_ms": 0,
+            "commanded_grip_move_count": 0,
+            "owner_independent_settlement_required": true,
+            "post_round_stop_required": true,
+            "lisp_execution_allowed": true,
+            "known_read_sequence_passes": 0,
+            "real_read_steps_per_request": 0,
+            "per_request_work_timeout_seconds": 60,
+            "request_submission_max_per_owner": 1
+          },
+          "acceptance": "Receiver must independently validate both exact private owners, fixed LINE write intervals, saved native readback, real origin receipts and protected normal exit. No 3+ instance or arbitrary engineering claim.",
+          "validation_mode": "PARALLEL_NATIVE_WRITE_ONLY",
+          "request_submission": {
+            "publisher": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/publish_channel_request_v11.ps1",
+            "lease_owner_thread_id": "RECEIVER_SOURCE_B",
+            "owner_sources": [
+              {
+                "owner": "A",
+                "source_thread_id": "RECEIVER_SOURCE_A"
+              },
+              {
+                "owner": "B",
+                "source_thread_id": "RECEIVER_SOURCE_B"
+              }
+            ],
+            "scope": "one_fixed_native_write_request_per_exact_owned_slot_in_this_READY_only__one_inflight_per_owner__shared_initial_release__unique_request_nonce_source_owner__each_actual_origin_reads_own_result_and_saved_output__no_COM_UI_CAD_lease_or_production_access",
+            "actual_two_source_actions_required": true,
+            "origin_return_required": true
+          }
+        }
+      }
+    }
+  }
+}

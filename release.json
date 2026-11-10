@@ -1,8 +1,8 @@
 {
-  "version": "1.3.0",
-  "released_on": "2026-11-09",
+  "version": "1.3.1",
+  "released_on": "2026-11-10",
   "repository": "EagleRanger/tianzheng-cad-automation-skills",
   "skill_count": 15,
-  "kind": "complete-family-and-runtime-source",
-  "cad_runtime_validation": "receiver-environment-required"
+  "kind": "complete-family-with-parallel-channel-source",
+  "cad_runtime_validation": "two-owner-source-machine-evidence__receiver-environment-required"
 }

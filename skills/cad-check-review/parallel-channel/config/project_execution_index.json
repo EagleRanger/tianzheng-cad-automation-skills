@@ -1,0 +1,6 @@
+{
+  "command_research_routing": "config/cad_command_research_routing_v1.json",
+  "loop_id": "RECEIVER_PROJECT_LOOP",
+  "ready_handoff_publisher": "RECEIVER_EXISTING_READY_PUBLISHER",
+  "native_task_registry": "config/cad_native_task_registry.json"
+}

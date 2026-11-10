@@ -1,5 +1,5 @@
 {
-  "version": "1.3.0",
+  "version": "1.3.1",
   "kind": "source-integrity-only",
   "files": [
     {
@@ -14,8 +14,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 4525,
-      "sha256": "b6cb1ced8c192fe6f60329b7f595e7e1baaefe43ad9a5c5b5a53ac889cb09c31"
+      "bytes": 5234,
+      "sha256": "2728726dddd48554bcec94efcadcd152c637f0e1f81a35fdca5e6229c8e42c33"
     },
     {
       "path": "install.ps1",
@@ -24,18 +24,18 @@
     },
     {
       "path": "LICENSES.md",
-      "bytes": 418,
-      "sha256": "bb3dc75f2d1c46b831b6682e8fa6dd09af7bdaf95c808d2c92106aebb4242840"
+      "bytes": 937,
+      "sha256": "d8a8163e678a27f5d8b6b50d4de4a474e877352d9491eabe719c32e83dbfa361"
     },
     {
       "path": "README.md",
-      "bytes": 5698,
-      "sha256": "64e1244ff1ce67b94a3b210ee032c01994431a3ca5ba4bf9a5a5f3b23ba105df"
+      "bytes": 5421,
+      "sha256": "7507facb4db004d0d594c55c8e03bef3590ea77ce3d9a3a0beed232601e730fb"
     },
     {
       "path": "release.json",
-      "bytes": 257,
-      "sha256": "8da93c324d62fee5ea584df3f4ead59970f0805816691fad2d4ad3f54cf9f854"
+      "bytes": 302,
+      "sha256": "a46b12ba3da2de9a81852cff8985b11c6027ace88d2adcf50a5f39ff54465b47"
     },
     {
       "path": "skills/cad-area-hatch/agents/openai.yaml",
@@ -88,14 +88,259 @@
       "sha256": "cab0b01ac5f50a695bef9e036cc6a3322406e4e04f5018ec4cfb4952257d254a"
     },
     {
+      "path": "skills/cad-check-review/parallel-channel/build_offline.ps1",
+      "bytes": 2779,
+      "sha256": "ce3030c410530d12539622d42b09cd1c53fe3f7a4c3f4fc26a7c01e3b222de28"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/config/cad_automation_component_packages.json",
+      "bytes": 1179,
+      "sha256": "9723f7c349b904a75d54ce7b40db769c4e70d2b01224a01b311b4adfc7eecfdb"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/config/cad_command_research_routing_v1.json",
+      "bytes": 6244,
+      "sha256": "52bae7c57be9f8ae340b10e49940f5cc9be7e9734a2dc2ed28464bc9d3275c65"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/config/cad_native_task_registry.json",
+      "bytes": 695,
+      "sha256": "ab46efe9d4870bc71a10fff93395f24431caf90849fa0c938fe95d63433c109f"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/config/cad_project_loop.json",
+      "bytes": 819,
+      "sha256": "6c34c22938aa2a62be6ad33ccb2d9b1cd192fac1db82aae2b8515a044afa67f2"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/config/parallel_receiver.json",
+      "bytes": 95,
+      "sha256": "77759d89400441eb5f1a9edd7be3ea82851283775256bb7cc4bf4992dd5af576"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/config/project_execution_index.json",
+      "bytes": 254,
+      "sha256": "3a27eafe42aa0da7ce66207399fef57d30677b9cd8f4ee27757fd89831b32ba4"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/config/tianzheng_dialog_whitelist.json",
+      "bytes": 3294,
+      "sha256": "167b706db6deb97648aea6977fe76511f4033c63d79aaf27b2365363e37c824a"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/lifecycle-templates/A/close/startup_tip_worker_v4.ps1",
+      "bytes": 3269,
+      "sha256": "dd31242dcda5f63f74d7cdac37596289a6e182de5b0307f3881aff35f0d0110d"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/lifecycle-templates/A/invoke_close.ps1",
+      "bytes": 2091,
+      "sha256": "7da3abf687433bb5fdf03ddfc9db1e3b01870f08344a28556b583c855c8c7435"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/lifecycle-templates/A/invoke_identity_read.ps1",
+      "bytes": 2104,
+      "sha256": "4736d1c7fdae6c5e2db9d00f4645999c471c44828f7f31290c3c2aeb48cbae93"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/lifecycle-templates/A/invoke_save.ps1",
+      "bytes": 2088,
+      "sha256": "cb97c8005c8f7c209e3f2b02c45c0d021facaf32ebc398b0c3ab79fd48f038cc"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/lifecycle-templates/A/save/startup_tip_worker_v4.ps1",
+      "bytes": 3584,
+      "sha256": "7e82566b74e71ca4088b635adfa9591f962d412891e66d9bf4cc6526833420ed"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/lifecycle-templates/A/startup_tip_worker_v4.ps1",
+      "bytes": 2687,
+      "sha256": "2db4a7eda2c23a2a53c73be2e64ccbd2e437c3d593f492f8a5c7ac7e3101c221"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/public-source-manifest.json",
+      "bytes": 9107,
+      "sha256": "0836c80f49c6fb6ddfc484e89c617dee9c775abb4d66b37dd243615dc9504d1c"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/README.md",
+      "bytes": 8958,
+      "sha256": "4d904c9439f0a54de4c485f96bbdf86225f8c599a2123bf3b1af9f1069345f1e"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/command_uia_inspection_v1/OwnHelperJobV2.cs",
+      "bytes": 12123,
+      "sha256": "70b1c0bf64b865cba6dc1d697c0c9d68bbe2ca985a7910bf6b49fd7ef68e11b2"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/build_channel_draft_v11.ps1",
+      "bytes": 11638,
+      "sha256": "76cd3d0b17aa047052b1c9c5d1e5de54564a80b8295978d44325a451c626e60c"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/build_channel_v11.ps1",
+      "bytes": 812,
+      "sha256": "d399e3cea733b5de22f43fc83f1b26d9fcd7384fd91ae2816a3d87e9f5815b1f"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/channel_contract_v11.ps1",
+      "bytes": 7259,
+      "sha256": "8417999ea8db17f334418104edef0944345ee9bd3735dbf76f69bef42234d86e"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/ChannelModuleV11.cs",
+      "bytes": 16881,
+      "sha256": "5692cf4aab6fdab68038d66847b2f575b201cd41f458b5586218f74463e0f5f5"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/ChannelProtocolTestsV11.cs",
+      "bytes": 1328,
+      "sha256": "ba2741229802043e9c578fe53b817067b61a00179444063e06843227fbc2ed6e"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/ChannelProtocolV11.cs",
+      "bytes": 3443,
+      "sha256": "a930b5f78f6c56d2a9b62352f4959ab2991fbadb6a0e33e54840049e79a3a65d"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/FixedTaskProtocol.cs",
+      "bytes": 7078,
+      "sha256": "0328da83a000dafc022fe98911608e6f74a8b642dce4d536ab655e75dcce27f9"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/invoke_channel_v11.ps1",
+      "bytes": 14376,
+      "sha256": "0ae242d1d2a508b54521de879f431bbda511ad7d725ae0bd76075b1de1e96cd0"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/launch_channel_v11.ps1",
+      "bytes": 4756,
+      "sha256": "fdf1b8a1a9b9320eb339b1685dfaa4628b72547f32eced6d9e1be08ded563c93"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/measure_native_write_overlap_v1.ps1",
+      "bytes": 2814,
+      "sha256": "ac89a4a23d881cdc09d0522c8e03af65a756fb9d440bbaa1be12281d75c90bef"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/OwnStartupJobV4.cs",
+      "bytes": 12337,
+      "sha256": "65a964202f7f04e4bea7ccbeaebb77a627a00d15bebd604ab8109115abfedd5d"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/publish_channel_request_v11.ps1",
+      "bytes": 3513,
+      "sha256": "8def121ccec3f1111201d37850c88705f701ffdce846401abc4f755cf7dac415"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/receive_channel_result_v11.ps1",
+      "bytes": 2748,
+      "sha256": "73c8986253a3633a67fe2cbb53493c5e167894543afb2e9a581a0dcd6da3b0fe"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/startup_tip_worker_v4.ps1",
+      "bytes": 4734,
+      "sha256": "c38b76c57f64696777871bb36e0cdcf3481b5551a871af46514ed2881028feb5"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/reports/cad_multi_window_interface_research/independent_project_jobs_v3/test_channel_v11.ps1",
+      "bytes": 1158,
+      "sha256": "78141b9d19dbf78f8095e8cd1d33f7ffd32d2aab4e5cf11ee2e4c1b57f9cc418"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/scripts/assert_cad_canonical_open_consistency.ps1",
+      "bytes": 28703,
+      "sha256": "9db0ec1a97ef0b136d98b18e1de47acad20f11bda7cc67bf3d2fc406f08a00b9"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/scripts/assert_cad_command_research_routing_v1.ps1",
+      "bytes": 54426,
+      "sha256": "7280291044cb8681c5848edbd06a0c6de66910ca0b593105596930f180fc31d3"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/scripts/assert_cad_independent_project_jobs_v3.ps1",
+      "bytes": 11544,
+      "sha256": "c39e02796537eeb55c6fa11122bf9a9b8dd4313c51c03a2819b8cbeef568b123"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/scripts/common/CadOperationGuard.psm1",
+      "bytes": 3393,
+      "sha256": "396e051c4c083239102cdd906dd2872eedeef86eeb6884bbdd3e29a6f647b411"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/scripts/common/TestDrawingHistory.psm1",
+      "bytes": 10963,
+      "sha256": "256ec2d55a387b1c462ce50bc354993f16e7af34c155095390e0ca25903b6bb7"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/scripts/common/TianzhengLifecycle.psm1",
+      "bytes": 13528,
+      "sha256": "a0c0eaabbf085ecb8240676d0e22ca8104357e1d7c8be458ce83616b0a7e1258"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/scripts/common/TianzhengPlatformSelector.psm1",
+      "bytes": 6522,
+      "sha256": "afb7b6141b903f1cfecf345b6a0eb898dd08e540ecd79892267eb30224980f82"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/scripts/get_shared_file_sha256_v1.ps1",
+      "bytes": 507,
+      "sha256": "55e5c237ff9b00ae8a067dd45804852b18f2eb933f58ff14dc4de3d1960d662a"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/scripts/get_tianzheng_adaptive_startup_budget.ps1",
+      "bytes": 4607,
+      "sha256": "57bb62c7bdd0c7ebb0c13f6d9c4de1b517dd8db4952f8c2b26fd5947b4bf4409"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/scripts/restore_cad_manual_dialogs_after_exit.ps1",
+      "bytes": 2888,
+      "sha256": "9ebb96779f36bbddcb2684afef51a6d6817095dfdbed5e1cf69b00c906f566f1"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/scripts/start_owned_tianzheng_direct_dwg.ps1",
+      "bytes": 26141,
+      "sha256": "9d00cd9fbdbea7ef16ed12c08df11ef171b0294cad1b5439e9b4a09a05587ba9"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/scripts/start_owned_tianzheng_supervised.ps1",
+      "bytes": 13881,
+      "sha256": "fabc2f6cad30154d549b8223d637d7e5aa640357b5026a6c04f9a58646c5d0ba"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/scripts/wait_tianzheng_resource_quiescence.ps1",
+      "bytes": 4345,
+      "sha256": "35324fdb8a60b44691d962a781f8a84a698849fe1c3a28c83c84a1b2eccc42e7"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/scripts/watch_tianzheng_dialogs.ps1",
+      "bytes": 17081,
+      "sha256": "ebdf90b29739d01689475f32855d17fa7157b7931cf5e5660606cefc91036b05"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/templates/channel_handoff.draft.json",
+      "bytes": 3356,
+      "sha256": "f51ee2c9fae8ce5cee6b620d7db5d3cc071f4a5ea7f3f8c658acf4b296bff538"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/templates/ready-claim-input-contract.md",
+      "bytes": 2565,
+      "sha256": "3680bf9e961f9260ba5cf0d96615060b2534974838de02acd82ad6bd2fb167d3"
+    },
+    {
+      "path": "skills/cad-check-review/parallel-channel/tests/test_tianzheng_startup_fastpath.ps1",
+      "bytes": 8731,
+      "sha256": "c2a15c24d6d8e998c0203e68ac3bff8770d1abcd8023bd8297b74ba91a2fd06f"
+    },
+    {
       "path": "skills/cad-check-review/references/annotation-control.md",
       "bytes": 18598,
       "sha256": "15c8b0a8da9f1095adda2b2cc681af913ae71ffe4d7d87ba57de121c84f178e6"
     },
     {
       "path": "skills/cad-check-review/references/cad-method-index.json",
-      "bytes": 25761,
-      "sha256": "eddb1026d5b11c9aa18b190059ed5eaabcb98056b007eaa5a257fc86ea1f6917"
+      "bytes": 27413,
+      "sha256": "442691a4c7e657d6da7f046af62543f321ccec8bedde7b88132eb3571165b731"
     },
     {
       "path": "skills/cad-check-review/references/construction-drawing-workflow.md",
@@ -104,8 +349,8 @@
     },
     {
       "path": "skills/cad-check-review/references/drawing-change-workflow.md",
-      "bytes": 27325,
-      "sha256": "4700d22cb8ca6680fadb2dcde896d607b6c0415c8d5ed278e71a99642d08ceec"
+      "bytes": 27550,
+      "sha256": "9bf8f3717cd21f9f2230b1a6691493aa228b3733dac5fad125be85d96a12e34d"
     },
     {
       "path": "skills/cad-check-review/references/large-area-hatch.md",
@@ -134,8 +379,8 @@
     },
     {
       "path": "skills/cad-check-review/references/runtime-components.md",
-      "bytes": 3722,
-      "sha256": "2fa0e887488bdc7e6de114876aafee29875a6bf8401060142756b127c869c220"
+      "bytes": 6725,
+      "sha256": "75a3e1d538498c2121076ed15c5fd3e3d0e81a289b800089dbbc2fe48d04471c"
     },
     {
       "path": "skills/cad-check-review/references/validation-gates.md",
@@ -914,8 +1159,8 @@
     },
     {
       "path": "skills/cad-check-review/SKILL.md",
-      "bytes": 17517,
-      "sha256": "7be3b2c4aae080de585619a661b71258f7ba5d2667ac69d1712cd7ad24bf58b5"
+      "bytes": 17946,
+      "sha256": "dabebb56b4ce1ca84e4e6a809fdb0f887754f76fc08c5bbfc318c327d4b32645"
     },
     {
       "path": "skills/cad-dimension-annotation/agents/openai.yaml",
@@ -1110,12 +1355,12 @@
     {
       "path": "skills/tianzheng-batch-polyline-dimension/runtime/public-runtime-manifest.json",
       "bytes": 154469,
-      "sha256": "1e4f733af407b94d14f8a305e9fc6e3dd15b5ca7e35ea9618fc4929aa3eecdf0"
+      "sha256": "1bebc50bd4d22ef8776dadf194c6a84266982475f12b9a5e2c0f90ad7839d630"
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/runtime/public-runtime-receipt.json",
       "bytes": 151,
-      "sha256": "8f66467feef7ecdabe51fad9e9702674858a1d705ebf195be875180b9a1bcf5a"
+      "sha256": "3f430eec52122717acd8409f03aee87ff37acfe88a9a9b0c30ebc6478a45b6e4"
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/runtime/README.md",
@@ -2695,7 +2940,7 @@
     {
       "path": "skills/tianzheng-batch-polyline-dimension/scripts/inspect_capability.ps1",
       "bytes": 2566,
-      "sha256": "5b90e6930ec04f281dc6e8d2385597f23ea60d9c9297c37227272b6020a1e4a4"
+      "sha256": "d73d6153d7ee96958f06b1174296f5b441870fd9e9affab81bb03447de95acf7"
     },
     {
       "path": "skills/tianzheng-batch-polyline-dimension/SKILL.md",
@@ -2724,8 +2969,8 @@
     },
     {
       "path": "skills/tianzheng-cad-automation-framework/docs/recent-practices.md",
-      "bytes": 5746,
-      "sha256": "69b7f66cdca959f9dd6e3caab0d159c5caec8a4a3a66c0708bbc6da9dd109b1e"
+      "bytes": 5926,
+      "sha256": "622275962eb3b01c1ea4466700347262b4b6a281e815c6418e5829af67944cb6"
     },
     {
       "path": "skills/tianzheng-cad-automation-framework/examples/request-arc-angle.json",

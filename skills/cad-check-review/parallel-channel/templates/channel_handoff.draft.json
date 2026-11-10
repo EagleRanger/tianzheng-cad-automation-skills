@@ -1,0 +1,95 @@
+{
+  "schema_version": 3,
+  "loop_id": "RECEIVER_PROJECT_LOOP",
+  "status": "DRAFT",
+  "run_id": "RECEIVER_RUN_ID",
+  "handoff_id": "RECEIVER_HANDOFF_ID",
+  "issued_at": "RECEIVER_ISSUED_AT",
+  "workflow_mode": "REAL_TWO_ORIGIN_PARALLEL_NATIVE_WRITE",
+  "issuer": {
+    "thread_id": "RECEIVER_SOURCE_A",
+    "lane": "shared_interface_research"
+  },
+  "target": {
+    "thread_id": "RECEIVER_SOURCE_B",
+    "lane": "execution_run"
+  },
+  "canonical_open": {
+    "transport": "TIANZHENG_SHORTCUT_SHELLEXECUTE_WITH_DWG_ARGUMENT",
+    "component_version": "1.2.8",
+    "entrypoint": "scripts/start_owned_tianzheng_supervised.ps1",
+    "launch_permitted_for_this_handoff": false,
+    "inner_entrypoint": "scripts/start_owned_tianzheng_direct_dwg.ps1",
+    "platform": "AutoCAD 2021",
+    "component_id": "CAD-LC-OPEN-V1"
+  },
+  "launch_policy": {
+    "alternate_transport_allowed": false,
+    "launch_permitted_for_this_handoff": false,
+    "timeout_may_reclassify_failed_open": false,
+    "standalone_close_allowed": false,
+    "inline_startup_wrapper_allowed": false
+  },
+  "command_routing": {},
+  "reasoning": {
+    "reuse_admission": {
+      "mode": "NEW_AFTER_RECALL_GAP",
+      "recalled_authorities": [
+        "config/cad_automation_component_packages.json"
+      ],
+      "why_no_active_component_applies": "Receiver configuration not admitted",
+      "regression": {
+        "sha256": "RECEIVER_REGRESSION_SHA256",
+        "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/test_channel_v11.ps1"
+      },
+      "delta_scope": "Fixed two-owner channel only",
+      "reused_component_ids": [],
+      "interface_contract": {
+        "controller_recalculation_count": 0,
+        "adapter_rule": "VERSIONED_EXPLICIT_ADAPTER",
+        "producer_semantics": "EXACT_OWNER_SOURCE_BOUND_REQUEST",
+        "consumer_semantics": "NATIVE_COMPLETION_RETURN_TO_SAME_REAL_ORIGIN"
+      }
+    },
+    "settled": "No receiving-machine live result yet",
+    "falsifiable_hypothesis": "Both exact owner transactions and independent saved-native reads must pass; positive write-window overlap is independent evidence.",
+    "objective": "Fixed two-owner native LINE calibration only",
+    "user_authority": "RECEIVER_EXPLICIT_AUTHORIZATION_REQUIRED",
+    "open_space": "Receiver validation required"
+  },
+  "governance": {
+    "workflow_id": "CAD-AB-INDEPENDENT-PROJECT-JOBS-V3",
+    "whole_drawing_acceptance_claimed": false,
+    "formal_completion_claimed": false,
+    "delivery_class": "LIMITED_EXPERIMENT"
+  },
+  "program": {},
+  "action": {},
+  "acceptance": {
+    "retry_count": 0,
+    "aesthetic_gate": false
+  },
+  "owner": {
+    "drawing": "RECEIVER_ISOLATED_DWG",
+    "process_start_time_utc": null,
+    "launch_permitted": false,
+    "window_handle": 0,
+    "process_id": 0
+  },
+  "forbidden": [
+    "existing CAD hosts",
+    "production documents",
+    "arbitrary payload",
+    "replay",
+    "foreground input"
+  ],
+  "reporting": {},
+  "stop_conditions": [
+    "identity/hash/claim mismatch",
+    "unknown task result: no resend"
+  ],
+  "rollback": "Preserve isolated copies and evidence; no source overwrite.",
+  "terminal_policy": {
+    "next": "Protected normal close plus process-exit verification is a separate explicit step."
+  }
+}

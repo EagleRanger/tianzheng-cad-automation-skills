@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "status": "active",
+  "default_action": "stop_and_report",
+  "matching_policy": "exact_pid_class_title_body_and_button_signature",
+  "rules": [
+    {
+      "id": "graphic_repair_close_notification",
+      "status": "known_signature_requires_receiver_authorization",
+      "window_class": "#32770",
+      "title_exact": "图形修复",
+      "required_button_text": "关闭(&C)",
+      "action": "post_standard_close_and_verify",
+      "effect": "close_notification_without_running_repair_or_writeback"
+    },
+    {
+      "id": "xref_missing_ignore_unresolved",
+      "status": "known_signature_requires_receiver_authorization",
+      "window_class": "#32770",
+      "title_exact": "参照 - 未找到文件",
+      "required_button_text": "忽略未解决的参照文件",
+      "action": "click_exact_button",
+      "effect": "continue_without_resolving_or_rewriting_xref_paths"
+    },
+    {
+      "id": "trusted_staged_lsp_always_load",
+      "status": "known_signature_requires_receiver_authorization",
+      "window_class": "#32770",
+      "title_exact": "安全性 - 未签名的可执行文件",
+      "requires_trusted_script_context": true,
+      "required_button_text": "始终加载",
+      "action": "click_exact_button",
+      "effect": "persist_trust_for_the_lsp_currently_being_loaded_by_the_owned_tianzheng_script_stage"
+    },
+    {
+      "id": "drawing_path_not_found_acknowledge_and_fail",
+      "status": "observed_safe_failure",
+      "window_class": "#32770",
+      "title_exact": "AutoCAD 消息",
+      "body_exact": "找不到指定的图形文件。\n请确认文件存在。",
+      "required_button_text": "确定",
+      "action": "click_exact_button_then_stop",
+      "effect": "dismiss_non_destructive_error_but_fail_the_open_attempt"
+    },
+    {
+      "id": "tdimmp_first_session_total_dimension_mode",
+      "status": "known_signature_requires_receiver_authorization",
+      "window_class": "#32770",
+      "title_exact": "逐点标注",
+      "requires_trusted_script_context": true,
+      "required_trusted_script_basenames_exact": [
+        "tdimarc_native_full_batch_spec.lsp"
+      ],
+      "required_text_contains": [
+        "标注样式：",
+        "标总尺寸"
+      ],
+      "required_button_text": "标总尺寸",
+      "required_button_style": "BS_AUTOCHECKBOX",
+      "action": "observe_trusted_nonblocking_command_palette",
+      "effect": "recognize_the_exact_trusted_tdimmp_palette_without_changing_optional_total_dimension_mode__native_object_and_source_mapping_remain_authoritative",
+      "current_reason": "The generated typed-segment serial workflow uses versioned controller/core filenames while retaining the bound task-spec filename. Requiring the retired monolithic filename caused the exact known nonblocking palette to be misclassified as unknown."
+    }
+  ],
+  "pending_observation_categories": [
+    "missing_font_or_font_substitution",
+    "drawing_recovery_manager",
+    "proxy_object_or_higher_version_notice"
+  ],
+  "never_auto_accept_categories": [
+    "save_overwrite_source",
+    "repair_and_write_back",
+    "replace_or_rebind_external_reference",
+    "unknown_dialog"
+  ],
+  "receiver_configuration_required": true
+}

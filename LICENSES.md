@@ -5,3 +5,7 @@
 - 随包各 Skill 的原来源、许可和适用边界保持不变。
 - 未附独立授予许可证的自有说明与工具保留作者权利；公开可见不等于额外商业授权或转授权。
 - 软件本体、第三方账号、字体、模型权重和平台服务按其各自条款另行取得。
+
+## 多窗口通道的思路参考
+
+多实例适配、会话隔离和请求／结果边界的设计参考了 [cad-mcp 多实例说明](https://github.com/shtirlitsDva/cad-mcp/blob/master/docs/acd-mcp.md) 与 [dwg-mcp 架构说明](https://github.com/bimwright/dwg-mcp/blob/master/ARCHITECTURE.md)。本包沿用本项目的私有桌面、固定原生模块和任务文件控制链，没有复制这两个项目的管道实现；它们也不是随包依赖。第三方项目的代码和许可仍以其原仓库为准。

@@ -1,0 +1,242 @@
+[
+  {
+    "path": "build_offline.ps1",
+    "sha256": "CE3030C410530D12539622D42B09CD1C53FE3F7A4C3F4FC26A7C01E3B222DE28",
+    "length": 2779
+  },
+  {
+    "path": "config/cad_automation_component_packages.json",
+    "sha256": "9723F7C349B904A75D54CE7B40DB769C4E70D2B01224A01B311B4ADFC7EECFDB",
+    "length": 1179
+  },
+  {
+    "path": "config/cad_command_research_routing_v1.json",
+    "sha256": "52BAE7C57BE9F8AE340B10E49940F5CC9BE7E9734A2DC2ED28464BC9D3275C65",
+    "length": 6244
+  },
+  {
+    "path": "config/cad_native_task_registry.json",
+    "sha256": "AB46EFE9D4870BC71A10FFF93395F24431CAF90849FA0C938FE95D63433C109F",
+    "length": 695
+  },
+  {
+    "path": "config/cad_project_loop.json",
+    "sha256": "6C34C22938AA2A62BE6AD33CCB2D9B1CD192FAC1DB82AAE2B8515A044AFA67F2",
+    "length": 819
+  },
+  {
+    "path": "config/parallel_receiver.json",
+    "sha256": "77759D89400441EB5F1A9EDD7BE3EA82851283775256BB7CC4BF4992DD5AF576",
+    "length": 95
+  },
+  {
+    "path": "config/project_execution_index.json",
+    "sha256": "3A27EAFE42AA0DA7CE66207399FEF57D30677B9CD8F4EE27757FD89831B32BA4",
+    "length": 254
+  },
+  {
+    "path": "config/tianzheng_dialog_whitelist.json",
+    "sha256": "167B706DB6DEB97648AEA6977FE76511F4033C63D79AAF27B2365363E37C824A",
+    "length": 3294
+  },
+  {
+    "path": "lifecycle-templates/A/close/startup_tip_worker_v4.ps1",
+    "sha256": "DD31242DCDA5F63F74D7CDAC37596289A6E182DE5B0307F3881AFF35F0D0110D",
+    "length": 3269
+  },
+  {
+    "path": "lifecycle-templates/A/invoke_close.ps1",
+    "sha256": "7DA3ABF687433BB5FDF03DDFC9DB1E3B01870F08344A28556B583C855C8C7435",
+    "length": 2091
+  },
+  {
+    "path": "lifecycle-templates/A/invoke_identity_read.ps1",
+    "sha256": "4736D1C7FDAE6C5E2DB9D00F4645999C471C44828F7F31290C3C2AEB48CBAE93",
+    "length": 2104
+  },
+  {
+    "path": "lifecycle-templates/A/invoke_save.ps1",
+    "sha256": "CB97C8005C8F7C209E3F2B02C45C0D021FACAF32EBC398B0C3AB79FD48F038CC",
+    "length": 2088
+  },
+  {
+    "path": "lifecycle-templates/A/save/startup_tip_worker_v4.ps1",
+    "sha256": "7E82566B74E71CA4088B635ADFA9591F962D412891E66D9BF4CC6526833420ED",
+    "length": 3584
+  },
+  {
+    "path": "lifecycle-templates/A/startup_tip_worker_v4.ps1",
+    "sha256": "2DB4A7EDA2C23A2A53C73BE2E64CCBD2E437C3D593F492F8A5C7AC7E3101C221",
+    "length": 2687
+  },
+  {
+    "path": "README.md",
+    "sha256": "4D904C9439F0A54DE4C485F96BBDF86225F8C599A2123BF3B1AF9F1069345F1E",
+    "length": 8958
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/command_uia_inspection_v1/OwnHelperJobV2.cs",
+    "sha256": "70B1C0BF64B865CBA6DC1D697C0C9D68BBE2CA985A7910BF6B49FD7EF68E11B2",
+    "length": 12123
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/build_channel_draft_v11.ps1",
+    "sha256": "76CD3D0B17AA047052B1C9C5D1E5DE54564A80B8295978D44325A451C626E60C",
+    "length": 11638
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/build_channel_v11.ps1",
+    "sha256": "D399E3CEA733B5DE22F43FC83F1B26D9FCD7384FD91AE2816A3D87E9F5815B1F",
+    "length": 812
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/channel_contract_v11.ps1",
+    "sha256": "8417999EA8DB17F334418104EDEF0944345EE9BD3735DBF76F69BEF42234D86E",
+    "length": 7259
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/ChannelModuleV11.cs",
+    "sha256": "5692CF4AAB6FDAB68038D66847B2F575B201CD41F458B5586218F74463E0F5F5",
+    "length": 16881
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/ChannelProtocolTestsV11.cs",
+    "sha256": "BA2741229802043E9C578FE53B817067B61A00179444063E06843227FBC2ED6E",
+    "length": 1328
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/ChannelProtocolV11.cs",
+    "sha256": "A930B5F78F6C56D2A9B62352F4959AB2991FBADB6A0E33E54840049E79A3A65D",
+    "length": 3443
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/FixedTaskProtocol.cs",
+    "sha256": "0328DA83A000DAFC022FE98911608E6F74A8B642DCE4D536AB655E75DCCE27F9",
+    "length": 7078
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/invoke_channel_v11.ps1",
+    "sha256": "0AE242D1D2A508B54521DE879F431BBDA511AD7D725AE0BD76075B1DE1E96CD0",
+    "length": 14376
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/launch_channel_v11.ps1",
+    "sha256": "FDF1B8A1A9B9320EB339B1685DFAA4628B72547F32ECED6D9E1BE08DED563C93",
+    "length": 4756
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/measure_native_write_overlap_v1.ps1",
+    "sha256": "AC89A4A23D881CDC09D0522C8E03AF65A756FB9D440BBAA1BE12281D75C90BEF",
+    "length": 2814
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/OwnStartupJobV4.cs",
+    "sha256": "65A964202F7F04E4BEA7CCBEAEBB77A627A00D15BEBD604AB8109115ABFEDD5D",
+    "length": 12337
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/publish_channel_request_v11.ps1",
+    "sha256": "8DEF121CCEC3F1111201D37850C88705F701FFDCE846401ABC4F755CF7DAC415",
+    "length": 3513
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/receive_channel_result_v11.ps1",
+    "sha256": "73C8986253A3633A67FE2CBB53493C5E167894543AFB2E9A581A0DCD6DA3B0FE",
+    "length": 2748
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/startup_tip_worker_v4.ps1",
+    "sha256": "C38B76C57F64696777871BB36E0CDCF3481B5551A871AF46514ED2881028FEB5",
+    "length": 4734
+  },
+  {
+    "path": "reports/cad_multi_window_interface_research/independent_project_jobs_v3/test_channel_v11.ps1",
+    "sha256": "78141B9D19DBF78F8095E8CD1D33F7FFD32D2AAB4E5CF11EE2E4C1B57F9CC418",
+    "length": 1158
+  },
+  {
+    "path": "scripts/assert_cad_canonical_open_consistency.ps1",
+    "sha256": "9DB0EC1A97EF0B136D98B18E1DE47ACAD20F11BDA7CC67BF3D2FC406F08A00B9",
+    "length": 28703
+  },
+  {
+    "path": "scripts/assert_cad_command_research_routing_v1.ps1",
+    "sha256": "7280291044CB8681C5848EDBD06A0C6DE66910CA0B593105596930F180FC31D3",
+    "length": 54426
+  },
+  {
+    "path": "scripts/assert_cad_independent_project_jobs_v3.ps1",
+    "sha256": "C39E02796537EEB55C6FA11122BF9A9B8DD4313C51C03A2819B8CBEEF568B123",
+    "length": 11544
+  },
+  {
+    "path": "scripts/common/CadOperationGuard.psm1",
+    "sha256": "396E051C4C083239102CDD906DD2872EEDEEF86EEB6884BBDD3E29A6F647B411",
+    "length": 3393
+  },
+  {
+    "path": "scripts/common/TestDrawingHistory.psm1",
+    "sha256": "256EC2D55A387B1C462CE50BC354993F16E7AF34C155095390E0CA25903B6BB7",
+    "length": 10963
+  },
+  {
+    "path": "scripts/common/TianzhengLifecycle.psm1",
+    "sha256": "A0C0EAABBF085ECB8240676D0E22CA8104357E1D7C8BE458CE83616B0A7E1258",
+    "length": 13528
+  },
+  {
+    "path": "scripts/common/TianzhengPlatformSelector.psm1",
+    "sha256": "AFB7B6141B903F1CFECF345B6A0EB898DD08E540ECD79892267EB30224980F82",
+    "length": 6522
+  },
+  {
+    "path": "scripts/get_shared_file_sha256_v1.ps1",
+    "sha256": "55E5C237FF9B00AE8A067DD45804852B18F2EB933F58FF14DC4DE3D1960D662A",
+    "length": 507
+  },
+  {
+    "path": "scripts/get_tianzheng_adaptive_startup_budget.ps1",
+    "sha256": "57BB62C7BDD0C7EBB0C13F6D9C4DE1B517DD8DB4952F8C2B26FD5947B4BF4409",
+    "length": 4607
+  },
+  {
+    "path": "scripts/restore_cad_manual_dialogs_after_exit.ps1",
+    "sha256": "9EBB96779F36BBDDCB2684AFEF51A6D6817095DFDBED5E1CF69B00C906F566F1",
+    "length": 2888
+  },
+  {
+    "path": "scripts/start_owned_tianzheng_direct_dwg.ps1",
+    "sha256": "9D00CD9FBDBEA7EF16ED12C08DF11EF171B0294CAD1B5439E9B4A09A05587BA9",
+    "length": 26141
+  },
+  {
+    "path": "scripts/start_owned_tianzheng_supervised.ps1",
+    "sha256": "FABC2F6CAD30154D549B8223D637D7E5AA640357B5026A6C04F9A58646C5D0BA",
+    "length": 13881
+  },
+  {
+    "path": "scripts/wait_tianzheng_resource_quiescence.ps1",
+    "sha256": "35324FDB8A60B44691D962A781F8A84A698849FE1C3A28C83C84A1B2ECCC42E7",
+    "length": 4345
+  },
+  {
+    "path": "scripts/watch_tianzheng_dialogs.ps1",
+    "sha256": "EBDF90B29739D01689475F32855D17FA7157B7931CF5E5660606CEFC91036B05",
+    "length": 17081
+  },
+  {
+    "path": "templates/channel_handoff.draft.json",
+    "sha256": "F51EE2C9FAE8CE5CEE6B620D7DB5D3CC071F4A5EA7F3F8C658ACF4B296BFF538",
+    "length": 3356
+  },
+  {
+    "path": "templates/ready-claim-input-contract.md",
+    "sha256": "3680BF9E961F9260BA5CF0D96615060B2534974838DE02ACD82AD6BD2FB167D3",
+    "length": 2565
+  },
+  {
+    "path": "tests/test_tianzheng_startup_fastpath.ps1",
+    "sha256": "C2A15C24D6D8E998C0203E68AC3BFF8770D1ABCD8023BD8297B74BA91A2FD06F",
+    "length": 8731
+  }
+]

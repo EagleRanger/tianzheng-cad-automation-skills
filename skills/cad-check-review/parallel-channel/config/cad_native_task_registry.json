@@ -1,0 +1,24 @@
+{
+  "tasks": {
+    "execution_run": {
+      "thread_id": "RECEIVER_SOURCE_B"
+    },
+    "shared_interface_research": {
+      "may_write_project_authority": false,
+      "publish_scope": {
+        "may_publish_other_routes": false,
+        "target_thread_id": "RECEIVER_SOURCE_B",
+        "publisher": "RECEIVER_EXISTING_READY_PUBLISHER",
+        "may_bypass_publisher": false,
+        "target_lane": "execution_run",
+        "route_id": "shared_annotation_interface_read"
+      },
+      "may_control_cad": false,
+      "may_publish_ready": false,
+      "thread_id": "RECEIVER_SOURCE_A"
+    },
+    "project_strategy": {
+      "thread_id": "RECEIVER_COORDINATOR"
+    }
+  }
+}

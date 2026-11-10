@@ -1,0 +1,21 @@
+{
+  "components": [
+    {
+      "id": "CAD-LC-OPEN-V1",
+      "version": "1.2.8",
+      "type": "lifecycle_executable",
+      "status": "RECEIVER_REVIEW_REQUIRED",
+      "entry": "scripts/start_owned_tianzheng_supervised.ps1",
+      "entry_sha256": "RECEIVER_ENTRY_SHA256",
+      "inner_entry": "scripts/start_owned_tianzheng_direct_dwg.ps1",
+      "inner_entry_sha256": "RECEIVER_INNER_ENTRY_SHA256",
+      "launch_transport": "TIANZHENG_SHORTCUT_SHELLEXECUTE_WITH_DWG_ARGUMENT",
+      "platform": "AutoCAD 2021",
+      "retry_owner": "supervisor",
+      "inner_max_launch_attempts": 1,
+      "one_shot_handoff_policy": "discover_live_project_owner_states__reject_stale_PID_reuse_by_process_identity_and_start_time__clean_exact_owned_old_cad__release_global_guard_after_ready__KeepAliveSeconds_must_be_zero__return_after_exact_ready__same_controller_continues_business",
+      "ready_handoff_policy": "bind_component_version_entry_inner_entry_transport_platform_and_canonical_only_invocation__forbid_inline_startup_wrappers_and_timeout_reclassification",
+      "next_gate": "Receiver admission and regression required; not active by publication."
+    }
+  ]
+}

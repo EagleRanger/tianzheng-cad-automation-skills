@@ -1,0 +1,20 @@
+{
+  "canonical_open": {
+    "component_id": "CAD-LC-OPEN-V1",
+    "component_version": "1.2.8",
+    "entrypoint": "scripts/start_owned_tianzheng_supervised.ps1",
+    "inner_entrypoint": "scripts/start_owned_tianzheng_direct_dwg.ps1",
+    "transport": "TIANZHENG_SHORTCUT_SHELLEXECUTE_WITH_DWG_ARGUMENT",
+    "platform": "AutoCAD 2021",
+    "target": "isolated_dwg_only",
+    "supervisor_owns_retry": true,
+    "inner_max_launch_attempts": 1,
+    "legacy_alternative_routes_forbidden": true,
+    "ready_handoff_binding_required": true,
+    "invocation_policy": "canonical_entrypoint_only",
+    "open_result_semantics": "target_DWG_open_chain_observed_or_fail",
+    "inline_startup_wrapper_allowed": false,
+    "alternate_transport_allowed": false,
+    "timeout_may_reclassify_failed_open": false
+  }
+}
